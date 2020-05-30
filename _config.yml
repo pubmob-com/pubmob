@@ -4,7 +4,7 @@ plugins:
   - jekyll-assets
 
 # Structure configuration
-source: source
+# source: source
 destination: build
 
 assets:
