@@ -21,12 +21,4 @@ post-content:
 title-bar-color: title-bar-light-yellow
 title-bar-text: Thank you
 ---
-{% assign color = page.title-bar-color %}
-{% assign text = page.title-bar-text %}
-{% capture title_bar_content %}
-  {{ color }}
-  {{ text }}
-{% endcapture %}
-{% include title-bar.html content=title_bar_content %}
-
 Thank you for contacting PubMob. We'll respond promptly to the email address or phone number you have provided.
