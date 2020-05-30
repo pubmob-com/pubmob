@@ -91,3 +91,5 @@ collections:
   announcements:
     output: false
 
+
+theme: jekyll-theme-cayman
