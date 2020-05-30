@@ -1,0 +1,17 @@
+<div class="header-grid">
+  <div class="column-left">
+      {% include logo.html %}
+      <div id="menu" class="click-me">
+        <img src="/assets/images/design/header-menu-button.png" />
+      </div>
+  </div>
+  <div class="column-right">
+      <nav class="navmenu collapse">
+        {% for link in site.navigation %}
+          <div class="box">
+            <p><a id="{{ link.id }}" href="{{link.url}}">{{link.title}}</a></p>
+          </div>
+        {% endfor %}
+      </nav>
+  </div>
+</div>
