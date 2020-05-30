@@ -2,11 +2,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    {% if jekyll.environment == "production" %}
-    {% javascript application %}
-    {% else %}
-    {% javascript development %}
-    {% endif %}
     <!-- Fav and touch icons -->
     <link href="/assets/images/ico/apple-touch-icon-512-precomposed.png" rel="apple-touch-icon-precomposed" sizes="512x512" type="image/png" />
     <link href="/assets/images/ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144" type="image/png" />
