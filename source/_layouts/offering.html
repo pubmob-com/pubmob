@@ -1,0 +1,54 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body id="{{page.pagename}}">
+    <header>
+      <div class="grid">
+        <div class="content">
+          {% include header.html %}
+         </div>
+      </div>
+    </header>
+    {{ page.pre-content }}
+    <article>
+      <div class="grid">
+        <div class="content">
+          <div class="indent">
+          <h3>{{ page.name }}</h3>
+          <img src="/assets/images/offerings/{{page.tender-id}}/{{page.graphic}}" style="width: 225px" />
+          <p>Tender: <a href="/tenders/{{page.tender-id}}">{{ page.tender-name }}</a></p>
+          </div>
+
+          <div>
+            <br />
+             <p><em>{{ page.twelve-words-or-fewerblurb }}</em></p>
+             <p>{{ page.summary-blurb-300-words }}</p>
+             <p>Experience level: {{ page.exercise-skill }}</p>
+            <br />
+             <p>Upcoming dates: TBD</p>
+          </div>
+
+          {{ content }}
+
+        </div>
+      </div>
+    </article>
+    {{ page.post-content }}
+     <div>
+    </div>
+     <footer>
+      <div class="footerbar"></div>
+      <div class="grid">
+        <div class="content">
+          <div class="indent">
+          {% include footer.html %}
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

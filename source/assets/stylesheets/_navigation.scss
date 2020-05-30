@@ -1,0 +1,65 @@
+header .column-right {
+  @include respond-to(handhelds) { 
+  }
+  @include respond-to(wide-handhelds) {
+  }
+  @include respond-to(tablets) {
+    @include flexbox();
+    @include flex-justify-content(flex-end);
+  }
+  @include respond-to(desktops) { 
+    @include flexbox();
+    @include flex-justify-content(center);
+  }
+  @include respond-to(max) { 
+    @include flexbox();
+    @include flex-justify-content(center);
+  }
+}
+  
+header nav {
+  @include flexbox();
+  @include flex-direction(column);
+ 
+  background-color: $header-background-color;
+}
+  
+%active {
+  @extend strong;
+  color: $font-active-color-navigation;
+}
+
+header .box {
+  padding: 0 0 $nav-spacing 0;
+  margin: 0;
+  p {
+    padding: 0;
+    margin: 0;
+    @include ms-respond(font-size, .5);
+    color: $font-color-navigation;
+    text-align: center;
+  }
+  
+  a {
+    @include link-styles($font-color-navigation, $font-active-color-navigation);
+  }
+}
+
+// Used as header breakpoint
+@media only screen and (min-width: $breakpoint-tablet) {
+  header nav {
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-justify-content(flex-end);
+    @include vertical-center(transform);
+  }
+
+  header .box {
+    padding: 0 $nav-spacing 0 0;
+    margin: 0;
+    &:last-child {
+      padding: 0 $base-spacing 0 0;
+      margin: 0;
+    }
+  }
+}

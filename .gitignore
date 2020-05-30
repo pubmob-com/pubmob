@@ -1,0 +1,7 @@
+.bundle
+.jekyll-cache
+.sass-cache
+Gemfile.lock
+*.swp
+vendor/
+build/

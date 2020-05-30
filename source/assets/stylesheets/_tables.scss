@@ -1,0 +1,41 @@
+table {
+  //@include font-feature-settings("kern", "liga", "tnum");
+  border-collapse: collapse;
+  margin: $small-spacing 0;
+  //table-layout: fixed;
+  width: 100%;
+
+  a {font-size: 100%;}
+
+  p {
+    margin: 0;
+    padding: 0 0.6em;
+  }
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: $base-table-zebra-striping; 
+}
+
+th {
+  border-bottom: 1px solid darken($base-table-border-color, 15%);
+  font-weight: 600;
+  padding: $small-spacing 0;
+  text-align: left;
+  background: $base-table-header-background; 
+  color: $base-table-header-font-color; 
+}
+
+td {
+  border-bottom: $base-table-border;
+  padding: $small-spacing 0;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+

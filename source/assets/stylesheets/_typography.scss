@@ -1,0 +1,284 @@
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 400;
+  
+  margin: 0;
+  padding: 0;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+%link {
+  transition: color 0.2s linear;
+  text-decoration:none;
+  cursor: pointer;
+  outline: 0;
+}
+
+a {
+  @extend %link;
+  @include link-styles($link-color, $action-color);
+}
+
+.more {
+  @include ms-respond(font-size, 0);
+}
+
+h1 {
+  @include ms-respond(font-size,3.7);
+}
+
+h2 {
+  @include ms-respond(font-size,3);
+}
+
+h3 {
+  @include ms-respond(font-size,2.6);
+}
+
+h4 {
+  @include ms-respond(font-size,1.9);
+}
+
+h5 {
+  @include ms-respond(font-size,1.3);
+}
+
+h6 {
+  @include ms-respond(font-size,0.5);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $headings-interior-font-color;
+  font-weight: 700;
+//  text-transform: uppercase;
+}
+
+p {
+  @include ms-respond(font-size,1);
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+b {
+  @extend strong;
+}
+
+.postDetails {
+  @include ms-respond(font-size,0.3);
+}
+
+%italic {
+  font-style: italic;
+}
+
+.caption {
+  padding: 20px 0 20px 10px;
+  margin: 0;
+  @extend %italic; 
+  text-align: left;
+}
+
+i {
+  @extend %italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.true-image {
+  img {
+    height: auto;
+    max-height: 800px;
+    width: auto;
+  }
+}
+
+img { width: 100%; height: auto; }
+
+.max { width: auto; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+span {
+  display: inline;
+  white-space: nowrap;
+}
+
+.leading {
+  margin-top: .5em;
+  padding-top: .5em;
+}
+
+.trailing {
+  margin-bottom: .1em;
+  padding-bottom: .1em;
+}
+
+.indent {
+  margin: 2em $base-spacing 2em $base-spacing;
+  padding: 0;
+}
+
+blockquote {
+  background: $color-blockquote-background;
+  border-left: 10px solid $color-blockquote-border;
+  margin: 1.5em 10px;
+  padding: 15px;
+  p {
+    &:first-child {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+code {
+  word-break: break-all;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+%topbar {
+  border-top-style: solid;
+  border-top-color: $item-interior-bar;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $White;
+  border-bottom-width: 0px;
+}
+
+%bottombar {
+  border-top-style: solid;
+  border-top-color: $White;
+  border-top-width: 0px;
+  border-bottom-style: solid;
+  border-bottom-color: $item-interior-bar;
+  border-bottom-width: 1px;
+}
+
+.topbar {
+  @extend %topbar;
+}
+
+.bottombar {
+  @extend %bottombar;
+}
+
+hr, .hr, .strip {
+  border-top-style: solid;
+  border-top-color: $item-interior-strip;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  border-bottom-width: 0px;
+}
+
+.itemInteriorSection {
+  font-weight:400;
+  color: $item-interior-bar;
+  margin: 0;
+  padding: 10px 0;
+  b {
+    color: $item-interior-dot;
+  }
+}
+
+.textBlock {
+  margin: 0 $base-spacing;
+  padding: 10px 0;
+}
+
+.is-hidden {
+  display:none
+}
+
+.show { display: block; }
+.hide { display: none; }
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding-top: .1em;
+  padding-bottom: .1em;
+  background-repeat: no-repeat;
+  p {
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 3px;
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.list {
+  padding: 0 0 0 20px;
+  padding-top: .4em;
+  //padding-bottom: .8em;
+  padding-bottom: 0em;
+  list-style-position: outside;
+  list-style-type: none;
+  .outer {
+    background-image: url('images/design/list-disc.png');
+    background-position: 3px 10px;
+    padding-left: 18px; 
+  }
+  
+  .inner {
+    background-image: url('images/design/list-arrow.png');
+    background-position: 0px 9px;
+    padding-left: 18px; 
+    margin-left: 25px;
+  }
+}
+
+ol.list {
+  counter-reset: o-counter 0;
+  padding: 0 0 0 20px;
+  padding-top: .4em;
+  padding-bottom: .8em;
+  display: table;
+  li.outer {
+    counter-increment: o-counter;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    display: table-row;
+    &:before {
+      @extend p;
+      content: '[' counter(o-counter) ']';
+      display: table-cell;
+      padding-right: 8px; 
+      text-align: right;
+    }
+  }
+}
+
+

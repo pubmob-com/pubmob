@@ -1,0 +1,266 @@
+#home {
+  #navhome { @extend %active; }
+
+  // Services
+
+  .services {
+    @include respond-to(handhelds) {  }
+    @include respond-to(wide-handhelds) {  }
+    @include respond-to(tablets) {  }
+    @include respond-to(desktops) {
+      margin: 2em $base-spacing 2em $base-spacing;
+      padding: 0;
+    }
+    @include respond-to(max) {
+      margin: 2em $base-spacing 2em $base-spacing;
+      padding: 0;
+    }
+  }
+
+  .deco {
+    grid-area: deco;
+  }
+  .image {
+    grid-area: image;
+  }
+  .copy {
+    grid-area: copy;
+  }
+
+  .boxleft {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 5% 1fr 1fr;
+    grid-template-areas:
+      "deco image copy";
+    padding: 20px 0 0 0;
+    
+    img {
+      width: 445px;
+      height: auto;
+    }
+
+    @include respond-to(handhelds) { 
+      grid-gap: 0px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "deco"
+        "image"
+        "copy";
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @include respond-to(wide-handhelds) {
+      grid-gap: 0px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "deco"
+        "image"
+        "copy";
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @include respond-to(tablets) {
+      grid-gap: 20px;
+      grid-template-columns: 5% 1fr 1fr;
+      grid-template-areas:
+        "deco image copy";
+      img {
+        width: 445px;
+        height: auto;
+      }
+    }
+    @include respond-to(desktops) { 
+      grid-gap: 20px;
+      grid-template-columns: 5% 1fr 1fr;
+      grid-template-areas:
+        "deco image copy";
+      img {
+        width: 445px;
+        height: auto;
+      }
+    }
+    @include respond-to(max) { 
+      grid-gap: 20px;
+      grid-template-columns: 5% 1fr 1fr;
+      grid-template-areas:
+        "deco image copy";
+      img {
+        width: 445px;
+        height: auto;
+      }
+    }
+  }
+
+  .boxright {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 5%;
+    grid-template-areas:
+      "copy image deco";
+    padding: 20px 0 0 0;
+
+    @include respond-to(handhelds) { 
+      grid-gap: 0px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "deco"
+        "image"
+        "copy";
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @include respond-to(wide-handhelds) {
+      grid-gap: 0px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "deco"
+        "image"
+        "copy";
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @include respond-to(tablets) {
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr 5%;
+      grid-template-areas:
+        "copy image deco";
+      img {
+        width: 445px;
+        height: auto;
+      }
+    }
+    @include respond-to(desktops) { 
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr 5%;
+      grid-template-areas:
+        "copy image deco";
+      img {
+        width: 445px;
+        height: auto;
+      }
+    }
+    @include respond-to(max) { 
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr 5%;
+      grid-template-areas:
+        "copy image deco";
+      img {
+        width: 445px;
+        height: auto;
+      }
+    }
+  }
+
+  .boxcopy {
+    padding: 20px;
+    
+    h5 { @include ms-respond(font-size, .3); text-align: center; margin: 0; padding: 0; }
+    p { @include ms-respond(font-size, 0); color: $White; margin: 5px 0 0 0; padding: 0; }
+  }
+
+  .IrishFlagGreen {
+    .boxcopy {
+      background-color: $IrishFlagGreen;
+      h5 { color: $IrishFlagOrange; }
+      a { @include link-styles($IrishFlagOrange, $White); }
+    }
+  }
+
+  .IrishFlagOrange {
+    .boxcopy {
+      background-color: $IrishFlagOrange;
+      h5 { color: $White; }
+      a { @include link-styles($DarkGreen, $White); }
+     }
+  }
+
+  .Blackish {
+    .boxcopy {
+      background-color: $Blackish;
+      h5 { color: $Whitish; }
+      a { @include link-styles($IrishFlagOrange, $Whitish); }
+     }
+  }
+
+  .Reddish {
+    .boxcopy {
+      background-color: $Reddish;
+      h5 { color: $Whitish; }
+      a { @include link-styles($Blackish, $Whitish); }
+     }
+  }
+
+  // Announcements and latest post
+  .a {
+    grid-area: a;
+  }
+  .p {
+    grid-area: p;
+  }
+  .two {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a p";
+    padding: 20px 0;
+
+    @include respond-to(handhelds) { 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "a"
+        "p";
+    }
+    @include respond-to(wide-handhelds) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "a"
+        "p";
+    }
+    @include respond-to(tablets) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "a p";
+    }
+    @include respond-to(desktops) { 
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "a p";
+    }
+    @include respond-to(max) { 
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "a p";
+    }
+
+    p { @include ms-respond(font-size, 0); }
+
+    h5 {
+      margin: 0;
+      padding: 10px 0px;
+      @include ms-respond(font-size, .5);
+      color: $White;
+      text-align: center;
+    }
+
+    .announcements {
+      h5 { background-color: $LightGreen; }
+    }
+
+    .posts {
+      h5 { background-color: $LightBlue; }
+    }
+
+    .more { float: right; }
+  }
+
+}

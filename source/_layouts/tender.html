@@ -1,0 +1,71 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body id="{{page.pagename}}">
+    <header>
+      <div class="grid">
+        <div class="content">
+          {% include header.html %}
+         </div>
+      </div>
+    </header>
+    {{ page.pre-content }}
+    <article>
+      <div class="grid">
+        <div class="content">
+          <div class="indent">
+          <h3>Welcome to {{page.pub-name}}</h3>
+          <p>Tender: {{page.tender-name}}</p>
+          <img src="/assets/images/{{ page.id }}.{{page.tender-photo-extension}}" style="width: 225px" />
+          </div>
+
+          <div>
+            <p>{{ page.pub-name}} will provide you with expertise and offerings in:</p>
+            <ul>
+              {% for tech in page.technologies %}
+                <li>{{ tech }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+
+          {{ content }}
+
+          <h3>What's on Tap</h3>
+<!-- TODO reuse guts of offering loop in offerings page -->
+          <ul>
+             {% for offering in site.offerings %}
+               {% if offering.tender-id == page.tender-id %}
+               <li>
+                 <h5><a href="{{ offering.id }}">{{ offering.name }}</a></h5>
+                 <p>Tender: <a href="/tenders/{{offering.tender-id}}">{{ offering.tender-name }}</a></p>
+                <!-- fix above to derive tender name from offering, or something better -->
+                 <p><em>{{ offering.twelve-words-or-fewerblurb }}</em></p>
+                 <p>{{ offering.summary-blurb-300-words }}</p>
+                 <p>Upcoming dates:</p>
+                  <p>TBD</p>
+               </li>
+               {% endif %}
+             {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </article>
+    {{ page.post-content }}
+     <div>
+    </div>
+     <footer>
+      <div class="footerbar"></div>
+      <div class="grid">
+        <div class="content">
+          <div class="indent">
+          {% include footer.html %}
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

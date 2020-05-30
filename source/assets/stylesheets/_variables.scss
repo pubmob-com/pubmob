@@ -1,0 +1,91 @@
+// Layout
+$header-height: 75px;
+$nav-spacing: 18px;
+
+// Typography
+$base-font-family: $roboto;
+$base-font-size: 100%;
+
+// Colors
+$Black:          #000000;
+$White:          #FFFFFF;
+$LightGreen: #41AD49;
+$DarkGreen: #34401A;
+$LightBlue: #18A3D6;
+$DarkBlue: #2D5390;
+$LightYellow: #C6BF4F;
+$DarkYellow: #A86539;
+$IrishFlagOrange: #FF883E;
+$IrishFlagGreen: #169B62;
+$Blackish: #011627;
+$Whitish: #FDFFFC;
+$Reddish: #E71D36;
+
+// Background and font
+$home-background-color: $White;
+$home-font-color: $Black;
+
+$interior-background-color: $White;
+$interior-font-color: $Black;
+
+// Header
+$header-background-color: $White;
+
+// Navigation
+$font-color-navigation: $DarkBlue;
+$font-active-color-navigation: $LightBlue;
+
+// Footer
+$footer-background: $White;
+$footer-action-color: $DarkBlue;
+$footer-link-color: $LightBlue;
+$footer-font: $Black;
+
+// Headings
+$headings-homepage-font-color: $DarkBlue;
+$headings-interior-font-color: $DarkBlue;
+$headings-post-font-color: $DarkBlue;
+
+// Links
+$link-color: $DarkBlue;
+$action-color: $LightBlue;
+
+// Item interior
+$item-interior-bar: $DarkBlue;
+$item-interior-strip: $Black;
+$item-interior-dot: $DarkYellow;
+
+// Blockquote
+$color-blockquote-border: $LightBlue;
+$color-blockquote-background: transparent; //#f9f9f9f9;
+
+// Table
+$base-table-border-color: $LightBlue;
+$base-table-border: $LightBlue;
+$base-table-zebra-striping: #eee;
+$base-table-header-background: $LightBlue;
+$base-table-header-font-color: $White;
+
+// FORMS
+$base-spacing: 1.2em;
+$small-spacing: $base-spacing / 2;
+$base-border-radius: 0px;
+
+$base-fieldset-color: transparent;
+$base-fieldset-border-color: transparent;
+
+$base-input-background-color: #eee;
+$base-input-border-color: transparent;
+$base-input-border: 2px solid $base-input-border-color;
+
+// FORMS -- Glow
+$base-form-required: $Black;
+$base-form-active-color:  $DarkYellow;
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($base-form-active-color, $lightness: -5%, $alpha: -0.3);
+
+// Button
+$colors-button-border-interior: $White;
+$colors-button-interior-hover: darken($LightYellow, 8);;
+$colors-button-interior: $LightYellow; 
+$colors-button-font: $White;

@@ -1,0 +1,73 @@
+#about {
+  @extend .interior;
+  #navabout { @extend %active; }
+
+  // Two column
+
+  .form {
+    grid-area: form;
+    @include center();
+    img { width: 80%; height: auto; }
+    @include respond-to(handhelds) { 
+      img { width: 80%; height: auto; }
+    }
+    @include respond-to(wide-handhelds) {
+      img { width: 50%; height: auto; }
+    }
+    @include respond-to(tablets) {
+      img { width: 80%; height: auto; }
+    }
+    @include respond-to(desktops) { 
+      img { width: 80%; height: auto; }
+    }
+    @include respond-to(max) { 
+      img { width: 80%; height: auto; }
+    }
+  }
+  .text {
+    grid-area: text;
+    h5 {
+      @include ms-respond(font-size, 0);
+      &:first-child {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  .two {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "form text";
+    padding: 30px 20px;
+
+    @include respond-to(handhelds) { 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "form"
+        "text";
+    }
+    @include respond-to(wide-handhelds) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "form"
+        "text";
+    }
+    @include respond-to(tablets) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "form text";
+    }
+    @include respond-to(desktops) { 
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "form text";
+    }
+    @include respond-to(max) { 
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "form text";
+    }
+  }
+}

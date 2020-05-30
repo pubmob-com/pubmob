@@ -1,0 +1,4 @@
+Redirect 301 /2009/03/ /jeffs-blog
+RedirectMatch 301 ^/2008/04/$ /jeffs-blog
+RedirectMatch 301 ^/2008/04/$ /jeffs-blog
+

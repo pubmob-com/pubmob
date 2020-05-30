@@ -1,0 +1,38 @@
+.seo {
+  margin: 1.5*$base-spacing $small-spacing;
+  h1 { 
+    margin: 0;
+    padding: 0;
+    font-family: $gillsans;
+    font-size: 32px;
+    color: $Black;
+    text-align: center;
+    text-transform: uppercase;
+    @media only screen and (min-width: $breakpoint-tablet) { font-size: 43px; }
+  }
+  .tagline {
+    margin: 0;
+    padding: 0;
+    font-family: $geosans;
+    @include ms-respond(font-size, 1.3);
+    text-align: center;
+  }
+  p { @include ms-respond(font-size, .8); }
+
+  @include respond-to(handhelds) { 
+    margin: .5*$base-spacing $small-spacing;
+  }
+  @include respond-to(wide-handhelds) {
+    margin: .5*$base-spacing $small-spacing;
+  }
+  @include respond-to(tablets) {
+    margin: 1.5*$base-spacing $small-spacing;
+  }
+  @include respond-to(desktops) { 
+    margin: 1.5*$base-spacing $small-spacing;
+
+  }
+  @include respond-to(max) { 
+    margin: 1.5*$base-spacing $small-spacing;
+  }
+}

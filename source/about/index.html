@@ -1,0 +1,64 @@
+---
+layout: default
+pagename: about
+title: PubMob | About
+description: About PubMob
+keywords:
+pre-content: >
+    <div class="grid">
+      <div class="content">
+        <picture>
+          <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' media='(max-width: 1080px)'>
+          <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' media='(min-width: 960px)'>
+          <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' media='(min-width: 830px'>
+          <img src='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' alt='About PubMob'>
+        </picture>
+      </div>
+    </div>
+post-content: >
+title-bar-color: title-bar-light-green
+title-bar-text: Our Mission
+---
+<section class="two">
+  <article class="form">
+    {% include logo.html %}
+  </article>
+  <article class="text">
+    <p class="p first">
+    PubMob provides a community meeting place for ... </p>
+  </article>
+</section>
+<section class="two">
+  <article class="form">
+    <img src="/assets/images/about/jeff-langr-1.jpg" alt="About PubMob"</img>
+  </article>
+  <article class="text light-green">
+    <h5>About PubMob</h5>
+    <p class="p">
+      PubMob arose from the Coronavirus pandemic of 2020. It is currently owned and operated by <a href="http://langrsoft.com">Langr Software Soutions, Inc.</a>  The owner, Jeff Langr, is:
+    </p>
+    <ul class="list">
+      <li class="outer"><p class="p">A software development veteran building software professionally since 1982</p></li>
+      <li class="outer"><p class="p">an author and a blogger who has written five books and over a hundred articles</p></li>
+      <li class="outer"><p class="p">a contributor to the bestselling <a href="http://www.amazon.com/exec/obidos/ASIN/0132350882">Clean Code</a>
+        and also to Robert Martin's newest book, <a href="https://www.amazon.com/Clean-Agile-Basics-Robert-Martin/dp/0135781868">Clean Agile</a></p></li>
+      <li class="outer"><p class="p">a member of the Pragmatic Programmers' technical advisory board.</p></li>
+    </ul>
+  </article>
+</section>
+<picture>
+  <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-mission.jpg' media='(max-width: 1080px)'>
+  <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-mission.jpg' media='(min-width: 960px)'>
+  <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-mission.jpg' media='(min-width: 830px'>
+  <img src='/assets/images/about/langr-software-solutions-colorado-springs-colorado-mission.jpg' alt='About PubMob'>
+</picture>
+{% assign color = page.title-bar-color %}
+{% assign text = page.title-bar-text %}
+{% capture title_bar_content %}
+  {{ color }}
+  {{ text }}
+{% endcapture %}
+{% include title-bar.html content=title_bar_content %}
+<p>
+We'll help you mob. ...
+</p>

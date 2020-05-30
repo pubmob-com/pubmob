@@ -1,0 +1,105 @@
+// Mixins
+
+@mixin link-colors($normal, $hover, $active, $visited, $focus) {
+  &:link { color: $normal; }
+  &:hover { color: $hover; }
+  &:active { color: $active; }
+  &:visited { color: $visited; }
+  &:focus { color: $focus; }
+}
+
+@mixin link-styles($normal, $hover) {
+  color: $normal;
+  &:link, &:visited {
+  }
+
+  &:hover, &:active {
+    color: $hover;
+  }
+}
+
+@mixin title($BackgroundColor:$DarkBlue, $FontColor: $White) {
+  @include vertical-center(flex);
+  margin: 30px 0 30px 0;
+  height: 50px;
+  background-color: $BackgroundColor;
+  text-align: center;
+  h1 {
+    @include ms-respond(font-size, 1.3);
+    color: $FontColor;
+  }
+}
+
+@mixin vertical-center($media,$height:100px) {
+  @if $media == transform {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @else if $media == flex {
+    @include flexbox();
+    @include flex-direction(column);
+    @include flex-justify-content(center);
+  }
+  @else if $media == knownheight {
+    position: absolute;
+    top: 50%;
+    height: $height;
+    margin-top: $height / 2; /* account for padding and border if not using box-sizing: border-box; */
+  }
+}
+
+@mixin center() {
+  @include flexbox();
+  @include flex-justify-content(center);
+  @include flex-align-items(center);
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin flex-direction($values) {
+  -webkit-box-flex-direction: $values;
+  -moz-box-flex-direction:  $values;
+  -webkit-flex-direction:  $values;
+  -ms-flex-direction:  $values;
+  flex-direction:  $values;
+}
+
+@mixin flex-justify-content($values) {
+  -webkit-box-justify-content: $values;
+  -moz-box-justify-content:  $values;
+  -webkit-justify-content:  $values;
+  -ms-justify-content:  $values;
+  justify-content:  $values;
+}
+
+@mixin flex-align-content($values) {
+  -webkit-box-align-content: $values;
+  -moz-box-align-content:  $values;
+  -webkit-align-content:  $values;
+  -ms-align-content:  $values;
+  align-content:  $values;
+}
+
+@mixin flex-align-items($values) {
+  -webkit-box-align-items: $values;
+  -moz-box-align-items:  $values;
+  -webkit-align-items:  $values;
+  -ms-align-items:  $values;
+  align-items:  $values;
+}
+

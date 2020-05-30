@@ -1,0 +1,138 @@
+$breakpoint-mobile: 500px;
+$breakpoint-tablet: 830px;
+$breakpoint-desktop: 960px;
+$breakpoint-max: 1080px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: ($breakpoint-mobile - 1px)) { @content; }
+  }
+  @else if $media == wide-handhelds {
+    @media only screen and (min-width: $breakpoint-mobile) and (max-width: ($breakpoint-tablet - 1px)) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: $breakpoint-tablet) and (max-width: ($breakpoint-desktop - 1px)) { @content; }
+  }
+  @else if $media == desktops {
+    @media only screen and (min-width: $breakpoint-desktop) and (max-width: ($breakpoint-max - 1px)) { @content; }
+  }
+  @else if $media == max {
+    @media only screen and (min-width: $breakpoint-max) { @content; }
+  }
+}
+
+.content {
+  grid-area: content;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 0px;
+  @include respond-to(handhelds) { 
+    grid-template-columns: 12fr;
+    grid-template-areas:
+      "content";
+  }
+  @include respond-to(wide-handhelds) {
+    grid-template-columns: 12fr;
+    grid-template-areas:
+      "content";
+  }
+  @include respond-to(tablets) {
+    grid-template-columns: 12fr;
+    grid-template-areas:
+      "content";
+  }
+  @include respond-to(desktops) { 
+    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-areas:
+      ". content .";
+  }
+  @include respond-to(max) { 
+    grid-template-columns: 1fr $breakpoint-desktop 1fr;
+    grid-template-areas:
+      ". content .";
+  }
+}
+
+.column-left {
+  grid-area: col-l;
+}
+
+.column-right {
+  grid-area: col-r;
+}
+
+.two-column-grid {
+  display: grid;
+  grid-gap: 0px;
+  align-content: stretch;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "col-l col-r";
+}
+
+.footer-grid {
+  display: grid;
+  grid-gap: 0px;
+  @include respond-to(handhelds) { 
+    grid-template-columns: 12fr;
+    grid-template-areas:
+      "col-l"
+      "col-r";
+  }
+  @include respond-to(wide-handhelds) {
+    grid-template-columns: 5fr 7fr;
+    grid-template-areas:
+      "col-l col-r";
+  }
+  @include respond-to(tablets) {
+    grid-template-columns: 5fr 7fr;
+    grid-template-areas:
+      "col-l col-r";
+  }
+  @include respond-to(desktops) { 
+    grid-template-columns: 5fr 7fr;
+    grid-template-areas:
+      "col-l col-r";
+  }
+  @include respond-to(max) { 
+    grid-template-columns: 5fr 7fr;
+    grid-template-areas:
+      "col-l col-r";
+  }
+}
+
+.header-grid {
+  display: grid;
+  grid-gap: 0px;
+  align-content: stretch;
+  grid-template-rows: $header-height;
+  @include respond-to(handhelds) { 
+    grid-template-columns: 12fr;
+    grid-template-areas:
+      "col-l"
+      "col-r";
+  }
+  @include respond-to(wide-handhelds) {
+    grid-template-columns: 12fr;
+    grid-template-areas:
+      "col-l"
+      "col-r";
+  }
+  @include respond-to(tablets) {
+    grid-template-columns: 4fr 8fr;
+    grid-template-areas:
+      "col-l col-r";
+  }
+  @include respond-to(desktops) { 
+    grid-template-columns: 4fr 8fr;
+    grid-template-areas:
+      "col-l col-r";
+  }
+  @include respond-to(max) { 
+    grid-template-columns: 4fr 8fr;
+    grid-template-areas:
+      "col-l col-r";
+  }
+}

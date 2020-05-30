@@ -1,0 +1,36 @@
+.button {
+  padding: 2px;
+  margin: 30px 0 0 0;
+  border: none;
+  outline: none;
+
+  background-color: $colors-button-interior;
+
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+
+  &:link, &:visited {
+  }
+
+  &:hover, &:active {
+    transition: background-color 0.2s ease-in-out;
+    background-color: $colors-button-interior-hover;
+  }
+}
+
+.buttonText {
+  padding: 8px 20px;
+  margin: 0;
+  border: 2px;
+  border-style: solid;
+  border-color: $colors-button-border-interior;
+  outline: none;
+
+  line-height: 1;
+  font-weight: 600;
+  color: $colors-button-font;
+  text-align: center;
+  text-transform: uppercase;
+}
+

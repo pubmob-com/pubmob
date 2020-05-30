@@ -1,0 +1,7 @@
+#manual {
+  @extend .interior;
+
+  #navhome {
+    color: $action-color;
+  }
+}

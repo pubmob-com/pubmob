@@ -1,0 +1,39 @@
+---
+# Layouts must stay in HTML
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body id="{{page.pagename}}">
+    <header>
+      <div class="grid">
+        <div class="content">
+          {% include header.html %}
+         </div>
+      </div>
+    </header>
+    {{ page.pre-content }}
+    <article>
+      <div class="grid">
+        <div class="content">
+          <div class="indent">
+          {{ content }}
+          </div>
+        </div>
+      </div>
+    </article>
+    {{ page.post-content }}
+     <footer>
+      <div class="footerbar"></div>
+      <div class="grid">
+        <div class="content">
+          <div class="indent">
+          {% include footer.html %}
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

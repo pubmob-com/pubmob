@@ -1,0 +1,39 @@
+.logo {
+  .left {
+  }
+  
+  .right {
+    border-left-style: solid;
+    border-left-color: $Black;
+    border-left-width: 1px;
+    margin-left: 8px;
+    padding-left: 4px;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    color: $Black;
+    line-height: 1;
+  }
+  
+  .langr {
+    font-family: $gillsans;
+    font-size: 32px;
+    color: $Black;
+    text-align: right;
+    @media only screen and (min-width: $breakpoint-tablet) { font-size: 43px; }
+  }
+
+  .software {
+    font-family: $geosans;
+    font-size: 15.5px;
+    @media only screen and (min-width: $breakpoint-tablet) { font-size: 19.5px; }
+  }
+
+  .solutions {
+    font-family: $geosans;
+    font-size: 15.3px;
+    @media only screen and (min-width: $breakpoint-tablet) { font-size: 18.3px; }
+  }
+}

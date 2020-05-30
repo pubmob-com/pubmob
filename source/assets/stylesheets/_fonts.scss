@@ -1,0 +1,87 @@
+$font-path: "/assets/stylesheets/webfonts";
+
+// Follows Style linking technique
+// https://www.smashingmagazine.com/2013/02/setting-weights-and-styles-at-font-face-declaration/
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$font-path}/Roboto/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$font-path}/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$font-path}/Roboto/Roboto-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+// As variables
+$gillsans: 'GillSans', sans-serif;
+// $gillsanscondensed: 'GillSansCondensed', sans-serif;
+$geosans: 'GeoSans', sans-serif;
+$robotoslab: 'RobotoSlab', serif;
+$roboto: 'Roboto', sans-serif;
+
+$fa-font-path: "/assets/stylesheets/webfonts/fontawesome";
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/brands.scss";
+@import "fontawesome/solid.scss";
+@import "fontawesome/regular.scss";
+//@import "fontawesome/light.scss";
+@import "fontawesome/_core.scss";
+@import "fontawesome/_mixins.scss";
+@import "fontawesome/_icons.scss";
+@import "fontawesome/_variables.scss";
+@import "fontawesome/_animated.scss";
+@import "fontawesome/_bordered-pulled.scss";
+@import "fontawesome/_fixed-width.scss";
+@import "fontawesome/_larger.scss";
+@import "fontawesome/_list.scss";
+@import "fontawesome/_rotated-flipped.scss";
+@import "fontawesome/_stacked.scss";
+@import "fontawesome/_screen-reader.scss";
+
+$icomoon-path: "/assets/stylesheets/webfonts/icomoon";
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$icomoon-path}/icomoon.eot?am443l');
+  src:  url('#{$icomoon-path}/icomoon.eot?am443l#iefix') format('embedded-opentype'),
+    url('#{$icomoon-path}/icomoon.ttf?am443l') format('truetype'),
+    url('#{$icomoon-path}/icomoon.woff?am443l') format('woff'),
+    url('#{$icomoon-path}/icomoon.svg?am443l#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-articles:before {
+  content: "\e900";
+}
+.icon-book:before {
+  content: "\e901";
+}
+.icon-cards:before {
+  content: "\e902";
+}

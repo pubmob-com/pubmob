@@ -1,0 +1,83 @@
+header {
+  position: relative;
+  z-index: 10;
+
+  height: $header-height;
+  width: 100%;
+
+  background-color: $header-background-color;
+}
+
+header .column-left {
+  @include respond-to(handhelds) { 
+    @include flexbox();
+    @include flex-justify-content(space-between);
+  }
+  @include respond-to(wide-handhelds) {
+    @include flexbox();
+    @include flex-justify-content(space-between);
+  }
+  @include respond-to(tablets) {
+  }
+  @include respond-to(desktops) { 
+  }
+  @include respond-to(max) { 
+  }
+}
+
+header .logo {
+  padding-left: $base-spacing;
+
+  @include respond-to(handhelds) { 
+    @include vertical-center(flex);
+  }
+  @include respond-to(wide-handhelds) {
+    @include vertical-center(flex);
+  }
+  @include respond-to(tablets) {
+    @include vertical-center(transform);
+  }
+  @include respond-to(desktops) { 
+    @include vertical-center(transform);
+  }
+  @include respond-to(max) { 
+    @include vertical-center(transform);
+  }
+}
+
+#menu {
+  height: $header-height;
+  width: 86px;
+  position: relative;
+
+  padding-right: 2*$base-spacing;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  @include respond-to(handhelds) { 
+    display: block;
+  }
+  @include respond-to(wide-handhelds) {
+    display: block;
+  }
+  @include respond-to(tablets) {
+    display: none;
+  }
+  @include respond-to(desktops) { 
+    display: none;
+  }
+  @include respond-to(max) { 
+    display: none;
+  }
+}

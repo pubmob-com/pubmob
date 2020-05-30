@@ -1,0 +1,160 @@
+footer .logo {
+  @include flexbox();
+  @include flex-justify-content(center);
+  @media only screen and (min-width: $breakpoint-tablet) { justify-content: start; }
+  margin-bottom: 1em;
+}
+
+.small {
+  @include ms-respond(font-size,.5);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.contactbox.flex {
+  @include flexbox();
+  @include respond-to(handhelds) { 
+    @include flex-justify-content(center);
+  }
+  @include respond-to(wide-handhelds) {
+    @include flex-justify-content(left);
+  }
+  @include respond-to(tablets) {
+    @include flex-justify-content(left);
+  }
+  @include respond-to(desktops) { 
+    @include flex-justify-content(left);
+  }
+  @include respond-to(max) {
+    @include flex-justify-content(left);
+  }
+}
+
+footer {
+  border-top-style: solid;
+  border-top-color: $DarkBlue;
+  border-top-width: 2px;
+  font-weight: 400;
+  margin: 20px 0 0 0;
+  padding: 0;
+
+  background-color: $footer-background;
+
+  .footerbar {
+    border-top-style: solid;
+    border-top-color: $LightBlue;
+    border-top-width: 1px;
+  }
+
+  .column-left {
+    li {
+      display: block;
+      padding: 0;
+      margin: 0;
+      a { @include link-styles($footer-action-color, $footer-link-color); }
+    }
+
+    ul.contact {
+      padding: 0;
+      @include respond-to(handhelds) { 
+        margin: 1em 0 1em 0;
+      }
+      @include respond-to(wide-handhelds) {
+        margin: 0.7em 0 0 0;
+      }
+      @include respond-to(tablets) {
+        margin: 0.7em 0 0 0;
+      }
+      @include respond-to(desktops) { 
+        margin: 0.7em 0 0 0;
+      }
+      @include respond-to(max) {
+        margin: 0.7em 0 0 0;
+      }
+    }
+
+    ul.contact li {
+      @include respond-to(handhelds) { 
+        padding-bottom: .5em;
+      }
+      @include respond-to(wide-handhelds) {
+        padding-bottom: .2em;
+      }
+      @include respond-to(tablets) {
+        padding-bottom: .2em;
+      }
+      @include respond-to(desktops) { 
+        padding-bottom: .2em;
+      }
+      @include respond-to(max) {
+        padding-bottom: .2em;
+      }
+      &:last-child { padding-bottom: 0; }
+    }
+  }
+
+  .column-right {
+    @include respond-to(handhelds) { 
+      text-align: center;
+    }
+    @include respond-to(wide-handhelds) {
+      text-align: right;
+    }
+    @include respond-to(tablets) {
+      text-align: right;
+    }
+    @include respond-to(desktops) { 
+      text-align: right;
+    }
+    @include respond-to(max) {
+      text-align: right;
+    }
+
+    li {
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.social {
+      padding: 0;
+      margin: 0 0 2em 0;
+    }
+
+    ul.social li {
+      display: inline;
+      padding-right: .7em;
+      &:last-child { padding-right: 0; }
+      a { @include link-styles($footer-action-color, $footer-link-color); }
+    }
+
+    i {
+      font-weight: 400;
+      @include ms-respond(font-size, 3.5);
+    }
+
+    .copyright {
+      padding: 0;
+      @include respond-to(handhelds) { 
+        margin: 0;
+        @include ms-respond(font-size, -0.3);
+      }
+      @include respond-to(wide-handhelds) {
+        margin: 0;
+        @include ms-respond(font-size, -0.5);
+      }
+      @include respond-to(tablets) {
+        margin: 0;
+        @include ms-respond(font-size, -0.3);
+      }
+      @include respond-to(desktops) { 
+         margin: 3em 0 0 0;
+        @include ms-respond(font-size, -0.3);
+      }
+      @include respond-to(max) {
+        margin: 3em 0 0 0;
+        @include ms-respond(font-size, -0.3);
+      }
+    }
+  }
+}

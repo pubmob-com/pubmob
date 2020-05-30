@@ -1,0 +1,122 @@
+#offerings {
+  @extend .interior;
+  #navofferings { @extend %active; }
+
+  // Service boxes
+
+  .boxes {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 50px 35px;
+    margin: 40px;
+
+    .box {
+      h1,h2,h3,h4,h5,h6 {
+        color: $White;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      h2 {
+        @include ms-respond(font-size, .3);
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        @include ms-respond(font-size, 0);
+        margin: 15px;
+        padding: 0;
+      }
+      .more {
+        text-align: center;
+      }
+      .header, .footer {
+        @include vertical-center(flex);
+      }
+      .header {
+        height: 75px;
+      }
+      .footer {
+        height: 30px;
+      }
+    }
+  }
+
+  .LightBlue {
+    .header, .footer {
+      background-color: $LightBlue;
+    }
+    a { @include link-styles($White, $DarkBlue); }
+  }
+  .LightGreen {
+    .header, .footer {
+      background-color: $LightGreen;
+    }
+    a { @include link-styles($White, $DarkGreen); }
+  }
+  .LightYellow {
+    .header, .footer {
+      background-color: $LightYellow;
+    }
+    a { @include link-styles($White, $DarkYellow); }
+  }
+  .DarkBlue {
+    .header, .footer {
+      background-color: $DarkBlue;
+    }
+    a { @include link-styles($White, $LightBlue); }
+  }
+
+  // Engage
+
+  .image {
+    grid-area: image;
+  }
+  .text {
+    grid-area: text;
+  }
+  .two {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image text";
+    padding: 0 20px;
+
+    @include respond-to(handhelds) { 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "image"
+        "text";
+    }
+    @include respond-to(wide-handhelds) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "image"
+        "text";
+    }
+    @include respond-to(tablets) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "image text";
+    }
+    @include respond-to(desktops) { 
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "image text";
+    }
+    @include respond-to(max) { 
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "image text";
+    }
+
+    p {
+      @include ms-respond(font-size, 0);
+      &:first-child {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}

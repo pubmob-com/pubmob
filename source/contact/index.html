@@ -1,0 +1,113 @@
+---
+layout: default
+pagename: contact
+title: PubMob | Contact
+description: >
+  Contact PubMob for information about custom remote mobbing events.
+keywords:
+pre-content: >
+    <div class="grid">
+      <div class="content">
+        <picture>
+          <source srcset='/assets/images/contact/langr-software-solutions-colorado-springs-colorado-contact.jpg' media='(max-width: 1080px)'>
+          <source srcset='/assets/images/contact/langr-software-solutions-colorado-springs-colorado-contact.jpg' media='(min-width: 960px)'>
+          <source srcset='/assets/images/contact/langr-software-solutions-colorado-springs-colorado-contact.jpg' media='(min-width: 830px'>
+          <img src='/assets/images/contact/langr-software-solutions-colorado-springs-colorado-contact.jpg' alt='Contact PubMob'>
+        </picture>
+      </div>
+    </div>
+post-content: >
+bpost-text: SEND
+title-bar-color: title-bar-light-yellow
+title-bar-text: Contact Us
+---
+{% assign color = page.title-bar-color %}
+{% assign text = page.title-bar-text %}
+{% capture title_bar_content %}
+  {{ color }}
+  {{ text }}
+{% endcapture %}
+{% include title-bar.html content=title_bar_content %}
+
+<section class="two">
+  <article class="form">
+    <p class="p first">
+    Have a question? Seeking a quote? Ready to secure our availability? Want to chat with us or bounce a question off of us?
+    Please use this contact form to send us a short note.
+    </p>
+    <p class="p">
+      <span class='required'>*</span>Required information
+    </p>
+    <fieldset>
+      <form id="contactForm"
+          action="https://formspree.io/{{ site.contact.formspree }}"
+          method="POST">
+        <input type="hidden" name="_next"    value="{{ site.contact.next }}" />
+        <input type="hidden" name="_subject" value="{{ site.contact.subject }}" />
+        <input type="text"   name="_gotcha"  class="is-hidden" />
+    
+        <section class="information">
+          <p class="p">
+            <label for="fname"><span>Name<span class='required'>*</span></span></label>
+            <input size="35" placeholder="Name" class="textbox" type="text" name="name" id="name" required />
+          </p>
+    
+          <p class="p">
+            <label for="email"><span>eMail<span class='required'>*</span></span></label>
+            <input size="35" placeholder="eMail" class="textbox" type="email" name="_replyto" id="email" required />
+          </p>
+    
+          <p class="p">
+            <label for="phone"><span>Phone</span></label>
+            <input size="35" placeholder="Phone" class="textbox" type="tel" name="phone" id="phone" />
+          </p>
+        </section>
+          
+        <p class="p">Use this opportunity to tell us about your project.</p>
+    
+        <section class="information">
+          <p class="p">
+            <label for="message"><span>Your Message<span class='required'>*</span></span></label>
+            <textarea rows="10" cols="105" placeholder="Type in your question/information" name="message" id="message" required></textarea>
+          </p>
+        </section>
+    
+        {% assign text = page.bpost-text %}
+        {% capture button_content %}
+          {{ text }}
+        {% endcapture %}
+        {% include button-post.html content=button_content %}
+      </form>
+    </fieldset>
+  </article>
+  <article class="text">
+    {% include logo.html %}
+    <div class="contactusinformation">
+      <div class="contactus">
+        <p>Phone</p>
+       </div>
+       <div class="information">
+         <p>{{ site.phone.reference }}</p>
+       </div>
+    </div>
+    <div class="contactusinformation">
+      <div class="contactus">
+        <p>Email</p>
+       </div>
+       <div class="information">
+         <p>{{ site.email.address }}</p>
+       </div>
+    </div>
+    <div class="contactusinformation">
+      <div class="contactus">
+        <p>Address</p>
+       </div>
+       <div class="information">
+         <p>{{ site.address.name }}</p>
+         <p>{{ site.address.address }}</p>
+         <p>{{ site.address.city }}, {{ site.address.state }}  {{ site.address.zipcode }}</p>
+         <p>{{ site.address.country }}</p>
+       </div>
+    </div>
+  </article>
+</section>

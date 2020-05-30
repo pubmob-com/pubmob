@@ -1,0 +1,93 @@
+plugins:
+  - jekyll-gist
+  - jekyll-coffeescript
+  - jekyll-assets
+
+# Structure configuration
+source: source
+destination: build
+
+assets:
+  js_compressor:  uglifier
+  compressors:
+    uglifier:
+      harmony: true
+      compress:
+        unused: false
+  external:
+      uglifier:
+        harmony: true
+  css_compressor: sass
+  cachebust: soft
+  sources:
+    - assets/images/home
+    - assets/images/banner
+    - assets/images/blog
+    - assets/images/books
+    - assets/images/design
+    - assets/images/ico
+    - assets/images/manual
+    - assets/javascripts
+    - assets/stylesheets
+
+# Site settings
+title: WARNING! DO THIS ON EACH PAGE
+description: WARNING! TAG ON EACH PAGE
+url: "http://pubmob.com"
+permalink: /:year/:month/:day/:title/
+contact:
+  formspree: xnqjqybv
+  subject: Website contact form submitted
+  next: /contact-thank-you
+twitter: https://twitter.com/pubmob
+linkedin: https://www.linkedin.com/in/jefflangr
+github: https://github.com/jlangr
+appointment: https://langrsoftwaresolutions.as.me/
+agile: http://agileinaflash.blogspot.com
+facebook: https://www.facebook.com/jeff.langr
+email:
+  address: jeff@langrsoft.com
+  subject: mailto:jeff@langrsoft.com?subject=email%20from%20langrsoft.com
+phone:
+  actual: 719-287-4335
+  reference: 719-287-GEEK
+address:
+  name: Langr Software Solutions
+  address: P.O. Box 6884
+  city: Colorado Springs
+  state: CO
+  zipcode: 80934-6884
+  country: United States
+breakpoint-mobile: 500px;
+breakpoint-tablet: 830px;
+breakpoint-desktop: 960px;
+breakpoint-max: 1080px;
+
+# Build settings
+encoding: utf-8
+
+navigation:
+  - title: Home
+    url: /
+    id: navhome
+  - title: Our (Virtual) Pubs
+    url: /pubs
+    id: navpubs
+  - title: What's on Tap
+    url: /offerings
+    id: navofferings
+  - title: Contact
+    url: /contact
+    id: navcontact
+  - title: About
+    url: /about
+    id: navabout
+
+collections:
+  tenders:
+    output: true
+  offerings:
+    output: true
+  announcements:
+    output: false
+
