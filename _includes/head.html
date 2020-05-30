@@ -2,7 +2,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    {% stylesheet application %}
     {% if jekyll.environment == "production" %}
     {% javascript application %}
     {% else %}
