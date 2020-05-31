@@ -17,4 +17,4 @@ technologies: [coaching,TDD,Java,smartypantsing]
 ---
 Come to Dustin's Dustup and be prepared to get plastered on knowledge!
 
-[[ This is where you can add custom information on your pub ]]
+I'm gonna put my customized web content here.
