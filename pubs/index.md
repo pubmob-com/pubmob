@@ -20,14 +20,41 @@ post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: The Pubs
 ---
-<div>
- {% assign sorted = site.tenders | sort: "sort-name" %}
- {% for pub in sorted %}
-   <li>
-     <h4><a href="/tenders/{{ pub.tender-id }}">{{ pub.pub-name }}</a></h4>
-     <img src="/assets/images/tenders/{{ pub.tender-id }}.{{ pub.tender-photo-extension }}" style="width: 200px" />
-     <p>{{ pub.tagline }}<br />
-     Your tender: {{ pub.tender-name }}</p>
-   </li>
- {% endfor %}
-</div>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<div class="container">
+	<div class="row">
+		<div class="heading-title text-center">
+			<h3 class="text-uppercase">Meet Our Pub Owners</h3>
+			<p class="p-top-30 half-txt">Pub Owner Description ... </p>
+		</div>
+		{% assign sorted = site.tenders | sort: "sort-name" %}
+		{% for pub in sorted %}
+        <a href="/tenders/{{ pub.tender-id }}">
+        <div class="col-md-4 col-sm-4">
+        		<div class="team-member">
+					<div class="team-img">
+						<img src="/assets/images/tenders/{{ pub.tender-id }}.{{ pub.tender-photo-extension }}" width="500" height="500" alt="team member" class="img-responsive">
+					</div>
+					<div class="team-hover">
+						<div class="desk">
+							<h4>{{ pub.pub-name }}</h4>
+							<p>{{ pub.tagline }}</p>
+						</div>
+						<div class="s-link">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+						</div>
+					</div>
+			</div>
+			<div class="team-title">
+				<a href="/tenders/{{ pub.tender-id }}"><h5>{{ pub.tender-name }}</h5></a>
+				<a href="/tenders/{{ pub.tender-id }}"><span>{{ pub.pub-name }}</span></a>
+			</div>
+		</div>
+		</a>
+ 	   {% endfor %}
+   </div>
+</div>			

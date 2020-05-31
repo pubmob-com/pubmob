@@ -5,3 +5,4 @@ Gemfile.lock
 *.swp
 vendor/
 build/
+*.DS_Store
