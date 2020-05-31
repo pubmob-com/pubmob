@@ -78,9 +78,6 @@ navigation:
   - title: What's on Tap
     url: /offerings
     id: navofferings
-  - title: Contact
-    url: /contact
-    id: navcontact
   - title: About
     url: /about
     id: navabout
