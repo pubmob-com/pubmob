@@ -1,0 +1,30 @@
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-height: 80px;
+}
+
+.nav li {
+	display: inline;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	font-family: Lato;
+	font-size: 1.7em;
+	font-weight: 300;
+	padding: 30px 25px 33px 25px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	background-color: #444444;
+	transition: 0.7s all linear;
+	height: 100%;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}

@@ -21,8 +21,6 @@ title-bar-color: title-bar-light-green
 title-bar-text: The Pubs
 ---
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
 <div class="container">
 	<div class="row">
 		<div class="heading-title text-center">
