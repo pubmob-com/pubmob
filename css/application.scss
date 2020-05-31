@@ -1,10 +1,11 @@
-// Vendors
+---
+---
+
 @import "fonts";
 @import "modularscale";
 @import "my-modularscale";
 @import "dist/math";
 
-// Mixins
 @import "variables";
 @import "grid-settings";
 @import "mixins";
@@ -14,7 +15,6 @@
 @import "lists";
 @import "tables";
 
-// Modules
 @import "logo";
 @import "navigation";
 @import "footer";
@@ -26,7 +26,6 @@
 @import "video";
 @import "testimonial";
 
-// Pages  
 @import "interior";
 @import "home";
 @import "manual";

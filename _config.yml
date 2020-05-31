@@ -7,6 +7,10 @@ plugins:
 # source: source
 destination: build
 
+sass:
+    sass_dir: _sass
+
+
 assets:
   js_compressor:  uglifier
   compressors:
@@ -92,4 +96,3 @@ collections:
     output: false
 
 
-theme: jekyll-theme-minimal
