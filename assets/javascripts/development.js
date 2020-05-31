@@ -1,2 +1,2 @@
-#= require jquery
-#= require collapse
+require jquery
+require collapse
