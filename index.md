@@ -32,7 +32,17 @@ post-content: >
 <section class="seo">
   <p class="tagline">Virtual Collaborative Coding</p>
   <p>
-    We rock and we're going to put a pile of keywords in this intro text.
+    Welcome to a new world of programming. Join the PubMob experience and tap
+    into the expertise of a productive worldwide community of software developers. 
+    Be part of a safe, enjoyable, and rewarding virtual collaborative coding experience!
+  </p>
+  <p>
+  PubMob provides you with hands-on opportunities to learn by doing, and to do
+   by collaborating online. Join a virtual PubMob session run by an experienced
+   "tender" who will guide you and up to five other developers.
+  </p>
+  <p>
+    Your tender is one of a number of <a href="/pubs">virtual PubMob pub owners</a> who will be providing short sessions focused on either helping you learn new technologies & techniques, or on helping you build something. Come see what <a href="/offerings">they have on tap</a>!
   </p>
 </section>
 
