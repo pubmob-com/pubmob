@@ -120,17 +120,6 @@ post-content: >
       {% endfor %}
     </div>
   </div>
-  <div class="posts">
-    <h5>Read the latest</h5>
-    <div class="indent">
-      {% assign latestPost = site.posts | sort: 'date' | reverse | first %}
-      <p><a href="{{latestPost.url}}">{{ latestPost.articletitle }}</a> ({{ latestPost.date | date: "%B %d, %Y" }})</p>
-      <img src="{{latestPost.image}}" width="400px" />
-      <p class="textBlock">{{latestPost.description}}</p>
-
-      <p><a class="more" href="/jeffs-blog">More posts &raquo;</a></p>
-    </div>
-  </div>
 </div>
 
 
