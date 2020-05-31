@@ -21,7 +21,7 @@ title-bar-color: title-bar-light-green
 title-bar-text: The Pubs
 ---
 <div>
- {% assign sorted = site.tenders | sort:'sort-name' %}
+ {% assign sorted = site.tenders | sort: "sort-name" %}
  {% for pub in sorted %}
    <li>
      <h4><a href="/tenders/{{ pub.tender-id }}">{{ pub.pub-name }}</a></h4>

@@ -4,7 +4,7 @@ tender-id: skylarwatson
 tender-name: Skylar
 owner-name: Skylar Watson
 sort-name: Watson, Skylar
-pub-name: Skylar's Saloon
+pub-name: "Skylar's Saloon"
 
 pub-photo: skylarwatson.jpg
 

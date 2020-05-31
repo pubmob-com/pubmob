@@ -3,7 +3,7 @@ layout: tender
 tender-id: jefflangr
 tender-name: JJ
 owner-name: Jeff Langr
-sort-name: 1
+sort-name: "1"
 pub-name: Jeff's bar
 
 pub-photo: jeffsbarphoto.jpg
