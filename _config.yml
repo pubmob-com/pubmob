@@ -39,10 +39,6 @@ title: WARNING! DO THIS ON EACH PAGE
 description: WARNING! TAG ON EACH PAGE
 url: "http://pubmob.com"
 permalink: /:year/:month/:day/:title/
-contact:
-  formspree: xnqjqybv
-  subject: Website contact form submitted
-  next: /contact-thank-you
 twitter: https://twitter.com/pubmobdotcom
 github: https://github.com/pubmob-com
 appointment: 
