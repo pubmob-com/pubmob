@@ -1,0 +1,51 @@
+.tender {
+  img {
+    height: auto;
+    width: auto;
+    max-width: 1200px;
+  }
+
+  .offeringSummary {
+    .offeringName {
+      @include ms-respond(font-size, 1.3);
+    }
+ 
+    .offeringDetails {
+      margin: 0 $base-spacing 0 $base-spacing;
+      padding: 0;
+    }
+  }
+
+  .tech {
+    ul {
+      overflow: auto;
+      list-style-type: none;
+    }
+     
+    li {
+      height: 25px;
+      float: left;
+      margin-right: 0px;
+      border-right: 1px solid #aaa;
+      padding: 0 10px;
+    }
+     
+    li:last-child {
+      border-right: none;
+    }
+     
+    li a {
+      text-decoration: none;
+      color: #ccc;
+      font: 25px/1 Helvetica, Verdana, sans-serif;
+      text-transform: uppercase;
+     
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+  }
+
+}
