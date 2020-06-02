@@ -1,7 +1,7 @@
 ---
 layout: tender
 tender-id: jefflangr
-tender-name: JJ
+tender-name: Jeff Langr
 owner-name: Jeff Langr
 sort-name: "1"
 pub-name: Jeff's bar
