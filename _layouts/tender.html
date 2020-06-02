@@ -46,10 +46,15 @@
                  <li>
                    <div class="offeringName"><a href="{{ offering.id }}">{{ offering.name }}</a></div>
                    <!-- fix above to derive tender name from offering, or something better -->
-                   <!-- TODO truncate at twelve words -->
                    <div class="offeringDetails">
-                     <p><em>{{ offering.twelve-words-or-fewerblurb }}</em></p>
-                     <p>{{ offering.summary-blurb-300-words }}<br />
+                     {% assign offeringTwelve = offering.twelve-words-or-fewer | split: " " | slice: 0, 12 | join: " " %}
+                     <p><em>{{ offeringTwelve }}</em></p>
+                     <p>
+                        {% assign blurbWordsSize = offering.summary-blurb-300-words | number_of_words %}
+                        {% assign blurbWords = offering.summary-blurb-300-words | split: " " | slice: 0, 300 | join: " " %}
+                        {{ blurbWords }}
+                        {% if blurbWordsSize > 300 %}...{% endif %}
+                     <br />
                        <strong>Upcoming dates:</strong> TBD<br />
                        <strong>Technologies: </strong> 
                        {% capture techs = "" %}

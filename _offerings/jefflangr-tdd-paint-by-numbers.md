@@ -12,7 +12,7 @@ mob-experience: any
 exercise-skill: [novice]
 repo: http://github.com/jlangr/name-normalizer
 prerequisites: []
-summary-blurb-300-words: Learn TDD the easy way with a TDD Paint by Numbers session, where the tests are already written for you--you fill in the code and keep it in the confines of the tests. Sessions continually available in numerous programming languages and for various katas.
+summary-blurb-300-words: Learn TDD the easy way with a TDD Paint by Numbers session, where the tests are already written for you--you fill in the code and keep it in the confines of the tests. Sessions are continually available in numerous programming languages, and I'll be keeping the katas fresh.
 active: true
 ---
 TDD Paint by Number sessions are gentle introductions to TDD. You and your co-mob will ...

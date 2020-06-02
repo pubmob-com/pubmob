@@ -3,7 +3,7 @@ layout: offering
 tender-id: jefflangr
 tender-name: JJ
 name: Legacy Dependency Breaking Techniques
-twelve-words-or-fewer: Simple techniques to break dependencines making it hard to test
+twelve-words-or-fewer: Simple techniques to break dependencies making it hard to test
 technologies: [TDD,refactoring,design]
 languages: [Java,C++,C#,Clojure,Kotlin,JavaScript]
 graphic:

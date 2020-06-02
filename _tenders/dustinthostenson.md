@@ -10,9 +10,11 @@ pub-photo: jeffsbarphoto.jpg
 
 tagline: Get dirty and dusty when coding with Dustin!
 tender-photo-extension: jpg
+tender-blurb: "a couple lines about you"
 company: Dustin's Great Consulting
 company-blurb: "We do it all"
-company-logo-url: http://something.com
+company-link: 
+company-logo-url: 
 technologies: [coaching,TDD,Java,smartypantsing]
 ---
 Come to Dustin's Dustup and be prepared to get plastered on knowledge!
