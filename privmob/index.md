@@ -24,7 +24,7 @@ PubMob Private: Bring the PubMob experience to your company or team.
 
 ## Private Development Sessions
 
-Want to help rev up your team's energy and productivity? A Private PubMob session will help provide your team with the expertise they can use&emdash;now&emdash;and the perspective of a seasoned coach who can spot things sometimes harder to see from where the team sits.
+Want to help rev up your team's energy and productivity? A Private PubMob session will help provide your team with the expertise they can use--now--and the perspective of a seasoned coach who can spot things sometimes harder to see from where the team sits.
 
 Your tender will coordinate the PubMob's activities and also participate fully in your sessions, as both driver and navigator. As with all PubMob sessions, everyone will get equal hands on the keyboard, and the team will quickly ramp up in their ability to help each driver become more productive.
 
