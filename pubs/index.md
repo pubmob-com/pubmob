@@ -18,7 +18,7 @@ pre-content: >
     </div>
 post-content: >
 title-bar-color: title-bar-light-green
-title-bar-text: The Pubs
+title-bar-text: PubMob | The Pubs
 ---
 
 <div class="container">
