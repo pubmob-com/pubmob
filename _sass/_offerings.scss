@@ -1,8 +1,6 @@
-#offerings {
+.offerings {
   @extend .interior;
   #navofferings { @extend %active; }
-
-  // Service boxes
 
   .boxes {
     display: grid;
