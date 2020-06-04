@@ -51,7 +51,7 @@
                      <p><em>{{ offeringTwelve }}</em></p>
                      <p>
                         {% assign blurbWordsSize = offering.summary-blurb-300-words | number_of_words %}
-                        {% assign blurbWords = offering.summary-blurb-300-words | split: " " | slice: 0, 300 | join: " " %}
+                        {% assign blurbWords = offering.summary-blurb-300-words | markdownify | split: " " | slice: 0, 300 | join: " " %}
                         {{ blurbWords }}
                         {% if blurbWordsSize > 300 %}...{% endif %}
                      <br />
