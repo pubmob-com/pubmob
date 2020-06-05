@@ -1,7 +1,7 @@
 ---
 layout: offering
 tender-id: jefflangr
-tender-name: JJ
+tender-name: Jeff Langr
 name: TDD Paint by Numbers
 twelve-words-or-fewer: Your first TDD experience
 technologies: [TDD]

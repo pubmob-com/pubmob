@@ -20,6 +20,7 @@ post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: What's on Tap
 ---
+<h3>Pub Sessions</h3>
 <script type="text/javascript">
   function setTechnologyHeaderText(selectedTechnology) {
     var technologyHeader = document.getElementById('selectedTechnology');
