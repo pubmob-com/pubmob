@@ -25,13 +25,18 @@ You might have spent some years pair-programming with other developers on your t
 
 ## Does anyone really like the idea of pairing?
 
-Most software developers recoil at the thought of sitting next to another developer throughout their day. Programming is a heavy brain activity. And we work best when we can sit in a quiet room and focus on the problem at hand by ourselves, right? Why would we use *two* developers to complete one task?
+Some of us do enjoy pairing and find it effective.
+
+![pairing](/assets/images/mobbing/pairing.jpg)
+{: .max-width-image}
+
+But most software developers recoil at the thought of sitting next to another developer throughout their day. Programming is a heavy brain activity. And we work best when we can sit in a quiet room and focus on the problem at hand by ourselves, right? Why would we use *two* developers to complete one task?
 
 Yet programming isn't just dreaming up a solution and slapping out code to support the solution. It requires a *correct* solution, for one, and a cleanly-designed solution in order to support later needs.
 
 To succeed over time, you must pay continual attention to your system's design. You must ensure that that others can understand your encoded solution, as well as the behaviors you intended.
 
-The core great idea behind pairing: Two heads are indeed better than one. You'll get a better design, and if you swap pairs regularly, you'll build a system that everyone's happier with. Customers included.
+The core great idea behind pairing: Two heads are indeed better than one. You'll create a better design when working in pairs, and if you swap pairs regularly, you'll build a system that everyone's happier with--customers included.
 
 Too bad pairing turns off so many people. We think part of it is the intimacy it demands, and the interpersonal challenges such intimacy can create.
 
@@ -53,9 +58,9 @@ We think people love mobbing because it's engaging, it's productive, it's social
 
 ## Why the two rules work
 
-The [two rules of mobbing]() say that the driver rotates on a short timer (5 minutes works well) and that you use [strong-style pairing](), where the driver listens to the navigators and cannot choose direction.
+The [two rules of mobbing](https://www.ranorex.com/blog/two-rules-mobbing-success/) say that the driver rotates on a short timer (5 minutes works well) and that you use [strong-style pairing](https://llewellynfalco.blogspot.com/2014/06/llewellyns-strong-style-pairing.html), where the driver listens to the navigators and cannot choose direction.
 
-Rapid rotations keeps mob sessions engaging and lively. It's also hard for you to snooze if you know you'll be driving shortly.
+Rapid rotations keep mob sessions engaging and lively. It's also hard for you to snooze if you know you'll be driving shortly.
 
 Strong-style pairing and short driver stints means no one person can easily dominate the session.
 
