@@ -47,7 +47,7 @@ backsite: javascript:history.back()
       <h2>How Does It Work?</h2>
     </div>
     <p>You can get a quick notion of what an actual PubMob session looks like by
-      watching a few minutes of this <a href="">15-minute video</a>. You'll see 
+      watching a few minutes of this <a href="">short video</a>. You'll see 
       how the mob rotations work. For a sample 3-minute driver session, the 
       next developer in turn:</p>
       <ul class="list">
@@ -68,9 +68,6 @@ backsite: javascript:history.back()
       of the many WIP commits and stages the resulting changes on the master
       branch. The team reviews what's staged and creates a commit. The mob
       tool removes the WIP branch as a final step.</p>
-    <div class="footer more">
-      <a href="/services/software-coach">Learn More</a>
-    </div>
   </div>
   <div class="box LightGreen">
     <div class="header">
@@ -86,67 +83,27 @@ backsite: javascript:history.back()
       pressured or intimidated because you don't have the answers.</p>
     <p>The feedback we usually hear: Mobbing is fun, it's productive,
       and it goes by fast. [[some real quotes here ]]</p>
-    <div class="footer more">
-      <a href="/services/distributed-team-coach">Learn More</a>
-    </div>
   </div>
   <div class="box LightYellow">
     <div class="header">
       <h2>How Do I Get Ready?</h2>
     </div>
-    <p>Most sessions will use the <a href="http://github.com/remotemobprogramming/mob">mob</a> tool. You will need to follow the simple instructions on that page to install the tool; it should take a couple minutes. For MacOS users, it's as simple as a <code>brew install</code>.</p>
+    <p>Most sessions will use the <a href="http://github.com/remotemobprogramming/mob">mob</a> tool. Follow the instructions on the mob page to install the tool; it should take a couple minutes. For MacOS users, it's a single <code>brew install</code> command.</p>
     <p>
       Each pub tender will have custom setup instructions for their mob session.
       Most of the time, this will involve cloning a repository and making sure
-      that it builds successfully.</p>
-    <p>[[ HMMM ]] So that you and all other participants get the maximum value 
-out of each session, we require that you validate your installation by demonstrating
-that you were able to build & run any tests. You'll be asked to provide a simple code
-when you complete registration. <em>Your card will not be charged until you provide
-this code, but you will not be registered, either.</em> You'll need to provide the code
-at least 24 hours prior to the start of the mob session.</p>
+      it builds successfully.</p>
+    <p>In order to get the maximum value out of your session, make sure that you're
+    able to build the session's software, and run any tests, before joining the session.
+    Participants who aren't ready will be asked to fall back to remote control,
+    which is a lot less fun.</p>
 
-[[ WHERE does the git push ability get added? It would be great to automate this
-somehow when people sign up. There's probably a way via the GitHub API. ]]
-    </p>
-    <div class="footer more">
-      <a href="/services/training-courses">Learn More</a>
-    </div>
+<p>TODO: WHERE does the git push ability get added? It would be great to automate this somehow when people sign up. There's probably a way via the GitHub API.</p>
+
+  <p>
+  Read <a href="/mobbing">more about mobbing and why we use it</a>.
+  </p>
   </div>
-  <div class="box DarkBlue">
-    <div class="header">
-      <h2></h2>
-    </div>
-    <p></p>
-    <div class="footer more">
-      <a href="/services/outsourced-software-development">Learn More</a>
-    </div>
-  </div>
+  
 </section>
 
-<div class="horizontal-rule">
-  <div class="lr"></div>
-  <h1>another bunch of info</h1>
-  <div class="lr"></div>
-</div>
-
-<section class="two">
-  <div class="image">
-    <picture>
-      <source srcset='/assets/images/services/how-we-engage.jpg' media='(max-width: {{site.breakpoint-max}})'>
-      <source srcset='/assets/images/services/how-we-engage.jpg' media='(min-width: {{site.breakpoint-desktop}})'>
-      <source srcset='/assets/images/services/how-we-engage.jpg' media='(min-width: {{site.breakpoint-tablet}})'>
-      <img src='/assets/images/services/how-we-engage.jpg' alt='PubMob what to expect'>
-    </picture>
-  </div>
-  <div class="text">
-  <p>
-  </p>
-  <p>
-  </p>
-  <p>
-  For more about mobbing and why we prefer it, read
-  <a href="https://www.ranorex.com/blog/does-mobbing-work/">"Does Mobbing Really Speed Us Up?"</a>
-  </p>
-  </div>
-</section>

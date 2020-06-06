@@ -19,7 +19,7 @@ post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: Why Mobbing?
 ---
-You've likely spent most of your software development careeer in a cubible or office, flying solo for most of your development efforts.
+You've likely spent most of your software development careeer in a cubicle or office, flying solo for most of your development efforts.
 
 You might have spent some years pair-programming with other developers on your team. You might also have spent some years *strongly resisting* pair programming.
 
@@ -64,7 +64,7 @@ Rapid rotations keep mob sessions engaging and lively. It's also hard for you to
 
 Strong-style pairing and short driver stints means no one person can easily dominate the session.
 
-Strong-style pairing and short driver stints also reduce your fear factor: For one, you're only in the driver seat five minutes before someone relieves you. For two, you're not expected to have the answers as the driver. Your job is to improve your ability to listen and translation directions into code.
+Strong-style pairing and short driver stints also reduce your fear factor: For one, you're only in the driver seat five minutes before someone relieves you. For two, you're not expected to have the answers as the driver. Your job is to translate directions into code. Even if you're a programming novice, you'll quickly get better at that translation.
 
 ## Why mobbing is great for remote development
 
