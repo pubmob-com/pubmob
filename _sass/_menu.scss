@@ -1,29 +1,8 @@
-.navbar, .navbar-inverse {
-	border-radius: 0;
-	border: none;
-	margin-bottom: 0;
-	min-height: 80px;
+.icon-bar {
+    background-color: black !important;
+	padding-top: 2px;
 }
 
-.nav li {
-	display: inline;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-	font-size: 1.7em;
-	font-weight: 300;
-	padding: 30px 25px 33px 25px;
-}
-
-.navbar-inverse .navbar-nav li a:hover {
-	background-color: #444444;
-	transition: 0.7s all linear;
-	height: 100%;
-}
-
-.navbar-toggle .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
+.navbar-toggle {
+	border: 1px solid black !important;
 }
