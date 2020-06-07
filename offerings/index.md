@@ -49,41 +49,53 @@ console.log("selected tech", selectedTechnology);
   }
 </script>
 
+<!--
 <div class="offerings">
   <p>Technology filters:</p>
   <div>
     <a id="All" onclick="filterUsingTechnology('All')">*All*</a>
-    {% assign allTech = "" | split: "," %}
-    {% for offering in site.offerings %}
-      {% assign allTech = allTech | concat: offering.technologies %}
-    {% endfor %}
-    {% assign allTech = allTech | uniq | sort %}
+    
+    
+    
 
-    {% for tech in allTech %}
-    <a id="{{ tech }}" onclick="filterUsingTechnology(this.id)" href="javascript:void(0);">{{ tech }}</a>
-    {% endfor %}
-    <p id='selectedTechnology'></p>
+    
+    <a id="TDD" onclick="filterUsingTechnology(this.id)" href="javascript:void(0);">TDD</a>
+    
+    <a id="design" onclick="filterUsingTechnology(this.id)" href="javascript:void(0);">design</a>
+    
+    <a id="refactoring" onclick="filterUsingTechnology(this.id)" href="javascript:void(0);">refactoring</a>
+    
+    <p id="selectedTechnology"></p>
   </div>
   <div>
   </div>
   <div>
-   {% assign id = 0 %}
-   {% for offering in site.offerings %}
-     {% assign id = id | plus: 1 %}
-     <div id="{{id}}">
-     <li>
-       <h5><a href="{{ offering.id }}">{{ offering.name }}</a></h5>
-       <p>Tender: <a href="/tenders/{{offering.tender-id}}">{{ offering.tender-name }}</a></p>
-      <br />
-      <!-- fix above to derive tender name from offering, or something better -->
-       <p>{{ offering.twelve-words-or-fewerblurb }}</p>
-       <p>{{ offering.summary-blurb-300-words }}</p>
-       <p>Tech: {{ offering.technologies | array_to_sentence_string: "and " }}</p>
-       <p>Experience: {{offering.exercise-skill}}</p>
-       <p>Upcoming dates:</p>
-        <p>TBD</p>
-     </li>
-     </div>
-   {% endfor %}
-  </div>
-</div>
+-->   
+   
+<div class="container">
+	<div class="row">
+		{% for offering in site.offerings %}
+        <a href="{{ offering.id }}">
+        <div class="col-md-4 col-sm-4">
+        		<div class='team-member offering-box offer-{{forloop.index}}'>
+					<div class="team-img">
+						<h4 class="offering-name">{{offering.name}}</h4>
+					</div>
+					<div class="team-hover">
+						<div class="desk">
+							<h4>{{ offering.tender-name }}</h4>
+							<p>{{ offering.summary-blurb-300-words | strip_html | truncatewords: 12 }}</p>
+						</div>
+					</div>
+			</div>
+		</div>
+		</a>
+		
+	    <script type="text/javascript">
+	 	   var colors = ['#a6e3b6','#ae9ed9','#9eccd9','#d99ed3','#d99ea4','#d9cd9e','#bcd99e','#b69ed9','#9ec6d9','#9ed9a2','#d5d99e','#d9bf9e'];
+	 	   var random_color = colors[Math.floor(Math.random() * colors.length)];
+	 	   $('.offer-{{forloop.index}}').css('background-color', random_color);
+	    </script>
+ 	   {% endfor %}
+   </div>
+</div>			
