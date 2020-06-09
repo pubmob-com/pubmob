@@ -48,7 +48,7 @@ title-bar-text: PubMob | The Pubs
 					</div>
 			</div>
 			<div class="team-title">
-				<a href="/tenders/{{ pub.tender-id }}"><h5>{{ pub.tender-name }}</h5></a>
+				<a href="/tenders/{{ pub.tender-id }}"><h5>{{ pub.owner-name }}</h5></a>
 				<a href="/tenders/{{ pub.tender-id }}"><span>{{ pub.pub-name }}</span></a>
 			</div>
 		</div>

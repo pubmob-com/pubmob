@@ -5,7 +5,6 @@ tender-name: Skylar
 owner-name: Skylar Watson
 sort-name: Watson, Skylar
 pub-name: "Skylar's Saloon"
-
 pub-photo: skylarwatson.jpg
 
 tagline: Slurp up the knowledge!

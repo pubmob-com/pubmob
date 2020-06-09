@@ -4,8 +4,7 @@ tender-id: dustinthostenson
 tender-name: Dustinson
 owner-name: Dustin Thostenson
 pub-name: Dustin's Dustup
-sort-name: "Thostenson, Dustin"
-
+sort-name: Thostenson, Dustin
 pub-photo: jeffsbarphoto.jpg
 
 tagline: Get dirty and dusty when coding with Dustin!

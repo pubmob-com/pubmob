@@ -3,12 +3,11 @@ layout: tender
 tender-id: davidbernstein
 tender-name: David
 owner-name: David Bernstein
-sort-name: "1"
+sort-name: Bernstein, David
 pub-name: David's Dive
-
-pub-photo: foo
-
+pub-photo: davidbernstein.jpg
 tender-photo-extension: jpg
+
 tagline: Lessen the Learning Curve
 tender-blurb: "David's continuing passion for software design and construction has led him to train more than 10,000 professional software developers for clients that have included Fortune 500 firms such as Microsoft, IBM, Yahoo, State Farm, Vanguard, and many others. Since 2006, he has devoted his consulting practice to providing organizations with training and coaching for software developers and teams transitioning to Agile, Scrum, and Extreme Programming practices. His award-winning book, Beyond Legacy Code: Nine Practices to Extend the Life (and Value) of Your Software, describes the value and reasoning behind the Agile technical practices."
 company: To Be Agile

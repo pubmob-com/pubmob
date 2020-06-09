@@ -5,11 +5,10 @@ tender-name: Jeff Langr
 owner-name: Jeff Langr
 sort-name: "1"
 pub-name: Jeff's bar
-
+tender-photo-extension: jpg
 pub-photo: jeffsbarphoto.jpg
 
 tagline: The best place for hootin' and hollerin'
-tender-photo-extension: jpg
 tender-blurb: "Jeff has been building software professionally since 1982. He's written five books and contributed to Clean Code. Jeff is the owner of Langr Software Solutions."
 company: Langr Software Solutions, Inc.
 company-blurb: "Langr Software Solutions provides training, coaching, and development services for software development teams."
