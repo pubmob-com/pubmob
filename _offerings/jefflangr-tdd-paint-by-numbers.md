@@ -3,7 +3,7 @@ layout: offering
 tender-id: jefflangr
 tender-name: Jeff Langr
 name: TDD Paint by Numbers
-twelve-words-or-fewer: Your first TDD experience
+twelve-words-or-fewer: "Your first TDD experience: Learn refactoring & the Red-Green-Refactor Cycle."
 technologies: [TDD]
 languages: [Java,C++,C#,Clojure,Kotlin,JavaScript]
 graphic: tdd-paint-by-numbers.png

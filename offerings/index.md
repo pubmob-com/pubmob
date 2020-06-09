@@ -84,7 +84,7 @@ console.log("selected tech", selectedTechnology);
 					<div class="team-hover">
 						<div class="desk">
 							<h4>{{ offering.tender-name }}</h4>
-							<p>{{ offering.summary-blurb-300-words | strip_html | truncatewords: 12 }}</p>
+							<p>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 15 }}</p>
 						</div>
 					</div>
 			</div>
