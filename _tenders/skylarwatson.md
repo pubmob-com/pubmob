@@ -17,6 +17,7 @@ company-link:
 company-logo-url: 
 technologies: [outcome-based development, TDD, Java, Groovy, Javscript]
 ---
-Say some friendly words to get people interested here.
+
+If you do not see your topic of interest on tap, let me know. We tailor our offerings based on the feedback we receive.
 
 
