@@ -12,15 +12,18 @@ mob-experience: any
 exercise-skill: [novice]
 repo: none
 prerequisites: []
-summary-blurb-300-words: "It’s easy to be overwhelmed by newly inherited legacy code. Legacy code can be difficult to work with, and so it can be helpful to have an extra set of eyes and a whole bunch of techniques for dealing with it. I can help review your software to identify areas of risk and create approaches for mitigation.
+summary-blurb-300-words: "<p>It’s easy to be overwhelmed by newly inherited legacy code. Legacy code can be difficult to work with, and so it can be helpful to have an extra set of eyes and a whole bunch of techniques for dealing with it. I can help review your software to identify areas of risk and create approaches for mitigation.</p>
 
-I’ll help you:
-Review, prioritize, and organize existing legacy code
-Retrofit unit tests into legacy code so it’s safe to refactor
-Identify types of technical debt in your code and how to fix them
-Suggest alternative implementations for challenging code
-Use techniques to clean up existing code for maintainability
-Refactor code so it can readily accommodate new features
-Gain techniques for efficiently refactoring legacy code"
+<p>I’ll help you:</p>
+
+<ul class='list outer'>
+<li>Review, prioritize, and organize existing legacy code</li>
+<li>Retrofit unit tests into legacy code so it’s safe to refactor</li>
+<li>Identify types of technical debt in your code and how to fix them</li>
+<li>Suggest alternative implementations for challenging code</li>
+<li>Use techniques to clean up existing code for maintainability</li>
+<li>Refactor code so it can readily accommodate new features</li>
+<li>Gain techniques for efficiently refactoring legacy code</li>
+</ul>"
 active: true
 ---
