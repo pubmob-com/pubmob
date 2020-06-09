@@ -10,16 +10,13 @@ pub-photo: skylarwatson.jpg
 
 tagline: Slurp up the knowledge!
 tender-photo-extension: jpg
-tender-blurb: "Skylar is ... He speaks frequently on outcome-based stuffs."
+tender-blurb: "Skylar Watson is a software consultant and agile coach who implements high-value software to satisfy customer's needs. Skylar works with companies both domestically and internationally, assisting in adopting agile software practices. As a coach, Skylar works with both leadership and developers to assure the organization that their business outcomes are driving the transformation."
 company: SkyNet Software Solutions
 company-blurb: "SkyNet Software Solutions: there when you need them."
 company-link: 
 company-logo-url: 
-technologies: [outcome-based development]
+technologies: [outcome-based development, TDD, Java, Groovy, Javscript]
 ---
 Say some friendly words to get people interested here.
 
-[add your pub info here. Personal history, what your sessions are like, your favorite
-things, key things you like to focus on. Relevant conference history, books, key articles,
-other videos, customers, etc.
-A mini resume that sells your sessions.]
+
