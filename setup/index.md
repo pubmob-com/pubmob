@@ -51,12 +51,11 @@ backsite: javascript:history.back()
       how the mob rotations work. For a sample 3-minute driver session, the 
       next developer in turn:</p>
       <ul class="list">
-        <li class="outer"><p>shares their screen</p></li>
-        <li class="outer"><p>issues the <code>mob start 3</code> command</p></li>
-        <li class="outer"><p>listens for direction from the mob</p></li>
-        <li class="outer"><p>builds code to suport the mob's direction</p></li>
-        <li class="outer"><p>issues the <code>mob next</code> command, which passes
-          the driver role to the next developer in turn</p></li>
+        <li><p>shares their screen</p></li>
+        <li><p>issues the <code>mob start 3</code> command</p></li>
+        <li><p>listens for direction from the mob</p></li>
+        <li><p>builds code to suport the mob's direction</p></li>
+        <li><p>issues the <code>mob next</code> command, which passes the driver role to the next developer in turn</p></li>
       </ul>
     <p>The <code>mob start</code> command grabs the latest in-progress code
       and checks out a work-in-progress (WIP) branch named mob-session.

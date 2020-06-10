@@ -246,14 +246,19 @@ ul.list {
   padding-bottom: 0em;
   list-style-position: outside;
   list-style-type: none;
+  li {
+    background-image: url('/assets/images/design/list-disc.png');
+    background-position: 3px 10px;
+    padding-left: 18px; 
+  }
   .outer {
-    background-image: url('images/design/list-disc.png');
+    background-image: url('/assets/images/design/list-disc.png');
     background-position: 3px 10px;
     padding-left: 18px; 
   }
   
   .inner {
-    background-image: url('images/design/list-arrow.png');
+    background-image: url('/assets/images/design/list-arrow.png');
     background-position: 0px 9px;
     padding-left: 18px; 
     margin-left: 25px;

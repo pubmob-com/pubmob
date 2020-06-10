@@ -18,9 +18,15 @@
       <div class="grid">
         <div class="content">
           <div class="indent">
-          <h3>{{ page.name }}</h3>
-          <img src="/assets/images/offerings/{{page.tender-id}}/{{page.graphic}}" style="width: 225px" />
-          <p>Tender: <a href="/tenders/{{page.tender-id}}">{{ page.tender-name }}</a></p>
+            <h3>{{ page.name }}</h3>
+            {% if page.graphic %}
+              <img src="/assets/images/offerings/{{page.tender-id}}/{{page.graphic}}" style="width: 225px" />
+            {% endif %}
+          </div>
+
+          <div class="indent" style="float: right">
+            <img src="/assets/images/tenders/{{ page.tender-id }}.jpg" style="width: 225px" />
+            <p>Tender: <a href="/tenders/{{page.tender-id}}">{{ page.tender-name }}</a></p>
           </div>
 
           <div>
@@ -28,7 +34,6 @@
              <p><em>{{ page.twelve-words-or-fewerblurb }}</em></p>
              <p>{{ page.summary-blurb-300-words }}</p>
              <p>Experience level: {{ page.exercise-skill }}</p>
-            <br />
              <p>Upcoming dates: TBD</p>
           </div>
 
