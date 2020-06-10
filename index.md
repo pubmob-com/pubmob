@@ -76,10 +76,11 @@ post-content: >
     <div class="boxcopy copy">
       <h5>Why Mobbing?</h5>
       <p>
-         You've learned how challenging it is to work remotely. You've been isolated from teammates for months. You long for social interaction.</p>
+         Remote work is challenging. You've been isolated from teammates for months. You crave social interaction.
+      </p>
       <p>
-        You also need to build high quality products, you need to get them out the door in a timely fashion,
-        and you need to love what you do.
+        You need to build high quality products and deliver them in a timely fashion. 
+        You want to love what you do.
       </p>
       <p>Build on the strengths of others. Build a real team. Relish the experience.
          <a class="more" href="/mobbing">More &raquo;</a>
