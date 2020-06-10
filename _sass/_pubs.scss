@@ -40,6 +40,7 @@ body {
 }
 .team-member {
     overflow: hidden;
+    margin-top: 20px;
 }
 .team-member, .team-member .team-img {
     position: relative;
@@ -108,16 +109,22 @@ body {
     color: #333;
     font-size: 16px;
 }
+.team-summary {
+    padding: 0px 0;
+    display: inline-block;
+ //   letter-spacing: 2px;
+    width: 100%;
+  span {
+    white-space: pre-wrap;
+  }
+}
 .team-title {
     position: static;
-    padding: 20px 0;
+    margin-bottom: 0px;
+    padding: 0px 0;
     display: inline-block;
     letter-spacing: 2px;
     width: 100%;
-}
-.team-title h5 {
-    margin-bottom: 0px;
-    display: block;
     text-transform: uppercase;
 }
 .team-title span {

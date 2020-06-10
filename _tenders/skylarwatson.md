@@ -6,6 +6,7 @@ owner-name: Skylar Watson
 sort-name: Watson, Skylar
 pub-name: "Skylar's Saloon"
 pub-photo: skylarwatson.jpg
+pub-summary-twenty-words: Stay on your toes in Skylar's Saloon as he teaches you core dev and outcome-based stuffs.
 
 tagline: Slurp up the knowledge!
 tender-photo-extension: jpg

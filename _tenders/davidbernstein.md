@@ -6,6 +6,8 @@ owner-name: David Bernstein
 sort-name: Bernstein, David
 pub-name: David's Dive
 pub-photo: davidbernstein.jpg
+pub-summary-twenty-words: "Join the action in David's pub: software design, legacy code, and more."
+
 tender-photo-extension: jpg
 
 tagline: Lessen the Learning Curve
