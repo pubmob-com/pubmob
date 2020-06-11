@@ -20,12 +20,11 @@ post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: PubMob | The Pubs
 ---
-
 <div class="container">
 	<div class="row">
 		<div class="heading-title text-center">
 			<h3>Our pub owners.</h3>
-			<p class="p-top-30 half-txt">Each of our pubs is owned by a tender with extensive experience in helping development teams deliver high-quality software.
+			<p class="p-top half-txt">Each of our pubs is owned by a tender with extensive experience in helping development teams deliver high-quality software.
       </p>
 		</div>
 <!-- 

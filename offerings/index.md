@@ -20,7 +20,13 @@ post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: What's on Tap
 ---
-<h3>Pub Sessions</h3>
+<div class="row">
+  <div class="heading-title text-center">
+    <h3>Our pub sessions.</h3>
+    <p class="p-top half-txt">You'll find a varied selections of engaging mob sessions, from hands-on coding to design workshops. Click on a session for further details.</p>
+  </div>
+</div>
+
 <script type="text/javascript">
   function setTechnologyHeaderText(selectedTechnology) {
     var technologyHeader = document.getElementById('selectedTechnology');
@@ -54,22 +60,12 @@ console.log("selected tech", selectedTechnology);
   <p>Technology filters:</p>
   <div>
     <a id="All" onclick="filterUsingTechnology('All')">*All*</a>
-    
-    
-    
-
-    
     <a id="TDD" onclick="filterUsingTechnology(this.id)" href="javascript:void(0);">TDD</a>
-    
     <a id="design" onclick="filterUsingTechnology(this.id)" href="javascript:void(0);">design</a>
-    
     <a id="refactoring" onclick="filterUsingTechnology(this.id)" href="javascript:void(0);">refactoring</a>
-    
     <p id="selectedTechnology"></p>
   </div>
-  <div>
-  </div>
-  <div>
+<div>
 -->   
    
 <div class="container">

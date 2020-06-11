@@ -4,6 +4,9 @@
 
   // Two column
 
+  .p {
+    margin-bottom: 5px;
+  }
   .form {
     grid-area: form;
     @include center();
