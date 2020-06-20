@@ -38,52 +38,66 @@
           </div>
 
           <h3>What's on Tap at {{page.pub-name}}</h3>
+		</br></br>
+		  
 <!-- TODO reuse guts of offering loop in offerings page -->
           <div class="offeringSummary">
-            <ul>
-               {% for offering in site.offerings %}
-                 {% if offering.tender-id == page.tender-id %}
-                 <li>
-                   <div class="offeringName"><a href="{{ offering.id }}">{{ offering.name }}</a></div>
-                   <!-- fix above to derive tender name from offering, or something better -->
-                   <div class="offeringDetails">
-                     {% assign offeringBlurb = offering.twelve-words-or-fewer | split: " " | slice: 0, 12 | join: " " %}
-                     <p><em>{{ offeringBlurb }}</em></p>
-                     <p>
-                        {{ offering.summary-blurb-300-words | markdownify | truncatewords: 300 }}
-                        {% assign summarySize = offering.summary-blurb-300-words | number_of_words %}
-                        {% if summarySize > 300 %}...{% endif %}
-                     <br />
-                       <strong>Upcoming dates:</strong> TBD<br />
-                       <strong>Technologies: </strong> 
-                       {% capture techs = "" %}
-                       {% for tech in offering.technologies %}
-                         {{ tech }}{% if forloop.last == false %},{% endif %}
-                       {% endfor %}
-                       {% endcapture %}
-                       {{ techs }}
-                       <br />
-                     </p>
-                   </div>
-                 </li>
-                 {% endif %}
-               {% endfor %}
-            </ul>
-          </div>
+			  <div id="accordion">
+                {% for offering in site.offerings %}
+                  {% if offering.tender-id == page.tender-id %}
+			    <div class="card">
+			      <div class="card-header" id="heading-{{forloop.index}}">
+			        <h5 class="mb-0">
+			          <button class="btn btn-link collapse-btn" data-toggle="collapse" data-target="#collapse-{{forloop.index}}" aria-expanded="true" aria-controls="collapse-{{forloop.index}}">
+						<p>{{ offering.name }}</p>
+			          </button>
+					{% assign offeringBlurb = offering.twelve-words-or-fewer | split: " " | slice: 0, 12 | join: " " %}
+				</br>
+					<strong class="offeringBlurb">{{ offeringBlurb }}</strong>
+			        </h5>
+			      </div>
 
-          <h3>About Your Tender</h3>
-          <p>{{ page.tender-blurb }}</p>
+			      <div id="collapse-{{forloop.index}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+			        <div class="card-body">
+                      </br>
+					  <div class="offeringDescription">{{ offering.summary-blurb-300-words | markdownify | truncatewords: 300 }}
+                        {% assign summarySize = offering.summary-blurb-300-words | number_of_words %}
+                        {% if summarySize > 300 %}...{% endif %}</div>
+                        <br />
+                          <strong>Upcoming dates:</strong> TBD<br />
+                          <strong>Technologies: </strong> 
+                          {% capture techs = "" %}
+                          {% for tech in offering.technologies %}
+                            {{ tech }}{% if forloop.last == false %},{% endif %}
+                          {% endfor %}
+                          {% endcapture %}
+                          {{ techs }}
+                          			
+			        </div>
+			      </div>
+			    </div>
+			</br>
+                  {% endif %}
+                {% endfor %}
+			  </div>
+			  
+		  </br></br>
+	          <h3>About Your Tender</h3>
+	          <p>{{ page.tender-blurb }}</p>
           
-          <h3>About <a href="{{page.company-link}}">{{ page.company }}</a></h3>
-          <p>{{ page.company-blurb }}</p>
-          <a href="{{ page.company-link }}"><img src="{{ page.company-logo-url }}" alt="{{ page.company }}"/></a>
-          
+	          <h3>About <a href="{{page.company-link}}">{{ page.company }}</a></h3>
+	          <p>{{ page.company-blurb }}</p>
+	          <a href="{{ page.company-link }}"><img src="{{ page.company-logo-url }}" alt="{{ page.company }}"/></a>
+		    </article>
+		    {{ page.post-content }}
+		     <div>
+		    </div>  
+			  
+          </div>
         </div>
       </div>
-    </article>
-    {{ page.post-content }}
-     <div>
-    </div>
+	  
+	
      <footer>
       <div class="footerbar"></div>
       <div class="grid">
