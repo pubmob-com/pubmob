@@ -20,7 +20,18 @@
           <div class="indent">
           <h3>Welcome to {{page.pub-name}}</h3>
           <p>Your tender: {{page.tender-name}}</p>
-          <img src="/assets/images/{{ page.id }}.{{page.tender-photo-extension}}" style="width: 225px" />
+		  
+		  <table class="aboutTender">
+			  <tr>
+				  <td>
+					  <img src="/assets/images/{{ page.id }}.{{page.tender-photo-extension}}" style="width: 225px" />
+				  </td>
+				  <td>
+			          <h3>About Your Tender</h3>
+			          <p>{{ page.tender-blurb }}</p>
+				  </td>
+			  </tr>
+		</table>			  
           </div>
 
           <div>
@@ -81,10 +92,7 @@
                 {% endfor %}
 			  </div>
 			  
-		  </br></br>
-	          <h3>About Your Tender</h3>
-	          <p>{{ page.tender-blurb }}</p>
-          
+		  </br></br>          
 	          <h3>About <a href="{{page.company-link}}">{{ page.company }}</a></h3>
 	          <p>{{ page.company-blurb }}</p>
 	          <a href="{{ page.company-link }}"><img src="{{ page.company-logo-url }}" alt="{{ page.company }}"/></a>
