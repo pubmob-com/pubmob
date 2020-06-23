@@ -9,10 +9,10 @@ pre-content: >
     <div class="grid">
       <div class="content">
         <picture>
-          <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' media='(max-width: 1080px)'>
-          <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' media='(min-width: 960px)'>
-          <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' media='(min-width: 830px'>
-          <img src='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' alt='About PubMob'>
+          <source srcset='/assets/images/pubmob/people-inside-pub.jpg' media='(max-width: 1080px)'>
+          <source srcset='/assets/images/pubmob/people-inside-pub.jpg' media='(min-width: 960px)'>
+          <source srcset='/assets/images/pubmob/people-inside-pub.jpg' media='(min-width: 830px'>
+          <img src='/assets/images/pubmob/people-inside-pub.jpg' alt='PubMob'>
         </picture>
       </div>
     </div>
@@ -42,22 +42,38 @@ You might be a little nervous the first time driving, but there's no reason to b
 
 With mobbing, we work on one thing at a time as a team. Splitting up and having each team member work on separate items may seem like a good idea, but it creates a significant amount of overhead and cost. Mobbing, in contrast, speeds us up by minimizing:
 
-* Coordination meetings (iteration planning, daily stand-ups)
-* Incorrect speculation about future work
-* Managing how we collaborate (meetings, pairing coordination, etc.)
-* Context-switching and interruptions
-* Reworking of badly-designed solutions
-* Poorly-expressed code that costs dear time to understand
-* Deviation from standards
-* New team member ramp-up
-* Learning time for new technologies & challenges
-* The number of defects
-* Review & rework processes
-* Time lost from missing information
-* Estimates
-* Festering interpersonal issues
-* Tolerance for ineffective ways of working
-* Drudgery
+* {: .outer}Coordination meetings (iteration planning, daily stand-ups)
+
+* {: .outer}Incorrect speculation about future work
+
+* {: .outer}Managing how we collaborate (meetings, pairing coordination, etc.)
+
+* {: .outer}Context-switching and interruptions
+
+* {: .outer}Reworking of badly-designed solutions
+
+* {: .outer}Poorly-expressed code that costs dear time to understand
+
+* {: .outer}Deviation from standards
+
+* {: .outer}New team member ramp-up
+
+* {: .outer}Learning time for new technologies & challenges
+
+* {: .outer}The number of defects
+
+* {: .outer}Review & rework processes
+
+* {: .outer}Time lost from missing information
+
+* {: .outer}Estimates
+
+* {: .outer}Festering interpersonal issues
+
+* {: .outer}Tolerance for ineffective ways of working
+
+* {: .outer}Drudgery
+{: .list}
 
 ## Why PubMob is fun
 
