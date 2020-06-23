@@ -47,5 +47,40 @@
       transition: all 0.5s ease;
     }
   }
+  
+  .collapse-btn {
+   padding: 0px 0px !important;
+   text-align: left !important;
+  }
 
+  .offeringBlurb {
+  	color: #595959;
+  }
+  
+  .offeringDescription p {
+  	font-size: 18px;
+	width: 650px;
+    overflow-wrap: break-word;
+  }
+  
+  .offeringDescription {
+  	border-left: 2px solid #595959;
+	margin-left: 25px;
+	padding-left: 25px;
+  	font-size: 18px;
+  }
+ 
+  .aboutTender {
+  	background-color: white;
+  }
+
+  .aboutTender td {
+	background-color: white;
+	padding-left: 15px;
+	vertical-align: top;
+  }
+  
+  .aboutTender td p {
+	font-size: 18px;
+  }
 }
