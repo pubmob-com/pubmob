@@ -44,7 +44,7 @@ post-content: >
    "tender" who will guide you and up to five other developers.
   </p>
   <p>
-    Your tender is one of a number of <a href="/pubs">virtual PubMob pub owners</a> who will be providing short sessions focused on either helping you learn new technologies & techniques, or on helping you build something. Come see what <a href="/offerings">they have on tap</a>!
+    Your tender is one of a number of <a href="/pubs">virtual PubMob pub owners</a> who will be providing short sessions focused on either helping you learn new technologies & techniques, or on helping you build something. Come see what <a href="/offerings">we have on tap</a>!
   </p>
 </section>
 
@@ -64,7 +64,7 @@ post-content: >
     <div class="boxcopy copy">
       <h5>PubMob Private</h5>
       <p>Your team wants to get unblocked so they can deliver. Give them the gift of Private PubMob, where they can focus on the challenge at hand as a team. They will appreciate being to reach for training, coaching, debugging, or help with building their code--just in time to help meet the challenge.
-         <a class="more" href="/privmob">More &raquo;</a>
+         <a class="more" href="/pubmobPrivate">More &raquo;</a>
       </p>
     </div>
     <div class="image">
