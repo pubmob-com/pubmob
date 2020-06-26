@@ -64,7 +64,7 @@
 			          <button class="btn btn-link collapse-btn" data-toggle="collapse" data-target="#collapse-{{forloop.index}}" aria-expanded="true" aria-controls="collapse-{{forloop.index}}">
 						<p>{{ offering.name }}</p>
 			          </button>
-					{% assign offeringBlurb = offering.twelve-words-or-fewer | split: " " | slice: 0, 12 | join: " " %}
+					{% assign offeringBlurb = offering.twelve-words-or-fewer | truncatewords: 12 %}
 				</br>
 					<strong class="offeringBlurb">{{ offeringBlurb }}</strong>
 			        </h5>
@@ -73,9 +73,9 @@
 			      <div id="collapse-{{forloop.index}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 			        <div class="card-body">
                       </br>
-					  <div class="offeringDescription">{{ offering.summary-blurb-300-words | markdownify | truncatewords: 300 }}
-                        {% assign summarySize = offering.summary-blurb-300-words | number_of_words %}
-                        {% if summarySize > 300 %}...{% endif %}</div>
+					  <div class="offeringDescription">{{ offering.summary-blurb-125-words | markdownify | truncatewords: 125 }}
+                        {% assign summarySize = offering.summary-blurb-125-words | number_of_words %}
+                        {% if summarySize > 125 %}...{% endif %}</div>
                         <br />
                           <strong>Upcoming dates:</strong> TBD<br />
                           <strong>Technologies: </strong> 

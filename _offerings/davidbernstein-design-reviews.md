@@ -12,7 +12,7 @@ is-mob-newbie-friendly: true
 exercise-skill: beginner
 repo: 
 prerequisites: []
-summary-blurb-300-words: "<ul class='list'>
+summary-blurb-125-words: "<ul class='list'>
 <li>Identify patterns in your design to simplify and clarify code</li>
 <li>Improve the testability of your designs to help automate validation</li>
 <li>Examine the context and motivation around your design decisions</li>

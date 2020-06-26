@@ -12,9 +12,8 @@ is-mob-newbie-friendly: true
 exercise-skill: beginner
 repo: http://github.com/jlangr/geektone
 prerequisites: []
-summary-blurb-300-words: "<p>Mobbing is 'everyone in a room working on the same thing at the same time,' per Woody Zuill. Outrageous! Yet teams are finding it a highly enjoyable way to collaboratively build and deliver high-quality software. Some teams even say they go faster with mobbing.</p>
-<p>Don't let use of the word <em>mob</em> lead you to believe this is a chaotic and dangerous practice. Instead, every mob session is kept focused and enjoyable by employing a few simple rules, so that we play together like a well-seasoned orchestra.</p>
-<p>Let's try a bit of mobbing as we talk about it and learn the basics. We'll mob to collaboratively compose a short song. Even if you know little about music, you'll feel firsthand how mobbing can reduce your anxiety and help you contribute in short order. You’ll also experience first-hand the value proposition of mob programming.</p>"
+summary-blurb-125-words: "<p>Mobbing is 'everyone in a room working on the same thing at the same time,' per Woody Zuill. Outrageous! Yet teams are finding it a highly enjoyable way to collaboratively build and deliver high-quality software. Some teams even say they go faster with mobbing.</p>
+<p>In this session, we'll mob to collaboratively compose a short song. Even if you know little about music, you'll feel firsthand how mobbing can reduce your anxiety and help you contribute in short order. You’ll also experience first-hand the value proposition of mob programming.</p>"
 active: true
 ---
 Suppose you have a software development team of five folks challenged with delivering five features. That team working as a mob--focusing on only one feature at a time--can actually deliver all five features faster than those same five folks trying to "divide & conquer" the features.

@@ -74,7 +74,7 @@ console.log("selected tech", selectedTechnology);
     <h1><a href="{{ offering.id }}">{{ offering.name }}</a></h1>
     <h2><a href="/tenders/{{ offering.tender-id }}">{{ offering.tender-name }}</a></h2>
     <p class="summary"><em>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 15 }}</em></p>
-    <p class="longer-description">{{ offering.summary-blurb-300-words | truncatewords: 300 }}</p>
+    <p class="longer-description">{{ offering.summary-blurb-125-words | truncatewords: 125 }}</p>
     <button>Book now</button>
   </article>
   <article class="right">
