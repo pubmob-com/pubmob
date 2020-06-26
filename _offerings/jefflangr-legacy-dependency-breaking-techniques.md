@@ -8,8 +8,8 @@ technologies: [TDD,refactoring,design]
 languages: [java,cpp,csharp,clojure,kotlin,javascript]
 graphic:
 public-or-private: both
-mob-experience: any
-exercise-skill: [all]
+is-mob-newbie-friendly: false
+exercise-skill: beginner
 repo: 
 prerequisites: []
 summary-blurb-300-words: Pick up a few techniques to fix common dependency challenges in your code, things that make it seem impossible to write unit tests.

@@ -79,19 +79,30 @@ console.log("selected tech", selectedTechnology);
   </article>
   <article class="right">
     <div class="student-level">
-      <div><p class="top">skill</p> <p class="bottom">B</p></div>
-      <div><p class="top">newb?</p> <p class="bottom">Y</p></div> 
+      <div><p class="top">Skill</p> <p class="bottom">B</p></div>
+      <div>
+        <p class="top"></p> 
+        <p class="bottom">
+          {% if offering.is-mob-newbie-friendly == true %}
+            <img class="icon" src="/assets/images/misc-icons/checkmark.svg"/>
+            mob newb friendly
+          {% endif %}
+        </p>
+      </div> 
     </div>
     <div class="topics">
-      <p>{{ offering.technologies | array_to_sentence_string }}</p>
+      <p>Topics: {{ offering.technologies | array_to_sentence_string }}</p>
     </div>
-    <div class="programming-language">
-      <!-- TODO keep consistent size? -->
-      {% for language in offering.languages %}
-        {% assign filename = "/assets/images/programming-language-icons/" | append: language | append: ".svg" %}
-        <img class="icon" title="{{ language }}" src="{{ filename }}" />
-      {% endfor %}
-    </div>
+    {% if offering.languages.size > 0 %}
+      <div class="programming-language">
+        <!-- TODO keep consistent size? -->
+        <!-- Languages: -->
+          {% for language in offering.languages %}
+            {% assign filename = "/assets/images/programming-language-icons/" | append: language | append: ".svg" %}
+            <img class="icon" title="{{ language }}" src="{{ filename }}" />
+          {% endfor %}
+      </div>
+    {% endif %}
   </article>
 </section>
 {% endfor %}

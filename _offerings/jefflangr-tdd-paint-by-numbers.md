@@ -8,8 +8,8 @@ technologies: [TDD]
 languages: [java,cpp,csharp,clojure,kotlin,javascript]
 graphic: tdd-paint-by-numbers.png
 public-or-private: both
-mob-experience: any
-exercise-skill: [novice]
+is-mob-newbie-friendly: true
+exercise-skill: beginner
 repo: http://github.com/jlangr/name-normalizer
 prerequisites: []
 summary-blurb-300-words: "Learn TDD the easy way with a TDD Paint by Numbers session, where the tests are already written for you--you fill in the code and keep it in the confines of the tests. Sessions are continually available in numerous programming languages, and I'll be keeping the katas fresh."

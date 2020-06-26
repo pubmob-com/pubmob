@@ -8,8 +8,8 @@ technologies: [TDD, design patterns, domain modeling, refactoring]
 languages: [java,cpp,csharp,javascript]
 graphic: 
 public-or-private: both
-mob-experience: any
-exercise-skill: [novice]
+is-mob-newbie-friendly: true
+exercise-skill: beginner
 repo: 
 prerequisites: []
 summary-blurb-300-words: "<ul class='list'>

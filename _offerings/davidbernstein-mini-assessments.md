@@ -8,8 +8,8 @@ technologies: [TDD, design patterns, domain modeling, refactoring]
 languages: [java,cpp,csharp,javascript]
 graphic:
 public-or-private: both
-mob-experience: any
-exercise-skill: [novice]
+is-mob-newbie-friendly: true
+exercise-skill: beginner
 repo:
 prerequisites: []
 summary-blurb-300-words: "<p>Every project is unique and so are its challenges. Through online interviews, questionnaires, and conversations I can provide you an ad hoc assessment of your software development process and/or project along with recommendations for improvement prioritized by the value that you’ll receive right away. This is a guided conversation from one to two hours.</p>
