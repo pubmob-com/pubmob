@@ -1,6 +1,96 @@
-.offerings {
+#offerings {
   @extend .interior;
   #navofferings { @extend %active; }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .left {
+    grid-area: offering-left;
+  }
+  .right {
+    grid-area: offering-right;
+  }
+  .offering {
+    display: grid;
+    grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+      "offering-left offering-right";
+    grid-gap: 10px 20px;
+
+    .left {
+    }
+
+    .right {
+      padding: 50px 0 0 0;
+     
+      .student-level {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(75px,1fr));
+        grid-auto-rows: 1fr;
+        grid-gap: 8px;
+      }
+      .programming-language {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30px,1fr));
+        grid-auto-rows: 1fr;
+        grid-gap: 3px;
+      }
+    }
+    
+    .longer-description {
+      @include ms-respond(font-size,0.6);
+      line-height: 1.3;
+      margin-bottom: 3px;
+    }
+
+    @include respond-to(handhelds) { 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "offering-left"
+        "offering-right";
+
+      .right {
+        padding: 0;
+      }
+    }
+    @include respond-to(wide-handhelds) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "offering-left"
+        "offering-right";
+      .right {
+        padding: 0;
+      }
+    }
+    @include respond-to(tablets) {
+      grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+      grid-template-areas:
+        "offering-left offering-right";
+      .right {
+        padding: 50px 0 0 0;
+      }
+    }
+    @include respond-to(desktops) { 
+      grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+      grid-template-areas:
+        "offering-left offering-right";
+      .right {
+        padding: 50px 0 0 0;
+      }
+    }
+    @include respond-to(max) { 
+      grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+      grid-template-areas:
+        "offering-left offering-right";
+      .right {
+        padding: 50px 0 0 0;
+      }
+    }
+  }
 
   .boxes {
     display: grid;

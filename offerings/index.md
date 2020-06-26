@@ -68,8 +68,46 @@ console.log("selected tech", selectedTechnology);
 <div>
 -->   
    
-<div class="container">
+<section class="offering">
+ <article class="left">
+   <h1>TDD Paint-by-Numbers</h1>
+   <h2>Jeff Langr</h2>
+   <p class="summary">The greatest TDD intro ever</p>
+   <p class="longer-description">
+    Summary blurb 300 words blah more blurb up to 300 words total to describe the class in a brief summary form. It turns out that 300 words is a bit more than most people think it is and it can describe actually quite a lot. Maybe we need to compress down to 150 words or something like that. I don't think we really want any more text in this book than this amount of text. It's possible there's not quite enough text to match the right-hand side icon panel.
+    </p>
+    <button>Book now</button>
+  </article>
+  <article class="right">
+   <div class="student-level">
+     <div>
+       <p class="top">skill</p>
+       <p class="bottom">B</p>
+     </div>
+     <div>
+       <p class="top">newb?</p>
+       <p class="bottom">Y</p>
+     </div> 
+   </div>
+   <div class="topics">
+     <p>TDD | testing | ATDD</p>
+   </div>
+   <div class="programming-language">
+     <div>
+       <img src="/assets/images/programming-languages/css.png" />
+     </div>
+     <div>
+       <img src="/assets/images/programming-languages/cpp.png" />
+     </div>
+     <div>
+       <img src="/assets/images/programming-languages/php.png" />
+     </div>
+   </div>
+  </article>
+</section>
+<!--
 	<div class="row">
+
 		{% for offering in site.offerings %}
         <a href="{{ offering.id }}">
         <div class="col-md-4 col-sm-4">
@@ -94,4 +132,6 @@ console.log("selected tech", selectedTechnology);
 	    </script>
  	   {% endfor %}
    </div>
+
 </div>			
+-->
