@@ -68,15 +68,14 @@ console.log("selected tech", selectedTechnology);
 <div>
 -->   
    
+{% for offering in site.offerings %}
 <section class="offering">
- <article class="left">
-   <h1>TDD Paint-by-Numbers</h1>
-   <h2>Jeff Langr</h2>
-   <p class="summary">The greatest TDD intro ever</p>
-   <p class="longer-description">
-    Summary blurb 300 words blah more blurb up to 300 words total to describe the class in a brief summary form. It turns out that 300 words is a bit more than most people think it is and it can describe actually quite a lot. Maybe we need to compress down to 150 words or something like that. I don't think we really want any more text in this book than this amount of text. It's possible there's not quite enough text to match the right-hand side icon panel.
-    </p>
-    <button>Book now</button>
+  <article class="left">
+   <h1><a href="{{ offering.id }}">{{ offering.name }}</a></h1>
+   <h2><a href="{{ offering.tender-id }}">{{ offering.tender-name }}</a></h2>
+   <p class="summary"><em>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 15 }}</em></p>
+   <p class="longer-description">{{ offering.summary-blurb-300-words | truncatewords: 300 }}</p>
+   <button>Book now</button>
   </article>
   <article class="right">
    <div class="student-level">
@@ -105,33 +104,13 @@ console.log("selected tech", selectedTechnology);
    </div>
   </article>
 </section>
-<!--
-	<div class="row">
+{% endfor %}
 
-		{% for offering in site.offerings %}
-        <a href="{{ offering.id }}">
-        <div class="col-md-4 col-sm-4">
-        		<div class='team-member offering-box offer-{{forloop.index}}'>
-					<div class="team-img">
-						<h4 class="offering-name">{{offering.name}}</h4>
-					</div>
-					<div class="team-hover">
-						<div class="desk">
-							<h4>{{ offering.tender-name }}</h4>
-							<p>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 15 }}</p>
-						</div>
-					</div>
-			</div>
-		</div>
-		</a>
-		
+<!--
+
 	    <script type="text/javascript">
 	 	   var colors = ['#a6e3b6','#ae9ed9','#9eccd9','#d99ed3','#d99ea4','#d9cd9e','#bcd99e','#b69ed9','#9ec6d9','#9ed9a2','#d5d99e','#d9bf9e'];
 	 	   var random_color = colors[Math.floor(Math.random() * colors.length)];
 	 	   $('.offer-{{forloop.index}}').css('background-color', random_color);
 	    </script>
- 	   {% endfor %}
-   </div>
-
-</div>			
 -->

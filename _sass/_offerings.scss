@@ -71,7 +71,7 @@
       grid-template-areas:
         "offering-left offering-right";
       .right {
-        padding: 50px 0 0 0;
+        padding: 10px 0 0 0;
       }
     }
     @include respond-to(desktops) { 
@@ -79,7 +79,7 @@
       grid-template-areas:
         "offering-left offering-right";
       .right {
-        padding: 50px 0 0 0;
+        padding: 10px 0 0 0;
       }
     }
     @include respond-to(max) { 
@@ -87,7 +87,7 @@
       grid-template-areas:
         "offering-left offering-right";
       .right {
-        padding: 50px 0 0 0;
+        padding: 10px 0 0 0;
       }
     }
   }
