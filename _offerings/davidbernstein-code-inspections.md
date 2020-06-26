@@ -12,8 +12,9 @@ is-mob-newbie-friendly: true
 exercise-skill: beginner
 repo:
 prerequisites: []
-summary-blurb-300-words: "<p>It’s easy to be overwhelmed by newly inherited legacy code. Legacy code can be difficult to work with, and so it can be helpful to have an extra set of eyes and a whole bunch of techniques for dealing with it. I can help review your software to identify areas of risk and create approaches for mitigation.</p>
-
+summary-blurb-125-words: "<p>It’s easy to be overwhelmed by newly inherited legacy code. Legacy code can be difficult to work with, and so it can be helpful to have an extra set of eyes and a whole bunch of techniques for dealing with it. I can help review your software to identify areas of risk and create approaches for mitigation.</p>"
+active: true
+---
 <p>I’ll help you:</p>
 
 <ul class='list outer'>
@@ -25,5 +26,3 @@ summary-blurb-300-words: "<p>It’s easy to be overwhelmed by newly inherited le
 <li>Refactor code so it can readily accommodate new features</li>
 <li>Gain techniques for efficiently refactoring legacy code</li>
 </ul>"
-active: true
----

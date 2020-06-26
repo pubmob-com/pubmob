@@ -72,21 +72,23 @@
 
 			      <div id="collapse-{{forloop.index}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 			        <div class="card-body">
-                      </br>
-					  <div class="offeringDescription">{{ offering.summary-blurb-125-words | markdownify | truncatewords: 125 }}
-                        {% assign summarySize = offering.summary-blurb-125-words | number_of_words %}
-                        {% if summarySize > 125 %}...{% endif %}</div>
-                        <br />
-                          <strong>Upcoming dates:</strong> TBD<br />
-                          <strong>Technologies: </strong> 
-                          {% capture techs = "" %}
-                          {% for tech in offering.technologies %}
-                            {{ tech }}{% if forloop.last == false %},{% endif %}
-                          {% endfor %}
-                          {% endcapture %}
-                          {{ techs }}
-                          			
-			        </div>
+                </br>
+                {% if offering.summary-blurb-125-words %}
+                <div class="offeringDescription">{{ offering.summary-blurb-125-words | markdownify | truncatewords: 125 }}
+                  {% assign summarySize = offering.summary-blurb-125-words | number_of_words %}
+                  {% if summarySize > 125 %}...{% endif %}
+                </div>
+                <br />
+                {% endif %}
+                <strong>Upcoming dates:</strong> TBD<br />
+                <strong>Technologies: </strong> 
+                {% capture techs = "" %}
+                {% for tech in offering.technologies %}
+                  {{ tech }}{% if forloop.last == false %},{% endif %}
+                {% endfor %}
+                {% endcapture %}
+                {{ techs }}
+               </div>
 			      </div>
 			    </div>
 			</br>
