@@ -5,7 +5,7 @@ tender-name: David Bernstein
 name: Design Reviews
 twelve-words-or-fewer: Get an outside perspective on your design ideas
 technologies: [TDD, design patterns, domain modeling, refactoring]
-languages: [Java,C++,C#,JavaScript]
+languages: [java,cpp,csharp,javascript]
 graphic: 
 public-or-private: both
 mob-experience: any

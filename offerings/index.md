@@ -71,42 +71,34 @@ console.log("selected tech", selectedTechnology);
 {% for offering in site.offerings %}
 <section class="offering">
   <article class="left">
-   <h1><a href="{{ offering.id }}">{{ offering.name }}</a></h1>
-   <h2><a href="{{ offering.tender-id }}">{{ offering.tender-name }}</a></h2>
-   <p class="summary"><em>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 15 }}</em></p>
-   <p class="longer-description">{{ offering.summary-blurb-300-words | truncatewords: 300 }}</p>
-   <button>Book now</button>
+    <h1><a href="{{ offering.id }}">{{ offering.name }}</a></h1>
+    <h2><a href="{{ offering.tender-id }}">{{ offering.tender-name }}</a></h2>
+    <p class="summary"><em>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 15 }}</em></p>
+    <p class="longer-description">{{ offering.summary-blurb-300-words | truncatewords: 300 }}</p>
+    <button>Book now</button>
   </article>
   <article class="right">
-   <div class="student-level">
-     <div>
-       <p class="top">skill</p>
-       <p class="bottom">B</p>
-     </div>
-     <div>
-       <p class="top">newb?</p>
-       <p class="bottom">Y</p>
-     </div> 
-   </div>
-   <div class="topics">
-     <p>TDD | testing | ATDD</p>
-   </div>
-   <div class="programming-language">
-     <div>
-       <img src="/assets/images/programming-languages/css.png" />
-     </div>
-     <div>
-       <img src="/assets/images/programming-languages/cpp.png" />
-     </div>
-     <div>
-       <img src="/assets/images/programming-languages/php.png" />
-     </div>
-   </div>
+    <div class="student-level">
+      <div><p class="top">skill</p> <p class="bottom">B</p></div>
+      <div><p class="top">newb?</p> <p class="bottom">Y</p></div> 
+    </div>
+    <div class="topics">
+      <p>{{ offering.technologies | array_to_sentence_string }}</p>
+    </div>
+    <div class="programming-language">
+      <!-- TODO these are chopping right -->
+      {% for language in offering.languages %}
+        {% assign filename = "programming-language-icons/" | append: language | append: ".svg" %}
+        {% include {{ filename }} %} <br />
+      {% endfor %}
+    </div>
   </article>
 </section>
 {% endfor %}
 
 <!--
+
+        <div><img src="/assets/images/programming-languages/php.png" /></div>
 
 	    <script type="text/javascript">
 	 	   var colors = ['#a6e3b6','#ae9ed9','#9eccd9','#d99ed3','#d99ea4','#d9cd9e','#bcd99e','#b69ed9','#9ec6d9','#9ed9a2','#d5d99e','#d9bf9e'];

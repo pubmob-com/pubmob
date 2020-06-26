@@ -5,7 +5,7 @@ tender-name: Jeff Langr
 name: Legacy Dependency Breaking Techniques
 twelve-words-or-fewer: Simple techniques to break dependencies making it hard to test
 technologies: [TDD,refactoring,design]
-languages: [Java,C++,C#,Clojure,Kotlin,JavaScript]
+languages: [java,cpp,csharp,clojure,kotlin,javascript]
 graphic:
 public-or-private: both
 mob-experience: any
