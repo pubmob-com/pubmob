@@ -95,6 +95,10 @@ post-content: >
       <p>
         To make the most out of your PubMob experience, you'll want to ensure you're ready
         to hit the ground running.
+      </p>
+      <p>
+        Mostly that means having installed a simple tool for doing code handovers to other
+        PubMob attendees, and making sure you can build any codebases used in the session.
         <a class="more" href="/setup">More &raquo;</a>
       </p>
     </div>
