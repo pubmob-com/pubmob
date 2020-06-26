@@ -86,10 +86,10 @@ console.log("selected tech", selectedTechnology);
       <p>{{ offering.technologies | array_to_sentence_string }}</p>
     </div>
     <div class="programming-language">
-      <!-- TODO these are chopping right -->
+      <!-- TODO keep consistent size? -->
       {% for language in offering.languages %}
-        {% assign filename = "programming-language-icons/" | append: language | append: ".svg" %}
-        {% include {{ filename }} %} <br />
+        {% assign filename = "/assets/images/programming-language-icons/" | append: language | append: ".svg" %}
+        <img class="icon" title="{{ language }}" src="{{ filename }}" />
       {% endfor %}
     </div>
   </article>
