@@ -33,21 +33,21 @@ title-bar-text: PubMob | The Pubs
 
   With that change, the pub name itself can disappear from the team -hover div.
 -->
-		{% assign sorted = site.tenders | sort: "sort-name" %}
+		{% assign sorted = site.pubs | sort: "sort-name" %}
 		{% for pub in sorted %}
       <div class="col-md-4 col-sm-4">
         <div class="team-member">
           <div class="team-img">
-            <a href="/tenders/{{ pub.tender-id }}">
+            <a href="/pubs/{{ pub.tender-id }}">
               <span class="team-title">{{ pub.pub-name }}</span>
 		        </a>
-            <a href="/tenders/{{ pub.tender-id }}">
-              <img src="/assets/images/tenders/{{ pub.tender-id }}.{{ pub.tender-photo-extension }}" width="500" height="500" alt="team member" class="img-responsive">
+            <a href="/pubs/{{ pub.tender-id }}">
+              <img src="/assets/images/pubs/{{ pub.tender-id }}.{{ pub.tender-photo-extension }}" width="500" height="500" alt="team member" class="img-responsive">
 		        </a>
           </div>
           <div class="team-hover">
             <div class="desk">
-              <a href="/tenders/{{ pub.tender-id }}">
+              <a href="/pubs/{{ pub.tender-id }}">
                 <h4>{{ pub.pub-name }}</h4>
                 <p>{{ pub.tagline }}</p>
               </a>
@@ -60,7 +60,7 @@ title-bar-text: PubMob | The Pubs
           </div>
         </div>
         <div class="team-title">
-          <a href="/tenders/{{ pub.tender-id }}"><h5>{{ pub.owner-name }}</h5></a>
+          <a href="/pubs/{{ pub.tender-id }}"><h5>{{ pub.owner-name }}</h5></a>
         </div>
         <div class="team-summary">
           <span>{{ pub.pub-summary-twenty-words | truncatewords: 20 }}</span>

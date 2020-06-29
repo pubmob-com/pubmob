@@ -19,6 +19,8 @@ pre-content: >
 post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: What's on Tap
+blink-link:
+blink-text: Book Now
 ---
 <div class="row">
   <div class="heading-title text-center">
@@ -67,6 +69,8 @@ console.log("selected tech", selectedTechnology);
   </div>
 <div>
 -->   
+
+<p>New to mobbing? Look for courses with the ,, checkmark ,, image</p>
    
 {% for offering in site.offerings %}
 <section class="offering">
@@ -78,20 +82,21 @@ console.log("selected tech", selectedTechnology);
     {% if blurbLength <= 125 %}
       <p class="longer-description">{{ offering.summary-blurb-125-words | truncatewords: 125 }}</p>
     {% endif %}
-    <button>Book now</button>
+    {% assign link = "http://example.com" %}
+    {% assign text = page.blink-text %}
+    {% capture button_content %}
+      {{ link }}
+      {{ text }}
+    {% endcapture %}
+    {% include button-link.html content=button_content %}
   </article>
   <article class="right">
     <div class="student-level">
-      <div><p class="top">Skill</p> <p class="bottom">B</p></div>
-      <div>
-        <p class="top"></p> 
-        <p class="bottom">
-          {% if offering.is-mob-newbie-friendly == true %}
-            <img class="icon" src="/assets/images/misc-icons/checkmark.svg"/>
-            mob newb friendly
-          {% endif %}
-        </p>
-      </div> 
+        {% assign skill-icon-filename = "/assets/images/misc-icons/" | append: offering.exercise-skill | append: ".svg" %}
+        <img class="icon" src="{{ skill-icon-filename }}" />
+        {% if offering.is-mob-newbie-friendly == true %}
+          <img class="icon" src="/assets/images/misc-icons/checkmark.svg"/>
+        {% endif %}
     </div>
     <div class="topics">
       <p>Topics: {{ offering.technologies | array_to_sentence_string }}</p>

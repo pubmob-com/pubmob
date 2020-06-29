@@ -79,7 +79,7 @@ navigation:
     id: navabout
 
 collections:
-  tenders:
+  pubs:
     output: true
   offerings:
     output: true

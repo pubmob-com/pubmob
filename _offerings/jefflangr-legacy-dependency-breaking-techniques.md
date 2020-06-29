@@ -9,7 +9,7 @@ languages: [java,cpp,csharp,clojure,kotlin,javascript]
 graphic:
 public-or-private: both
 is-mob-newbie-friendly: false
-exercise-skill: beginner
+exercise-skill: intermediate
 repo: 
 prerequisites: []
 summary-blurb-125-words: Pick up a few techniques to fix common dependency challenges in your code, things that make it seem impossible to write unit tests.

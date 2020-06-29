@@ -10,12 +10,12 @@ graphic: tdd-paint-by-numbers.png
 public-or-private: both
 is-mob-newbie-friendly: true
 exercise-skill: beginner
-repo: http://github.com/jlangr/name-normalizer
+repo: "http://github.com/jlangr/name-normalizer"
 prerequisites: []
-summary-blurb-125-words: "Learn TDD the easy way with a TDD Paint by Numbers session, where the tests are already written for you--you fill in the code and keep it in the confines of the tests. Sessions are continually available in numerous programming languages, and I'll be keeping the katas fresh."
+summary-blurb-125-words: "<p>Learn TDD the easy way with a TDD Paint by Numbers session, where the tests are already written for you--you fill in the code and keep it in the confines of the tests. Sessions are continually available in numerous programming languages, and I'll be keeping the katas fresh.</p>"
 active: true
 ---
-TDD Paint by Number sessions are gentle introductions to TDD. You and your co-mob will ...
+TDD Paint by Number sessions are gentle introductions to TDD. You and your co-mob will do things...
 
 Since we'll be all working on the same codebase, scheduled sessions show
 the programming language and compiler version you'll need. You'll also see which
