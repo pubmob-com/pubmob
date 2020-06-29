@@ -8,7 +8,7 @@ technologies: [TDD, design patterns, domain modeling, refactoring]
 languages: [java,cpp,csharp,javascript]
 graphic: 
 public-or-private: both
-is-mob-newbie-friendly: true
+is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
 prerequisites: []

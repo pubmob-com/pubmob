@@ -8,7 +8,7 @@ technologies: [TDD]
 languages: [java,cpp,csharp,clojure,kotlin,javascript]
 graphic: tdd-paint-by-numbers.png
 public-or-private: both
-is-mob-newbie-friendly: true
+is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: "http://github.com/jlangr/name-normalizer"
 prerequisites: []

@@ -1,5 +1,6 @@
 ---
 layout: pub
+pagename: pub
 tender-id: dustinthostenson
 tender-name: Dustinson
 owner-name: Dustin Thostenson

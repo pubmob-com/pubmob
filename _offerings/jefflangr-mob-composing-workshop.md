@@ -8,7 +8,7 @@ technologies: [mobbing]
 languages: []
 graphic: 
 public-or-private: both
-is-mob-newbie-friendly: true
+is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: "http://github.com/jlangr/geektone"
 prerequisites: []

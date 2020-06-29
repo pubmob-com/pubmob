@@ -1,21 +1,56 @@
-.pub {
+#pub {
   @extend .interior;
   #navtenders { @extend %active; }
- 
-  img {
-    height: auto;
-    width: auto;
-    max-width: 1200px;
-  }
 
-  .offeringSummary {
-    .offeringName {
-      @include ms-respond(font-size, 1.3);
+  $size_about_left: 50%;
+  $size_about_right: 50%;
+
+  .tender {
+    grid-area: about-left;
+  }
+  .pubDetails {
+    grid-area: about-right;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: minmax($size_about_left,1fr) minmax($size_about_right,1fr);
+    grid-template-areas:
+      "about-left about-right";
+    grid-gap: 10px 20px;
+
+    .tender {
+      img { width: 66%; height: auto; }
     }
- 
-    .offeringDetails {
-      margin: 0 $base-spacing 0 $base-spacing;
-      padding: 0;
+
+    .pubDetails {
+    }
+
+    @include respond-to(handhelds) { 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "about-left"
+        "about-right";
+    }
+    @include respond-to(wide-handhelds) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "about-left"
+        "about-right";
+    }
+    @include respond-to(tablets) {
+      grid-template-columns: minmax($size_about_left,1fr) minmax($size_about_right,1fr);
+      grid-template-areas:
+        "about-left about-right";
+    }
+    @include respond-to(desktops) { 
+      grid-template-columns: minmax($size_about_left,1fr) minmax($size_about_right,1fr);
+      grid-template-areas:
+        "about-left about-right";
+    }
+    @include respond-to(max) { 
+      grid-template-columns: minmax($size_about_left,1fr) minmax($size_about_right,1fr);
+      grid-template-areas:
+        "about-left about-right";
     }
   }
 
@@ -25,7 +60,7 @@
   .right {
     grid-area: tender-right;
   }
-  .tender {
+  .offering {
     display: grid;
     grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
     grid-template-areas:
@@ -46,17 +81,16 @@
       padding: 50px 0 0 0;
 
       .icon {
-          width: 64px;
-          max-width: 64px;
-//          width:100%; /* IE */
+          width: 48px;
+          max-width: 48px;
       }
      
       .student-level {
-        img { height: 64px; width: auto; }
+        img { height: 48px; width: auto; }
       }
       .programming-language {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
         grid-gap: 3px;
       }
       .tech {
@@ -128,78 +162,5 @@
         padding: 10px 0 0 0;
       }
     }
-  }
-
-
-
-
-
-// TODO how to reuse this on the offerings page without duplication
-  .tech {
-    ul {
-      overflow: auto;
-      list-style-type: none;
-    }
-     
-    li {
-      height: 25px;
-      float: left;
-      margin-right: 0px;
-      border-right: 1px solid #aaa;
-      padding: 0 10px;
-    }
-     
-    li:last-child {
-      border-right: none;
-    }
-     
-    li a {
-      text-decoration: none;
-      color: #ccc;
-      //font: 25px/1 Helvetica, Verdana, sans-serif;
-      text-transform: uppercase;
-     
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-    }
-  }
-  
-  .collapse-btn {
-   padding: 0px 0px !important;
-   text-align: left !important;
-  }
-
-  .offeringBlurb {
-  	color: #595959;
-  }
-  
-  .offeringDescription p {
-  	font-size: 18px;
-	width: 650px;
-    overflow-wrap: break-word;
-  }
-  
-  .offeringDescription {
-  	border-left: 2px solid #595959;
-	margin-left: 25px;
-	padding-left: 25px;
-  	font-size: 18px;
-  }
- 
-  .aboutTender {
-  	background-color: white;
-  }
-
-  .aboutTender td {
-	background-color: white;
-	padding-left: 15px;
-	vertical-align: top;
-  }
-  
-  .aboutTender td p {
-	font-size: 18px;
   }
 }

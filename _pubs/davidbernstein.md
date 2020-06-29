@@ -1,5 +1,6 @@
 ---
 layout: pub
+pagename: pub
 tender-id: davidbernstein
 tender-name: David
 owner-name: David Bernstein

@@ -1,5 +1,6 @@
 ---
 layout: pub
+pagename: pub
 tender-id: jefflangr
 tender-name: Jeff Langr
 owner-name: Jeff Langr

@@ -1,5 +1,6 @@
 ---
 layout: pub
+pagename: pub
 tender-id: skylarwatson
 tender-name: Skylar
 owner-name: Skylar Watson

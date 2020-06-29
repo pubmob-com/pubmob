@@ -70,7 +70,7 @@ console.log("selected tech", selectedTechnology);
 <div>
 -->   
 
-<p>New to mobbing? Look for courses with the ,, checkmark ,, image</p>
+<p>Courses marked with [[ experienced-mobber ]] icon are recommended for experienced mobbers.</p>
    
 {% for offering in site.offerings %}
 <section class="offering">
@@ -94,8 +94,8 @@ console.log("selected tech", selectedTechnology);
     <div class="student-level">
         {% assign skill-icon-filename = "/assets/images/misc-icons/" | append: offering.exercise-skill | append: ".svg" %}
         <img class="icon" src="{{ skill-icon-filename }}" />
-        {% if offering.is-mob-newbie-friendly == true %}
-          <img class="icon" src="/assets/images/misc-icons/checkmark.svg"/>
+        {% if offering.is-for-experienced-mobbers == true %}
+          <img class="icon" src="/assets/images/misc-icons/experienced-mobbers.svg"/>
         {% endif %}
     </div>
     <div class="topics">
@@ -103,12 +103,10 @@ console.log("selected tech", selectedTechnology);
     </div>
     {% if offering.languages.size > 0 %}
       <div class="programming-language">
-        <!-- TODO keep consistent size? -->
-        <!-- Languages: -->
-          {% for language in offering.languages %}
-            {% assign filename = "/assets/images/programming-language-icons/" | append: language | append: ".svg" %}
-            <img class="icon" title="{{ language }}" src="{{ filename }}" />
-          {% endfor %}
+        {% for language in offering.languages %}
+          {% assign filename = "/assets/images/programming-language-icons/" | append: language | append: ".svg" %}
+          <img class="icon" title="{{ language }}" src="{{ filename }}" />
+        {% endfor %}
       </div>
     {% endif %}
   </article>

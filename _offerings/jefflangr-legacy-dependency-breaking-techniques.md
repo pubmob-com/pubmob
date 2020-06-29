@@ -8,7 +8,7 @@ technologies: [TDD,refactoring,design]
 languages: [java,cpp,csharp,clojure,kotlin,javascript]
 graphic:
 public-or-private: both
-is-mob-newbie-friendly: false
+is-for-experienced-mobbers: false
 exercise-skill: intermediate
 repo: 
 prerequisites: []
