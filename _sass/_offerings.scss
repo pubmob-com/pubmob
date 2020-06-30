@@ -7,6 +7,37 @@
     padding: 0;
   }
 
+  .legend {
+    display: grid;
+    grid-template-columns: minmax(65%,1fr) minmax(34%,1fr);
+
+    margin-bottom: 10px;
+
+    .overview {
+      padding: 50px 10px 10px 0;
+    }
+    .key {
+      p {
+        @include ms-respond(font-size,0.6);
+      }
+      margin-top: 40px;
+      padding: 10px 10px 10px 10px;
+
+      display: grid;
+      grid-template-columns: minmax(10%,1ft) minmax(90%,1fr);
+
+      border-style: solid;
+      border-color: #000;
+      border-width: 1px;
+
+      .small-icon {
+        margin-right: 10px;
+        width: 32px;
+        max-width: 32px;
+      }
+    }
+  }
+
   .left {
     grid-area: offering-left;
   }
@@ -16,8 +47,7 @@
   .offering {
     display: grid;
     grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
-    grid-template-areas:
-      "offering-left offering-right";
+    grid-template-areas: "offering-left offering-right";
     grid-gap: 10px 20px;
 
     background-color: #eee;
@@ -74,54 +104,45 @@
 
     @include respond-to(handhelds) { 
       grid-template-columns: 1fr;
-      grid-template-areas:
-        "offering-left"
-        "offering-right";
-
+      grid-template-areas: "offering-left" "offering-right";
       .right {
         padding: 0;
       }
     }
     @include respond-to(wide-handhelds) {
       grid-template-columns: 1fr;
-      grid-template-areas:
-        "offering-left"
-        "offering-right";
+      grid-template-areas: "offering-left" "offering-right";
       .right {
         padding: 0;
       }
     }
     @include respond-to(tablets) {
       grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
-      grid-template-areas:
-        "offering-left offering-right";
+      grid-template-areas: "offering-left offering-right";
       .right {
         padding: 10px 0 0 0;
       }
     }
     @include respond-to(desktops) { 
       grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
-      grid-template-areas:
-        "offering-left offering-right";
+      grid-template-areas: "offering-left offering-right";
       .right {
         padding: 10px 0 0 0;
       }
     }
     @include respond-to(max) { 
       grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
-      grid-template-areas:
-        "offering-left offering-right";
+      grid-template-areas: "offering-left offering-right";
       .right {
         padding: 10px 0 0 0;
       }
     }
   }
-
 }
 
 .offering-box {
-      height: 150px;
-      width: 280px;
+  height: 150px;
+  width: 280px;
 }
 
 .team-title a {
@@ -131,7 +152,7 @@
 .offering-name {
   padding-top: 15%;
 	text-align: center;
-    color: #545c56;
+  color: #545c56;
 }
 
 .desk p {

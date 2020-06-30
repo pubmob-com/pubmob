@@ -24,8 +24,7 @@ blink-text: Book Now
 ---
 <div class="row">
   <div class="heading-title text-center">
-    <h3>Our pub sessions.</h3>
-    <p class="p-top half-txt">You'll find a varied selections of engaging mob sessions, from hands-on coding to design workshops. Click on a session for further details.</p>
+    <h1>Our pub sessions.</h1>
   </div>
 </div>
 
@@ -70,7 +69,33 @@ console.log("selected tech", selectedTechnology);
 <div>
 -->   
 
-<p>Courses marked with [[ experienced-mobber ]] icon are recommended for experienced mobbers.</p>
+
+<section class="legend">
+  <article class="overview">
+    <p>At PubMob, you'll find a varied selection of engaging mob sessions, from hands-on coding to design workshops.</p>
+    <p>Click on a session for further details.</p>
+  </article>
+  <article class="key">
+    <ul>
+      <li>
+        <img class="small-icon" src="/assets/images/misc-icons/beginner.svg"/>
+        <p>Introductory</p>
+      </li>
+      <li>
+        <img class="small-icon" src="/assets/images/misc-icons/intermediate.svg"/>
+        <p>Intermediate</p>
+      </li>
+      <li>
+        <img class="small-icon" src="/assets/images/misc-icons/expert.svg"/>
+        <p>Advanced</p>
+      </li>
+      <li>
+        <img class="small-icon" src="/assets/images/misc-icons/experienced-mobbers.svg"/>
+        <p>Experienced mobbers</p>
+      </li>
+    </ul>
+  </article>
+</section>
    
 {% for offering in site.offerings %}
 <section class="offering">
@@ -113,13 +138,3 @@ console.log("selected tech", selectedTechnology);
 </section>
 {% endfor %}
 
-<!--
-
-        <div><img src="/assets/images/programming-languages/php.png" /></div>
-
-	    <script type="text/javascript">
-	 	   var colors = ['#a6e3b6','#ae9ed9','#9eccd9','#d99ed3','#d99ea4','#d9cd9e','#bcd99e','#b69ed9','#9ec6d9','#9ed9a2','#d5d99e','#d9bf9e'];
-	 	   var random_color = colors[Math.floor(Math.random() * colors.length)];
-	 	   $('.offer-{{forloop.index}}').css('background-color', random_color);
-	    </script>
--->
