@@ -76,7 +76,7 @@ console.log("selected tech", selectedTechnology);
     <p>Click on a session for further details.</p>
   </article>
   <article class="key">
-    <ul>
+    <ul class="top">
       <li>
         <img class="small-icon" src="/assets/images/misc-icons/beginner.svg"/>
         <p>Introductory</p>
@@ -89,6 +89,8 @@ console.log("selected tech", selectedTechnology);
         <img class="small-icon" src="/assets/images/misc-icons/expert.svg"/>
         <p>Advanced</p>
       </li>
+    </ul>
+    <ul>
       <li>
         <img class="small-icon" src="/assets/images/misc-icons/experienced-mobbers.svg"/>
         <p>Experienced mobbers</p>

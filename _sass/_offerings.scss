@@ -9,7 +9,7 @@
 
   .legend {
     display: grid;
-    grid-template-columns: minmax(65%,1fr) minmax(34%,1fr);
+    grid-template-columns: minmax(68%,1fr) minmax(31%,1fr);
 
     margin-bottom: 10px;
 
@@ -19,6 +19,12 @@
     .key {
       p {
         @include ms-respond(font-size,0.6);
+      }
+      .top {
+        border-bottom-style: solid;
+        border-bottom-color: #000;
+        border-bottom-width: 1px;
+        padding-bottom: 10px;
       }
       margin-top: 40px;
       padding: 10px 10px 10px 10px;
@@ -71,11 +77,13 @@
       .student-level {
         img { height: 64px; width: auto; }
       }
+
       .programming-language {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
         grid-gap: 3px;
       }
+
       .tech {
         ul {
           overflow: auto;

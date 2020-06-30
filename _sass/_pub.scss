@@ -88,11 +88,13 @@
       .student-level {
         img { height: 48px; width: auto; }
       }
+
       .programming-language {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
         grid-gap: 3px;
       }
+
       .tech {
         ul {
           overflow: auto;
