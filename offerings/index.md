@@ -27,43 +27,47 @@ title-bar-text: What's on Tap
 </div>
 
 <script type="text/javascript">
-  function setTechnologyHeaderText(selectedTechnology) {
-    var technologyHeader = document.getElementById('selectedTechnology');
-    technologyHeader.innerHTML = `Selected tech: ${selectedTechnology}`
+  function setTopicHeaderText(selectedTopic) {
+    var topicHeader = document.getElementById('selectedTopic');
+    topicHeader.innerHTML = `Selected topic: ${selectedTopic}`
   }
 
-  function renderIfOfferingHasTechnology(div, technologies, selectedTechnology) {
-      div.style.display = (selectedTechnology == 'All' || technologies.includes(selectedTechnology)) 
+  function renderIfOfferingHasTopic(div, topics, selectedTopic) {
+      div.style.display = (selectedTopic == 'All' || topics.includes(selectedTopic)) 
         ? 'unset' // TODO: does unset work in all browsers?
         : 'none';
   }
 
-  function renderPostsFor(selectedTechnology) {
+  function renderPostsFor(selectedTopic) {
     var id = 0;
     {% for offering in site.offerings %}
       var offeringDiv = document.getElementById(++id);
-      renderIfOfferingHasTechnology(offeringDiv, {{ offering.technologies | jsonify }}, selectedTechnology);
+      renderIfOfferingHasTopic(offeringDiv, {{ offering.technologies | jsonify }}, selectedTopic);
     {% endfor %}
   }
 
-  function filterUsingTechnology(selectedTechnology) {
-    setTechnologyHeaderText(selectedTechnology);
-    renderPostsFor(selectedTechnology);
+  function filterUsingTopic(selectedTopic) {
+    setTopicHeaderText(selectedTopic);
+    renderPostsFor(selectedTopic);
   }
 </script>
 
-<!--
-<div class="offerings">
-  <p>Technology filters:</p>
-  <div>
-    <a id="All" onclick="filterUsingTechnology('All')">*All*</a>
-    <a id="TDD" onclick="filterUsingTechnology(this.id)" href="javascript:void(0);">TDD</a>
-    <a id="design" onclick="filterUsingTechnology(this.id)" href="javascript:void(0);">design</a>
-    <a id="refactoring" onclick="filterUsingTechnology(this.id)" href="javascript:void(0);">refactoring</a>
-    <p id="selectedTechnology"></p>
+<!-- TODO rename technologies to topics in offerings MD files -->
+<div>
+  <p>Filter classes by topic:</p>
+  <div class="all-topics">
+    {% assign all-topics = "" | split: "" %}
+    {% for offering in site.offerings %}
+      {% assign all-topics = all-topics | concat: offering.technologies %}
+    {% endfor %}
+    {% assign all-topics = all-topics | uniq | sort %}
+    <a id="All" class="topic" onclick="filterUsingTopic('All')">*All*</a>
+    {% for topic in all-topics %}
+      <a id="{{ topic }}" class="topic" onclick="filterUsingTopic(this.id)" href="javascript:void(0);">{{ topic }}</a>
+    {% endfor %}
+    <p id="selectedTopic"></p>
   </div>
 <div>
--->   
 
 <section class="overview">
   <article class="description">
@@ -74,7 +78,9 @@ title-bar-text: What's on Tap
   {% include skills-key.html %}
 </section>
    
+{% assign id = 0 %}
 {% for offering in site.offerings %}
+  {% assign id = id | plus:1 %}
   {% include offering.html %}
 {% endfor %}
 
