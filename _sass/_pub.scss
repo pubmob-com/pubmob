@@ -7,6 +7,9 @@
 
   .tender {
     grid-area: about-left;
+    .tech {
+      @include ms-respond(font-size,0.6);
+    }
   }
   .pubDetails {
     grid-area: about-right;

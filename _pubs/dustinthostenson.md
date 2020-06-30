@@ -2,6 +2,7 @@
 layout: pub
 pagename: pub
 tender-id: dustinthostenson
+tender-short-name: Dustinson
 tender-name: Dustinson
 owner-name: Dustin Thostenson
 pub-name: Dustin's Dustup

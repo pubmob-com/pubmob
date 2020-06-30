@@ -1,0 +1,40 @@
+<section class="offering">
+  <article class="left">
+    <h1><a href="{{ offering.id }}">{{ offering.name }}</a></h1>
+    {% if page.pagename == "offerings" %}
+      <h2><a href="/pubs/{{ offering.tender-id }}">{{ offering.tender-name }}</a></h2>
+    {% endif %}
+    <p class="summary"><em>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 15 }}</em></p>
+    {% assign blurbLength = offering.summary-blurb-125-words | number_of_words %}
+    {% if blurbLength <= 125 %}
+      <p class="longer-description">{{ offering.summary-blurb-125-words | truncatewords: 125 }}</p>
+    {% endif %}
+    {% assign link = "http://example.com" %}
+    {% assign text = "Book" %}
+    {% capture button_content %}
+      {{ link }}
+      {{ text }}
+    {% endcapture %}
+    {% include button-link.html content=button_content %}
+  </article>
+  <article class="right">
+    <div class="student-level">
+        {% assign skill-icon-filename = "/assets/images/misc-icons/" | append: offering.exercise-skill | append: ".svg" %}
+        <img class="icon" src="{{ skill-icon-filename }}" title="{{ offering.exercise-skill }}" />
+        {% if offering.is-for-experienced-mobbers == true %}
+          <img class="icon" src="/assets/images/misc-icons/experienced-mobbers.svg" title="Recommended for people with some experience mobbing" />
+        {% endif %}
+    </div>
+    <div class="topics">
+      <p>Topics: {{ offering.technologies | array_to_sentence_string }}</p>
+    </div>
+    {% if offering.languages.size > 0 %}
+      <div class="programming-language">
+        {% for language in offering.languages %}
+          {% assign filename = "/assets/images/programming-language-icons/" | append: language | append: ".svg" %}
+          <img class="icon" title="{{ language }}" src="{{ filename }}" />
+        {% endfor %}
+      </div>
+    {% endif %}
+  </article>
+</section>

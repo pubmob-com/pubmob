@@ -19,8 +19,6 @@ pre-content: >
 post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: What's on Tap
-blink-link:
-blink-text: Book Now
 ---
 <div class="row">
   <div class="heading-title text-center">
@@ -35,8 +33,6 @@ blink-text: Book Now
   }
 
   function renderIfOfferingHasTechnology(div, technologies, selectedTechnology) {
-console.log("technologies", technologies);
-console.log("selected tech", selectedTechnology);
       div.style.display = (selectedTechnology == 'All' || technologies.includes(selectedTechnology)) 
         ? 'unset' // TODO: does unset work in all browsers?
         : 'none';
@@ -69,74 +65,16 @@ console.log("selected tech", selectedTechnology);
 <div>
 -->   
 
-
-<section class="legend">
-  <article class="overview">
+<section class="overview">
+  <article class="description">
     <p>At PubMob, you'll find a varied selection of engaging mob sessions, from hands-on coding to design workshops.</p>
-    <p>Click on a session for further details.</p>
+    <p>Click on the title of a session for further details. Click on the booking button to see a calendar of available dates.</p>
+    <p>Hover over an icon to see what it represents.</p>
   </article>
-  <article class="key">
-    <ul class="top">
-      <li>
-        <img class="small-icon" src="/assets/images/misc-icons/beginner.svg"/>
-        <p>Introductory</p>
-      </li>
-      <li>
-        <img class="small-icon" src="/assets/images/misc-icons/intermediate.svg"/>
-        <p>Intermediate</p>
-      </li>
-      <li>
-        <img class="small-icon" src="/assets/images/misc-icons/expert.svg"/>
-        <p>Advanced</p>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <img class="small-icon" src="/assets/images/misc-icons/experienced-mobbers.svg"/>
-        <p>Experienced mobbers</p>
-      </li>
-    </ul>
-  </article>
+  {% include skills-key.html %}
 </section>
    
 {% for offering in site.offerings %}
-<section class="offering">
-  <article class="left">
-    <h1><a href="{{ offering.id }}">{{ offering.name }}</a></h1>
-    <h2><a href="/tenders/{{ offering.tender-id }}">{{ offering.tender-name }}</a></h2>
-    <p class="summary"><em>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 15 }}</em></p>
-    {% assign blurbLength = offering.summary-blurb-125-words | number_of_words %}
-    {% if blurbLength <= 125 %}
-      <p class="longer-description">{{ offering.summary-blurb-125-words | truncatewords: 125 }}</p>
-    {% endif %}
-    {% assign link = "http://example.com" %}
-    {% assign text = page.blink-text %}
-    {% capture button_content %}
-      {{ link }}
-      {{ text }}
-    {% endcapture %}
-    {% include button-link.html content=button_content %}
-  </article>
-  <article class="right">
-    <div class="student-level">
-        {% assign skill-icon-filename = "/assets/images/misc-icons/" | append: offering.exercise-skill | append: ".svg" %}
-        <img class="icon" src="{{ skill-icon-filename }}" />
-        {% if offering.is-for-experienced-mobbers == true %}
-          <img class="icon" src="/assets/images/misc-icons/experienced-mobbers.svg"/>
-        {% endif %}
-    </div>
-    <div class="topics">
-      <p>Topics: {{ offering.technologies | array_to_sentence_string }}</p>
-    </div>
-    {% if offering.languages.size > 0 %}
-      <div class="programming-language">
-        {% for language in offering.languages %}
-          {% assign filename = "/assets/images/programming-language-icons/" | append: language | append: ".svg" %}
-          <img class="icon" title="{{ language }}" src="{{ filename }}" />
-        {% endfor %}
-      </div>
-    {% endif %}
-  </article>
-</section>
+  {% include offering.html %}
 {% endfor %}
 

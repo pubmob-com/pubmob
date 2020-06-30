@@ -25,62 +25,35 @@
         <section class="about">
           <article class="tender">
             <h3>Your tender: {{page.tender-name}}</h3>
-            <div>
-              <img src="/assets/images/{{ page.id }}.{{page.tender-photo-extension}}" />
-            </div>
+            <div><img src="/assets/images/{{ page.id }}.{{page.tender-photo-extension}}" /></div>
+
             <h3>About Your Tender</h3>
             <p>{{ page.tender-blurb }}</p>
-
-            <p>{{ page.technologies | join: " | " }}</p>
+            <p class="tech">{{ page.technologies | join: " | " }}</p>
           </article>
 
           <article class="pubDetails">
-          {{ content | markdownify }}
+            <div>
+            {{ content | markdownify }}
+            </div>
           </article>
+
         </section>
 
-// TODO: most of this duplicates stuff in offerings/index.md
-      {% for offering in site.offerings %}
+        <section class="overview">
+          <article class="description">
+            <p>{{ page.tender-short-name }} provides the following mob sessions.</p>
+            <p>Click on the title of a session for further details. Click on the booking button to see a calendar of available dates.</p>
+            <p>Hover over an icon to see what it represents.</p>
+          </article>
+          {% include skills-key.html %}
+        </section>
+
+        {% for offering in site.offerings %}
           {% if offering.tender-id == page.tender-id %}
-      <section class="offering">
-        <article class="left">
-          <h1><a href="{{ offering.id }}">{{ offering.name }}</a></h1>
-          <p class="summary"><em>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 15 }}</em></p>
-          {% assign blurbLength = offering.summary-blurb-125-words | number_of_words %}
-          {% if blurbLength <= 125 %}
-            <p class="longer-description">{{ offering.summary-blurb-125-words | truncatewords: 125 }}</p>
+            {% include offering.html %}
           {% endif %}
-          {% assign link = "http://example.com" %}
-          {% assign text = "Book now" %}
-          {% capture button_content %}
-            {{ link }}
-            {{ text }}
-          {% endcapture %}
-          {% include button-link.html content=button_content %}
-        </article>
-        <article class="right">
-          <div class="student-level">
-              {% assign skill-icon-filename = "/assets/images/misc-icons/" | append: offering.exercise-skill | append: ".svg" %}
-              <img class="icon" src="{{ skill-icon-filename }}" />
-              {% if offering.is-for-experienced-mobbers == true %}
-                <img class="icon" src="/assets/images/misc-icons/experienced-mobbers.svg"/>
-              {% endif %}
-          </div>
-          <div class="topics">
-            <p>Topics: {{ offering.technologies | array_to_sentence_string }}</p>
-          </div>
-          {% if offering.languages.size > 0 %}
-            <div class="programming-language">
-                {% for language in offering.languages %}
-                  {% assign filename = "/assets/images/programming-language-icons/" | append: language | append: ".svg" %}
-                  <img class="icon" title="{{ language }}" src="{{ filename }}" />
-                {% endfor %}
-            </div>
-          {% endif %}
-        </article>
-      </section>
-        {% endif %}
-      {% endfor %}
+        {% endfor %}
 
 
         <h3>About <a href="{{page.company-link}}">{{ page.company }}</a></h3>

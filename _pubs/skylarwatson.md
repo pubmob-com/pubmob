@@ -2,6 +2,7 @@
 layout: pub
 pagename: pub
 tender-id: skylarwatson
+tender-short-name: Skylar
 tender-name: Skylar
 owner-name: Skylar Watson
 sort-name: Watson, Skylar

@@ -3,6 +3,7 @@ layout: pub
 pagename: pub
 tender-id: jefflangr
 tender-name: Jeff Langr
+tender-short-name: Jeff
 owner-name: Jeff Langr
 sort-name: "1"
 pub-name: Jeff's Place

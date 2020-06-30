@@ -3,6 +3,7 @@ layout: pub
 pagename: pub
 tender-id: davidbernstein
 tender-name: David
+tender-short-name: David
 owner-name: David Bernstein
 sort-name: Bernstein, David
 pub-name: David's Dive
