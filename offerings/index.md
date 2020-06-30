@@ -55,18 +55,22 @@ title-bar-text: What's on Tap
 <!-- TODO rename technologies to topics in offerings MD files -->
 <div>
   <p>Filter classes by topic:</p>
-  <div class="all-topics">
-    {% assign all-topics = "" | split: "" %}
-    {% for offering in site.offerings %}
-      {% assign all-topics = all-topics | concat: offering.technologies %}
-    {% endfor %}
-    {% assign all-topics = all-topics | uniq | sort %}
-    <a id="All" class="topic" onclick="filterUsingTopic('All')">*All*</a>
+  {% assign all-topics = "" | split: "" %}
+  {% for offering in site.offerings %}
+    {% assign all-topics = all-topics | concat: offering.technologies %}
+  {% endfor %}
+  {% assign all-topics = all-topics | uniq | sort %}
+  <ul class="all-topics">
+    <li>
+      <a id="All" onclick="filterUsingTopic('All')">*All*</a>
+    </li>
     {% for topic in all-topics %}
-      <a id="{{ topic }}" class="topic" onclick="filterUsingTopic(this.id)" href="javascript:void(0);">{{ topic }}</a>
+    <li>
+      <a id="{{ topic }}" onclick="filterUsingTopic(this.id)" href="javascript:void(0);">{{ topic }}</a>
+    </li>
     {% endfor %}
-    <p id="selectedTopic"></p>
-  </div>
+  </ul>
+  <p id="selectedTopic"></p>
 <div>
 
 <section class="overview">

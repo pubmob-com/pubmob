@@ -113,13 +113,14 @@
   }
 
   .all-topics {
-    .topic {
-      @include ms-respond(font-size,0.6);
+    @include ms-respond(font-size,0.6);
+    li {
+      display: inline;
     }
-  }
-  .all-topics .topic:not(:last-child):after {
-      padding-right: 10px;
-      border-right: 1px solid #000;
+    li+li:before
+    {
+      content: '| ';
+    }
   }
 }
 
