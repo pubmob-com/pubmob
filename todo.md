@@ -7,7 +7,10 @@
 - layout of bottom
 - calendar links actual
 - flesh out Jeff's page with bar image, etc.
-- headers consistent text font
+- page headers consistent text font
+- menu sucks a bit
+- accordion for filters?
+- still a few mountain photos
 
 done
 

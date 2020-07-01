@@ -1,7 +1,8 @@
-.overview {
+.class-legend {
   display: grid;
   grid-template-columns: minmax(68%,1fr) minmax(31%,1fr);
 
+  border: solid 1px #000;
   margin-bottom: 10px;
 
   .description {

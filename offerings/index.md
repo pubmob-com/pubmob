@@ -19,69 +19,94 @@ pre-content: >
 post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: What's on Tap
+all-topics-tag: All
 ---
-<div class="row">
-  <div class="heading-title text-center">
-    <h1>Our pub sessions.</h1>
-  </div>
-</div>
+<h1 class="text-center">Our pub sessions.</h1>
+<p>At PubMob, you'll find a varied selection of engaging mob sessions, from hands-on coding to design workshops.</p>
 
 <script type="text/javascript">
-  function setTopicHeaderText(selectedTopic) {
-    var topicHeader = document.getElementById('selectedTopic');
-    topicHeader.innerHTML = `Selected topic: ${selectedTopic}`
+  function setText(id, text) {
+    var topicHeader = document.getElementById(id)
+    topicHeader.innerHTML = text
   }
 
-  function renderIfOfferingHasTopic(div, topics, selectedTopic) {
-      div.style.display = (selectedTopic == 'All' || topics.includes(selectedTopic)) 
-        ? 'unset' // TODO: does unset work in all browsers?
-        : 'none';
+  function setFilterSelectionText(displayElement, filterSelection, description) {
+    setText(displayElement, filterSelection == 'All' ? '' : description)
   }
 
-  function renderPostsFor(selectedTopic) {
+  function renderIf(element, condition) {
+    element.style.display = condition ? 'unset' : 'none'
+  }
+
+  function renderIfContains(element, items, filterSelection) {
+    renderIf(element, filterSelection == 'All' || items.includes(filterSelection))
+  }
+
+  function renderPostsFor(filterSelection) {
     var id = 0;
     {% for offering in site.offerings %}
-      var offeringDiv = document.getElementById(++id);
-      renderIfOfferingHasTopic(offeringDiv, {{ offering.technologies | jsonify }}, selectedTopic);
+      var element = document.getElementById(++id)
+      renderIfContains(element, {{ offering.technologies | jsonify }}, filterSelection)
     {% endfor %}
   }
 
-  function filterUsingTopic(selectedTopic) {
-    setTopicHeaderText(selectedTopic);
-    renderPostsFor(selectedTopic);
+  function filterUsingTopic(displayElement, languageDisplayElement, filterSelection) {
+    setFilterSelectionText(displayElement, filterSelection, ` for topic ${filterSelection}`)
+    renderPostsFor(filterSelection)
+  }
+
+  function filterUsingLanguage(displayElement, filterSelection) {
+    setFilterSelectionText(displayElement, filterSelection, ` for programming language ${filterSelection}`)
+    renderPostsFor(filterSelection)
   }
 </script>
 
 <!-- TODO rename technologies to topics in offerings MD files -->
-<div>
-  <p>Filter classes by topic:</p>
-  {% assign all-topics = "" | split: "" %}
-  {% for offering in site.offerings %}
-    {% assign all-topics = all-topics | concat: offering.technologies %}
-  {% endfor %}
-  {% assign all-topics = all-topics | uniq | sort %}
-  <ul class="all-topics">
-    <li>
-      <a id="All" onclick="filterUsingTopic('All')">*All*</a>
-    </li>
-    {% for topic in all-topics %}
-    <li>
-      <a id="{{ topic }}" onclick="filterUsingTopic(this.id)" href="javascript:void(0);">{{ topic }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-  <p id="selectedTopic"></p>
-<div>
 
-<section class="overview">
-  <article class="description">
-    <p>At PubMob, you'll find a varied selection of engaging mob sessions, from hands-on coding to design workshops.</p>
-    <p>Click on the title of a session for further details. Click on the booking button to see a calendar of available dates.</p>
-    <p>Hover over an icon to see what it represents.</p>
+<section class="class-legend">
+  <article class="filters">
+    <div>
+      <p>Filter classes by topic: </p>
+      {% assign all-selections = "" | split: "" %}
+      {% for offering in site.offerings %}
+        {% assign all-selections = all-selections | concat: offering.technologies %}
+      {% endfor %}
+      {% assign all-selections = all-selections | uniq | sort %}
+      <ul class="all-selections">
+        <li>
+          <a id="All" onclick="filterUsingTopic('selectedTopic', 'selectedLanguage', 'All')">*All*</a>
+        </li>
+        {% for topic in all-selections %}
+        <li>
+          <a id="{{ selection }}" onclick="filterUsingTopic('selectedTopic', 'selectedLanguage', this.id)" href="javascript:void(0);">{{ selection }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div>
+      <p>Filter classes by programming language: </p>
+      {% assign all-selections = "" | split: "" %}
+      {% for offering in site.offerings %}
+        {% assign all-selections = all-selections | concat: offering.languages %}
+      {% endfor %}
+      {% assign all-selections = all-selections | uniq | sort %}
+      <ul class="all-selections">
+        <li>
+          <a id="All" onclick="filterUsingLanguage('selectedTopic', 'selectedLanguage', 'All')">*All*</a>
+        </li>
+        {% for selection in all-selections %}
+        <li>
+          <a id="{{ selection }}" onclick="filterUsingLanguage('selectedTopic', 'selectedLanguage', this.id)" href="javascript:void(0);">{{ selection }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </article>
   {% include skills-key.html %}
 </section>
-   
+
+<p>Showing all classes<span id="selectedTopic" /></p>
 {% assign id = 0 %}
 {% for offering in site.offerings %}
   {% assign id = id | plus:1 %}
