@@ -50,13 +50,8 @@ all-topics-tag: All
     {% endfor %}
   }
 
-  function filterUsingTopic(displayElement, languageDisplayElement, filterSelection) {
+  function filterUsingTopic(displayElement, filterSelection) {
     setFilterSelectionText(displayElement, filterSelection, ` for topic ${filterSelection}`)
-    renderPostsFor(filterSelection)
-  }
-
-  function filterUsingLanguage(displayElement, filterSelection) {
-    setFilterSelectionText(displayElement, filterSelection, ` for programming language ${filterSelection}`)
     renderPostsFor(filterSelection)
   }
 </script>
@@ -74,11 +69,11 @@ all-topics-tag: All
       {% assign all-selections = all-selections | uniq | sort %}
       <ul class="all-selections">
         <li>
-          <a id="All" onclick="filterUsingTopic('selectedTopic', 'selectedLanguage', 'All')">*All*</a>
+          <a id="All" onclick="filterUsingTopic('selectedTopic', 'All')">*All*</a>
         </li>
-        {% for topic in all-selections %}
+        {% for selection in all-selections %}
         <li>
-          <a id="{{ selection }}" onclick="filterUsingTopic('selectedTopic', 'selectedLanguage', this.id)" href="javascript:void(0);">{{ selection }}</a>
+          <a id="{{ selection }}" onclick="filterUsingTopic('selectedTopic', this.id)" href="javascript:void(0);">{{ selection }}</a>
         </li>
         {% endfor %}
       </ul>
@@ -91,16 +86,6 @@ all-topics-tag: All
         {% assign all-selections = all-selections | concat: offering.languages %}
       {% endfor %}
       {% assign all-selections = all-selections | uniq | sort %}
-      <ul class="all-selections">
-        <li>
-          <a id="All" onclick="filterUsingLanguage('selectedTopic', 'selectedLanguage', 'All')">*All*</a>
-        </li>
-        {% for selection in all-selections %}
-        <li>
-          <a id="{{ selection }}" onclick="filterUsingLanguage('selectedTopic', 'selectedLanguage', this.id)" href="javascript:void(0);">{{ selection }}</a>
-        </li>
-        {% endfor %}
-      </ul>
     </div>
   </article>
   {% include skills-key.html %}
