@@ -8,11 +8,16 @@
   .tender {
     grid-area: about-left;
     .tech {
-      @include ms-respond(font-size,0.6);
+      @include ms-respond(font-size,0.5);
     }
   }
   .pubDetails {
     grid-area: about-right;
+
+    figcaption {
+      @include ms-respond(font-size,0.6);
+      text-align: center;
+    }
   }
   .about {
     display: grid;
@@ -21,11 +26,19 @@
       "about-left about-right";
     grid-gap: 10px 20px;
 
+    .tagline {
+      font-style: italic;
+    }
+
     .tender {
       img { width: 66%; height: auto; }
     }
 
     .pubDetails {
+    }
+
+    .openEndedPubMarkdown {
+      margin-top: 20px;
     }
 
     @include respond-to(handhelds) { 

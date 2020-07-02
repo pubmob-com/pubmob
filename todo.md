@@ -12,11 +12,12 @@
 - accordion for filters?
 - still a few mountain photos
 - statements on alcohol. "public mob"
-- consistent technologies / topics list
 - smaller font on tech on pub page
-- styling with |
 - languages on pub page (icons)
+- page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
 
 done
 
+- consistent technologies / topics list
+- styling with |
 - hover help on tech buttons

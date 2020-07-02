@@ -1,4 +1,5 @@
 ---
+title: PubMob | Pubs
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +21,7 @@
     <div class="content">
       <div class="indent">
         <h1>Welcome to {{page.pub-name}}</h1>
-        <p><a href="https://www.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991/employee/{{page.calendar-app-id}}">Book now</a></p>
+        <p class="tagline">{{ page.tagline }}</p>
 
         <section class="about">
           <article class="tender">
@@ -30,21 +31,30 @@
             <h3>About Your Tender</h3>
             <p>{{ page.tender-blurb }}</p>
             <p class="tech">{{ page.topics | join: " | " }}</p>
+            <p class="tech">{{ page.languages | join: " | " }}</p>
           </article>
 
           <article class="pubDetails">
             <div>
-            {{ content | markdownify }}
+              <p>{{ page.pub-summary-twenty-words }}</p>
+              <figure>
+                <img src="/assets/images/{{ page.id }}/{{ page.pub-photo }}" />
+                <figcaption>{{ page.pub-photo-caption }}</figcaption>
+              </figure>
             </div>
           </article>
 
         </section>
 
+        <section class="openEndedPubMarkdown">
+          <div>
+          {{ content | markdownify }}
+          </div>
+        </section>
+
         <section class="class-legend">
           <article class="description">
-            <p>{{ page.tender-short-name }} provides the following mob sessions.</p>
-            <p>Click on the title of a session for further details. Click on the booking button to see a calendar of available dates.</p>
-            <p>Hover over an icon to see what it represents.</p>
+            <p><a href="https://www.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991/employee/{{page.calendar-app-id}}">Book now</a></p>
           </article>
           {% include skills-key.html %}
         </section>
@@ -54,7 +64,6 @@
             {% include offering.html %}
           {% endif %}
         {% endfor %}
-
 
         <h3>About <a href="{{page.company-link}}">{{ page.company }}</a></h3>
         <p>{{ page.company-blurb }}</p>
