@@ -2,7 +2,6 @@
 layout: offering
 tender-id: davidbernstein
 tender-name: David Bernstein
-unique-id: code-inspections
 name: Code Inspections
 twelve-words-or-fewer: Learn a bunch of techniques for working in your code.
 topics: [TDD, design patterns, domain modeling, refactoring]

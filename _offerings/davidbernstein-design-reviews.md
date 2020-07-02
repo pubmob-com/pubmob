@@ -2,7 +2,6 @@
 layout: offering
 tender-id: davidbernstein
 tender-name: David Bernstein
-unique-id: design-reviews
 name: Design Reviews
 twelve-words-or-fewer: Get an outside perspective on your design ideas
 topics: [TDD, design patterns, domain modeling, refactoring]

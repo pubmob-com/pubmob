@@ -2,7 +2,6 @@
 layout: offering
 tender-id: jefflangr
 tender-name: Jeff Langr
-unique-id: legacy-1
 name: Legacy Dependency Breaking Techniques
 twelve-words-or-fewer: Simple techniques to break dependencies making it hard to test
 topics: [TDD,refactoring,design]

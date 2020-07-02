@@ -20,25 +20,23 @@
   }
 
   function renderPost(id, offeringLanguages, offeringTopics, topicFilterSelection, languageFilterSelection) {
-console.log('id: ' + id)
-console.log('offering topics: ', offeringTopics)
-console.log('selected topic: ', topicFilterSelection)
     var element = document.getElementById(id);
-console.log('element: ', element)
-    var shouldRender = (topicFilterSelection === '' && languageFilterSelection === '') ||
-      (topicFilterSelection === '' && offeringLanguages.includes(languageFilterSelection)) ||
-      (offeringTopics.includes(topicFilterSelection) && languageFilterSelection == '') ||
-      (offeringTopics.includes(topicFilterSelection) && offeringLanguages.includes(languageFilterSelection));
-    renderIf(element, shouldRender);
+    if (element) {
+      var shouldRender = (topicFilterSelection === '' && languageFilterSelection === '') ||
+        (topicFilterSelection === '' && offeringLanguages.includes(languageFilterSelection)) ||
+        (offeringTopics.includes(topicFilterSelection) && languageFilterSelection == '') ||
+        (offeringTopics.includes(topicFilterSelection) && offeringLanguages.includes(languageFilterSelection));
+      renderIf(element, shouldRender);
+    }
   }
 
   function renderPosts(topicFilterSelection, languageFilterSelection) {
-    var id = 0;
     {% for offering in site.offerings %}
       renderPost("{{ offering.id }}",
         {{ offering.languages | jsonify }}, 
         {{ offering.topics | jsonify }},
-        topicFilterSelection, languageFilterSelection);
+        topicFilterSelection, 
+        languageFilterSelection);
     {% endfor %}
   }
 

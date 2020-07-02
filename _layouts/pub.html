@@ -69,10 +69,8 @@ title: PubMob | Pubs
           <section>
             {% include class-legend.html %}
 
-            {% assign id = 0 %}
             {% for offering in site.offerings %}
               {% if offering.tender-id == page.tender-id %}
-                {% assign id = id | plus:1 %}
                 {% include offering.html %}
               {% endif %}
             {% endfor %}

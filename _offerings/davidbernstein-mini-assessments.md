@@ -2,7 +2,6 @@
 layout: offering
 tender-id: davidbernstein
 tender-name: David Bernstein
-unique-id: mini-assessments
 name: Mini-Assessments
 twelve-words-or-fewer: Find cost-effective ways to improve your software development processes.
 topics: [TDD, design patterns, domain modeling, refactoring]
