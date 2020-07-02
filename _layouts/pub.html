@@ -21,7 +21,9 @@ title: PubMob | Pubs
     <div class="content">
       <div class="indent">
         <h1>Welcome to {{page.pub-name}}</h1>
+        {% if page.tagline %}
         <p class="tagline">{{ page.tagline }}</p>
+        {% endif %}
 
         <section class="about">
           <article class="tender">
@@ -30,17 +32,28 @@ title: PubMob | Pubs
 
             <h3>About Your Tender</h3>
             <p>{{ page.tender-blurb }}</p>
+            <div>
+            <p>{{ page.tender-short-name }} offers sessions on the following topics:</p>
             <p class="tech">{{ page.topics | join: " | " }}</p>
-            <p class="tech">{{ page.languages | join: " | " }}</p>
+            {% assign languages-length = page.languages | size %}
+            {% if languages-length > 0 %}
+              <p>And is versed in the following languages:</p>
+              <p class="tech">{{ page.languages | join: " | " }}</p>
+            {% endif %}
+            </div>
           </article>
 
           <article class="pubDetails">
             <div>
               <p>{{ page.pub-summary-twenty-words }}</p>
+              {% if page.pub-photo %}
               <figure>
                 <img src="/assets/images/{{ page.id }}/{{ page.pub-photo }}" />
+                {% if page.pub-photo-caption %}
                 <figcaption>{{ page.pub-photo-caption }}</figcaption>
+                {% endif %}
               </figure>
+              {% endif %}
             </div>
           </article>
 

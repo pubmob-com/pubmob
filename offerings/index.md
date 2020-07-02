@@ -23,6 +23,8 @@ all-topics-tag: All
 ---
 <h1 class="text-center">Our pub sessions.</h1>
 <p>At PubMob, you'll find a varied selection of engaging mob sessions, from hands-on coding to design workshops.</p>
+<p>Most of our tenders can teach their hands-on coding classes in a number of different programming languages. However, a given mob sesion is almost always run with a single programming language pre-determined by the pub tender. Check the calendar listings for their next session in your language of choice!</p>
+<p>(You'll also find that PubMob sessions are great ways to get your fingers wet in a new language.)</p>
 
 <script type="text/javascript">
   function setText(id, text) {
