@@ -27,11 +27,10 @@ all-topics-tag: All
 <script type="text/javascript">
   function setText(id, text) {
     var topicHeader = document.getElementById(id)
-    topicHeader.innerHTML = text
-  }
-
-  function setFilterSelectionText(displayElement, filterSelection) {
-    setText(displayElement, filterSelection == 'All' ? '' : filterSelection)
+    if (topicHeader)
+      topicHeader.innerHTML = text
+    else
+      console.log('id not found: ', id)
   }
 
   function renderIf(element, condition) {
@@ -50,13 +49,27 @@ all-topics-tag: All
     {% endfor %}
   }
 
-  function clearFilterSelection(elementId) {
-    setFilterSelectionText(elementId, '');
-    renderPostsFor('All')
+  function renderPostsForLanguage(filterSelection) {
+    var id = 0;
+    {% for offering in site.offerings %}
+      var element = document.getElementById(++id)
+      renderIfContains(element, {{ offering.languages | jsonify }}, filterSelection)
+    {% endfor %}
   }
 
-  function filterUsingTopic(displayElement, filterSelection) {
-    setFilterSelectionText(displayElement, filterSelection)
+  function clearFilterSelections(elementIds) {
+    for (let i = 0; i < elementIds.length; i++)
+      setText(elementIds[i], '');
+    renderPostsFor('All');
+  }
+
+  function filterUsingLanguage(displayElementId, filterSelection) {
+    setText(displayElementId, filterSelection)
+    renderPostsForLanguage(filterSelection)
+  }
+
+  function filterUsingTopic(displayElementId, filterSelection) {
+    setText(displayElementId, filterSelection)
     renderPostsFor(filterSelection)
   }
 </script>
@@ -73,9 +86,6 @@ all-topics-tag: All
       {% endfor %}
       {% assign all-selections = all-selections | uniq | sort %}
       <ul class="all-selections">
-        <li>
-          <a id="All" onclick="filterUsingTopic('selectedTopic', 'All')">*All*</a>
-        </li>
         {% for selection in all-selections %}
         <li>
           <a id="{{ selection }}" onclick="filterUsingTopic('selectedTopic', this.id)" href="javascript:void(0);">{{ selection }}</a>
@@ -85,19 +95,28 @@ all-topics-tag: All
     </div>
 
     <div>
-      <p>Filter classes by programming language: </p>
+      <p>Refine filter by programming language: </p>
       {% assign all-selections = "" | split: "" %}
       {% for offering in site.offerings %}
         {% assign all-selections = all-selections | concat: offering.languages %}
       {% endfor %}
       {% assign all-selections = all-selections | uniq | sort %}
+      <ul class="all-selections">
+        {% for selection in all-selections %}
+        <li>
+          <a id="{{ selection }}" onclick="filterUsingLanguage('selectedLanguage', this.id)" href="javascript:void(0);">{{ selection }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+
     </div>
   </article>
   {% include skills-key.html %}
 </section>
 
-<button onclick="clearFilterSelection('selectedTopic')">Clear</button>
-<p>Showing all classes<span id="selectedTopic" /></p>
+<button onclick="clearFilterSelections(['selectedTopic', 'selectedLanguage'])">Clear filters</button>
+<p>Showing all classes on topic <span id="selectedTopic" /></p>
+<p>Using the programming language <span id="selectedLanguage" /></p>
 
 {% assign id = 0 %}
 {% for offering in site.offerings %}

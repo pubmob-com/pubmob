@@ -13,9 +13,10 @@
 - still a few mountain photos
 - statements on alcohol. "public mob"
 - consistent technologies / topics list
+- smaller font on tech on pub page
+- styling with |
+- languages on pub page (icons)
 
 done
 
 - hover help on tech buttons
-- smaller font on tech on pub page
-- styling with |
