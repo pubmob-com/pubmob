@@ -11,6 +11,8 @@
 - menu sucks a bit
 - accordion for filters?
 - still a few mountain photos
+- statements on alcohol. "public mob"
+- consistent technologies / topics list
 
 done
 

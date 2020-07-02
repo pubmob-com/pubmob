@@ -30,8 +30,8 @@ all-topics-tag: All
     topicHeader.innerHTML = text
   }
 
-  function setFilterSelectionText(displayElement, filterSelection, description) {
-    setText(displayElement, filterSelection == 'All' ? '' : description)
+  function setFilterSelectionText(displayElement, filterSelection) {
+    setText(displayElement, filterSelection == 'All' ? '' : filterSelection)
   }
 
   function renderIf(element, condition) {
@@ -50,8 +50,13 @@ all-topics-tag: All
     {% endfor %}
   }
 
+  function clearFilterSelection(elementId) {
+    setFilterSelectionText(elementId, '');
+    renderPostsFor('All')
+  }
+
   function filterUsingTopic(displayElement, filterSelection) {
-    setFilterSelectionText(displayElement, filterSelection, ` for topic ${filterSelection}`)
+    setFilterSelectionText(displayElement, filterSelection)
     renderPostsFor(filterSelection)
   }
 </script>
@@ -91,7 +96,9 @@ all-topics-tag: All
   {% include skills-key.html %}
 </section>
 
+<button onclick="clearFilterSelection('selectedTopic')">Clear</button>
 <p>Showing all classes<span id="selectedTopic" /></p>
+
 {% assign id = 0 %}
 {% for offering in site.offerings %}
   {% assign id = id | plus:1 %}
