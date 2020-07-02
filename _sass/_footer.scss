@@ -1,16 +1,3 @@
-footer .logo {
-  @include flexbox();
-  @include flex-justify-content(center);
-  @media only screen and (min-width: $breakpoint-tablet) { justify-content: start; }
-  margin-bottom: 1em;
-}
-
-.small {
-  @include ms-respond(font-size,.5);
-  font-weight: 400;
-  white-space: nowrap;
-}
-
 .contactbox.flex {
   @include flexbox();
   @include respond-to(handhelds) { 
@@ -31,6 +18,7 @@ footer .logo {
 }
 
 footer {
+  white-space: nowrap;
   border-top-style: solid;
   border-top-color: $DarkBlue;
   border-top-width: 2px;
@@ -39,6 +27,18 @@ footer {
   padding: 0;
 
   background-color: $footer-background;
+
+  .logo {
+    @include flexbox();
+    @include flex-justify-content(center);
+    @media only screen and (min-width: $breakpoint-tablet) { justify-content: right; }
+    margin-bottom: 1em;
+
+    img {
+      object-fit: contain;
+      max-width: 330px;
+    }
+  }
 
   .footerbar {
     border-top-style: solid;
@@ -65,46 +65,47 @@ footer {
     @include respond-to(max) {
       text-align: right;
     }
+  }
 
-    ul.social {
-      padding: 0;
-      margin: 0 0 2em 0;
+  ul.social {
+    padding: 0;
+    margin: 0 0 2em 0;
+  }
+
+  ul.social li {
+    display: inline;
+    padding-right: .7em;
+    &:last-child { padding-right: 0; }
+    a { @include link-styles($footer-action-color, $footer-link-color); }
+  }
+
+  ul.social i {
+    font-weight: 400;
+    @include ms-respond(font-size, 3.5);
+  }
+
+  .copyright {
+    padding: 0;
+    text-align: center;
+    @include respond-to(handhelds) { 
+      margin: 0;
+      @include ms-respond(font-size, -0.3);
     }
-
-    ul.social li {
-      display: inline;
-      padding-right: .7em;
-      &:last-child { padding-right: 0; }
-      a { @include link-styles($footer-action-color, $footer-link-color); }
+    @include respond-to(wide-handhelds) {
+      margin: 0;
+      @include ms-respond(font-size, -0.5);
     }
-
-    ul.social i {
-      font-weight: 400;
-      @include ms-respond(font-size, 3.5);
+    @include respond-to(tablets) {
+      margin: 0;
+      @include ms-respond(font-size, -0.3);
     }
-
-    .copyright {
-      padding: 0;
-      @include respond-to(handhelds) { 
-        margin: 0;
-        @include ms-respond(font-size, -0.3);
-      }
-      @include respond-to(wide-handhelds) {
-        margin: 0;
-        @include ms-respond(font-size, -0.5);
-      }
-      @include respond-to(tablets) {
-        margin: 0;
-        @include ms-respond(font-size, -0.3);
-      }
-      @include respond-to(desktops) { 
-         margin: 3em 0 0 0;
-        @include ms-respond(font-size, -0.3);
-      }
-      @include respond-to(max) {
-        margin: 3em 0 0 0;
-        @include ms-respond(font-size, -0.3);
-      }
+    @include respond-to(desktops) { 
+       margin: 3em 0 0 0;
+      @include ms-respond(font-size, -0.3);
+    }
+    @include respond-to(max) {
+      margin: 3em 0 0 0;
+      @include ms-respond(font-size, -0.3);
     }
   }
 }

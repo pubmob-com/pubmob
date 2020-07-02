@@ -11,6 +11,7 @@
 - remove heavy alcohol
 - facebook vanity URL
 - larger logo
+- Christine new brain icon
 
 done:
 

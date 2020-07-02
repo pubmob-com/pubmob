@@ -1,21 +1,23 @@
 <div class="footer-grid">
   <div class="column-left">
-    <script type="text/javascript" src="https://www.flexbooker.com/js/lib/iframeResizer.min.js"></script><script>iFrameResize({log:false}, '#flexbookeriframe')</script><iframe id="flexbookeriframe" src="https://www.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991" style="width:100%;min-height:450px"></iframe>
-  </div>
-  <div class="column-right">
-    {% include logo.html %}
-    <div class="global">
-      <ul>
-        <li>Contact: <a href="{{ site.email.subject }}">{{ site.email.address }}</a></li>
-        <li>Code of conduct</li>
-        <li>The pub motif vs. alcohol</li>
-      </ul>
+    <div class="logo">
+        <a href="/" id="logo-link">
+          <img src="/assets/images/logos/PubMob_1100x667_transp.png" alt="PubMob" />
+        </a>
     </div>
+    <ul>
+      <li>Contact: <a href="{{ site.email.subject }}">{{ site.email.address }}</a></li>
+      <li>Code of conduct</li>
+      <li>The pub motif vs. alcohol</li>
+    </ul>
     <ul class="social">
       <li><a href="{{site.twitter}}"><p><i class='fab fa-twitter-square'></i></p></a></li>
       <li><a href="{{site.github}}"><p><i class='fab fa-github-square'></i></p></a></li>
       <li><a href="{{site.facebook}}"><p><i class='fab fa-facebook'></i></p></a></li>
     </ul>
-    <p class="copyright"><span>Copyright &copy; {{ 'now' | date: "%Y"}} Langr Software Solutions.</span> <span>All rights reserved</span></p>
+  </div>
+  <div class="column-right">
+    <script type="text/javascript" src="https://www.flexbooker.com/js/lib/iframeResizer.min.js"></script><script>iFrameResize({log:false}, '#flexbookeriframe')</script><iframe id="flexbookeriframe" src="https://www.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991" style="width:100%;min-height:450px"></iframe>
   </div>
 </div>
+<p class="copyright"><span>Copyright &copy; {{ 'now' | date: "%Y"}} Langr Software Solutions.</span> <span>All rights reserved</span></p>
