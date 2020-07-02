@@ -22,11 +22,8 @@ title-bar-text: PubMob | The Pubs
 ---
 <div class="container">
 	<div class="row">
-		<div class="heading-title text-center">
-			<h3>Our pub owners.</h3>
-			<p class="p-top half-txt">Each of our pubs is owned by a tender with extensive experience in helping development teams deliver high-quality software.
-      </p>
-		</div>
+    <h1 class="text-center">Our pub owners.</h1>
+    <p>Each of our pubs is owned by a tender with extensive experience in helping development teams deliver high-quality software.</p>
 <!-- 
   It might make sense for the team hover to be shrunk down so that it does *not*
   cover the pub name that now appears about the photo.

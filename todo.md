@@ -2,15 +2,14 @@
 - code of conduct
 - layout of bottom
 - calendar links actual
-- flesh out Jeff's page with bar image, etc.
 - page headers consistent text font
 - menu sucks a bit
 - accordion for filters?
 - still a few mountain photos
 - statements on alcohol. "public mob"
-- smaller font on tech on pub page
 - page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
 - stupid mini menu overwrites top part of page
+- remove heavy alcohol
 
 done
 
@@ -22,3 +21,5 @@ done
     - by programming language
     - put into legend section
 - languages on pub page (icons)
+- flesh out Jeff's page with bar image, etc.
+- smaller font on tech on pub page
