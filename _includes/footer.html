@@ -1,19 +1,16 @@
 <div class="footer-grid">
   <div class="column-left">
-    {% include logo.html %}
-    <div class="contactbox flex">
-
     <script type="text/javascript" src="https://www.flexbooker.com/js/lib/iframeResizer.min.js"></script><script>iFrameResize({log:false}, '#flexbookeriframe')</script><iframe id="flexbookeriframe" src="https://www.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991" style="width:100%;min-height:450px"></iframe>
-      <ul class="contact">
-        <li>
-          <a href="{{ site.email.subject }}">
-             <span class='small'>{{ site.email.address }}</span>
-          </a>
-        </li>
-      </ul>
-    </div>
   </div>
   <div class="column-right">
+    {% include logo.html %}
+    <div class="global">
+      <ul>
+        <li>Contact: <a href="{{ site.email.subject }}">{{ site.email.address }}</a></li>
+        <li>Code of conduct</li>
+        <li>The pub motif vs. alcohol</li>
+      </ul>
+    </div>
     <ul class="social">
       <li><a href="{{site.twitter}}"><p><i class='fab fa-twitter-square'></i></p></a></li>
       <li><a href="{{site.github}}"><p><i class='fab fa-github-square'></i></p></a></li>

@@ -17,16 +17,16 @@ footer .logo {
     @include flex-justify-content(center);
   }
   @include respond-to(wide-handhelds) {
-    @include flex-justify-content(left);
+    @include flex-justify-content(right);
   }
   @include respond-to(tablets) {
-    @include flex-justify-content(left);
+    @include flex-justify-content(right);
   }
   @include respond-to(desktops) { 
-    @include flex-justify-content(left);
+    @include flex-justify-content(right);
   }
   @include respond-to(max) {
-    @include flex-justify-content(left);
+    @include flex-justify-content(right);
   }
 }
 
@@ -47,55 +47,11 @@ footer {
   }
 
   .column-left {
-    li {
-      display: block;
-      padding: 0;
-      margin: 0;
-      a { @include link-styles($footer-action-color, $footer-link-color); }
-    }
-
-    ul.contact {
-      padding: 0;
-      @include respond-to(handhelds) { 
-        margin: 1em 0 1em 0;
-      }
-      @include respond-to(wide-handhelds) {
-        margin: 0.7em 0 0 0;
-      }
-      @include respond-to(tablets) {
-        margin: 0.7em 0 0 0;
-      }
-      @include respond-to(desktops) { 
-        margin: 0.7em 0 0 0;
-      }
-      @include respond-to(max) {
-        margin: 0.7em 0 0 0;
-      }
-    }
-
-    ul.contact li {
-      @include respond-to(handhelds) { 
-        padding-bottom: .5em;
-      }
-      @include respond-to(wide-handhelds) {
-        padding-bottom: .2em;
-      }
-      @include respond-to(tablets) {
-        padding-bottom: .2em;
-      }
-      @include respond-to(desktops) { 
-        padding-bottom: .2em;
-      }
-      @include respond-to(max) {
-        padding-bottom: .2em;
-      }
-      &:last-child { padding-bottom: 0; }
-    }
   }
 
   .column-right {
     @include respond-to(handhelds) { 
-      text-align: center;
+      text-align: right;
     }
     @include respond-to(wide-handhelds) {
       text-align: right;
@@ -110,12 +66,6 @@ footer {
       text-align: right;
     }
 
-    li {
-      display: block;
-      padding: 0;
-      margin: 0;
-    }
-
     ul.social {
       padding: 0;
       margin: 0 0 2em 0;
@@ -128,7 +78,7 @@ footer {
       a { @include link-styles($footer-action-color, $footer-link-color); }
     }
 
-    i {
+    ul.social i {
       font-weight: 400;
       @include ms-respond(font-size, 3.5);
     }

@@ -2,7 +2,6 @@
 - code of conduct
 - layout of bottom
 - calendar links actual
-- page headers consistent text font
 - menu sucks a bit
 - accordion for filters?
 - still a few mountain photos
@@ -10,8 +9,10 @@
 - page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
 - stupid mini menu overwrites top part of page
 - remove heavy alcohol
+- facebook vanity URL
+- larger logo
 
-done
+done:
 
 - consistent technologies / topics list
 - styling with |
@@ -23,3 +24,4 @@ done
 - languages on pub page (icons)
 - flesh out Jeff's page with bar image, etc.
 - smaller font on tech on pub page
+- page headers consistent text font
