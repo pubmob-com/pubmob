@@ -72,11 +72,17 @@ title: PubMob | Pubs
           {% include skills-key.html %}
         </section>
 
-        {% for offering in site.offerings %}
-          {% if offering.tender-id == page.tender-id %}
-            {% include offering.html %}
-          {% endif %}
-        {% endfor %}
+        <section>
+
+          <p>Check the calendar listings for the next session from {{ page.tender-short-name }} in your language of choice!</p>
+          <p>(You'll also find that PubMob sessions are great ways to get your fingers wet in a new language.)</p>
+
+          {% for offering in site.offerings %}
+            {% if offering.tender-id == page.tender-id %}
+              {% include offering.html %}
+            {% endif %}
+          {% endfor %}
+        </section>
 
         <h3>About <a href="{{page.company-link}}">{{ page.company }}</a></h3>
         <p>{{ page.company-blurb }}</p>
