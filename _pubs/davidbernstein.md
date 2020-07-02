@@ -18,6 +18,6 @@ company: To Be Agile
 company-blurb: "To Be Agile provides Agile technical coaching, training, and consulting focusing on Extreme Programming practices that support rapidly building maintainable code."
 company-link: http://ToBeAgile.com
 company-logo-url: https://tobeagile.com/wp-content/uploads/2020/06/to-be-agile-logo-words.png
-technologies: [BDD, design patterns, test-first development, feature refinement, refactoring]
+topics: [BDD, design patterns, test-first development, feature refinement, refactoring]
 ---
 Plus, if you just want to get a second opinion or different perspective schedule a call with me. 

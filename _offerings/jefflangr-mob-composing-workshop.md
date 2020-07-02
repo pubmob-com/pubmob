@@ -4,7 +4,7 @@ tender-id: jefflangr
 tender-name: Jeff Langr
 name: From Mob to Symphony--A Mob Composing Workshop
 twelve-words-or-fewer: "Not a programmer? Learn firsthand the joy of a mob. Come compose with us."
-technologies: [mobbing]
+topics: [mobbing]
 languages: []
 graphic: 
 public-or-private: both

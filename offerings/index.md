@@ -45,12 +45,12 @@ all-topics-tag: All
     element.style.display = condition ? '' : 'none'
   }
 
-  function renderPost(id, offeringLanguages, offeringTechnologies, topicFilterSelection, languageFilterSelection) {
+  function renderPost(id, offeringLanguages, offeringTopics, topicFilterSelection, languageFilterSelection) {
     var element = document.getElementById(id);
     var shouldRender = (topicFilterSelection === '' && languageFilterSelection === '') ||
       (topicFilterSelection === '' && offeringLanguages.includes(languageFilterSelection)) ||
-      (offeringTechnologies.includes(topicFilterSelection) && languageFilterSelection == '') ||
-      (offeringTechnologies.includes(topicFilterSelection) && offeringLanguages.includes(languageFilterSelection));
+      (offeringTopics.includes(topicFilterSelection) && languageFilterSelection == '') ||
+      (offeringTopics.includes(topicFilterSelection) && offeringLanguages.includes(languageFilterSelection));
     renderIf(element, shouldRender);
   }
 
@@ -59,7 +59,7 @@ all-topics-tag: All
     {% for offering in site.offerings %}
       renderPost(++id, 
         {{ offering.languages | jsonify }}, 
-        {{ offering.technologies | jsonify }},
+        {{ offering.topics | jsonify }},
         topicFilterSelection, languageFilterSelection);
     {% endfor %}
   }
@@ -92,15 +92,13 @@ all-topics-tag: All
   }
 </script>
 
-<!-- TODO rename technologies to topics in offerings MD files -->
-
 <section class="class-legend">
   <article class="filters">
     <div>
       <p>Filter classes by topic: </p>
       {% assign all-selections = "" | split: "" %}
       {% for offering in site.offerings %}
-        {% assign all-selections = all-selections | concat: offering.technologies %}
+        {% assign all-selections = all-selections | concat: offering.topics %}
       {% endfor %}
       {% assign all-selections = all-selections | uniq | sort %}
       <ul class="all-selections">

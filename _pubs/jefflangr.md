@@ -17,7 +17,7 @@ company: Langr Software Solutions, Inc.
 company-blurb: "Langr Software Solutions provides training, coaching, and development services for software development teams."
 company-link: http://langrsoft.com
 company-logo-url: http://langrsoft.com/assets/images/home/logo-small.png
-technologies: [TDD,Java,C++,C#,Clojure,Kotlin,JavaScript,React,legacy,design]
+topics: [TDD,Java,C++,C#,Clojure,Kotlin,JavaScript,React,legacy,design]
 calendar-app-id: JeffLangr
 ---
 Don't see what you like? Ask. It might just be behind the bar.

@@ -17,7 +17,7 @@ company: Dustin's Great Consulting
 company-blurb: "We do it all"
 company-link: 
 company-logo-url: 
-technologies: [coaching,TDD,Java,smartypantsing]
+topics: [coaching,TDD,Java,smartypantsing]
 ---
 Come to Dustin's Dustup and be prepared to get plastered on knowledge!
 

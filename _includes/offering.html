@@ -27,7 +27,7 @@
           {% endif %}
       </div>
       <div class="topics">
-        <p>Topics: {{ offering.technologies | array_to_sentence_string }}</p>
+        <p>Topics: {{ offering.topics | array_to_sentence_string }}</p>
       </div>
       {% if offering.languages.size > 0 %}
         <div class="programming-language">

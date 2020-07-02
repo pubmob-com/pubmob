@@ -4,7 +4,7 @@ tender-id: jefflangr
 tender-name: Jeff Langr
 name: Test Abstraction in TDD
 twelve-words-or-fewer: "Ensure your tests stay sustainable."
-technologies: [TDD]
+topics: [TDD]
 languages: [java,cpp,csharp,clojure,kotlin,javascript]
 graphic: 
 public-or-private: both
