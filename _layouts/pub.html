@@ -17,88 +17,87 @@ title: PubMob | Pubs
 
     {{ page.pre-content }}
 
-  <div class="grid">
-    <div class="content">
-      <div class="indent">
-        <h1>Welcome to {{page.pub-name}}</h1>
-        {% if page.tagline %}
-        <p class="tagline">{{ page.tagline }}</p>
-        {% endif %}
+    <div class="grid">
+      <div class="content">
+        <div class="indent">
+          <h1>Welcome to {{page.pub-name}}</h1>
+          {% if page.tagline %}
+          <p class="tagline">{{ page.tagline }}</p>
+          {% endif %}
 
-        <section class="about">
-          <article class="tender">
-            <h3>Your tender: {{page.tender-name}}</h3>
-            <div><img src="/assets/images/{{ page.id }}.{{page.tender-photo-extension}}" /></div>
+          <section class="about">
+            <article class="tender">
+              <h3>Your tender: {{page.tender-name}}</h3>
+              <div><img src="/assets/images/{{ page.id }}.{{page.tender-photo-extension}}" /></div>
 
-            <h3>About Your Tender</h3>
-            <p>{{ page.tender-blurb }}</p>
-            <div>
-            <p>{{ page.tender-short-name }} offers sessions on the following topics:</p>
-            <p class="tech">{{ page.topics | join: " | " }}</p>
-            {% assign languages-length = page.languages | size %}
-            {% if languages-length > 0 %}
-              <p>And is versed in the following languages:</p>
-              <p class="tech">{{ page.languages | join: " | " }}</p>
-            {% endif %}
-            </div>
-          </article>
-
-          <article class="pubDetails">
-            <div>
-              <p>{{ page.pub-summary-twenty-words }}</p>
-              {% if page.pub-photo %}
-              <figure>
-                <img src="/assets/images/{{ page.id }}/{{ page.pub-photo }}" />
-                {% if page.pub-photo-caption %}
-                <figcaption>{{ page.pub-photo-caption }}</figcaption>
-                {% endif %}
-              </figure>
+              <h3>About Your Tender</h3>
+              <p>{{ page.tender-blurb }}</p>
+              <div>
+              <p>{{ page.tender-short-name }} offers sessions on the following topics:</p>
+              <p class="tech">{{ page.topics | join: " | " }}</p>
+              {% assign languages-length = page.languages | size %}
+              {% if languages-length > 0 %}
+                <p>And is versed in the following languages:</p>
+                <p class="tech">{{ page.languages | join: " | " }}</p>
               {% endif %}
+              </div>
+            </article>
+
+            <article class="pubDetails">
+              <div>
+                <p>{{ page.pub-summary-twenty-words }}</p>
+                {% if page.pub-photo %}
+                <figure>
+                  <img src="/assets/images/{{ page.id }}/{{ page.pub-photo }}" />
+                  {% if page.pub-photo-caption %}
+                  <figcaption>{{ page.pub-photo-caption }}</figcaption>
+                  {% endif %}
+                </figure>
+                {% endif %}
+              </div>
+            </article>
+
+          </section>
+
+          <section class="openEndedPubMarkdown">
+            <div>
+            {{ content | markdownify }}
             </div>
-          </article>
+          </section>
 
-        </section>
+          <section class="class-legend">
+            <article class="description">
+              <p><a href="https://www.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991/employee/{{page.calendar-app-id}}">Book now</a></p>
+            </article>
+            {% include skills-key.html %}
+          </section>
 
-        <section class="openEndedPubMarkdown">
-          <div>
-          {{ content | markdownify }}
-          </div>
-        </section>
+          <section>
 
-        <section class="class-legend">
-          <article class="description">
-            <p><a href="https://www.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991/employee/{{page.calendar-app-id}}">Book now</a></p>
-          </article>
-          {% include skills-key.html %}
-        </section>
+            <p>Check the calendar listings for the next session from {{ page.tender-short-name }} in your language of choice!</p>
+            <p>(You'll also find that PubMob sessions are great ways to get your fingers wet in a new language.)</p>
 
-        <section>
+            {% for offering in site.offerings %}
+              {% if offering.tender-id == page.tender-id %}
+                {% include offering.html %}
+              {% endif %}
+            {% endfor %}
+          </section>
 
-          <p>Check the calendar listings for the next session from {{ page.tender-short-name }} in your language of choice!</p>
-          <p>(You'll also find that PubMob sessions are great ways to get your fingers wet in a new language.)</p>
+          <h3>About <a href="{{page.company-link}}">{{ page.company }}</a></h3>
+          <p>{{ page.company-blurb }}</p>
+          <a href="{{ page.company-link }}"><img src="{{ page.company-logo-url }}" alt="{{ page.company }}"/></a>
 
-          {% for offering in site.offerings %}
-            {% if offering.tender-id == page.tender-id %}
-              {% include offering.html %}
-            {% endif %}
-          {% endfor %}
-        </section>
+          {{ page.post-content }}
 
-        <h3>About <a href="{{page.company-link}}">{{ page.company }}</a></h3>
-        <p>{{ page.company-blurb }}</p>
-        <a href="{{ page.company-link }}"><img src="{{ page.company-logo-url }}" alt="{{ page.company }}"/></a>
-
-		    {{ page.post-content }}
-
-		     <div>
-		    </div>  
-			  
-          </div>
+           <div>
+          </div>  
+          
         </div>
       </div>
-	  
+    </div>
 	
-     <footer>
+    <footer>
       <div class="footerbar"></div>
       <div class="grid">
         <div class="content">
