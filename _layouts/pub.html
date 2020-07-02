@@ -65,20 +65,14 @@ title: PubMob | Pubs
             </div>
           </section>
 
-          <section class="class-legend">
-            <article class="description">
-              <p><a href="https://www.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991/employee/{{page.calendar-app-id}}">Book now</a></p>
-            </article>
-            {% include skills-key.html %}
-          </section>
 
           <section>
+            {% include class-legend.html %}
 
-            <p>Check the calendar listings for the next session from {{ page.tender-short-name }} in your language of choice!</p>
-            <p>(You'll also find that PubMob sessions are great ways to get your fingers wet in a new language.)</p>
-
+            {% assign id = 0 %}
             {% for offering in site.offerings %}
               {% if offering.tender-id == page.tender-id %}
+                {% assign id = id | plus:1 %}
                 {% include offering.html %}
               {% endif %}
             {% endfor %}
@@ -90,9 +84,8 @@ title: PubMob | Pubs
 
           {{ page.post-content }}
 
-           <div>
+            <div>
           </div>  
-          
         </div>
       </div>
     </div>

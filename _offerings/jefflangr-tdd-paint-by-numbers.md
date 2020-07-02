@@ -2,6 +2,7 @@
 layout: offering
 tender-id: jefflangr
 tender-name: Jeff Langr
+unique-id: tdd-intro
 name: TDD Paint by Numbers
 twelve-words-or-fewer: "Your first TDD experience: Learn refactoring & the Red-Green-Refactor Cycle."
 topics: [TDD]

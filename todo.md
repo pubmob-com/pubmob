@@ -15,6 +15,7 @@
 - smaller font on tech on pub page
 - languages on pub page (icons)
 - page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
+- stupid mini menu overwrites top part of page
 
 done
 
