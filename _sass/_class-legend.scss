@@ -1,0 +1,37 @@
+.class-legend {
+  display: grid;
+  grid-template-columns: minmax(68%,1fr) minmax(31%,1fr);
+
+  margin-bottom: 10px;
+
+  .description {
+    padding: 50px 10px 10px 0;
+  }
+
+  .filters {
+    border: solid 1px #000;
+    margin-right: 10px;
+    padding: 10px;
+
+    .active-filters .selectedTopicFilter { display: block; }
+    .active-filters .selectedProgrammingLanguageFilter { display: block; }
+    .active-filters .clearFiltersButton { display: block; }
+
+    ul {
+      overflow: auto;
+      list-style-type: none;
+    }
+     
+    li {
+      height: 25px; 
+      float: left; 
+      margin-right: 0px; 
+      border-right: 1px solid #aaa; 
+      padding: 0 10px;
+    }
+         
+    li:last-child {
+      border-right: none;
+    }
+  }
+}

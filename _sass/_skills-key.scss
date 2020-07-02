@@ -1,38 +1,26 @@
-.class-legend {
-  display: grid;
-  grid-template-columns: minmax(68%,1fr) minmax(31%,1fr);
-
-  border: solid 1px #000;
-  margin-bottom: 10px;
-
-  .description {
-    padding: 50px 10px 10px 0;
+.key {
+  p {
+    @include ms-respond(font-size,0.6);
   }
+  .top {
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+    border-bottom-width: 1px;
+    padding-bottom: 10px;
+  }
+  margin-top: 40px;
+  padding: 10px 10px 10px 10px;
 
-  .key {
-    p {
-      @include ms-respond(font-size,0.6);
-    }
-    .top {
-      border-bottom-style: solid;
-      border-bottom-color: #000;
-      border-bottom-width: 1px;
-      padding-bottom: 10px;
-    }
-    margin-top: 40px;
-    padding: 10px 10px 10px 10px;
+  display: grid;
+  grid-template-columns: minmax(10%,1ft) minmax(90%,1fr);
 
-    display: grid;
-    grid-template-columns: minmax(10%,1ft) minmax(90%,1fr);
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
 
-    border-style: solid;
-    border-color: #000;
-    border-width: 1px;
-
-    .small-icon {
-      margin-right: 10px;
-      width: 32px;
-      max-width: 32px;
-    }
+  .small-icon {
+    margin-right: 10px;
+    width: 32px;
+    max-width: 32px;
   }
 }
