@@ -1,6 +1,5 @@
 - video links
 - code of conduct
-- layout of bottom
 - calendar links actual
 - menu sucks a bit
 - accordion for filters?
@@ -10,8 +9,7 @@
 - stupid mini menu overwrites top part of page
 - remove heavy alcohol
 - facebook vanity URL
-- larger logo
-- Christine new brain icon
+- fix header / logo stuff properly, not a hack (right now it is a max-width image)
 
 done:
 
@@ -26,3 +24,6 @@ done:
 - flesh out Jeff's page with bar image, etc.
 - smaller font on tech on pub page
 - page headers consistent text font
+- layout of bottom
+- larger logo
+- Christine new brain icon

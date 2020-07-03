@@ -26,6 +26,8 @@ header .column-left {
 }
 
 header .logo {
+  image-fit: contain;
+  max-width: 320px;
   padding-left: $base-spacing;
 
   @include respond-to(handhelds) { 
