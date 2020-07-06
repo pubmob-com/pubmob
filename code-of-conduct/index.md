@@ -20,6 +20,20 @@ title-bar-color: title-bar-light-green
 ---
 # Code of conduct
 
-Your admission to a PubMob.com session is dependent upon you accepting the terms & conditions, which includes adherence to the code of conduct. 
+PubMob sessions are lively, interactive events. Our goal is to allow you to learn and engage in a fun but safe manner.
 
-** More to come **
+Your admission to a PubMob.com session is dependent upon you accepting the terms & conditions, which includes adherence to the code of conduct.
+
+PubMob is dedicated to providing a harassment-free experience for all attendees, regardless of race, ethnicity, religion (or lack thereof), gender, age, sexual orientation, disability, physical appearance, or personal belief system. Verbal or physical harassment or intimidation of any kind, including unwelcome sexual attention, will not be tolerated. Sharing threatening or sexual imagery will also not be tolerated.
+
+If asked to stop any behavior deemed as harassment, you are expected to immediately comply. You will be ejected immediately for egregious violations.
+
+If you violate the harassment policy will be disconnected from the PubMob session, without a refund.
+
+PubMob sessions are recorded. If ejected, you may request a review of the incident.
+
+If you feel you are being harassed during a PubMob session, or afterward as a result of attending a session, notify the PubMob representative running your session, or contact info @ langrsoft.com.
+
+Please keep the politics and anger at home, and have fun. PubMob is a forum for learning and doing software development. It is not a forum for venting your political beliefs, no matter how righteous you may feel about them.
+
+For questions or concerns regarding the PubMob code of contact policy, please contact info @ langrsoft.com.

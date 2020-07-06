@@ -1,15 +1,13 @@
 - video links
-- code of conduct
 - calendar links actual
 - menu sucks a bit
-- accordion for filters?
 - still a few mountain photos
-- statements on alcohol. "public mob"
 - page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
 - stupid mini menu overwrites top part of page
 - remove heavy alcohol
 - facebook vanity URL
 - fix header / logo stuff properly, not a hack (right now it is a max-width image)
+- quick NDA
 
 done:
 
@@ -27,3 +25,6 @@ done:
 - layout of bottom
 - larger logo
 - Christine new brain icon
+- statements on alcohol. "public mob"
+- accordion for filters?
+- code of conduct
