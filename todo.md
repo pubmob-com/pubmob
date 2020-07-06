@@ -1,8 +1,7 @@
 - video links
 - calendar links actual
-- menu sucks a bit
+- menu sucks a bit (Skylar)
 - still a few mountain photos
-- page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
 - stupid mini menu overwrites top part of page
 - remove heavy alcohol
 - facebook vanity URL
@@ -28,3 +27,5 @@ done:
 - statements on alcohol. "public mob"
 - accordion for filters?
 - code of conduct
+- favicon
+- page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"

@@ -22,5 +22,5 @@ topics: [TDD,legacy,design]
 languages: [Java,C++,C#,Clojure,Kotlin,JavaScript,React]
 calendar-app-id: JeffLangr
 ---
-Don't see what you like? Ask. It might just be behind the bar.
+Your session will Jeff will be laid-back but lively.
 
