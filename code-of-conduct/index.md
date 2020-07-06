@@ -32,8 +32,12 @@ If you violate the harassment policy will be disconnected from the PubMob sessio
 
 PubMob sessions are recorded. If ejected, you may request a review of the incident.
 
-If you feel you are being harassed during a PubMob session, or afterward as a result of attending a session, notify the PubMob representative running your session, or contact info @ langrsoft.com.
+If you feel you are being harassed during a PubMob session, notify the PubMob representative running your session, or contact info @ langrsoft.com.
 
 Please keep the politics and anger at home, and have fun. PubMob is a forum for learning and doing software development. It is not a forum for venting your political beliefs, no matter how righteous you may feel about them.
+
+PubMob works best when all participants seek to help and boost each other. Please keep this in mind.
+
+And despite the pub theme, please don't get inebriated while attending a session--it won't excuse you from getting ejected for violating this code of conduct.
 
 For questions or concerns regarding the PubMob code of contact policy, please contact info @ langrsoft.com.
