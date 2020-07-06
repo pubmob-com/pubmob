@@ -19,6 +19,6 @@ company-link: http://delta3consulting.com
 company-logo-url: http://delta3consulting.com/images/Delta3_tag_GRN.png
 topics: [coaching,TDD,C#,Java,Switf,Kotlin,snark,Dad Jokes]
 ---
-Come to Dustin's Dustup and be prepared to get plastered on knowledge!
+Drop in and Dev Up!
 
 [[ This is where you can add custom information on your pub ]]
