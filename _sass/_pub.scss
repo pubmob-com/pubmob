@@ -5,6 +5,13 @@
   $size_about_left: 50%;
   $size_about_right: 50%;
 
+  .openEndedPubMarkdown {
+    border-top: 3px solid #000; 
+    @include ms-respond(font-size,2.6);
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
   .tender {
     grid-area: about-left;
     .tech {
@@ -35,10 +42,6 @@
     }
 
     .pubDetails {
-    }
-
-    .openEndedPubMarkdown {
-      margin-top: 20px;
     }
 
     @include respond-to(handhelds) { 
