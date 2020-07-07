@@ -8,6 +8,35 @@
 - fix header / logo stuff properly, not a hack (right now it is a max-width image)
 - quick NDA
 - Ruby 2.5.5
+- github access to repo?  or "clone for class"
+- zoom tips page
+- rename "tender"
+
+- docker container for Jekyll local builds?
+
+- feedback emails from Flexbooker
+
+- free attendees?
+
+- MASTER TOPIC LIST
+- Terry Waters - Devada CEO?
+
+-- bullets in markdown pages for blurb
+
+-- refine by programming language --if the techologies don't apply to the filtered classes, don't show them
+
+People:
+
+Katz Wittel
+Erica Sadun
+- see James email
+Lisa Crispin
+Emily Bache
+Sandi Metz
+Carin Meier
+Woody Zuill
+Venkat - in town monday! ??  live or zoom?
+
 
 done:
 
@@ -30,3 +59,6 @@ done:
 - code of conduct
 - favicon
 - page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
+
+
+- PubMobPassword1 / pet ?  some scheduling software probably?
