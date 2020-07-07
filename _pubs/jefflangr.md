@@ -12,7 +12,7 @@ pub-photo: mountSaintHelens.png
 pub-photo-caption: "Reach new peaks with our training."
 pub-summary-twenty-words: Join a lively mob and learn from a veteran developer and author. TDD, design, legacy, BDD, more!
 
-tagline: The best place for hootin' and hollerin'
+tagline: "Living & loving software development for decades"
 tender-blurb: "Jeff has been building software professionally since 1982. He's written five books and contributed to Clean Code. Jeff is the owner of Langr Software Solutions."
 company: Langr Software Solutions, Inc.
 company-blurb: "Langr Software Solutions provides training, coaching, and development services for software development teams."
@@ -22,5 +22,5 @@ topics: [TDD,legacy,design]
 languages: [Java,C++,C#,Clojure,Kotlin,JavaScript,React]
 calendar-app-id: JeffLangr
 ---
-Your session will Jeff will be laid-back but lively.
+Your session with Jeff will be laid-back but lively.
 
