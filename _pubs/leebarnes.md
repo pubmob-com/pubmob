@@ -12,7 +12,7 @@ pub-photo:
 pub-photo-caption: 
 pub-summary-twenty-words: Grab a seat in the Tavern and learn about software testing, test automation and performance testing
 
-tagline: Tag line
+tagline: Testing done right
 tender-blurb: "Lee has developed a deep passion for software quality and testing and has spent over 25 years helping organizations of all sizes incorporate effective and efficient testing practices into their software development efforts.  Much of that time was spent helping organizations realize the value promised by test automation and performance testing.  Recently, Lee’s focus has been on bring quality and testing practices to DevOps teams.  He speaks regularly at software development and testing conferences and was recently selected to be a lecturer at Caltech."
 company: Utopia Solutions, Inc.
 company-blurb: "Utopia blurb"
