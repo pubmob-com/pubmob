@@ -7,6 +7,7 @@
 - facebook vanity URL
 - fix header / logo stuff properly, not a hack (right now it is a max-width image)
 - quick NDA
+- Ruby 2.5.5
 
 done:
 
