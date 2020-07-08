@@ -1,7 +1,7 @@
 ---
 layout: offering
-tender-id: dustinthostenson
-tender-name: Dustin Thostenson
+session-lead-id: dustinthostenson
+session-lead-name: Dustin Thostenson
 name: Refactoring FTW
 twelve-words-or-fewer: Build your refactoring muscle to more quickly allow the clear code emerge!
 topics: [TDD,refactoring,design]

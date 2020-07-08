@@ -1,7 +1,7 @@
 ---
 layout: offering
-tender-id: davidbernstein
-tender-name: David Bernstein
+session-lead-id: davidbernstein
+session-lead-name: David Bernstein
 name: Design Reviews
 twelve-words-or-fewer: Get an outside perspective on your design ideas
 topics: [TDD, design patterns, domain modeling, refactoring]

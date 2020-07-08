@@ -1,7 +1,7 @@
 ---
 layout: offering
-tender-id: jefflangr
-tender-name: Jeff Langr
+session-lead-id: jefflangr
+session-lead-name: Jeff Langr
 name: Legacy Dependency Breaking Techniques
 twelve-words-or-fewer: Simple techniques to break dependencies making it hard to test
 topics: [TDD,refactoring,design]

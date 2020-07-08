@@ -29,18 +29,18 @@ title-bar-text: PubMob | The Pubs
       {% for pub in sorted %}
       <div class="team-member">
         <div class="team-img">
-          <a href="/pubs/{{ pub.tender-id }}">
+          <a href="/pubs/{{ pub.session-lead-id }}">
             <span class="team-title">{{ pub.pub-name }}</span>
           </a>
-          <a href="/pubs/{{ pub.tender-id }}">
-            <img src="/assets/images/pubs/{{ pub.tender-id }}.{{ pub.tender-photo-extension }}" width="500" height="500" alt="team member" class="img-responsive">
+          <a href="/pubs/{{ pub.session-lead-id }}">
+            <img src="/assets/images/pubs/{{ pub.session-lead-id }}.{{ pub.session-lead-photo-extension }}" width="500" height="500" alt="team member" class="img-responsive">
           </a>
           <div class="team-hover">
-            <a href="/pubs/{{ pub.tender-id }}"><p>{{ pub.tagline }}</p></a>
+            <a href="/pubs/{{ pub.session-lead-id }}"><p>{{ pub.tagline }}</p></a>
           </div>
         </div>
         <div class="owner-name">
-          <span><a href="/pubs/{{ pub.tender-id }}">{{ pub.owner-name }}</a></span>
+          <span><a href="/pubs/{{ pub.session-lead-id }}">{{ pub.owner-name }}</a></span>
         </div>
         <div class="team-summary">
           <span>{{ pub.pub-summary-twenty-words | truncatewords: 20 }}</span>
@@ -49,4 +49,4 @@ title-bar-text: PubMob | The Pubs
    	  {% endfor %}
     </div>
   </div>
-</div>			
+</div>		

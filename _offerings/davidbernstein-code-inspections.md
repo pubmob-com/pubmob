@@ -1,7 +1,7 @@
 ---
 layout: offering
-tender-id: davidbernstein
-tender-name: David Bernstein
+session-lead-id: davidbernstein
+session-lead-name: David Bernstein
 name: Code Inspections
 twelve-words-or-fewer: Learn a bunch of techniques for working in your code.
 topics: [TDD, design patterns, domain modeling, refactoring]

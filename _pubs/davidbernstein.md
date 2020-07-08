@@ -1,18 +1,18 @@
 ---
 layout: pub
 pagename: pub
-tender-id: davidbernstein
-tender-name: David
-tender-short-name: David
+session-lead-id: davidbernstein
+session-lead-name: David
+session-lead-short-name: David
 owner-name: David Bernstein
 sort-name: Bernstein, David
 pub-name: David's Dive
 pub-photo: 
 pub-photo-caption: 
 pub-summary-twenty-words: "Join the action in David's pub: software design, legacy code, and more."
-tender-photo-extension: jpg
+session-lead-photo-extension: jpg
 tagline: Lessen the Learning Curve
-tender-blurb: "David's continuing passion for software design and construction has led him to train more than 10,000 professional software developers for clients that have included Fortune 500 firms such as Microsoft, IBM, Yahoo, State Farm, Vanguard, and many others. Since 2006, he has devoted his consulting practice to providing organizations with training and coaching for software developers and teams transitioning to Agile, Scrum, and Extreme Programming practices. His award-winning book, Beyond Legacy Code: Nine Practices to Extend the Life (and Value) of Your Software, describes the value and reasoning behind the Agile technical practices."
+session-lead-blurb: "David's continuing passion for software design and construction has led him to train more than 10,000 professional software developers for clients that have included Fortune 500 firms such as Microsoft, IBM, Yahoo, State Farm, Vanguard, and many others. Since 2006, he has devoted his consulting practice to providing organizations with training and coaching for software developers and teams transitioning to Agile, Scrum, and Extreme Programming practices. His award-winning book, Beyond Legacy Code: Nine Practices to Extend the Life (and Value) of Your Software, describes the value and reasoning behind the Agile technical practices."
 company: To Be Agile
 company-blurb: "To Be Agile provides Agile technical coaching, training, and consulting focusing on Extreme Programming practices that support rapidly building maintainable code."
 company-link: http://ToBeAgile.com

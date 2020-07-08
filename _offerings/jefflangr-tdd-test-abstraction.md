@@ -1,7 +1,7 @@
 ---
 layout: offering
-tender-id: jefflangr
-tender-name: Jeff Langr
+session-lead-id: jefflangr
+session-lead-name: Jeff Langr
 name: Test Abstraction in TDD
 twelve-words-or-fewer: "Ensure your tests stay sustainable."
 topics: [TDD]

@@ -3,11 +3,13 @@
 - menu sucks a bit (Skylar)
 - stupid mini menu overwrites top part of page
 - still a few mountain photos
-- remove heavy alcohol
 - facebook vanity URL
 - fix header / logo stuff properly, not a hack (right now it is a max-width image)
 - quick NDA
 - styling / colors
+- master list of technologies?
+- lookup (e.g. given an ID get supporting data)
+- picture on class page
 
 done:
 
@@ -31,3 +33,4 @@ done:
 - favicon
 - page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
 - Ruby 2.5.5
+- remove heavy alcohol
