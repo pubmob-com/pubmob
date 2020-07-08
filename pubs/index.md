@@ -23,7 +23,7 @@ title-bar-text: PubMob | The Pubs
 <div class="container">
 	<div class="row">
     <h1 class="text-center">Our pub owners.</h1>
-    <p>Each of our pubs is owned by a tender with extensive experience in helping development teams deliver high-quality software.</p>
+    <p>Each of our pubs is owned by a {{ site.session-lead-term }} with extensive experience in helping development teams deliver high-quality software.</p>
     <div class="pub-owners">
       {% assign sorted = site.pubs | sort: "sort-name" %}
       {% for pub in sorted %}

@@ -27,10 +27,10 @@
 
           <section class="about">
             <article class="tender">
-              <h3>Your tender: {{page.tender-name}}</h3>
+              <h3>Your {{ site.session-lead-term }}: {{page.tender-name}}</h3>
               <div><img src="/assets/images/{{ page.id }}.{{page.tender-photo-extension}}" /></div>
 
-              <h3>About Your Tender</h3>
+              <h3>About {{ page.tender-short-name }}</h3>
               <p>{{ page.tender-blurb }}</p>
               <div>
               <p>{{ page.tender-short-name }} offers sessions on the following topics:</p>

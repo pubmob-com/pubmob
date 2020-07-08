@@ -20,10 +20,10 @@ pre-content: >
     <div class="grid">
       <div class="content">
         <picture>
-          <source srcset='/assets/images/home/masthead-taps.jpg' media='(max-width: 1080px)'>
-          <source srcset='/assets/images/home/masthead-taps.jpg' media='(min-width: 960px)'>
-          <source srcset='/assets/images/home/masthead-taps.jpg' media='(min-width: 830px'>
-          <img src='/assets/images/home/masthead-taps.jpg' alt='PubMob'>
+          <source srcset='/assets/images/home/video-chat.jpg' media='(max-width: 1080px)'>
+          <source srcset='/assets/images/home/video-chat.jpg' media='(min-width: 960px)'>
+          <source srcset='/assets/images/home/video-chat.jpg' media='(min-width: 830px'>
+          <img src='/assets/images/home/video-chat.jpg' alt='PubMob'>
         </picture>
       </div>
     </div>
@@ -41,10 +41,10 @@ post-content: >
   <p>
   PubMob provides you with hands-on opportunities to learn by doing, and to do
    by collaborating online. Join a virtual PubMob session run by an experienced
-   "tender" who will guide you and up to five other developers.
+   {{ site.session-lead-term}} who will guide you and up to five other developers.
   </p>
   <p>
-    Your tender is one of a number of <a href="/pubs">virtual PubMob pub owners</a> who will be providing short sessions focused on either helping you learn new technologies & techniques, or on helping you build something. Come see what <a href="/offerings">we have on tap</a>!
+    Your {{ site.session-lead-term }} is one of a number of <a href="/pubs">virtual PubMob pub owners</a> who will be providing short sessions focused on either helping you learn new technologies & techniques, or on helping you build something. Come see what <a href="/offerings">we have on tap</a>!
   </p>
 </section>
 
@@ -55,7 +55,7 @@ post-content: >
     </div>
     <div class="boxcopy copy">
       <h5>PubMob</h5>
-      <p>Join a mob! Learn new techniques and technologies from pub tenders who know how to serve up their craft--from coding to testing to actual brewing. Experience the boisterous but safe feeling of a mob--the best way to build software as a team--without having to wear a mask.
+      <p>Join a mob! Learn new techniques and technologies from pub {{ site.session-lead-term-plural }} who know how to serve up their craft--from coding to testing to actual brewing. Experience the boisterous but safe feeling of a mob--the best way to build software as a team--without having to wear a mask.
          <a class="more" href="/pubmob">More &raquo;</a>
       </p>
     </div>
