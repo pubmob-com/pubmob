@@ -24,12 +24,6 @@ title-bar-text: PubMob | The Pubs
 	<div class="row">
     <h1 class="text-center">Our pub owners.</h1>
     <p>Each of our pubs is owned by a tender with extensive experience in helping development teams deliver high-quality software.</p>
-<!-- 
-  It might make sense for the team hover to be shrunk down so that it does *not*
-  cover the pub name that now appears about the photo.
-
-  With that change, the pub name itself can disappear from the team -hover div.
--->
     <div class="pub-owners">
       {% assign sorted = site.pubs | sort: "sort-name" %}
       {% for pub in sorted %}
@@ -45,8 +39,8 @@ title-bar-text: PubMob | The Pubs
             <a href="/pubs/{{ pub.tender-id }}"><p>{{ pub.tagline }}</p></a>
           </div>
         </div>
-        <div class="team-title">
-          <a href="/pubs/{{ pub.tender-id }}"><h5>{{ pub.owner-name }}</h5></a>
+        <div class="owner-name">
+          <span><a href="/pubs/{{ pub.tender-id }}">{{ pub.owner-name }}</a></span>
         </div>
         <div class="team-summary">
           <span>{{ pub.pub-summary-twenty-words | truncatewords: 20 }}</span>
