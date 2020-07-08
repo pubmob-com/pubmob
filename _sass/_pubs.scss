@@ -8,9 +8,13 @@
   grid-gap: 30px;
 }
 
+.team-img {
+  position: relative;
+}
+
 .team-hover {
-//    position: absolute;
-  top: 0;
+  position: absolute;
+  top: 20px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -20,6 +24,7 @@
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  text-align: center;
 }
 
 .team-member:hover .team-hover {

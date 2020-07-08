@@ -41,9 +41,9 @@ title-bar-text: PubMob | The Pubs
           <a href="/pubs/{{ pub.tender-id }}">
             <img src="/assets/images/pubs/{{ pub.tender-id }}.{{ pub.tender-photo-extension }}" width="500" height="500" alt="team member" class="img-responsive">
           </a>
-        </div>
-        <div class="team-hover">
-          <a href="/pubs/{{ pub.tender-id }}"><p>{{ pub.tagline }}</p></a>
+          <div class="team-hover">
+            <a href="/pubs/{{ pub.tender-id }}"><p>{{ pub.tagline }}</p></a>
+          </div>
         </div>
         <div class="team-title">
           <a href="/pubs/{{ pub.tender-id }}"><h5>{{ pub.owner-name }}</h5></a>
