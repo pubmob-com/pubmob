@@ -89,7 +89,7 @@ backsite: javascript:history.back()
     </div>
     <p>Most sessions will use the <a href="http://github.com/remotemobprogramming/mob">mob</a> tool. Follow the instructions on the mob page to install the tool; it should take a couple minutes. For MacOS users, it's a single <code>brew install</code> command.</p>
     <p>
-      Each pub tender will have custom setup instructions for their mob session.
+      Each pub {{ site.session-lead-term }} will have custom setup instructions for their mob session.
       Most of the time, this will involve cloning a repository and making sure
       it builds successfully.</p>
     <p>In order to get the maximum value out of your session, make sure that you're
