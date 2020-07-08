@@ -5,11 +5,13 @@
 - still a few mountain photos
 - facebook vanity URL
 - fix header / logo stuff properly, not a hack (right now it is a max-width image)
+  (use grid)
 - quick NDA
 - styling / colors
 - master list of technologies?
 - lookup (e.g. given an ID get supporting data)
-- picture on class page
+- heading inconsistency front page, also margins
+- about page: About PubMob header size / margin
 
 done:
 
