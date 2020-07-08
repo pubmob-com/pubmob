@@ -169,33 +169,33 @@
 
   .IrishFlagGreen {
     .boxcopy {
-      background-color: $IrishFlagGreen;
-      h5 { color: $IrishFlagOrange; }
+      background-color: $DarkCyanLimeGreen;
+      h5 { color: $BrightOrange; }
       a { @include link-styles($IrishFlagOrange, $White); }
     }
   }
 
   .IrishFlagOrange {
     .boxcopy {
-      background-color: $IrishFlagOrange;
+      background-color: $VividOrange;
       h5 { color: $White; }
-      a { @include link-styles($DarkGreen, $White); }
+      a { @include link-styles($DarkCyanLimeGreen, $White); }
      }
   }
 
   .Blackish {
     .boxcopy {
-      background-color: $Blackish;
+      background-color: $VeryDarkGrey;
       h5 { color: $Whitish; }
-      a { @include link-styles($IrishFlagOrange, $Whitish); }
+      a { @include link-styles($VividOrange, $Whitish); }
      }
   }
 
   .Reddish {
     .boxcopy {
-      background-color: $Reddish;
+      background-color: $BrightOrange;
       h5 { color: $Whitish; }
-      a { @include link-styles($Blackish, $Whitish); }
+      a { @include link-styles($VeryDarkGrey, $Whitish); }
      }
   }
 
@@ -253,7 +253,7 @@
     }
 
     .announcements {
-      h5 { background-color: $LightGreen; }
+      h5 { background-color: $DarkCyanLimeGreen; }
     }
 
     .posts {
