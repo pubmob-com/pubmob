@@ -17,7 +17,8 @@ company: Delta3Consulting
 company-blurb: "Design. Develop. Deliver."
 company-link: http://delta3consulting.com
 company-logo-url: http://delta3consulting.com/images/Delta3_tag_GRN.png
-topics: [coaching,TDD,C#,Java,Switf,Kotlin,snark,Dad Jokes]
+topics: [coaching,TDD]
+languages: [C#,Java,Swift,Kotlin]
 ---
 Drop in and Dev Up!
 

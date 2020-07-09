@@ -12,6 +12,13 @@
 - lookup (e.g. given an ID get supporting data)
 - heading inconsistency front page, also margins
 - about page: About PubMob header size / margin
+-- SOLICIT MORE SESSION LEADS!
+  -- who speaks to you? -- ask of customers
+
+- notify session leads of policies around CoC ejection (retain recording!)
+
+- more info on my personal pages
+
 
 done:
 
