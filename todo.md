@@ -17,7 +17,20 @@
 
 - notify session leads of policies around CoC ejection (retain recording!)
 
+    session lead "agreement"
+
+- start writing press release
+
+- schedule owner-only sessions
+
 - more info on my personal pages
+
+- sell a pack of sessions
+
+IDEAS:
+
+venkat--order up a class
+mario--conferences ("on your way to conference?")
 
 
 done:
