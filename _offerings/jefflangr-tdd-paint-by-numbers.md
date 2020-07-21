@@ -1,7 +1,7 @@
 ---
 layout: offering
-tender-id: jefflangr
-tender-name: Jeff Langr
+session-lead-id: jefflangr
+session-lead-name: Jeff Langr
 name: TDD Paint by Numbers
 twelve-words-or-fewer: "Your first TDD experience: Learn refactoring & the Red-Green-Refactor Cycle."
 topics: [TDD]
@@ -21,5 +21,5 @@ Since we'll be all working on the same codebase, scheduled sessions show
 the programming language and compiler version you'll need. You'll also see which
 exercise you'll get to participate in.
 
-Your tender will provide you with specific build instructions to ensure you're ready to 
+Your {{ site.session-lead-term }} will provide you with specific build instructions to ensure you're ready to 
 hit the ground running.

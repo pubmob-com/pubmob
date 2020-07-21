@@ -77,7 +77,7 @@
         {% if page.pagename == "offerings" %}
           {% assign all-selections = all-selections | concat: offering.topics %}
         {% else %}
-          {% if offering.tender-id == page.tender-id %}
+          {% if offering.session-lead-id == page.session-lead-id %}
             {% assign all-selections = all-selections | concat: offering.topics %}
           {% endif %}
         {% endif %}
@@ -98,7 +98,7 @@
         {% if page.pagename == "offerings" %}
           {% assign all-selections = all-selections | concat: offering.languages %}
         {% else %}
-          {% if offering.tender-id == page.tender-id %}
+          {% if offering.session-lead-id == page.session-lead-id %}
             {% assign all-selections = all-selections | concat: offering.languages %}
           {% endif %}
         {% endif %}

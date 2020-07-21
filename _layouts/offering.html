@@ -20,13 +20,13 @@
           <div class="indent">
             <h3>{{ page.name }}</h3>
             {% if page.graphic %}
-              <img src="/assets/images/offerings/{{page.tender-id}}/{{page.graphic}}" style="width: 225px" />
+              <img src="/assets/images/offerings/{{page.session-lead-id}}/{{page.graphic}}" style="width: 225px" />
             {% endif %}
           </div>
 
           <div class="indent" style="float: right">
-            <img src="/assets/images/tenders/{{ page.tender-id }}.jpg" style="width: 225px" />
-            <p>Tender: <a href="/tenders/{{page.tender-id}}">{{ page.tender-name }}</a></p>
+            <img src="/assets/images/pubs/{{ page.session-lead-id }}.jpg" style="width: 225px" />
+            <p>{{ site.session-lead-term | capitalize }}: <a href="/pubs/{{page.session-lead-id}}">{{ page.session-lead-name }}</a></p>
           </div>
 
           <div>

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.5.5'
+ruby '2.7.1'
 gem 'jekyll'
 gem 'uglifier'
 gem 'github-pages'

@@ -1,41 +1,36 @@
 - video links
 - calendar links actual
 - menu sucks a bit (Skylar)
-- still a few mountain photos
 - stupid mini menu overwrites top part of page
-- remove heavy alcohol
+- still a few mountain photos
 - facebook vanity URL
 - fix header / logo stuff properly, not a hack (right now it is a max-width image)
+  (use grid)
 - quick NDA
-- Ruby 2.5.5
-- github access to repo?  or "clone for class"
-- zoom tips page
-- rename "tender"
+- styling / colors
+- master list of technologies?
+- lookup (e.g. given an ID get supporting data)
+- heading inconsistency front page, also margins
+- about page: About PubMob header size / margin
+-- SOLICIT MORE SESSION LEADS!
+  -- who speaks to you? -- ask of customers
 
-- docker container for Jekyll local builds?
+- notify session leads of policies around CoC ejection (retain recording!)
 
-- feedback emails from Flexbooker
+    session lead "agreement"
 
-- free attendees?
+- start writing press release
 
-- MASTER TOPIC LIST
-- Terry Waters - Devada CEO?
+- schedule owner-only sessions
 
--- bullets in markdown pages for blurb
+- more info on my personal pages
 
--- refine by programming language --if the techologies don't apply to the filtered classes, don't show them
+- sell a pack of sessions
 
-People:
+IDEAS:
 
-Katz Wittel
-Erica Sadun
-- see James email
-Lisa Crispin
-Emily Bache
-Sandi Metz
-Carin Meier
-Woody Zuill
-Venkat - in town monday! ??  live or zoom?
+venkat--order up a class
+mario--conferences ("on your way to conference?")
 
 
 done:
@@ -59,6 +54,5 @@ done:
 - code of conduct
 - favicon
 - page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
-
-
-- PubMobPassword1 / pet ?  some scheduling software probably?
+- Ruby 2.5.5
+- remove heavy alcohol

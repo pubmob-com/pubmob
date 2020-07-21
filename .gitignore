@@ -6,3 +6,8 @@ Gemfile.lock
 vendor/
 build/
 *.DS_Store
+
+# rbenv, knowing which version of ruby to use
+# If you prefer, move the ruby version from Gemfile
+# into this file and then start tracking it.
+.ruby-version

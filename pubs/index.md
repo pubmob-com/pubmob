@@ -23,46 +23,30 @@ title-bar-text: PubMob | The Pubs
 <div class="container">
 	<div class="row">
     <h1 class="text-center">Our pub owners.</h1>
-    <p>Each of our pubs is owned by a tender with extensive experience in helping development teams deliver high-quality software.</p>
-<!-- 
-  It might make sense for the team hover to be shrunk down so that it does *not*
-  cover the pub name that now appears about the photo.
-
-  With that change, the pub name itself can disappear from the team -hover div.
--->
-		{% assign sorted = site.pubs | sort: "sort-name" %}
-		{% for pub in sorted %}
-      <div class="col-md-4 col-sm-4">
-        <div class="team-member">
-          <div class="team-img">
-            <a href="/pubs/{{ pub.tender-id }}">
-              <span class="team-title">{{ pub.pub-name }}</span>
-		        </a>
-            <a href="/pubs/{{ pub.tender-id }}">
-              <img src="/assets/images/pubs/{{ pub.tender-id }}.{{ pub.tender-photo-extension }}" width="500" height="500" alt="team member" class="img-responsive">
-		        </a>
-          </div>
+    <p>Each of our pubs is owned by a {{ site.session-lead-term }} with extensive experience in helping development teams deliver high-quality software.</p>
+    <div class="pub-owners">
+      {% assign sorted = site.pubs | sort: "sort-name" %}
+      {% for pub in sorted %}
+      <div class="team-member">
+        <div class="team-img">
+          <a href="/pubs/{{ pub.session-lead-id }}">
+            <span class="team-title">{{ pub.pub-name }}</span>
+          </a>
+          <a href="/pubs/{{ pub.session-lead-id }}">
+            <img src="/assets/images/pubs/{{ pub.session-lead-id }}.{{ pub.session-lead-photo-extension }}" width="500" height="500" alt="team member" class="img-responsive">
+          </a>
           <div class="team-hover">
-            <div class="desk">
-              <a href="/pubs/{{ pub.tender-id }}">
-                <h4>{{ pub.pub-name }}</h4>
-                <p>{{ pub.tagline }}</p>
-              </a>
-            </div>
-            <div class="s-link">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
-            </div>
+            <a href="/pubs/{{ pub.session-lead-id }}"><p>{{ pub.tagline }}</p></a>
           </div>
         </div>
-        <div class="team-title">
-          <a href="/pubs/{{ pub.tender-id }}"><h5>{{ pub.owner-name }}</h5></a>
+        <div class="owner-name">
+          <span><a href="/pubs/{{ pub.session-lead-id }}">{{ pub.owner-name }}</a></span>
         </div>
         <div class="team-summary">
           <span>{{ pub.pub-summary-twenty-words | truncatewords: 20 }}</span>
         </div>
-  		</div>
- 	  {% endfor %}
+      </div>
+   	  {% endfor %}
+    </div>
   </div>
-</div>			
+</div>		

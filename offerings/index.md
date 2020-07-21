@@ -9,10 +9,10 @@ pre-content: >
     <div class="grid">
       <div class="content">
         <picture>
-          <source srcset='/assets/images/about/offerings.jpg' media='(max-width: 1080px)'>
-          <source srcset='/assets/images/about/offerings.jpg' media='(min-width: 960px)'>
-          <source srcset='/assets/images/about/offerings.jpg' media='(min-width: 830px'>
-          <img src='/assets/images/about/offerings.jpg' alt='Offerings'>
+          <source srcset='/assets/images/offerings/masthead-taps.jpg' media='(max-width: 1080px)'>
+          <source srcset='/assets/images/offerings/masthead-taps.jpg' media='(min-width: 960px)'>
+          <source srcset='/assets/images/offerings/masthead-taps.jpg' media='(min-width: 830px'>
+          <img src='/assets/images/offerings/masthead-taps.jpg' alt='Offerings'>
         </picture>
       </div>
     </div>

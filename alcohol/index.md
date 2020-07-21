@@ -21,40 +21,44 @@ title-bar-text: Statement on PubMob and the pub motif
 ---
 # Statement on PubMob and the pub motif
 
-Concerned about the pub motif and its use of alcohol? Read the following personal statement from Jeff Langr about PubMob and the promotion of alcohol.
+*by Jeff Langr, July 2020*
 
-PubMob.com has a clear [code of conduct](/code-of-conduct), and does not tolerate abusive conduct from anyone. That includes those under the influence of alcohol.
+Wondering about the pub motif? Read about the origins of PubMob, followed by a statement from me about the associated pub motif and its relationship with alcohol.
 
 ## PubMob origins
 
-I've provided consulting independently since 2003. During that time, I've also managed to work in at least 5 years worth of building software (and coaching others to do so) remotely: One year at GeoLearning (defunct), three years at Outpace, and at least a year working remotely with developers at various customers (including Ford and Sonic). Last fall I knew this the direction I wanted to take my personal consultancy, and began taking steps toward that.
+I've provided consulting independently since 2003. During that time, I've also managed to log more than 5 years' time building software remotely (and coaching others to do so. My remote experience includes one year at GeoLearning (defunct), three years at Outpace, and more than a year working remotely with developers at various customers (including Ford and Sonic). Last fall it became clear that remote software development was the direction to take for my personal consulancy. I began taking steps toward achieving that goal.
 
 After COVID-19 forced businesses to shutter their offices, millions of software developers suddenly found themselves working from home.
 
 Shortly after, I started a weekly public mobbing session for a few reasons:
 
-* {: .outer} Have something to do on Fridays
+* {: .outer} Have something fun to do on Fridays. (Hey... coding in a group is a lot of fun, to me at least!)
 
-* {: .outer} Increase my social interaction during the shutdown, and stave off feelings of isolation
+* {: .outer} Increase my social interaction during the shutdown, and stave off feelings of isolation.
 
-* {: .outer} Continue exploring mechanisms for building software remotely and collaboratively
+* {: .outer} Continue exploring mechanisms for building software remotely and collaboratively.
 
-* {: .outer} See if we could build useful software to improve upon the fairly sad state of collaborative development tooling
+* {: .outer} Explore the possibility of building better collaborative development tools. Currently-available tools barely scratch the surface.
 {: .list}
 
-Since I was advertising sessions through my Twitter account (@jlangr), I derived the hashtag #PubMob from the words "public" and "mobbing." Of note, a pub in the sense of a drinking establishment comes from the term *public house*.
+To promote these free sessions via my Twitter account (@jlangr), I derived the hashtag #PubMob as a portmanteau of **pub**lic and **mob**bing. (Of note, the word *pub* comes from the term *public house*.)
 
-We still run these public (and free) #PubMob. The first #PubMob session was held Tuesday April 10. We shifted to Friday and have held sessions every week since. #PubMob has been successful in keeping at least a handful of folks entertained, engaged, and learning each week. We have over 20 people on the regular invitation list.
+The first #PubMob session was held Tuesday April 10, 2020. We shifted to Fridays and have held sessions every week since then. #PubMob has been successful in keeping at least a handful of folks entertained, engaged, and learning each week. Our invitation list grew to over 20 people within a few short weeks and minimal advertising.
 
-A few weeks after initiating #PubMob, still in COVID-19 lockdown, I was frustrated with how to take my consultancy to the next step in offering remote services--hopefully through finding a significant customer. My wife told me to take the dog for a walk--her way of saying, "get out of the house and clear your head." This head-clearing led me to realize that the #PubMob sessions were staring me in the face as a path forward. PubMob.com was created as a way to:
+A few weeks after initiating #PubMob and still in COVID-19 lockdown, I continued working on my consultancy's shift toward providing remote services. During this time I achieved considerable success as a result of introducing remote mobbing to two customers.
 
-* {: .outer} Create a marketplace for independent experts / trainers to offer their skills, and also provide them a way to demonstrate their skills to people in a low-cost way--"try before you buy."
+This success led me to start PubMob.com as a way to:
 
-* {: .outer} Democratize direct access to such experts, by offering small, short hands-on sessions
+* {: .outer} Create a marketplace for independent experts / trainers to offer their skills
+
+* {: .outer} Provide these experts with a way to demonstrate their value to potential customers: "Try before you buy."
+
+* {: .outer} Democratize direct access to such experts by offering low-cost short hands-on sessions with a small number of attendees
 
 * {: .outer} Help the world find a better way to do remote development in a humane and fun manner
 
-* {: .outer} Provide a way for those impacted by the new isolation to stay home, stay safe, and stay human 
+* {: .outer} Demonsrtate a way for those impacted by the new isolation to stay home, stay safe, and stay human 
 {: .list}
 
 Remote software development is here to stay, and many people will remain working remotely from now through the end of their career. PubMob.com is one answer to the question, "How do we make it work?"
@@ -63,14 +67,17 @@ Remote software development is here to stay, and many people will remain working
 
 Alcohol continues to be a legal but dangerous drug in most parts of the world. According to one study, around [6% of Americans have a drinking disorder](https://www.verywellmind.com/prevalence-of-alcoholism-in-the-united-states-67876).
 
-I've known three severe alcoholics well during my adulthood. Two died, one definitively from excessive drinking, the second died two days ago (from when I wrote this) with alcohol certainly a significant factor in her demise. The other managed to find her way out of the destruction it had caused... for now. I learned to distance myself from alcoholics; they do usually try to take you with them.
+I've known three severe alcoholics well during my adulthood. Two died, one definitively from excessive drinking, the second died two days ago with alcohol a significant contributing factor. The other has thankfully managed to find her way out of the destruction it had caused.
+
+All of this to say: I find alcohol abuse sad. But I also recognize that drinking alcohol is extremely popular worldwide, and that most people are capable of being responsible with respect to alcohol. I neither condemn nor celebrate its use.
 
 ## PubMob and alcohol
 
-The pub motif for PubMob.com exists mostly to get you to think about a public house in its most social sense: As a gathering place for strangers, strange friends, families, and team members to get together, relax, and enjoy something together--maybe even make a life-long connection. My experience in pubs isn't heavy, but I've always appreciated their warmth and friendliness, whether it's a brewery in Colorado or a small-town pub in Ireland. For those not susceptible to alcohol abuse, a brewery or pub can be a healthy place for social interaction.
+The pub motif for PubMob.com exists mostly to get you to think about a public house in its most social sense: As a gathering place for strangers, strange friends, families, and team members to get together, relax, and enjoy something together--maybe even make a lifelong connection. My time spent in pubs is modest, but I've always appreciated their warmth and friendliness, whether it's a brewery in Colorado or a small-town pub in Ireland. For those not susceptible to alcohol abuse, a brewery or pub can be a healthy place for social interaction.
 
-You may have been personally impacted by abuse of alcohol. I fully understand if that creates some distaste for the motif.
+You may have been personally impacted by alcohol abuse. I fully understand if that creates some distaste for the motif.
 
-**We do not discuss alcohol during PubMob.com sessions on software development.** You will not see alcohol advertised or promoted on the site. (You *will* see photos of pubs and people within, and you'll see glasses and bottles that might contain alcohol.) But the [code of conduct](/code-of-conduct) for PubMob.com session attendees is clear: **We don't tolerate jerks, and that includes people whose use of alcohol leads to any conduct-violating actions or statements.** They get booted.
+**We do not discuss alcohol during PubMob.com sessions on software development.** You will not see alcohol advertised or promoted on the site. (You *will* see photos of pubs and people within, and you'll see glasses and bottles that might contain alcohol.) But the [code of conduct](/code-of-conduct) for PubMob.com session attendees is clear: **We don't tolerate jerks, and that includes people whose drug use leads to any conduct-violating actions or statements.** They will be ejected.
 
-If it helps, please remember that PubMob is short for *Public Mobbing*.
+If it helps, please remember that PubMob is short for *Public Mobbing*. PubMob is a celebration of the camaraderie possible within a group of strangers. 
+

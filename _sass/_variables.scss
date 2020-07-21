@@ -7,8 +7,8 @@ $base-font-family: $roboto;
 $base-font-size: 100%;
 
 // Colors
-$Black:          #000000;
-$White:          #FFFFFF;
+$Black: #000000;
+$White: #FFFFFF;
 $LightGreen: #41AD49;
 $DarkGreen: #34401A;
 $LightBlue: #18A3D6;
@@ -17,9 +17,16 @@ $LightYellow: #C6BF4F;
 $DarkYellow: #A86539;
 $IrishFlagOrange: #FF883E;
 $IrishFlagGreen: #169B62;
-$Blackish: #011627;
 $Whitish: #FDFFFC;
 $Reddish: #E71D36;
+
+// Core colors
+$DarkCyanLimeGreen: #00954C; // PMS355
+$VeryDarkGrey: #404040; // 85%
+$VividOrange: #F26815; // PMS 165
+$BrightOrange: #F88D2a; // PMS 715
+$StrongCyan: #0091B3; // PMS 632
+$LightGreyishBlue: #ebedf1;
 
 // Background and font
 $home-background-color: $White;
@@ -32,26 +39,26 @@ $interior-font-color: $Black;
 $header-background-color: $White;
 
 // Navigation
-$font-color-navigation: $DarkBlue;
-$font-active-color-navigation: $LightBlue;
+$font-color-navigation: $VeryDarkGrey;
+$font-active-color-navigation: $StrongCyan;
 
 // Footer
 $footer-background: $White;
-$footer-action-color: $DarkBlue;
-$footer-link-color: $LightBlue;
+$footer-link-color: $VeryDarkGrey;
+$footer-action-color: $DarkCyanLimeGreen;
 $footer-font: $Black;
 
 // Headings
-$headings-homepage-font-color: $DarkBlue;
-$headings-interior-font-color: $DarkBlue;
-$headings-post-font-color: $DarkBlue;
+$headings-homepage-font-color: $StrongCyan;
+$headings-interior-font-color: $StrongCyan;
+$headings-post-font-color: $StrongCyan;
 
 // Links
-$link-color: $DarkBlue;
-$action-color: $LightBlue;
+$link-color: $StrongCyan;
+$action-color: $VeryDarkGrey;
 
 // Item interior
-$item-interior-bar: $DarkBlue;
+$item-interior-bar: $StrongCyan;
 $item-interior-strip: $Black;
 $item-interior-dot: $DarkYellow;
 
@@ -86,6 +93,6 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($base-form-active
 
 // Button
 $colors-button-border-interior: $White;
-$colors-button-interior-hover: darken($LightYellow, 8);;
-$colors-button-interior: $LightYellow; 
+$colors-button-interior-hover: darken($BrightOrange, 8);
+$colors-button-interior: $BrightOrange; 
 $colors-button-font: $White;

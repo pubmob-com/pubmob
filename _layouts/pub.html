@@ -27,13 +27,13 @@
 
           <section class="about">
             <article class="tender">
-              <h3>Your tender: {{page.tender-name}}</h3>
-              <div><img src="/assets/images/{{ page.id }}.{{page.tender-photo-extension}}" /></div>
+              <h3>Your {{ site.session-lead-term }}: {{page.session-lead-name}}</h3>
+              <div><img src="/assets/images/{{ page.id }}.{{page.session-lead-photo-extension}}" /></div>
 
-              <h3>About Your Tender</h3>
-              <p>{{ page.tender-blurb }}</p>
+              <h3>About {{ page.session-lead-short-name }}</h3>
+              <p>{{ page.session-lead-blurb }}</p>
               <div>
-              <p>{{ page.tender-short-name }} offers sessions on the following topics:</p>
+              <p>{{ page.session-lead-short-name }} offers sessions on the following topics:</p>
               <p class="tech">{{ page.topics | join: " | " }}</p>
               {% assign languages-length = page.languages | size %}
               {% if languages-length > 0 %}
@@ -67,10 +67,11 @@
 
 
           <section>
+            <h3>{{ page.session-lead-short-name }}'s PubMob Sessions</h3>
             {% include class-legend.html %}
 
             {% for offering in site.offerings %}
-              {% if offering.tender-id == page.tender-id %}
+              {% if offering.session-lead-id == page.session-lead-id %}
                 {% include offering.html %}
               {% endif %}
             {% endfor %}
