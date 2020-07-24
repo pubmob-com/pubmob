@@ -17,6 +17,7 @@ pre-content: >
     </div>
 post-content: >
 title-bar-color: title-bar-light-green
+backsite: javascript:history.back()
 title-bar-text: Statement on PubMob and the pub motif
 ---
 # Statement on PubMob and the pub motif

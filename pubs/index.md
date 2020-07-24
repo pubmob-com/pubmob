@@ -19,6 +19,7 @@ pre-content: >
 post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: PubMob | The Pubs
+backsite: javascript:history.back()
 ---
 <div class="container">
 	<div class="row">

@@ -17,6 +17,7 @@ pre-content: >
     </div>
 post-content: >
 title-bar-color: title-bar-light-green
+backsite: javascript:history.back()
 ---
 # Code of conduct
 

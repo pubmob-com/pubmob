@@ -19,6 +19,7 @@ pre-content: >
 post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: About PubMob Private
+backsite: javascript:history.back()
 ---
 Bring the PubMob experience to your company or team.
 

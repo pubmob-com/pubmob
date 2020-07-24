@@ -19,6 +19,7 @@ pre-content: >
 post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: About PubMob
+backsite: javascript:history.back()
 ---
 A PubMob is a live (and lively) short, remote, and hands-on experience. In a PubMob, you'll learn by doing--with your hands driving the keyboard, based on directions from the mob. You'll then shift from the driver's seat into the role of navigator, as you join the rest of the mob in helping the next driver decide where to go next, and in understanding the turns needed to get there.
 
