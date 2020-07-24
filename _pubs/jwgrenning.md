@@ -8,7 +8,7 @@ owner-name: James Grenning
 sort-name: "1"
 pub-name: The Eagle
 session-lead-photo-extension: jpg
-pub-photo: batman-rising.jpg
+pub-photo: the-eagle.jpg
 pub-photo-caption: "A nice view of Batman rising."
 pub-summary-twenty-words: "In this mob, James will have your wing."
 tagline: "I tried to avoid computers in the 70's. Guess what happended. Loving software development ever since."
