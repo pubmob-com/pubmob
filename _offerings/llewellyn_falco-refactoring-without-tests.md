@@ -1,0 +1,21 @@
+---
+layout: offering
+pagename: offering
+session-lead-id: llewellyn_falco
+session-lead-name: Llewellyn Falco
+name: Refactoring Without Tests
+twelve-words-or-fewer: "safe refactoring without tests"
+topics: [refactoring]
+languages: [cpp,csharp,java,python,javascript]
+graphic: 
+public-or-private: both
+is-for-experienced-mobbers: false
+exercise-skill: beginner
+repo: 
+prerequisites: []
+summary-blurb-125-words: "<p>Your legacy code doesn't have tests? Join the club. Let's learn how to do a lot of refactoring without the need for some tests.</p>"
+booking-link: 
+active: true
+---
+Your legacy code doesn't have tests? Join the club. Let's learn how to do a lot of refactoring without the need for some tests.
+

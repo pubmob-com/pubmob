@@ -7,7 +7,7 @@ session-lead-short-name: Llewellyn
 owner-name: Llewellyn Falco
 sort-name: "1"
 pub-name: Llewellyn's Place
-session-lead-photo-extension: jpg
+session-lead-photo-extension: png
 pub-photo: mountSaintHelens.png
 pub-photo-caption: "Reach new peaks with our training."
 pub-summary-twenty-words: Mobbing, Testing and Refactoring.
@@ -23,7 +23,7 @@ If you would like to get a sample of him, check out his Practical Refactoring ta
 company: Spun Laboratories Incorporated.
 company-blurb: "Agile Technical Coaching"
 company-link: http://spunlabs.com/p/hire-me.html
-company-logo-url: /pubs/llewellyn_falco/spun_labs_logo.png
+company-logo-url: /assets/images/pubs/llewellyn_falco/spun_labs_logo.png
 topics: [refactoring]
 languages: [java,cpp,csharp,javascript,python]
 calendar-app-id: 
