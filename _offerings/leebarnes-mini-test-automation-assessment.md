@@ -1,5 +1,6 @@
 ---
 layout: offering
+pagename: offering
 session-lead-id: leebarnes
 session-lead-name: Lee Barnes
 name: Test Automation Mini-Assessment
@@ -12,7 +13,8 @@ is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
 prerequisites: []
-summary-blurb-125-words: "<p>Understand your readiness to succeed with Test Automation and develop a roadmap for success. You'll address obtacles within your organizaiton and get started on a path to effective Test Automation!</p>"
+summary-blurb-125-words: "<p>Understand your readiness to succeed with Test Automation and develop a roadmap for success. You'll address obtacles within your organization and get started on a path to effective Test Automation!</p>"
+booking-link: https://a.flexbooker.com/widget/61a3d947-4177-4e7f-8a81-cf47ecaffec4
 active: true
 ---
 Are you struggling with implementing effective test automation?  Are you just getting started and want to avoid the common obstacles that prevent many from succeeding?  We’ll work through assessment activities over a one to two hour conversation that will provide you with a clear understanding of where you are and what you need to do to move forward with effective test automation.
