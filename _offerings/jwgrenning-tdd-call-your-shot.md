@@ -10,10 +10,10 @@ languages: [c,cpp]
 graphic: pool-shot.gif
 public-or-private: both
 is-for-experienced-mobbers: false
-exercise-skill: medium
+exercise-skill: intermediate
 repo: ""
 prerequisites: []
-summary-blurb-125-words: "<p>Call your shot TDD.  Make a deliberate change,  predict red|green|yellow.</p>"
+summary-blurb-125-words: "<p>Make a deliberate change,  predict red|green|yellow.</p>"
 booking-link: 
 active: true
 ---
