@@ -1,5 +1,6 @@
 ---
 layout: offering
+pagename: offering
 session-lead-id: jefflangr
 session-lead-name: Jeff Langr
 name: Legacy Dependency Breaking Techniques

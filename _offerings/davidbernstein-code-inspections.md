@@ -1,5 +1,6 @@
 ---
 layout: offering
+pagename: offering
 session-lead-id: davidbernstein
 session-lead-name: David Bernstein
 name: Code Inspections

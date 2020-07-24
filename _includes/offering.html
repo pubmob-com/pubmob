@@ -10,24 +10,19 @@
       {% if blurbLength <= 125 %}
         <p class="longer-description">{{ offering.summary-blurb-125-words | truncatewords: 125 }}</p>
       {% endif %}
-      {% assign link = "http://example.com" %}
-      {% assign text = "Book" %}
-      {% capture button_content %}
-        {{ link }}
-        {{ text }}
-      {% endcapture %}
-      {% include button-link.html content=button_content %}
+      <div class="booking-button">
+        {% assign link = offering.booking-link %}
+        {% assign text = "Register" %}
+        {% capture button_content %}
+          {{ link }}
+          {{ text }}
+        {% endcapture %}
+        {% include button-link.html content=button_content %}
+      </div>
     </article>
     <article class="right">
-      <div class="student-level">
-          {% assign skill-icon-filename = "/assets/images/misc-icons/" | append: offering.exercise-skill | append: ".svg" %}
-          <img class="icon" src="{{ skill-icon-filename }}" title="{{ offering.exercise-skill }}" />
-          {% if offering.is-for-experienced-mobbers == true %}
-            <img class="icon" src="/assets/images/misc-icons/experienced-mobbers.svg" title="Recommended for people with some experience mobbing" />
-          {% endif %}
-      </div>
       <div class="topics">
-        <p>Topics: {{ offering.topics | array_to_sentence_string }}</p>
+        <p>{{ offering.topics | array_to_sentence_string }}</p>
       </div>
       {% if offering.languages.size > 0 %}
         <div class="programming-language">
@@ -37,6 +32,13 @@
           {% endfor %}
         </div>
       {% endif %}
+      <div class="student-level">
+          {% assign skill-icon-filename = "/assets/images/misc-icons/" | append: offering.exercise-skill | append: ".svg" %}
+          <img class="icon" src="{{ skill-icon-filename }}" title="{{ offering.exercise-skill }}" />
+          {% if offering.is-for-experienced-mobbers == true %}
+            <img class="icon" src="/assets/images/misc-icons/experienced-mobbers.svg" title="Recommended for people with some experience mobbing" />
+          {% endif %}
+      </div>
     </article>
   </section>
 </div>

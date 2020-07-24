@@ -1,5 +1,6 @@
 ---
 layout: offering
+pagename: offering
 session-lead-id: jefflangr
 session-lead-name: Jeff Langr
 name: TDD Paint by Numbers
@@ -13,6 +14,7 @@ exercise-skill: beginner
 repo: "http://github.com/jlangr/name-normalizer"
 prerequisites: []
 summary-blurb-125-words: "<p>Learn TDD the easy way with a TDD Paint by Numbers session, where the tests are already written for you--you fill in the code and keep it in the confines of the tests. Sessions are continually available in numerous programming languages, and I'll be keeping the katas fresh.</p>"
+booking-link: https://a.flexbooker.com/widget/7170596c-b0b6-4630-a4f3-713674a24521
 active: true
 ---
 TDD Paint by Number sessions are gentle introductions to TDD. You and your co-mob will do things...

@@ -1,4 +1,4 @@
-#offerings {
+#offerings {  // the "on tap" or offerings page
   @extend .interior;
   #navofferings { @extend %active; }
 
@@ -21,14 +21,20 @@
     grid-template-areas: "offering-left offering-right";
     grid-gap: 10px 20px;
 
-    background-color: $LightGreyishBlue;
+    background-color: $White;
     border-top-style: solid;
-    border-top-color: #000;
+    border-top-color: #A7A9AC;
     border-top-width: 2px;
     margin: 0 0 20px 0;
     padding: 10px;
 
     .left {
+      h2 {
+        margin-top: 10px;
+      }
+      .booking-button {
+        float: right; // ? grid alignment
+      }
     }
 
     .right {
@@ -44,33 +50,22 @@
       }
 
       .programming-language {
+        margin-bottom: 20px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
         grid-gap: 3px;
       }
 
-      .tech {
-        ul {
-          overflow: auto;
-          list-style-type: none;
-        }
-         
-        li {
-          height: 25px; 
-          float: left; 
-          margin-right: 0px; 
-          border-right: 1px solid #aaa; 
-          padding: 0 10px;
-        }
-         
-        li:last-child {
-          border-right: none;
+      .topics {
+        margin-bottom: 20px;
+        p {
+          @include ms-respond(font-size,0.2);
         }
       }
     }
     
     .longer-description {
-      @include ms-respond(font-size,0.6);
+      @include ms-respond(font-size,1.0);
       line-height: 1.3;
       margin-bottom: 3px;
     }

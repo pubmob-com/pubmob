@@ -13,7 +13,28 @@
          </div>
       </div>
     </header>
+
     {{ page.pre-content }}
+
+    <!--
+    <h3>{{ page.name }}</h3>
+    <section class="offering">
+
+      <article class="left">
+        <p><em>{{ page.twelve-words-or-fewerblurb }}</em></p>
+        <p>{{ page.summary-blurb-300-words }}</p>
+        <p>Experience level: {{ page.exercise-skill }}</p>
+      </article>
+
+      <article class="right">
+        {% if page.graphic %}
+          <img src="/assets/images/offerings/{{page.session-lead-id}}/{{page.graphic}}" style="width: 225px" />
+        {% endif %}
+      </article>
+
+    </section>
+    -->
+
     <article>
       <div class="grid">
         <div class="content">
@@ -22,6 +43,16 @@
             {% if page.graphic %}
               <img src="/assets/images/offerings/{{page.session-lead-id}}/{{page.graphic}}" style="width: 225px" />
             {% endif %}
+          </div>
+
+          <div>
+            {% assign link = page.booking-link %}
+            {% assign text = "Register" %}
+            {% capture button_content %}
+              {{ link }}
+              {{ text }}
+            {% endcapture %}
+            {% include button-link.html content=button_content %}
           </div>
 
           <div class="indent" style="float: right">

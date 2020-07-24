@@ -30,12 +30,12 @@ title-bar-text: PubMob | The Pubs
       <div class="team-member">
         <div class="team-img">
           <a href="/pubs/{{ pub.session-lead-id }}">
-            <span class="team-title">{{ pub.pub-name }}</span>
-          </a>
-          <a href="/pubs/{{ pub.session-lead-id }}">
             <img src="/assets/images/pubs/{{ pub.session-lead-id }}.{{ pub.session-lead-photo-extension }}" width="500" height="500" alt="team member" class="img-responsive">
           </a>
           <div class="team-hover">
+            <a href="/pubs/{{ pub.session-lead-id }}">
+              <span class="team-title">{{ pub.pub-name }}</span>
+            </a>
             <a href="/pubs/{{ pub.session-lead-id }}"><p>{{ pub.tagline }}</p></a>
           </div>
         </div>

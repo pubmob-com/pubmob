@@ -1,5 +1,6 @@
 ---
 layout: offering
+pagename: offering
 session-lead-id: jbrains
 session-lead-name: "J. B. Rainsberger"
 name: "Let's Learn Purescript"

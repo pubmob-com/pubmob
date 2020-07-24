@@ -32,14 +32,9 @@
 
               <h3>About {{ page.session-lead-short-name }}</h3>
               <p>{{ page.session-lead-blurb }}</p>
+              <h3>About {{ page.pub-name }}</h3>
               <div>
-              <p>{{ page.session-lead-short-name }} offers sessions on the following topics:</p>
-              <p class="tech">{{ page.topics | join: " | " }}</p>
-              {% assign languages-length = page.languages | size %}
-              {% if languages-length > 0 %}
-                <p>And is versed in the following languages:</p>
-                <p class="tech">{{ page.languages | join: " | " }}</p>
-              {% endif %}
+              {{ content | markdownify }}
               </div>
             </article>
 
@@ -59,11 +54,12 @@
 
           </section>
 
-          <section class="openEndedPubMarkdown">
+          <!--<section class="openEndedPubMarkdown">
             <div>
             {{ content | markdownify }}
             </div>
           </section>
+          -->
 
 
           <section>
