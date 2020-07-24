@@ -12,8 +12,7 @@ pub-photo: batman-rising.png
 pub-photo-caption: "Reach new peaks with our training."
 pub-summary-twenty-words: "Join a lively mob. James will have your wing.""
 tagline: "I tried to avoid computers in the 70's. Guess what happended. Loving software development ever since."
-session-lead-blurb: "James has been building software professionally since 1979.
-He is the author of Test-Driven Development for Embedded C (http://wingman-sw.com/tddec) and has chapters in four other books. He is a co-author of CppUTest, a popular unit test harness for embedded C and C++. James Grenning’s trains, coaches and consults worldwide. James’ mission is to bring modern technical and management practices to product development teams, especially embedded systems development.  He invented Planning Poker, an estimating technique used around the world, and participated in the creation of the Manifesto for Agile Software Development."
+session-lead-blurb: "James has been building software professionally since 1979. James Grenning trains, coaches and consults worldwide. He is the author of Test-Driven Development for Embedded C (http://wingman-sw.com/tddec). He is a co-author of CppUTest, a popular unit test harness for embedded C and C++. He invented Planning Poker, an estimating technique used around the world. He participated in the creation of the Manifesto for Agile Software Development."
 company: Wingman Software
 company-blurb: "Wingman Software provides training, coaching, and consulting for embedded software teams and individuals."
 company-link: https://wingman-sw.com
