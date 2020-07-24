@@ -9,7 +9,7 @@ sort-name: "1"
 pub-name: The Eagle
 session-lead-photo-extension: jpg
 pub-photo: the-eagle.jpg
-pub-photo-caption: "A nice view of Batman rising."
+pub-photo-caption: "The Eagle, Cambrindge."
 pub-summary-twenty-words: "In this mob, James will have your wing."
 tagline: "I tried to avoid computers in the 70's. Guess what happended. Loving software development ever since."
 session-lead-blurb: "James has been building software professionally since 1979. James Grenning trains, coaches and consults worldwide. He is the author of Test-Driven Development for Embedded C. He is a co-author of CppUTest, a popular unit test harness for embedded C and C++. He invented Planning Poker, an estimating technique used around the world. He participated in the creation of the Manifesto for Agile Software Development."
