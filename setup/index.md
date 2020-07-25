@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: back
 pagename: setup
 title: PubMob | What to Expect
 description: what a mob session looks like
@@ -26,7 +26,7 @@ post-content: >
         </picture>
       </div>
     </div>
-backsite: javascript:history.back()
+backsite: "javascript:history.back()"
 ---
 <div class="horizontal-rule">
   <div class="lr"></div>

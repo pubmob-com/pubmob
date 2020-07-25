@@ -28,7 +28,6 @@ pre-content: >
       </div>
     </div>
 post-content: >
-backsite: javascript:history.back()
 ---
 <section class="seo">
   <div class="heading-title text-center">

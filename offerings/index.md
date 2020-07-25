@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: back
 pagename: offerings
 title: PubMob | What's on Tap
 description:
@@ -20,7 +20,7 @@ post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: What's on Tap
 all-topics-tag: All
-backsite: javascript:history.back()
+backsite: "javascript:history.back()"
 ---
 <h1 class="text-center">Our pub sessions.</h1>
 <p>At PubMob, you'll find a varied selection of engaging mob sessions, from hands-on coding to design workshops.</p>

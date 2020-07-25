@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: back
 pagename: pubs
 title: PubMob | The Pubs
 description:
@@ -19,7 +19,7 @@ pre-content: >
 post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: PubMob | The Pubs
-backsite: javascript:history.back()
+backsite: "javascript:history.back()"
 ---
 <div class="container">
 	<div class="row">

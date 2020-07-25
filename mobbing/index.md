@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: back
 pagename: pubmob
 title: PubMob | Why Mobbing?
 description: Why is PubMob based on mobbing? What's to like about mob programming?
@@ -18,7 +18,7 @@ pre-content: >
 post-content: >
 title-bar-color: title-bar-light-green
 title-bar-text: Why Mobbing?
-backsite: javascript:history.back()
+backsite: "javascript:history.back()"
 ---
 You've likely spent most of your software development careeer in a cubicle or office, flying solo for most of your development efforts.
 
