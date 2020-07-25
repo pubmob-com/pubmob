@@ -25,7 +25,13 @@
 
 - more info on my personal pages
 
-- sell a pack of sessions
+* sell a pack of sessions
+
+"flags"? TZ?
+
+* SELL corporate interest
+* certifications
+* conferences
 
 IDEAS:
 
