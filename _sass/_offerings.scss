@@ -17,7 +17,7 @@
 
   .offering {
     display: grid;
-    grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+    grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
     grid-template-areas: "offering-left offering-right";
     grid-gap: 10px 20px;
 
@@ -85,21 +85,21 @@
       }
     }
     @include respond-to(tablets) {
-      grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+      grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
       grid-template-areas: "offering-left offering-right";
       .right {
         padding: 10px 0 0 0;
       }
     }
     @include respond-to(desktops) { 
-      grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+      grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
       grid-template-areas: "offering-left offering-right";
       .right {
         padding: 10px 0 0 0;
       }
     }
     @include respond-to(max) { 
-      grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+      grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
       grid-template-areas: "offering-left offering-right";
       .right {
         padding: 10px 0 0 0;
