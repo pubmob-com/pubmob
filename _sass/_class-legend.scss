@@ -13,9 +13,14 @@
     margin-right: 10px;
     padding: 10px;
 
-    .active-filters .selectedTopicFilter { display: block; }
-    .active-filters .selectedProgrammingLanguageFilter { display: block; }
-    .active-filters .clearFiltersButton { display: block; }
+    .active-filters #selectedTopicFilter { display: block; }
+    .active-filters #selectedTechFilter { display: block; }
+    .active-filters .filterButton {
+    }
+    .active-filters #selectedTech {
+    }
+    .active-filters #selectedTopic {
+    }
 
     ul {
       overflow: auto;
