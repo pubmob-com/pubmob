@@ -2,11 +2,6 @@
   @extend .interior;
   #navofferings { @extend %active; }
 
-  h1 {
-    margin: 0;
-    padding: 0;
-  }
-
   .left {
     grid-area: offering-left;
   }
