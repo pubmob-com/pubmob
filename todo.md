@@ -1,20 +1,15 @@
 -- BOOKING FORM breaks back button functionality
 
 NEW:
-- limit summary text to 80 (blurb)
 - pub layout: optional video on right
 - certifications
-
+- filter fix
 - video links
 - calendar links actual
 - menu sucks a bit (Skylar)
-- stupid mini menu overwrites top part of page
 - still a few mountain photos
 - facebook vanity URL
-- fix header / logo stuff properly, not a hack (right now it is a max-width image)
-  (use grid)
 - quick NDA
-- styling / colors
 - master list of technologies?
 - lookup (e.g. given an ID get supporting data)
 - heading inconsistency front page, also margins
@@ -48,6 +43,9 @@ mario--conferences ("on your way to conference?")
 
 done:
 
+- styling / colors
+- fix header / logo stuff properly, not a hack (right now it is a max-width image)
+- stupid mini menu overwrites top part of page
 - consistent technologies / topics list
 - styling with |
 - hover help on tech buttons
@@ -69,6 +67,7 @@ done:
 - page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
 - Ruby 2.5.5
 - remove heavy alcohol
+- limit summary text to 80 (blurb)
 
 
 Erica Sadun:
