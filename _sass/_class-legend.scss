@@ -8,19 +8,18 @@
     padding: 50px 10px 10px 0;
   }
 
+  .activeFilters {
+    margin-top: 10px;
+
+    .filterButton {
+      font-size: 80%;
+    }
+  }
+
   .filters {
     border: solid 1px #000;
     margin-right: 10px;
     padding: 10px;
-
-    .active-filters #selectedTopicFilter { display: block; }
-    .active-filters #selectedTechFilter { display: block; }
-    .active-filters .filterButton {
-    }
-    .active-filters #selectedTech {
-    }
-    .active-filters #selectedTopic {
-    }
 
     ul {
       overflow: auto;

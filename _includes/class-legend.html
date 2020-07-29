@@ -20,7 +20,7 @@
   }
 
   function renderPost(id, offeringTechs, offeringTopics, topicFilterSelection, techFilterSelection) {
-    var element = document.getElementById(id);
+    var element = document.getElementById(id)
     if (element) {
       var shouldRender = (topicFilterSelection === '' && techFilterSelection === '') ||
         (topicFilterSelection === '' && offeringTechs.includes(techFilterSelection)) ||
@@ -45,7 +45,7 @@
   }
 
   function clearFilterSelection(displayElementId, spanId) {
-    setText(displayElementId, '');
+    setText(displayElementId, '')
     renderIf(element(spanId), false)
     rerenderPosts()
   }
@@ -65,12 +65,12 @@
     {% include skills-key.html %}
   </article>
   <article class="activeFilters">
-    <span>Filters: 
+    <span>Filters: <i class="fa fa-close" aria-hidden="true"></i>
       <span id="selectedTopicFilter" style="display:none">
-        <button class="filterButton" onClick="clearFilterSelection('selectedTopic', 'selectedTopicFilter')"><i class="fa fa-close"></i><span id="selectedTopic" /></button>
+        <button class="filterButton" onClick="clearFilterSelection('selectedTopic', 'selectedTopicFilter')"><span id="selectedTopic"></span> &times;</button>
       </span>
       <span id="selectedTechFilter" style="display:none">
-        <button class="filterButton" onClick="clearFilterSelection('selectedTech', 'selectedTechFilter')"><i class="fa fa-close"></i><span id="selectedTech" /></button>
+        <button class="filterButton" onClick="clearFilterSelection('selectedTech', 'selectedTechFilter')"><span id="selectedTech"></span> &times;</button>
       </span>
     </span>
   </article>
