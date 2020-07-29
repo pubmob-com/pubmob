@@ -1,35 +1,79 @@
-header {
-  position: relative;
-  z-index: 10;
-
+//header {
+////  position: relative;
+//  height: $header-height;
+//  width: 100%;
+//  background-color: $header-background-color;
+//  display: grid;
+//}
+//
+//header .column-left {
+//  @include respond-to(handhelds) { 
+//    @include flexbox();
+//    @include flex-justify-content(space-between);
+//  }
+//  @include respond-to(wide-handhelds) {
+//    @include flexbox();
+//    @include flex-justify-content(space-between);
+//  }
+//  @include respond-to(tablets) {
+//  }
+//  @include respond-to(desktops) { 
+//  }
+//  @include respond-to(max) { 
+//  }
+//}
+.header {
+  display: grid;
+  grid-gap: 0px;
+  z-index: 5;
   height: $header-height;
-  width: 100%;
 
-  background-color: $header-background-color;
-}
+  grid-template-rows: $header-height;
 
-header .column-left {
+  .column-left {
+    grid-area: column-left;
+    align-content: stretch;
+  }
+
+  .column-right {
+    grid-area: column-right;
+  }
+
   @include respond-to(handhelds) { 
-    @include flexbox();
-    @include flex-justify-content(space-between);
+    grid-template-columns: 12fr;
+    grid-template-areas:
+      "column-left"
+      "column-right";
   }
   @include respond-to(wide-handhelds) {
-    @include flexbox();
-    @include flex-justify-content(space-between);
+    grid-template-columns: 12fr;
+    grid-template-areas:
+      "column-left"
+      "column-right";
   }
   @include respond-to(tablets) {
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas:
+      "column-left column-right";
   }
   @include respond-to(desktops) { 
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas:
+      "column-left column-right";
   }
   @include respond-to(max) { 
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas:
+      "column-left column-right";
   }
 }
 
 header .logo {
-  image-fit: contain;
-  max-width: 320px;
+//  image-fit: contain;
+  max-width: 500px;
   padding-left: $base-spacing;
 
+  /*
   @include respond-to(handhelds) { 
     @include vertical-center(flex);
   }
@@ -45,6 +89,7 @@ header .logo {
   @include respond-to(max) { 
     @include vertical-center(transform);
   }
+  */
 }
 
 #menu {

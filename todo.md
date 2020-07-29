@@ -1,3 +1,10 @@
+-- BOOKING FORM breaks back button functionality
+
+NEW:
+- limit summary text to 80 (blurb)
+- pub layout: optional video on right
+- certifications
+
 - video links
 - calendar links actual
 - menu sucks a bit (Skylar)
@@ -62,3 +69,31 @@ done:
 - page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
 - Ruby 2.5.5
 - remove heavy alcohol
+
+
+Erica Sadun:
+- reduce friction for finding clients
+- training year round not workshops
+- money yes
+- tryswift.io
+- certifications!
+
+--
+Llewellyn:
+
+OBS (virtual cameras)o
+Anydesk
+Dependabot-- auto-check dependencies regularly
+
+--
+TWEET: perils of undo on mob switch
+==
+James suggests:
+Rob Smallshire / Austin Bingham 
+Jon Kern
+Gitte Klitgard
+Patrica Aas
+Becca Williams
+Gee Paw Hill
+Jutta Eckstein (technical?)
+Bas Vodde
