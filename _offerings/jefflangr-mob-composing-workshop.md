@@ -3,7 +3,7 @@ layout: offering
 pagename: offering
 session-lead-id: jefflangr
 session-lead-name: Jeff Langr
-name: From Mob to Symphony--A Mob Composing Workshop
+name: "From Mob to Symphony: A Mob Composing Workshop"
 twelve-words-or-fewer: "Not a programmer? Learn firsthand the joy of a mob. Come compose with us."
 topics: [mobbing]
 languages: []
