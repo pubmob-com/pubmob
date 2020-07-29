@@ -13,7 +13,7 @@ is-for-experienced-mobbers: false
 exercise-skill: intermediate
 repo: ""
 prerequisites: []
-summary-blurb-125-words: "<p>Make a deliberate change,  predict red|green|yellow.</p>"
+summary-blurb-80-words: "<p>Make a deliberate change,  predict red|green|yellow.</p>"
 booking-link: 
 active: true
 ---

@@ -5,10 +5,10 @@
       {% if page.pagename == "offerings" %}
         <h2><a href="/pubs/{{ offering.session-lead-id }}">{{ offering.session-lead-name }}</a></h2>
       {% endif %}
-      <p class="summary"><em>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 15 }}</em></p>
-      {% assign blurbLength = offering.summary-blurb-125-words | number_of_words %}
-      {% if blurbLength <= 125 %}
-        <p class="longer-description">{{ offering.summary-blurb-125-words | truncatewords: 125 }}</p>
+      <p class="summary"><em>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 12 }}</em></p>
+      {% assign blurbLength = offering.summary-blurb-80-words | number_of_words %}
+      {% if blurbLength <= 80 %}
+        <p class="longer-description">{{ offering.summary-blurb-80-words }}</p>
       {% endif %}
       <div class="booking-button">
         {% assign link = offering.booking-link %}

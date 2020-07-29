@@ -13,7 +13,7 @@ is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
 prerequisites: []
-summary-blurb-125-words: <p>Using existing test coverage, learn techniques and concepts to quickly de-crapify code.  Look at your company's monolith with some fresh eyes and renewed confidence!</p>
+summary-blurb-80-words: <p>Using existing test coverage, learn techniques and concepts to quickly de-crapify code.  Look at your company's monolith with some fresh eyes and renewed confidence!</p>
 active: true
 ---
 You'll see code that looks like the stuff in your system!

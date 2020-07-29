@@ -13,7 +13,7 @@ is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
 prerequisites: []
-summary-blurb-125-words: "<p>Understand your readiness to succeed with Test Automation and develop a roadmap for success. You'll address obtacles within your organization and get started on a path to effective Test Automation!</p>"
+summary-blurb-80-words: "<p>Understand your readiness to succeed with Test Automation and develop a roadmap for success. You'll address obtacles within your organization and get started on a path to effective Test Automation!</p>"
 booking-link: https://a.flexbooker.com/widget/61a3d947-4177-4e7f-8a81-cf47ecaffec4
 active: true
 ---

@@ -13,7 +13,7 @@ is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
 prerequisites: []
-summary-blurb-125-words: "<p>Your legacy code doesn't have tests? Join the club. Let's learn how to do a lot of refactoring without the need for some tests.</p>"
+summary-blurb-80-words: "<p>Your legacy code doesn't have tests? Join the club. Let's learn how to do a lot of refactoring without the need for some tests.</p>"
 booking-link: 
 active: true
 ---
