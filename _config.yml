@@ -65,10 +65,10 @@ navigation:
   - title: Home
     url: /
     id: navhome
-  - title: Our (Virtual) Pubs
+  - title: Virtual Pubs
     url: /pubs
     id: navpubs
-  - title: What's on Tap
+  - title: On Tap
     url: /offerings
     id: navofferings
   - title: About
