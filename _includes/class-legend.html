@@ -40,29 +40,20 @@
     {% endfor %}
   }
 
-  function clearFilterSelections(elementIds) {
-    for (let i = 0; i < elementIds.length; i++)
-      setText(elementIds[i], '');
-    renderPosts('', '');
-    renderIf(element('selectedTechFilter'), false)
-    renderIf(element('selectedTopicFilter'), false)
-    renderIf(element('clearFiltersButton'), false)
+  function rerenderPosts() {
+    renderPosts(getText('selectedTopic'), getText('selectedTech'))
   }
 
-  function filterUsingTopic(displayElementId, filterSelection, existingTechElementId) {
-    setText(displayElementId, filterSelection)
-    renderIf(element('selectedTechFilter'), true)
-    renderIf(element('selectedTopicFilter'), true)
-    renderIf(element('clearFiltersButton'), true)
-    var existingTechFilter = getText(existingTechElementId)
-    renderPosts(filterSelection, existingTechFilter)
+  function clearFilterSelection(displayElementId, spanId) {
+    setText(displayElementId, '');
+    renderIf(element(spanId), false)
+    rerenderPosts()
   }
 
-  function filterUsingTech(displayElementId, filterSelection, existingTopicElementId) {
+  function filter(displayElementId, spanId, filterSelection) {
     setText(displayElementId, filterSelection)
-    var existingTopicFilter = getText(existingTopicElementId)
-    renderPosts(existingTopicFilter, filterSelection)
-    renderIf(element('clearFiltersButton'), true)
+    renderIf(element(spanId), true)
+    rerenderPosts()
   }
 </script>
 
@@ -74,14 +65,13 @@
     {% include skills-key.html %}
   </article>
   <article class="activeFilters">
-    <button id="clearFiltersButton" 
-      style="display:none"
-      onclick="clearFilterSelections(['selectedTopic', 'selectedTech'])">
-      Clear
-    </button>
     <span>Filters: 
-      <span id="selectedTopicFilter" style="display:none"><span id="selectedTopic" /></span>
-      <span id="selectedTechFilter" style="display:none"><span id="selectedTech" /></span>
+      <span id="selectedTopicFilter" style="display:none">
+        <button class="btn" onClick="clearFilterSelection('selectedTopic', 'selectedTopicFilter')"><i class="fa fa-close"></i><span id="selectedTopic" /></button>
+      </span>
+      <span id="selectedTechFilter" style="display:none">
+        <button class="btn" onClick="clearFilterSelection('selectedTech', 'selectedTechFilter')"><i class="fa fa-close"></i><span id="selectedTech" /></button>
+      </span>
     </span>
   </article>
 </section>

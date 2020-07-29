@@ -14,7 +14,7 @@
   <ul class="all-selections">
     {% for selection in all-selections %}
     <li>
-      <a id="{{ selection }}" onclick="filterUsingTopic('selectedTopic', this.id, 'selectedTech')" href="javascript:void(0);">{{ selection }}</a>
+      <a id="{{ selection }}" onclick="filter('selectedTopic', 'selectedTopicFilter', this.id)" href="javascript:void(0);">{{ selection }}</a>
     </li>
     {% endfor %}
   </ul>
@@ -37,7 +37,7 @@
   <ul class="all-selections">
     {% for selection in all-selections %}
     <li>
-      <a id="{{ selection }}" onclick="filterUsingTech('selectedTech', this.id, 'selectedTopic')" href="javascript:void(0);">{{ selection }}</a>
+      <a id="{{ selection }}" onclick="filter('selectedTech', 'selectedTechFilter', this.id)" href="javascript:void(0);">{{ selection }}</a>
     </li>
     {% endfor %}
   </ul>
