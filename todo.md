@@ -3,16 +3,12 @@
 NEW:
 - pub layout: optional video on right
 - certifications
-- filter fix
 - video links
 - calendar links actual
 - menu sucks a bit (Skylar)
 - still a few mountain photos
 - facebook vanity URL
 - quick NDA
-- master list of technologies?
-- lookup (e.g. given an ID get supporting data)
-- heading inconsistency front page, also margins
 - about page: About PubMob header size / margin
 -- SOLICIT MORE SESSION LEADS!
   -- who speaks to you? -- ask of customers
@@ -27,22 +23,27 @@ NEW:
 
 - more info on my personal pages
 
-* sell a pack of sessions
-
-"flags"? TZ?
+*** sell a pack of sessions
 
 * SELL corporate interest
 * certifications
 * conferences
+* DOWNPLAY video training, long-term training
+* ALLOW scheduling of open session
 
 IDEAS:
 
+"flags"? TZ?
 venkat--order up a class
 mario--conferences ("on your way to conference?")
 
 
 done:
 
+- heading inconsistency front page, also margins
+- lookup (e.g. given an ID get supporting data)
+- master list of technologies?
+- filter fix
 - styling / colors
 - fix header / logo stuff properly, not a hack (right now it is a max-width image)
 - stupid mini menu overwrites top part of page

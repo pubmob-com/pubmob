@@ -21,8 +21,8 @@ title-bar-color: title-bar-light-green
 title-bar-text: PubMob | The Pubs
 backsite: "javascript:history.back()"
 ---
-<h1>Our pub owners.</h1>
-<p>Each of our pubs is owned by a {{ site.session-lead-term }} with extensive experience in helping development teams deliver high-quality software.</p>
+<h1>Our pub mob session leads.</h1>
+<p>Each of our public mobbing sessions is run by a {{ site.session-lead-term }} with extensive experience in helping development teams deliver high-quality software.</p>
 <div class="pub-owners">
   {% assign sorted = site.pubs | sort: "sort-name" %}
   {% for pub in sorted %}
