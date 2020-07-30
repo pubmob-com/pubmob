@@ -1,33 +1,18 @@
 <script type="text/javascript">
   function setText(id, text) {
-    var elt = document.getElementById(id)
-    if (elt)
-      elt.innerHTML = text
-    else
-      console.log('cannot setText; id not found: ', id)
-  }
-
-  function setButtonText(id, text) {
-    var button = document.getElementById(id)
-    if (button)
-      button.textContent = text
-    else
-      console.log('cannot setButtonText; id not found: ', id)
-  }
-
-  function element(id) {
-    var elt = document.getElementById(id)
-    if (!elt)
-      console.log('id not found: ', id)
-    return elt
+    element(id).innerHTML = text
   }
 
   function getText(id) {
-    var elt = document.getElementById(id)
-    if (elt)
-      return elt.innerHTML
-    console.log( 'id not found: ' + id)
+    return element(id).innerHTML
+  }
 
+  function setButtonText(id, text) {
+    element(id).textContent = text
+  }
+
+  function element(id) {
+    return document.getElementById(id)
   }
 
   function renderIf(elt, condition) {
