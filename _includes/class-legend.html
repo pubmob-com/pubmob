@@ -1,32 +1,52 @@
 <script type="text/javascript">
   function setText(id, text) {
-    var topicHeader = document.getElementById(id)
-    if (topicHeader)
-      topicHeader.innerHTML = text
+    var elt = document.getElementById(id)
+    if (elt)
+      elt.innerHTML = text
     else
-      console.log('id not found: ', id)
+      console.log('cannot setText; id not found: ', id)
+  }
+
+  function setButtonText(id, text) {
+    var button = document.getElementById(id)
+    if (button)
+      button.textContent = text
+    else
+      console.log('cannot setButtonText; id not found: ', id)
   }
 
   function element(id) {
-    return document.getElementById(id)
+    var elt = document.getElementById(id)
+    if (!elt)
+      console.log('id not found: ', id)
+    return elt
   }
 
   function getText(id) {
-    return document.getElementById(id).innerHTML
+    var elt = document.getElementById(id)
+    if (elt)
+      return elt.innerHTML
+    console.log( 'id not found: ' + id)
+
   }
 
-  function renderIf(element, condition) {
-    element.style.display = condition ? '' : 'none'
+  function renderIf(elt, condition) {
+    elt.style.display = condition ? '' : 'none'
+  }
+
+  
+  function showElementWithId(id) {
+    renderIf(element(id), true)
   }
 
   function renderPost(id, offeringTechs, offeringTopics, topicFilterSelection, techFilterSelection) {
-    var element = document.getElementById(id)
-    if (element) {
+    var elt = document.getElementById(id)
+    if (elt) {
       var shouldRender = (topicFilterSelection === '' && techFilterSelection === '') ||
         (topicFilterSelection === '' && offeringTechs.includes(techFilterSelection)) ||
         (offeringTopics.includes(topicFilterSelection) && techFilterSelection == '') ||
         (offeringTopics.includes(topicFilterSelection) && offeringTechs.includes(techFilterSelection));
-      renderIf(element, shouldRender);
+      renderIf(elt, shouldRender);
     }
   }
 
@@ -41,18 +61,28 @@
   }
 
   function rerenderPosts() {
-    renderPosts(getText('selectedTopic'), getText('selectedTech'))
+    var selectedTopic = getText('selectedTopic')
+    var selectedTech = getText('selectedTech')
+    renderPosts(selectedTopic, selectedTech)
   }
 
-  function clearFilterSelection(displayElementId, spanId) {
+  function clearFilterSelection(displayElementId, buttonId) {
     setText(displayElementId, '')
-    renderIf(element(spanId), false)
+    renderIf(element(buttonId), false)
     rerenderPosts()
   }
 
-  function filter(displayElementId, spanId, filterSelection) {
+  function filterTopic(displayElementId, spanId, description, filterSelection) {
     setText(displayElementId, filterSelection)
-    renderIf(element(spanId), true)
+    setButtonText('selectedTopicButton', description + ' \u00D7');
+    showElementWithId(spanId)
+    rerenderPosts()
+  }
+
+  function filterTech(displayElementId, spanId, description, filterSelection) {
+    setText(displayElementId, filterSelection)
+    setButtonText('selectedTechButton', description + ' \u00D7');
+    showElementWithId(spanId)
     rerenderPosts()
   }
 </script>
@@ -65,13 +95,11 @@
     {% include skills-key.html %}
   </article>
   <article class="activeFilters">
-    <span>Filters: <i class="fa fa-close" aria-hidden="true"></i>
-      <span id="selectedTopicFilter" style="display:none">
-        <button class="filterButton" onClick="clearFilterSelection('selectedTopic', 'selectedTopicFilter')"><span id="selectedTopic"></span> &times;</button>
-      </span>
-      <span id="selectedTechFilter" style="display:none">
-        <button class="filterButton" onClick="clearFilterSelection('selectedTech', 'selectedTechFilter')"><span id="selectedTech"></span> &times;</button>
-      </span>
+    <span>Filters:
+      <span id="selectedTopic" hidden></span>
+      <span id="selectedTech" hidden></span>
+      <button class="filterButton" id="selectedTopicButton" onClick="clearFilterSelection('selectedTopic', this.id)" style="display:none" />
+      <button class="filterButton" id="selectedTechButton" onClick="clearFilterSelection('selectedTech', this.id)" style="display:none" />
     </span>
   </article>
 </section>
