@@ -48,23 +48,29 @@
       var shouldRender = (topicFilterSelection === '' && techFilterSelection === '') ||
         (topicFilterSelection === '' && offeringTechs.includes(techFilterSelection)) ||
         (offeringTopics.includes(topicFilterSelection) && techFilterSelection == '') ||
-        (offeringTopics.includes(topicFilterSelection) && offeringTechs.includes(techFilterSelection));
-      renderIf(elt, shouldRender);
+        (offeringTopics.includes(topicFilterSelection) && offeringTechs.includes(techFilterSelection))
+      renderIf(elt, shouldRender)
+      return shouldRender
     }
+    return false
   }
 
   function renderPosts(topicFilterSelection, techFilterSelection) {
+    var count = 0
     {% for offering in site.offerings %}
-      renderPost("{{ offering.id }}",
+      var didRender = renderPost("{{ offering.id }}",
         {{ offering.languages | jsonify }}, 
         {{ offering.topics | jsonify }},
         topicFilterSelection, 
         techFilterSelection);
+      if (didRender) count++
     {% endfor %}
+    return count
   }
 
   function rerenderPosts() {
-    renderPosts(getText('selectedTopic'), getText('selectedTech'))
+    var countOfRenderedPosts = renderPosts(getText('selectedTopic'), getText('selectedTech'))
+    renderIf(element('noPosts'), countOfRenderedPosts == 0)
   }
 
   function clearFilterSelection(filterSelectionElementId, buttonId) {
@@ -94,8 +100,9 @@
     <span>Filters:
       <span id="selectedTopic" hidden></span>
       <span id="selectedTech" hidden></span>
-      <button class="filterButton" id="selectedTopicButton" onClick="clearFilterSelection('selectedTopic', this.id)" style="display:none" />
-      <button class="filterButton" id="selectedTechButton" onClick="clearFilterSelection('selectedTech', this.id)" style="display:none" />
+      <button class="filterButton" id="selectedTopicButton" onClick="clearFilterSelection('selectedTopic', this.id)" style="display:none"></button>
+      <button class="filterButton" id="selectedTechButton" onClick="clearFilterSelection('selectedTech', this.id)" style="display:none"></button>
     </span>
+    <p id='noPosts' style='display:none'>No sessions matched your filter selections.</p>
   </article>
 </section>
