@@ -1,0 +1,4 @@
+---
+name: purescript
+description: PureScript
+---
