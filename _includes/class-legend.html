@@ -34,9 +34,12 @@
     elt.style.display = condition ? '' : 'none'
   }
 
-  
   function showElementWithId(id) {
     renderIf(element(id), true)
+  }
+  
+  function hideElementWithId(id) {
+    renderIf(element(id), false)
   }
 
   function renderPost(id, offeringTechs, offeringTopics, topicFilterSelection, techFilterSelection) {
@@ -66,22 +69,15 @@
 
   function clearFilterSelection(filterSelectionElementId, buttonId) {
     setText(filterSelectionElementId, '')
-    renderIf(element(buttonId), false)
+    hideElementWithId(buttonId)
     rerenderPosts()
   }
 
   const xGlyph = '\u00D7'
 
-  function filterTopic(filterSelectionElementId, filterSelectionButtonId, filterSelectionButtonText, filterSelection) {
+  function filter(filterSelectionElementId, filterSelectionButtonId, filterSelectionButtonText, filterSelection) {
     setText(filterSelectionElementId, filterSelection)
-    setButtonText('selectedTopicButton', filterSelectionButtonText + ' ' + xGlyph);
-    showElementWithId(filterSelectionButtonId)
-    rerenderPosts()
-  }
-
-  function filterTech(filterSelectionElementId, filterSelectionButtonId, filterSelectionButtonText, filterSelection) {
-    setText(filterSelectionElementId, filterSelection)
-    setButtonText('selectedTechButton', filterSelectionButtonText + ' ' + xGlyph);
+    setButtonText(filterSelectionButtonId, filterSelectionButtonText + ' ' + xGlyph);
     showElementWithId(filterSelectionButtonId)
     rerenderPosts()
   }

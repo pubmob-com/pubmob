@@ -15,7 +15,7 @@
     {% for selection in all-selections %}
     <li>
       {% assign description = selection %}
-      <a id="{{ selection }}" onclick="filterTopic('selectedTopic', 'selectedTopicButton', '{{ description }}', this.id)" href="javascript:void(0);">{{ description }}</a>
+      <a id="{{ selection }}" onclick="filter('selectedTopic', 'selectedTopicButton', '{{ description }}', this.id)" href="javascript:void(0);">{{ description }}</a>
     </li>
     {% endfor %}
   </ul>
@@ -44,7 +44,7 @@
       {% else %}
       {%   assign description = selection %}
       {% endif %}
-      <a id="{{ selection }}" onclick="filterTech('selectedTech', 'selectedTechButton', '{{ description }}', this.id)" href="javascript:void(0);">{{ description }}</a>
+      <a id="{{ selection }}" onclick="filter('selectedTech', 'selectedTechButton', '{{ description }}', this.id)" href="javascript:void(0);">{{ description }}</a>
     </li>
     {% endfor %}
   </ul>
