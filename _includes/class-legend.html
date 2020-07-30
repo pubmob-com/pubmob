@@ -61,28 +61,28 @@
   }
 
   function rerenderPosts() {
-    var selectedTopic = getText('selectedTopic')
-    var selectedTech = getText('selectedTech')
-    renderPosts(selectedTopic, selectedTech)
+    renderPosts(getText('selectedTopic'), getText('selectedTech'))
   }
 
-  function clearFilterSelection(displayElementId, buttonId) {
-    setText(displayElementId, '')
+  function clearFilterSelection(filterSelectionElementId, buttonId) {
+    setText(filterSelectionElementId, '')
     renderIf(element(buttonId), false)
     rerenderPosts()
   }
 
-  function filterTopic(displayElementId, spanId, description, filterSelection) {
-    setText(displayElementId, filterSelection)
-    setButtonText('selectedTopicButton', description + ' \u00D7');
-    showElementWithId(spanId)
+  const xGlyph = '\u00D7'
+
+  function filterTopic(filterSelectionElementId, filterSelectionButtonId, filterSelectionButtonText, filterSelection) {
+    setText(filterSelectionElementId, filterSelection)
+    setButtonText('selectedTopicButton', filterSelectionButtonText + ' ' + xGlyph);
+    showElementWithId(filterSelectionButtonId)
     rerenderPosts()
   }
 
-  function filterTech(displayElementId, spanId, description, filterSelection) {
-    setText(displayElementId, filterSelection)
-    setButtonText('selectedTechButton', description + ' \u00D7');
-    showElementWithId(spanId)
+  function filterTech(filterSelectionElementId, filterSelectionButtonId, filterSelectionButtonText, filterSelection) {
+    setText(filterSelectionElementId, filterSelection)
+    setButtonText('selectedTechButton', filterSelectionButtonText + ' ' + xGlyph);
+    showElementWithId(filterSelectionButtonId)
     rerenderPosts()
   }
 </script>
