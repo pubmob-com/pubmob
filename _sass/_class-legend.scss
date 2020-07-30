@@ -2,13 +2,39 @@
   display: grid;
   grid-template-columns: minmax(68%,1fr) minmax(31%,1fr);
 
+  @include respond-to(handhelds) { 
+    grid-template-columns: 1fr;
+    grid-template-areas: "filters" "key" "activeFilters";
+  }
+  @include respond-to(wide-handhelds) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "filters" "key" "activeFilters";
+  }
+  @include respond-to(tablets) {
+    grid-template-columns: minmax(68%,1fr) minmax(31%,1fr);
+    grid-template-areas: "filters key" "activeFilters activeFilters";
+  }
+  @include respond-to(desktops) { 
+    grid-template-columns: minmax(68%,1fr) minmax(31%,1fr);
+    grid-template-areas: "filters key" "activeFilters activeFilters";
+  }
+  @include respond-to(max) { 
+    grid-template-columns: minmax(68%,1fr) minmax(31%,1fr);
+    grid-template-areas: "filters key" "activeFilters activeFilters";
+  }
+
   margin-bottom: 10px;
 
   .description {
     padding: 50px 10px 10px 0;
   }
 
+  .key {
+    grid-area: key;
+  }
+
   .activeFilters {
+    grid-area: activeFilters;
     margin-top: 10px;
 
     .filterButton {
@@ -17,6 +43,7 @@
   }
 
   .filters {
+    grid-area: filters;
     border: solid 1px #000;
     margin-right: 10px;
     padding: 10px;
