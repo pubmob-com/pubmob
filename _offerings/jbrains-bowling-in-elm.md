@@ -12,6 +12,7 @@ public-or-private: public
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
+next-available-sessions: [] 
 prerequisites: []
 summary-blurb-80-words: "Would you like to see Elm in practice? Serverless? With parsing? This is for you!"
 active: true

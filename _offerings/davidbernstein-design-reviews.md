@@ -10,6 +10,7 @@ languages: [java,cpp,csharp,javascript]
 graphic: 
 public-or-private: both
 is-for-experienced-mobbers: false
+next-available-sessions: [] 
 exercise-skill: beginner
 repo: 
 prerequisites: []

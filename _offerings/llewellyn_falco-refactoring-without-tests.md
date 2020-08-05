@@ -12,6 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
+next-available-sessions: [] 
 prerequisites: []
 summary-blurb-80-words: "<p>Your legacy code doesn't have tests? Join the club. Let's learn how to do a lot of refactoring without the need for some tests.</p>"
 booking-link: 

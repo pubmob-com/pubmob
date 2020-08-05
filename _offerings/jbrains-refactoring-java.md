@@ -12,6 +12,7 @@ public-or-private: public
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
+next-available-sessions: [] 
 prerequisites: []
 summary-blurb-80-words: "Strengthen and deepen your skill in evolutionary design by practising in Java. There's plenty of Java code that needs refactoring. We'll never run out of examples."
 active: true

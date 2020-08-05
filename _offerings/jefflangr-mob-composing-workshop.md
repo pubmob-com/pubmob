@@ -12,6 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: "http://github.com/jlangr/geektone"
+next-available-sessions: [] 
 prerequisites: []
 summary-blurb-80-words: "<p>Mobbing is 'everyone in a room working on the same thing at the same time,' per Woody Zuill. Outrageous! Yet teams find mobbing a fun way to collaboratively build and deliver high-quality software. Some teams even say they go faster.</p><p>In this session, we'll mob to collaboratively compose a short song. Even if you know little about music, you'll feel firsthand how mobbing can reduce your anxiety and help you contribute quickly.</p>"
 active: true

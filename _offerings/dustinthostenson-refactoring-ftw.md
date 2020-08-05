@@ -12,6 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
+next-available-sessions: [] 
 prerequisites: []
 summary-blurb-80-words: <p>Using existing test coverage, learn techniques and concepts to quickly de-crapify code.  Look at your company's monolith with some fresh eyes and renewed confidence!</p>
 active: true
