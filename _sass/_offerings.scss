@@ -24,42 +24,48 @@
     padding: 30px 10px 10px 10px;
 
     .left {
-      h1 {
-        text-align: left;
-      }
-      h2 {
-        margin-top: 10px;
-      }
-      .booking-button {
-//        float: left; 
-      }
     }
 
     .right {
       padding: 50px 0 0 0;
+    }
 
-      .icon {
-          width: 48px;
-          max-width: 48px;
-      }
-     
-      .student-level {
-        img { max-height: 48px; width: auto; }
-      }
+    h1 {
+      text-align: left;
+    }
+    h2 {
+      margin-top: 10px;
+    }
 
-      .programming-language {
-        margin-bottom: 20px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
-        grid-gap: 3px;
-      }
+    .booking-button {
+    }
 
-      .topics {
-        margin-bottom: 20px;
-        p {
-          @include ms-respond(font-size,0.2);
-        }
+    .icon {
+        width: 48px;
+        max-width: 48px;
+    }
+   
+    .student-level {
+      img { max-height: 48px; width: auto; }
+    }
+
+    .programming-language {
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+      grid-gap: 3px;
+    }
+
+    .topics {
+      margin-bottom: 20px;
+      p {
+        @include ms-respond(font-size,0.2);
       }
+    }
+
+    .upcoming-sessions p {
+      @include ms-respond(font-size,0.4);
+      font-style: italic;
     }
     
     .longer-description {
@@ -70,14 +76,16 @@
 
     @include respond-to(handhelds) { 
       grid-template-columns: 1fr;
-      grid-template-areas: "offering-left" "offering-right";
+      grid-template-areas: "offering-left" 
+                           "offering-right";
       .right {
         padding: 0;
       }
     }
     @include respond-to(wide-handhelds) {
       grid-template-columns: 1fr;
-      grid-template-areas: "offering-left" "offering-right";
+      grid-template-areas: "offering-left" 
+                           "offering-right";
       .right {
         padding: 0;
       }
