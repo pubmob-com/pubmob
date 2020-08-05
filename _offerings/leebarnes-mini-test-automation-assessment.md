@@ -15,7 +15,7 @@ repo:
 next-available-sessions: [] 
 prerequisites: []
 summary-blurb-80-words: "<p>Understand your readiness to succeed with Test Automation and develop a roadmap for success. You'll address obtacles within your organization and get started on a path to effective Test Automation!</p>"
-booking-link: https://a.flexbooker.com/widget/61a3d947-4177-4e7f-8a81-cf47ecaffec4
+booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=38964"
 active: true
 ---
 Are you struggling with implementing effective test automation?  Are you just getting started and want to avoid the common obstacles that prevent many from succeeding?  We’ll work through assessment activities over a one to two hour conversation that will provide you with a clear understanding of where you are and what you need to do to move forward with effective test automation.
