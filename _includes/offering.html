@@ -12,6 +12,14 @@
           <p><a href="{{ offering.id }}">More &#187;</a></p>
         </p>
       {% endif %}
+      <div class="upcoming-sessions">
+        <p>Upcoming sessions:
+          {% for next-session in offering.next-available-sessions | limit: 3 %}
+            {{ next-session | date: "%B %d %H:%M %Z" }}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </p>
+      </div>
+
       <div class="booking-button">
         {% assign link = offering.booking-link %}
         {% assign text = "Register" %}
