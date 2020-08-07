@@ -1,16 +1,14 @@
+-- BOOKING FORM breaks back button functionality
+
+NEW:
+- pub layout: optional video on right
+- certifications
 - video links
 - calendar links actual
 - menu sucks a bit (Skylar)
-- stupid mini menu overwrites top part of page
 - still a few mountain photos
 - facebook vanity URL
-- fix header / logo stuff properly, not a hack (right now it is a max-width image)
-  (use grid)
 - quick NDA
-- styling / colors
-- master list of technologies?
-- lookup (e.g. given an ID get supporting data)
-- heading inconsistency front page, also margins
 - about page: About PubMob header size / margin
 -- SOLICIT MORE SESSION LEADS!
   -- who speaks to you? -- ask of customers
@@ -25,16 +23,30 @@
 
 - more info on my personal pages
 
-- sell a pack of sessions
+*** sell a pack of sessions
+
+* SELL corporate interest
+* certifications
+* conferences
+* DOWNPLAY video training, long-term training
+* ALLOW scheduling of open session
 
 IDEAS:
 
+"flags"? TZ?
 venkat--order up a class
 mario--conferences ("on your way to conference?")
 
 
 done:
 
+- heading inconsistency front page, also margins
+- lookup (e.g. given an ID get supporting data)
+- master list of technologies?
+- filter fix
+- styling / colors
+- fix header / logo stuff properly, not a hack (right now it is a max-width image)
+- stupid mini menu overwrites top part of page
 - consistent technologies / topics list
 - styling with |
 - hover help on tech buttons
@@ -56,3 +68,32 @@ done:
 - page title for pub defaults to "jefflangr" but should be "PubMob | Pub | Jeff Langr"
 - Ruby 2.5.5
 - remove heavy alcohol
+- limit summary text to 80 (blurb)
+
+
+Erica Sadun:
+- reduce friction for finding clients
+- training year round not workshops
+- money yes
+- tryswift.io
+- certifications!
+
+--
+Llewellyn:
+
+OBS (virtual cameras)o
+Anydesk
+Dependabot-- auto-check dependencies regularly
+
+--
+TWEET: perils of undo on mob switch
+==
+James suggests:
+Rob Smallshire / Austin Bingham 
+Jon Kern
+Gitte Klitgard
+Patrica Aas
+Becca Williams
+Gee Paw Hill
+Jutta Eckstein (technical?)
+Bas Vodde

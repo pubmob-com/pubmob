@@ -13,7 +13,7 @@
 
   .team-hover {
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
@@ -41,17 +41,20 @@
   .team-title {
     margin-bottom: 5px;
     display: inline-block;
+    text-align: center;
     width: 100%;
-    text-transform: uppercase;
+    font-size: 110%;
+//    text-transform: uppercase;
   }
 
   .owner-name {
+    font-size: 150%;
     margin-top: 10px;
     margin-bottom: 5px;
-    text-align: center;
+ //   text-align: center;
     display: inline-block;
     width: 100%;
-    text-transform: uppercase;
+//    text-transform: uppercase;
   }
 
   @include respond-to(handhelds) { 

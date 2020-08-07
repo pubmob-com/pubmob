@@ -1,27 +1,29 @@
-<div class="header-grid">
+<div class="header">
 	
 	<div class="column-left">
       {% include logo.html %}
  	</div>
 		
-  <nav class="navbar navbar-static-top" role="navigation">
-      <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+  <div class="column-right">
+    <nav class="navbar navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            {% for link in site.navigation %}
+            <li><a href="{{ link.url }}">{{link.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          {% for link in site.navigation %}
-          <li><a href="{{ link.url }}">{{link.title}}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 
 </div>

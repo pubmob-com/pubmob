@@ -103,36 +103,3 @@ $breakpoint-max: 1080px;
   }
 }
 
-.header-grid {
-  display: grid;
-  grid-gap: 0px;
-  align-content: stretch;
-  grid-template-rows: $header-height;
-  @include respond-to(handhelds) { 
-    grid-template-columns: 12fr;
-    grid-template-areas:
-      "col-l"
-      "col-r";
-  }
-  @include respond-to(wide-handhelds) {
-    grid-template-columns: 12fr;
-    grid-template-areas:
-      "col-l"
-      "col-r";
-  }
-  @include respond-to(tablets) {
-    grid-template-columns: 4fr 8fr;
-    grid-template-areas:
-      "col-l col-r";
-  }
-  @include respond-to(desktops) { 
-    grid-template-columns: 4fr 8fr;
-    grid-template-areas:
-      "col-l col-r";
-  }
-  @include respond-to(max) { 
-    grid-template-columns: 4fr 8fr;
-    grid-template-areas:
-      "col-l col-r";
-  }
-}

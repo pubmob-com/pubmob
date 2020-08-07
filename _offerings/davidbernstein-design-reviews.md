@@ -1,5 +1,6 @@
 ---
 layout: offering
+pagename: offering
 session-lead-id: davidbernstein
 session-lead-name: David Bernstein
 name: Design Reviews
@@ -9,10 +10,11 @@ languages: [java,cpp,csharp,javascript]
 graphic: 
 public-or-private: both
 is-for-experienced-mobbers: false
+next-available-sessions: [] 
 exercise-skill: beginner
 repo: 
 prerequisites: []
-summary-blurb-125-words: "<ul class='list'>
+summary-blurb-80-words: "<ul class='list'>
 <li>Identify patterns in your design to simplify and clarify code</li>
 <li>Improve the testability of your designs to help automate validation</li>
 <li>Examine the context and motivation around your design decisions</li>
@@ -21,6 +23,7 @@ summary-blurb-125-words: "<ul class='list'>
 <li>Cohesively instantiate objects to reduce coupling throughout the system</li>
 <li>Implement alternative design solutions to resolve longstanding problems</li>
 </ul>"
+booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39109"
 active: true
 ---
 I’ve helped design dozens of successful products and services in a diverse range of industries. I have extensive experience working with design patterns and architecting a variety of systems, from embedded to the enterprise, and custom apps to operating systems.

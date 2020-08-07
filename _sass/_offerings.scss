@@ -1,11 +1,6 @@
-#offerings {
+#offerings {  // the "on tap" or offerings page
   @extend .interior;
   #navofferings { @extend %active; }
-
-  h1 {
-    margin: 0;
-    padding: 0;
-  }
 
   .left {
     grid-area: offering-left;
@@ -17,94 +12,100 @@
 
   .offering {
     display: grid;
-    grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+    grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
     grid-template-areas: "offering-left offering-right";
     grid-gap: 10px 20px;
 
-    background-color: $LightGreyishBlue;
+    background-color: $White;
     border-top-style: solid;
-    border-top-color: #000;
+    border-top-color: #A7A9AC;
     border-top-width: 2px;
     margin: 0 0 20px 0;
-    padding: 10px;
+    padding: 30px 10px 10px 10px;
 
     .left {
     }
 
     .right {
       padding: 50px 0 0 0;
+    }
 
-      .icon {
-          width: 48px;
-          max-width: 48px;
-      }
-     
-      .student-level {
-        img { height: 64px; width: auto; }
-      }
+    h1 {
+      text-align: left;
+    }
+    h2 {
+      margin-top: 10px;
+    }
 
-      .programming-language {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
-        grid-gap: 3px;
-      }
+    .booking-button {
+    }
 
-      .tech {
-        ul {
-          overflow: auto;
-          list-style-type: none;
-        }
-         
-        li {
-          height: 25px; 
-          float: left; 
-          margin-right: 0px; 
-          border-right: 1px solid #aaa; 
-          padding: 0 10px;
-        }
-         
-        li:last-child {
-          border-right: none;
-        }
+    .icon {
+        width: 48px;
+        max-width: 48px;
+    }
+   
+    .student-level {
+      img { max-height: 48px; width: auto; }
+    }
+
+    .programming-language {
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+      grid-gap: 3px;
+    }
+
+    .topics {
+      margin-bottom: 20px;
+      p {
+        @include ms-respond(font-size,0.2);
       }
+    }
+
+    .upcoming-sessions p {
+      @include ms-respond(font-size,0.4);
+      font-style: italic;
     }
     
     .longer-description {
-      @include ms-respond(font-size,0.6);
+      @include ms-respond(font-size,1.0);
       line-height: 1.3;
       margin-bottom: 3px;
     }
 
     @include respond-to(handhelds) { 
       grid-template-columns: 1fr;
-      grid-template-areas: "offering-left" "offering-right";
+      grid-template-areas: "offering-left" 
+                           "offering-right";
       .right {
         padding: 0;
       }
     }
     @include respond-to(wide-handhelds) {
       grid-template-columns: 1fr;
-      grid-template-areas: "offering-left" "offering-right";
+      grid-template-areas: "offering-left" 
+                           "offering-right";
       .right {
         padding: 0;
       }
     }
     @include respond-to(tablets) {
-      grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+      grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
       grid-template-areas: "offering-left offering-right";
       .right {
         padding: 10px 0 0 0;
       }
     }
     @include respond-to(desktops) { 
-      grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+      grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
       grid-template-areas: "offering-left offering-right";
       .right {
         padding: 10px 0 0 0;
       }
     }
     @include respond-to(max) { 
-      grid-template-columns: minmax(70%,1fr) minmax(29%,1fr);
+      grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
       grid-template-areas: "offering-left offering-right";
       .right {
         padding: 10px 0 0 0;

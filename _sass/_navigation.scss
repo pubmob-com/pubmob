@@ -21,6 +21,7 @@ header nav {
   @include flexbox();
   @include flex-direction(column);
  
+  text-transform: uppercase;
   background-color: $header-background-color;
 }
   

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: back
 pagename: setup
 title: PubMob | What to Expect
 description: what a mob session looks like
@@ -26,7 +26,7 @@ post-content: >
         </picture>
       </div>
     </div>
-backsite: javascript:history.back()
+backsite: "javascript:history.back()"
 ---
 <div class="horizontal-rule">
   <div class="lr"></div>
@@ -43,9 +43,7 @@ backsite: javascript:history.back()
 
 <section class="boxes">
   <div class="box LightBlue">
-    <div class="header">
-      <h2>How Does It Work?</h2>
-    </div>
+    <h2>How Does It Work?</h2>
     <p>You can get a quick notion of what an actual PubMob session looks like by
       watching a few minutes of this <a href="">short video</a>. You'll see 
       how the mob rotations work. For a sample 3-minute driver session, the 
@@ -69,9 +67,7 @@ backsite: javascript:history.back()
       tool removes the WIP branch as a final step.</p>
   </div>
   <div class="box LightGreen">
-    <div class="header">
-      <h2>What Does It Feel Like?</h2>
-    </div>
+    <h2>What Does It Feel Like?</h2>
     <p>Being a driver may sound intimidating at first, but a key element of 
       mobbing is to minimize the fear factor. When you're in the "hot seat" as a driver
       (typically for a breezy 3-5 minutes),
@@ -84,9 +80,7 @@ backsite: javascript:history.back()
       and it goes by fast. [[some real quotes here ]]</p>
   </div>
   <div class="box LightYellow">
-    <div class="header">
-      <h2>How Do I Get Ready?</h2>
-    </div>
+    <h2>How Do I Get Ready?</h2>
     <p>Most sessions will use the <a href="http://github.com/remotemobprogramming/mob">mob</a> tool. Follow the instructions on the mob page to install the tool; it should take a couple minutes. For MacOS users, it's a single <code>brew install</code> command.</p>
     <p>
       Each pub {{ site.session-lead-term }} will have custom setup instructions for their mob session.

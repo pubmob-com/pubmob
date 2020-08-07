@@ -1,133 +1,93 @@
 <script type="text/javascript">
   function setText(id, text) {
-    var topicHeader = document.getElementById(id)
-    if (topicHeader)
-      topicHeader.innerHTML = text
-    else
-      console.log('id not found: ', id)
+    element(id).innerHTML = text
+  }
+
+  function getText(id) {
+    return element(id).innerHTML
+  }
+
+  function setButtonText(id, text) {
+    element(id).textContent = text
   }
 
   function element(id) {
     return document.getElementById(id)
   }
 
-  function getText(id) {
-    return document.getElementById(id).innerHTML
+  function renderIf(elt, condition) {
+    elt.style.display = condition ? '' : 'none'
   }
 
-  function renderIf(element, condition) {
-    element.style.display = condition ? '' : 'none'
+  function showElementWithId(id) {
+    renderIf(element(id), true)
+  }
+  
+  function hideElementWithId(id) {
+    renderIf(element(id), false)
   }
 
-  function renderPost(id, offeringLanguages, offeringTopics, topicFilterSelection, languageFilterSelection) {
-    var element = document.getElementById(id);
-    if (element) {
-      var shouldRender = (topicFilterSelection === '' && languageFilterSelection === '') ||
-        (topicFilterSelection === '' && offeringLanguages.includes(languageFilterSelection)) ||
-        (offeringTopics.includes(topicFilterSelection) && languageFilterSelection == '') ||
-        (offeringTopics.includes(topicFilterSelection) && offeringLanguages.includes(languageFilterSelection));
-      renderIf(element, shouldRender);
+  function renderPost(id, offeringTechs, offeringTopics, topicFilterSelection, techFilterSelection) {
+    var elt = document.getElementById(id)
+    if (elt) {
+      var shouldRender = (topicFilterSelection === '' && techFilterSelection === '') ||
+        (topicFilterSelection === '' && offeringTechs.includes(techFilterSelection)) ||
+        (offeringTopics.includes(topicFilterSelection) && techFilterSelection == '') ||
+        (offeringTopics.includes(topicFilterSelection) && offeringTechs.includes(techFilterSelection))
+      renderIf(elt, shouldRender)
+      return shouldRender
     }
+    return false
   }
 
-  function renderPosts(topicFilterSelection, languageFilterSelection) {
+  function renderPosts(topicFilterSelection, techFilterSelection) {
+    var count = 0
     {% for offering in site.offerings %}
-      renderPost("{{ offering.id }}",
+      var didRender = renderPost("{{ offering.id }}",
         {{ offering.languages | jsonify }}, 
         {{ offering.topics | jsonify }},
         topicFilterSelection, 
-        languageFilterSelection);
+        techFilterSelection);
+      if (didRender) count++
     {% endfor %}
+    return count
   }
 
-  function clearFilterSelections(elementIds) {
-    for (let i = 0; i < elementIds.length; i++)
-      setText(elementIds[i], '');
-    renderPosts('', '');
-    renderIf(element('programmingLanguageFilters'), false)
-    renderIf(element('selectedProgrammingLanguageFilter'), false)
-    renderIf(element('selectedTopicFilter'), false)
-    renderIf(element('clearFiltersButton'), false)
+  function rerenderPosts() {
+    var countOfRenderedPosts = renderPosts(getText('selectedTopic'), getText('selectedTech'))
+    renderIf(element('noPosts'), countOfRenderedPosts == 0)
   }
 
-  function filterUsingTopic(displayElementId, filterSelection, existingLanguageElementId) {
-    setText(displayElementId, filterSelection)
-    renderIf(element('programmingLanguageFilters'), true)
-    renderIf(element('selectedProgrammingLanguageFilter'), true)
-    renderIf(element('selectedTopicFilter'), true)
-    renderIf(element('clearFiltersButton'), true)
-    var existingLanguageFilter = getText(existingLanguageElementId)
-    renderPosts(filterSelection, existingLanguageFilter)
+  function clearFilterSelection(filterSelectionElementId, buttonId) {
+    setText(filterSelectionElementId, '')
+    hideElementWithId(buttonId)
+    rerenderPosts()
   }
 
-  function filterUsingLanguage(displayElementId, filterSelection, existingTopicElementId) {
-    setText(displayElementId, filterSelection)
-    var existingTopicFilter = getText(existingTopicElementId)
-    renderPosts(existingTopicFilter, filterSelection)
-    renderIf(element('clearFiltersButton'), true)
+  const xGlyph = '\u00D7'
+
+  function filter(filterSelectionElementId, filterSelectionButtonId, filterSelectionButtonText, filterSelection) {
+    setText(filterSelectionElementId, filterSelection)
+    setButtonText(filterSelectionButtonId, filterSelectionButtonText + ' ' + xGlyph);
+    showElementWithId(filterSelectionButtonId)
+    rerenderPosts()
   }
 </script>
 
 <section class="class-legend">
   <article class="filters">
-    <div>
-      <p>Filter classes by topic: </p>
-      {% assign all-selections = "" | split: "" %}
-      {% for offering in site.offerings %}
-        {% if page.pagename == "offerings" %}
-          {% assign all-selections = all-selections | concat: offering.topics %}
-        {% else %}
-          {% if offering.session-lead-id == page.session-lead-id %}
-            {% assign all-selections = all-selections | concat: offering.topics %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-      {% assign all-selections = all-selections | uniq | sort %}
-      <ul class="all-selections">
-        {% for selection in all-selections %}
-        <li>
-          <a id="{{ selection }}" onclick="filterUsingTopic('selectedTopic', this.id, 'selectedLanguage')" href="javascript:void(0);">{{ selection }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div id="programmingLanguageFilters" style="display:none">
-      {% assign all-selections = "" | split: "" %}
-      {% for offering in site.offerings %}
-        {% if page.pagename == "offerings" %}
-          {% assign all-selections = all-selections | concat: offering.languages %}
-        {% else %}
-          {% if offering.session-lead-id == page.session-lead-id %}
-            {% assign all-selections = all-selections | concat: offering.languages %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-      {% assign all-selections = all-selections | uniq | sort %}
-      {% if all-selections.size > 0 %}
-      <p>Refine by programming language: </p>
-      <ul class="all-selections">
-        {% for selection in all-selections %}
-        <li>
-          <a id="{{ selection }}" onclick="filterUsingLanguage('selectedLanguage', this.id, 'selectedTopic')" href="javascript:void(0);">{{ selection }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-      <p>Check the calendar listings for the next session in your language of choice.</p>
-      <p>(You'll also find that PubMob sessions are great ways to get your fingers wet in a new language.)</p>
-      {% endif %}
-    </div>
-
-    <div id="activeFilters">
-      <button id="clearFiltersButton" 
-        style="display:none"
-        onclick="clearFilterSelections(['selectedTopic', 'selectedLanguage'])">
-        Clear filters
-      </button>
-      <p id="selectedTopicFilter" style="display:none">Showing all classes on topic: <b><span id="selectedTopic" /></b></p>
-      <p id="selectedProgrammingLanguageFilter" style="display:none">Using the programming language: <b><span id="selectedLanguage" /></b></p>
-    </div>
-
+    {% include filters.html %}
   </article>
-  {% include skills-key.html %}
+  <article class="key">
+    {% include skills-key.html %}
+  </article>
+  <article class="activeFilters">
+    <span>Filters:
+      <span id="selectedTopic" hidden></span>
+      <span id="selectedTech" hidden></span>
+      <button class="filterButton" id="selectedTopicButton" onClick="clearFilterSelection('selectedTopic', this.id)" style="display:none"></button>
+      <button class="filterButton" id="selectedTechButton" onClick="clearFilterSelection('selectedTech', this.id)" style="display:none"></button>
+    </span>
+    <p id='noPosts' style='display:none'>No sessions matched your filter selections.</p>
+  </article>
 </section>

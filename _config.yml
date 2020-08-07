@@ -1,6 +1,4 @@
 plugins:
-  - jekyll-gist
-  - jekyll-coffeescript
   - jekyll-assets
 
 # Structure configuration
@@ -9,7 +7,6 @@ destination: build
 
 sass:
     sass_dir: _sass
-
 
 assets:
   js_compressor:  uglifier
@@ -68,10 +65,10 @@ navigation:
   - title: Home
     url: /
     id: navhome
-  - title: Our (Virtual) Pubs
+  - title: Virtual Pubs
     url: /pubs
     id: navpubs
-  - title: What's on Tap
+  - title: On Tap
     url: /offerings
     id: navofferings
   - title: About
@@ -79,6 +76,8 @@ navigation:
     id: navabout
 
 collections:
+  technologies:
+      output: false
   pubs:
     output: true
   offerings:

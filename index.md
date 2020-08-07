@@ -30,9 +30,7 @@ pre-content: >
 post-content: >
 ---
 <section class="seo">
-  <div class="heading-title text-center">
-    <h3>Virtual collaborative coding.</h3>
-  </div>
+  <h1>Virtual collaborative coding.</h1>
   <p>
     Welcome to a new world of programming. Join the PubMob experience and tap
     into the expertise of a productive worldwide community of software developers. 

@@ -3,9 +3,9 @@
 require 'rake/clean'
 
 SWAP_FILES = FileList.new('**/.*.swp').compact
-STYLESHEETS_DIR = File.join("source","assets","stylesheets")
+STYLESHEETS_DIR = File.join("_sass")
 
-CLEAN.include("build",".sass-cache","source/.jekyll-cache")
+CLEAN.include("build",".sass-cache")
 CLOBBER.include(".bundle","vendor","Gemfile.lock")
 
 desc "Setup modularscale"
@@ -74,26 +74,4 @@ task :tar do
   dirname = Dir.getwd
   dirbasename = File.basename(dirname)
   sh "git archive --format=tar.gz -o #{dirbasename}.tar.gz HEAD"
-end
-
-desc "Extract quotes"
-task :quotes do
-  fn  = File.join("scripts","student-quotes.md")
-  dn = File.join("scripts","student-quotes")
-  rm_rf dn if File.directory?(dn)
-  mkdir dn
-  quotes = File.readlines(fn)
-  Dir.chdir(dn) do
-    counter = 0
-    quotes.each do |l|
-      next if l.strip.length==0
-      m = /^..8220;(.*)..8221;.*..8211;(.*)$/.match(l)
-      statement = m[1].strip if m[1]
-      author = m[2].gsub(/-/,"").strip if m[2]
-      quote = "---\ntxt: '#{statement}'\nauthor: '#{author}'\n---"
-      id = "%03d" % counter
-      counter = counter + 1
-      File.open("#{id}-#{author.downcase.gsub(/ /,'-').gsub(/\./,'')}.md", 'w'){ |f| f.write quote }
-    end
-  end
 end

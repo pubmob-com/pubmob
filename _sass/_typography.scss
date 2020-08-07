@@ -29,6 +29,7 @@ a {
 }
 
 h1 {
+  text-align: center;
   @include ms-respond(font-size,3.7);
 }
 
@@ -55,10 +56,15 @@ h6 {
 h1,h2,h3,h4,h5,h6 {
   color: $headings-interior-font-color;
   font-weight: 700;
-//  text-transform: uppercase;
 }
 
 p {
+  @include ms-respond(font-size,0.9);
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+
+span {
   @include ms-respond(font-size,0.9);
   line-height: 1.3;
   margin-bottom: 3px;
@@ -240,6 +246,7 @@ ul {
 }
 
 ul.list {
+  @include ms-respond(font-size,0.9);
   padding: 0 0 0 20px;
   padding-top: .4em;
   //padding-bottom: .8em;

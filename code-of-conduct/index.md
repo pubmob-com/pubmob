@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: back
 pagename: code-of-conduct
 title: PubMob | Code of Conduct
 description: code of conduct for mob session attendees
@@ -17,6 +17,7 @@ pre-content: >
     </div>
 post-content: >
 title-bar-color: title-bar-light-green
+backsite: "javascript:history.back()"
 ---
 # Code of conduct
 

@@ -1,15 +1,5 @@
 .seo {
   margin: 1.5*$base-spacing $small-spacing;
-  h1 { 
-    margin: 0;
-    padding: 0;
-    font-family: $gillsans;
-    font-size: 32px;
-    color: $Black;
-    text-align: center;
-    text-transform: uppercase;
-    @media only screen and (min-width: $breakpoint-tablet) { font-size: 43px; }
-  }
   .tagline {
     margin: 0;
     padding: 0;

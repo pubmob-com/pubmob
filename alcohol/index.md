@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: back
 pagename: alcohol-and-pubmob
 title: PubMob | Statement on PubMob and the pub motif
 description: Alcohol statement
@@ -17,6 +17,7 @@ pre-content: >
     </div>
 post-content: >
 title-bar-color: title-bar-light-green
+backsite: "javascript:history.back()"
 title-bar-text: Statement on PubMob and the pub motif
 ---
 # Statement on PubMob and the pub motif
@@ -58,7 +59,7 @@ This success led me to start PubMob.com as a way to:
 
 * {: .outer} Help the world find a better way to do remote development in a humane and fun manner
 
-* {: .outer} Demonsrtate a way for those impacted by the new isolation to stay home, stay safe, and stay human 
+* {: .outer} Demonstrate a way for those impacted by the new isolation to stay home, stay safe, and stay human 
 {: .list}
 
 Remote software development is here to stay, and many people will remain working remotely from now through the end of their career. PubMob.com is one answer to the question, "How do we make it work?"

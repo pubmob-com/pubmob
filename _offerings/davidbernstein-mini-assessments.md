@@ -1,5 +1,6 @@
 ---
 layout: offering
+pagename: offering
 session-lead-id: davidbernstein
 session-lead-name: David Bernstein
 name: Mini-Assessments
@@ -11,8 +12,12 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo:
+next-available-sessions: [] 
 prerequisites: []
-summary-blurb-125-words: "<p>Every project is unique and so are its challenges. Through online interviews, questionnaires, and conversations I can provide you an ad hoc assessment of your software development process and/or project along with recommendations for improvement prioritized by the value that you’ll receive right away. This is a guided conversation from one to two hours.</p>
+summary-blurb-80-words: "<p>Every project is unique and so are its challenges. Through online interviews, questionnaires, and conversations I can provide you an ad hoc assessment of your software development process and/or project along with recommendations for improvement prioritized by the value that you’ll receive right away. This is a guided conversation from one to two hours.</p>"
+booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39110"
+active: true
+---
 
 <p>I’ll help you:</p>
 <ul class='list'>
@@ -23,6 +28,4 @@ summary-blurb-125-words: "<p>Every project is unique and so are its challenges. 
 <li>Quickly get a snapshot of your situation and where you stand</li>
 <li>Explore solutions and alternate approaches</li>
 <li>Gain a new perspective from an experienced outsider</li>
-</ul>"
-active: true
----
+</ul>
