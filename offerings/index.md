@@ -27,7 +27,8 @@ backsite: "javascript:history.back()"
 
 {% include class-legend.html %}
 
-{% for offering in site.offerings %}
+{% assign offerings = site.offerings | sort: "name" %}
+{% for offering in offerings %}
   {% include offering.html %}
 {% endfor %}
 
