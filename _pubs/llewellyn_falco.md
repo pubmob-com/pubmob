@@ -5,7 +5,7 @@ session-lead-id: llewellyn_falco
 session-lead-name: Llewellyn Falco
 session-lead-short-name: Llewellyn
 owner-name: Llewellyn Falco
-sort-name: "1"
+sort-name: Falco, Llewellyn
 pub-name: Llewellyn's Place
 session-lead-photo-extension: png
 pub-photo: mountSaintHelens.png

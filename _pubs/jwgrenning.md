@@ -5,7 +5,7 @@ session-lead-id: jwgrenning
 session-lead-name: James Grenning
 session-lead-short-name: James
 owner-name: James Grenning
-sort-name: "1"
+sort-name: Grenning, James
 pub-name: The Eagle
 session-lead-photo-extension: jpg
 pub-photo: the-eagle.jpg

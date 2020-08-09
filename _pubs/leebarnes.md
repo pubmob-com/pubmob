@@ -5,7 +5,7 @@ session-lead-id: leebarnes
 session-lead-name: Lee Barnes
 session-lead-short-name: Lee
 owner-name: Lee Barnes
-sort-name: "1"
+sort-name: Barnes, Lee
 pub-name: Lee's Testing Tavern
 session-lead-photo-extension: jpg
 pub-photo: 

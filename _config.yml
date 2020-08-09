@@ -77,11 +77,12 @@ navigation:
 
 collections:
   technologies:
-      output: false
+    output: false
   pubs:
     output: true
   offerings:
     output: true
+    sort_by: name
   announcements:
     output: false
 
