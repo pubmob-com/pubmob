@@ -27,13 +27,15 @@
     renderIf(element(id), false)
   }
 
-  function renderPost(id, offeringTechs, offeringTopics, topicFilterSelection, techFilterSelection) {
+  function renderPost(id, offeringTechs, offeringTopics, topicFilterSelection, techFilterSelection, isActive) {
     var elt = document.getElementById(id)
     if (elt) {
-      var shouldRender = (topicFilterSelection === '' && techFilterSelection === '') ||
-        (topicFilterSelection === '' && offeringTechs.includes(techFilterSelection)) ||
-        (offeringTopics.includes(topicFilterSelection) && techFilterSelection == '') ||
-        (offeringTopics.includes(topicFilterSelection) && offeringTechs.includes(techFilterSelection))
+      var shouldRender = 
+        isActive &&
+        ((topicFilterSelection === '' && techFilterSelection === '') ||
+         (topicFilterSelection === '' && offeringTechs.includes(techFilterSelection)) ||
+         (offeringTopics.includes(topicFilterSelection) && techFilterSelection == '') ||
+         (offeringTopics.includes(topicFilterSelection) && offeringTechs.includes(techFilterSelection)))
       renderIf(elt, shouldRender)
       return shouldRender
     }
@@ -47,7 +49,8 @@
         {{ offering.languages | jsonify }}, 
         {{ offering.topics | jsonify }},
         topicFilterSelection, 
-        techFilterSelection);
+        techFilterSelection,
+        {{ offering.active }});
       if (didRender) count++
     {% endfor %}
     return count

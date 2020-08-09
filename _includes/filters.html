@@ -2,6 +2,7 @@
   <p>Filter by a topic:</p>
   {% assign all-selections = "" | split: "" %}
   {% for offering in site.offerings %}
+    <!-- TODO ignore non-active offering? -->
     {% if page.pagename == "offerings" %}
       {% assign all-selections = all-selections | concat: offering.topics %}
     {% else %}
@@ -24,6 +25,7 @@
 <div id="techFilters">
   {% assign all-selections = "" | split: "" %}
   {% for offering in site.offerings %}
+    <!-- TODO ignore non-active offering? -->
     {% if page.pagename == "offerings" %}
       {% assign all-selections = all-selections | concat: offering.languages %}
     {% else %}
