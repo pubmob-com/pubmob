@@ -1,0 +1,9 @@
+<div>
+  {% assign link = offering.booking-link %}
+  {% assign text = "Register" %}
+  {% capture button_content %}
+    {{ link }}
+    {{ text }}
+  {% endcapture %}
+  {% include button-link.html content=button_content %}
+</div>

@@ -1,0 +1,6 @@
+{% assign blurbLength = offering.summary-blurb-80-words | number_of_words %}
+{% if blurbLength <= 80 %}
+  <p class="longer-description">{{ offering.summary-blurb-80-words }}
+    <p><a href="{{ offering.id }}">More &#187;</a></p>
+  </p>
+{% endif %}

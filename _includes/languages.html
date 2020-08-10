@@ -1,0 +1,6 @@
+<div class="programming-language">
+  {% for language in offering.languages %}
+    {% assign filename = "/assets/images/programming-language-icons/" | append: language | append: ".svg" %}
+    <img class="icon" title="{{ language }}" src="{{ filename }}" />
+  {% endfor %}
+</div>

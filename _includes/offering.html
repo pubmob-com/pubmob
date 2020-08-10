@@ -6,50 +6,17 @@
       {% if page.pagename == "offerings" %}
         <h2><a href="/pubs/{{ offering.session-lead-id }}">{{ offering.session-lead-name }}</a></h2>
       {% endif %}
-      <p class="summary"><em>{{ offering.twelve-words-or-fewer | strip_html | truncatewords: 12 }}</em></p>
-      {% assign blurbLength = offering.summary-blurb-80-words | number_of_words %}
-      {% if blurbLength <= 80 %}
-        <p class="longer-description">{{ offering.summary-blurb-80-words }}
-          <p><a href="{{ offering.id }}">More &#187;</a></p>
-        </p>
-      {% endif %}
-      <div class="upcoming-sessions">
-        <p>Upcoming sessions:
-          {% for next-session in offering.next-available-sessions | limit: 3 %}
-            {{ next-session | date: "%B %d %H:%M %Z" }}{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </p>
-      </div>
 
-      <div class="booking-button">
-        {% assign link = offering.booking-link %}
-        {% assign text = "Register" %}
-        {% capture button_content %}
-          {{ link }}
-          {{ text }}
-        {% endcapture %}
-        {% include button-link.html content=button_content %}
-      </div>
+      {% include summary.html %}
+      {% include summary-blurb.html %}
+      {% include upcoming-sessions.html %}
+      {% include booking-button.html %}
+
     </article>
     <article class="right">
-      <div class="topics">
-        <p>{{ offering.topics | array_to_sentence_string }}</p>
-      </div>
-      {% if offering.languages.size > 0 %}
-        <div class="programming-language">
-          {% for language in offering.languages %}
-            {% assign filename = "/assets/images/programming-language-icons/" | append: language | append: ".svg" %}
-            <img class="icon" title="{{ language }}" src="{{ filename }}" />
-          {% endfor %}
-        </div>
-      {% endif %}
-      <div class="student-level">
-        {% assign skill-icon-filename = "/assets/images/misc-icons/" | append: offering.exercise-skill | append: ".svg" %}
-        <img class="icon" src="{{ skill-icon-filename }}" title="{{ offering.exercise-skill }}" />
-        {% if offering.is-for-experienced-mobbers == true %}
-          <img class="icon" src="/assets/images/misc-icons/experienced-mobbers.svg" title="Recommended for people with some experience mobbing" />
-        {% endif %}
-      </div>
+      {% include topics.html %}
+      {% include languages.html %}
+      {% include student-level.html %}
     </article>
   </section>
 </div>
