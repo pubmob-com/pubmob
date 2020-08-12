@@ -5,17 +5,21 @@ title: PubMob
 description: >
   PubMob is awesome
 keywords:
-  Jeff Langr,
   PubMob,
+  mob programming,
+  ensemble programming,
+  mobbing,
+  collaborative development,
+  collaboration,
+  virtual,
+  virtual software development,
+  distributed,
   software development,
   software development author,
   software development courses,
   outsourced software development,
   effective remote teams,
-  distributed teams,
-  software development team,
-  software team building,
-  geographically distributed team coaching,
+  Jeff Langr,
 pre-content: >
     <div class="grid">
       <div class="content">
@@ -32,9 +36,9 @@ post-content: >
 <section class="seo">
   <h1>Virtual collaborative coding.</h1>
   <p>
-    Welcome to a new world of programming. Join the PubMob experience and tap
+    Welcome to a new world for software development. Join the PubMob experience and tap
     into the expertise of a productive worldwide community of software developers. 
-    Be part of a safe, enjoyable, and rewarding virtual collaborative coding experience!
+    Be part of a safe, enjoyable, and rewarding virtual collaborative development experience!
   </p>
   <p>
   PubMob provides you with hands-on opportunities to learn by doing, and to do
