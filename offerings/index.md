@@ -23,7 +23,6 @@ all-topics-tag: All
 backsite: "javascript:history.back()"
 ---
 <script src="/assets/javascripts/moment.js"></script>
-<script src="/assets/javascripts/moment-timezone-with-data-10-year-range.js"></script>
 <h1>Our pub mob sessions.</h1>
 <p>At PubMob, you'll find a varied selection of engaging mob sessions, from hands-on coding to design workshops.</p>
 

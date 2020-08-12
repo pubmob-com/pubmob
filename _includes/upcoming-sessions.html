@@ -3,12 +3,7 @@
     var elements = document.getElementsByClassName("upcoming-session-date");
     for (var i = 0; i < elements.length; i++) {
       var utcDateString = elements[i].innerHTML;
-      console.log("utc date string: " + utcDateString);
       var date = new Date(utcDateString);
-      // for use with the little z flag which should show timezone name, e.g. MDT... but it seemed
-      // to be off by an hour
-      // var ignoreCache = true;
-      // timezone = moment.tz.guess(ignoreCache);  // if not detected ?
       localDate = moment(date).format("MMM DD h:mma (UTCZ)");
       elements[i].innerHTML = localDate;
     }
