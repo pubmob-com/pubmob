@@ -1,9 +1,5 @@
 <div>
-  {% assign link = offering.booking-link %}
-  {% assign text = "Register" %}
-  {% capture button_content %}
-    {{ link }}
-    {{ text }}
-  {% endcapture %}
-  {% include button-link.html content=button_content %}
+  <a class="button flexbooker_widget_launch" href="{{ include.link }}">
+    <p class="buttonText" >Register</p>
+  </a>  
 </div>

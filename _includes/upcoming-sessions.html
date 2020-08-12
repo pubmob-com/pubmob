@@ -1,7 +1,26 @@
+<script>
+  window.onload = function() {
+    var elements = document.getElementsByClassName("upcoming-session-date");
+    for (var i = 0; i < elements.length; i++) {
+      var utcDateString = elements[i].innerHTML;
+      console.log("utc date string: " + utcDateString);
+      var date = new Date(utcDateString);
+      // for use with the little z flag which should show timezone name, e.g. MDT... but it seemed
+      // to be off by an hour
+      // var ignoreCache = true;
+      // timezone = moment.tz.guess(ignoreCache);  // if not detected ?
+      localDate = moment(date).format("MMM DD h:mma (UTCZ)");
+      elements[i].innerHTML = localDate;
+    }
+  }
+</script>
 <div class="upcoming-sessions">
   <p>Upcoming sessions:
     {% for next-session in offering.next-available-sessions | limit: 3 %}
-      <a href="https://www.timeanddate.com/worldclock/fixedtime.html?iso={{ next-session | date: "%Y%m%dT%H%M%S" }}&msg={{ offering.name | escape }}&ah=1&am=15">{{ next-session | date: "%B %d %H:%M %Z" }}</a>{% unless forloop.last %}, {% endunless %}
+    <a class="upcoming-session-date" href="https://www.timeanddate.com/worldclock/fixedtime.html?iso={{ next-session | date: "%Y%m%dT%H%M%S" }}&msg={{ offering.name | escape }}&ah=1&am=15">{{ next-session }}</a>{% unless forloop.last %}, {% endunless %}
+    <!-- <span class="upcoming-session-date">{{ next-session }}</span>{% unless forloop.last %}, {% endunless %} -->
     {% endfor %}
   </p>
 </div>
+
+<!-- | date: "%B %d %H:%M %Z" -->

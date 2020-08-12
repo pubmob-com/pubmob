@@ -12,7 +12,7 @@ public-or-private: public
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
-next-available-sessions: [20200827T1530Z]
+next-available-sessions: [2020-08-27T15:30Z]
 prerequisites: []
 summary-blurb-80-words: "Would you like to see Elm in practice? Serverless? With parsing? This is for you!"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39112"

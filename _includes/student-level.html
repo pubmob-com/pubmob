@@ -1,7 +1,7 @@
 <div class="student-level">
-  {% assign skill-icon-filename = "/assets/images/misc-icons/" | append: offering.exercise-skill | append: ".svg" %}
-  <img class="icon" src="{{ skill-icon-filename }}" title="{{ offering.exercise-skill }}" />
+  {% assign skill-icon-filename = "/assets/images/misc-icons/" | append: include.exercise-skill | append: ".svg" %}
+  <img class="icon" src="{{ skill-icon-filename }}" title="{{ include.exercise-skill }}" />
   {% if offering.is-for-experienced-mobbers == true %}
-    <img class="icon" src="/assets/images/misc-icons/experienced-mobbers.svg" title="Recommended for people with some experience mobbing" />
+    <img class="icon" src="/assets/images/misc-icons/experienced-mobbers.svg" title="Recommended for people with some experience mob programming" />
   {% endif %}
 </div>

@@ -7,16 +7,17 @@
         <h2><a href="/pubs/{{ offering.session-lead-id }}">{{ offering.session-lead-name }}</a></h2>
       {% endif %}
 
-      {% include summary.html %}
+      {% include summary.html summary=offering.twelve-words-or-fewer %}
       {% include summary-blurb.html %}
       {% include upcoming-sessions.html %}
-      {% include booking-button.html %}
+      {% assign link = offering.booking-link %}
+      {% include booking-button.html link=offering.booking-link %}
 
     </article>
     <article class="right">
       {% include topics.html %}
       {% include languages.html %}
-      {% include student-level.html %}
+      {% include student-level.html exercise-skill=offering.exercise-skill %}
     </article>
   </section>
 </div>

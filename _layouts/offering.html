@@ -4,6 +4,8 @@
 <html lang="en">
   <head>
     {% include head.html %}
+    <script src="/assets/javascripts/moment.js"></script>  <!-- TODO in right place? -->
+    <script src="/assets/javascripts/moment-timezone-with-data-10-year-range.js"></script>
   </head>
   <body id="{{page.pagename}}">
     <header>
@@ -19,40 +21,34 @@
     <article>
       <div class="grid">
         <div class="content">
-          <div class="indent">
-            <h3>{{ page.name }}</h3>
-            {% if page.graphic %}
-              <img src="/assets/images/offerings/{{page.session-lead-id}}/{{page.graphic}}" style="width: 225px" />
-            {% endif %}
-          </div>
+          <h3>{{ page.name }}</h3>
+          {% if page.graphic %}
+            <img src="/assets/images/offerings/{{page.session-lead-id}}/{{page.graphic}}" style="width: 225px" />
+          {% endif %}
 
-          <div>
-            {% assign link = page.booking-link %}
-            {% assign text = "Register" %}
-            {% capture button_content %}
-              {{ link }}
-              {{ text }}
-            {% endcapture %}
-            {% include button-link.html content=button_content %}
-          </div>
+        {% include booking-button.html link=page.booking-link %}
 
-          <div class="indent" style="float: right">
-            <img src="/assets/images/pubs/{{ page.session-lead-id }}.jpg" style="width: 225px" />
-            <p>{{ site.session-lead-term | capitalize }}: <a href="/pubs/{{page.session-lead-id}}">{{ page.session-lead-name }}</a></p>
-          </div>
+        <div class="indent" style="float: right">
+          <img src="/assets/images/pubs/{{ page.session-lead-id }}.jpg" style="width: 225px" />
+          <p>{{ site.session-lead-term | capitalize }}: <a href="/pubs/{{page.session-lead-id}}">{{ page.session-lead-name }}</a></p>
+        </div>
 
-          <div>
-            <br />
-             <p><em>{{ page.twelve-words-or-fewerblurb }}</em></p>
-             <p>{{ page.summary-blurb-300-words }}</p>
-             <p>Experience level: {{ page.exercise-skill }}</p>
-             <p>Upcoming dates: TBD</p>
-          </div>
+        <div>
+          <br />
+           {% include summary.html summary=page.twelve-words-or-fewer %}
+           <p>{{ page.summary-blurb-300-words }}</p>
+           {% include student-level.html exercise-skill=page.exercise-skill %}
+           <p>Upcoming dates: TBD</p>
+        </div>
 
-          {{ content }}
+        {{ content }}
 
         </div>
       </div>
+<!--      <div>
+        {% include booking-button.html link=page.booking-link %}
+      </div>
+-->
     </article>
     {{ page.post-content }}
      <div>
