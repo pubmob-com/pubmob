@@ -9,10 +9,10 @@ pre-content: >
     <div class="grid">
       <div class="content">
         <picture>
-          <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' media='(max-width: 1080px)'>
-          <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' media='(min-width: 960px)'>
-          <source srcset='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' media='(min-width: 830px'>
-          <img src='/assets/images/about/langr-software-solutions-colorado-springs-colorado-about.jpg' alt='About PubMob'>
+          <source srcset='/assets/images/mastheads/masthead-laptop-mob.jpg' media='(max-width: 1080px)'>
+          <source srcset='/assets/images/mastheads/masthead-laptop-mob.jpg' media='(min-width: 960px)'>
+          <source srcset='/assets/images/mastheads/masthead-laptop-mob.jpg' media='(min-width: 830px'>
+          <img src='/assets/images/mastheads/masthead-laptop-mob.jpg' alt='PubMob Private'>
         </picture>
       </div>
     </div>

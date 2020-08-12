@@ -8,10 +8,10 @@ pre-content: >
     <div class="grid">
       <div class="content">
         <picture>
-          <source srcset='/assets/images/services/langr-software-solutions-colorado-springs-colorado-services.jpg' media='(max-width: 1080px)'>
-          <source srcset='/assets/images/services/langr-software-solutions-colorado-springs-colorado-services.jpg' media='(min-width: 960px)'>
-          <source srcset='/assets/images/services/langr-software-solutions-colorado-springs-colorado-services.jpg' media='(min-width: 830px'>
-          <img src='/assets/images/services/langr-software-solutions-colorado-springs-colorado-services.jpg' alt='PubMob what to expect'>
+          <source srcset='/assets/images/mastheads/masthead-laptop-mob3.jpg' media='(max-width: 1080px)'>
+          <source srcset='/assets/images/mastheads/masthead-laptop-mob3.jpg' media='(min-width: 960px)'>
+          <source srcset='/assets/images/mastheads/masthead-laptop-mob3.jpg' media='(min-width: 830px'>
+          <img src='/assets/images/mastheads/masthead-laptop-mob3.jpg' alt='PubMob what to expect'>
         </picture>
       </div>
     </div>
@@ -19,10 +19,10 @@ post-content: >
     <div class="grid">
       <div class="content">
         <picture>
-          <source srcset='/assets/images/services/langr-software-solutions-services.png' media='(max-width: 1080px)'>
-          <source srcset='/assets/images/services/langr-software-solutions-services.png' media='(min-width: 960px)'>
-          <source srcset='/assets/images/services/langr-software-solutions-services.png' media='(min-width: 830px'>
-          <img src='/assets/images/services/langr-software-solutions-services.png' alt='PubMob what to expect'>
+          <source srcset='/assets/images/mastheads/masthead-laptop-mob3.jpg' media='(max-width: 1080px)'>
+          <source srcset='/assets/images/mastheads/masthead-laptop-mob3.jpg' media='(min-width: 960px)'>
+          <source srcset='/assets/images/mastheads/masthead-laptop-mob3.jpg' media='(min-width: 830px'>
+          <img src='/assets/images/mastheads/masthead-laptop-mob3.jpg' alt='PubMob what to expect'>
         </picture>
       </div>
     </div>
