@@ -15,7 +15,7 @@ repo:
 next-available-sessions: [] 
 prerequisites: []
 summary-blurb-80-words: "Let's see how safely and deftly we can move without tests. We'll focus on guiding the design to evolve and we'll write the tests in our heads. We're professionals; we can trust each other."
-booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39218"
+booking-link: ""
 active: false
 ---
 I love TDD. Not everyone does. Sometimes we just want to practise guiding a design to evolve without spending time to write tests. I don't _recommend_ this as a way to work, but I understand why you might prefer it, **especially if you've been practising TDD for a while and worry that it still just... feels... so... slow**. Sometimes it helps to spend time focusing on guiding a design to evolve using tiny steps, frequent commits, and a trusted guide. (That's me!)
