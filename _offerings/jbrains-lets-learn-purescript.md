@@ -12,7 +12,7 @@ public-or-private: public
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
-next-available-sessions: [] 
+next-available-sessions: [20200820T1530Z, 20200903T1530Z] 
 prerequisites: []
 summary-blurb-80-words: "Let's learn a statically-typed functional programming language built on Javascript that isn't called 'Elm'! (Nothing against Elm.) I've played around with Elm and I did three days of Haskell in 2013. Now Purescript looks interesting and I'd like to learn about it. I'd rather learn it with you than on my own!"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39113"
