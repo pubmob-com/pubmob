@@ -32,7 +32,7 @@ Want to help rev up your team's energy and productivity? A PubMob Private sessio
 
 Your {{ site.session-lead-term }} will coordinate the PubMob's activities and also participate fully in your sessions, as both driver and navigator. As with all PubMob sessions, everyone will get equal hands on the keyboard, and the team will quickly ramp up in their ability to help each driver become more productive.
 
-PubMob Private is ideal for helping existing teams cohere and level-up more junior members. Mobbers regularly tell us that sessions fly by and they get a pile done. Teams who embrace mobbing outside of PubMob are more excited to show up for work each morning.
+PubMob Private is ideal for helping existing teams cohere and level-up more junior members. Mobbers regularly tell us that sessions fly by and they get a pile done. Teams who embrace mob programming outside of PubMob are more excited to show up for work each morning.
 
 PubMob can help create a safe working space for your entire team.
 

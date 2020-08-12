@@ -32,7 +32,7 @@ I've provided consulting independently since 2003. During that time, I've also m
 
 After COVID-19 forced businesses to shutter their offices, millions of software developers suddenly found themselves working from home.
 
-Shortly after, I started a weekly public mobbing session for a few reasons:
+Shortly after, I started a weekly public mob programming session for a few reasons:
 
 * {: .outer} Have something fun to do on Fridays. (Hey... coding in a group is a lot of fun, to me at least!)
 
@@ -43,11 +43,11 @@ Shortly after, I started a weekly public mobbing session for a few reasons:
 * {: .outer} Explore the possibility of building better collaborative development tools. Currently-available tools barely scratch the surface.
 {: .list}
 
-To promote these free sessions via my Twitter account (@jlangr), I derived the hashtag #PubMob as a portmanteau of **pub**lic and **mob**bing. (Of note, the word *pub* comes from the term *public house*.)
+To promote these free sessions via my Twitter account (@jlangr), I derived the hashtag #PubMob as a portmanteau of **pub**lic and **mob** programming. (Of note, the word *pub* comes from the term *public house*.)
 
 The first #PubMob session was held Tuesday April 10, 2020. We shifted to Fridays and have held sessions every week since then. #PubMob has been successful in keeping at least a handful of folks entertained, engaged, and learning each week. Our invitation list grew to over 20 people within a few short weeks and minimal advertising.
 
-A few weeks after initiating #PubMob and still in COVID-19 lockdown, I continued working on my consultancy's shift toward providing remote services. During this time I achieved considerable success as a result of introducing remote mobbing to two customers.
+A few weeks after initiating #PubMob and still in COVID-19 lockdown, I continued working on my consultancy's shift toward providing remote services. During this time I achieved considerable success as a result of introducing remote mob programming to two customers.
 
 This success led me to start PubMob.com as a way to:
 
@@ -80,5 +80,5 @@ You may have been personally impacted by alcohol abuse. I fully understand if th
 
 **We do not discuss alcohol during PubMob.com sessions on software development.** You will not see alcohol advertised or promoted on the site. (You *will* see photos of pubs and people within, and you'll see glasses and bottles that might contain alcohol.) But the [code of conduct](/code-of-conduct) for PubMob.com session attendees is clear: **We don't tolerate jerks, and that includes people whose drug use leads to any conduct-violating actions or statements.** They will be ejected.
 
-If it helps, please remember that PubMob is short for *Public Mobbing*. PubMob is a celebration of the camaraderie possible within a group of strangers. 
+If it helps, please remember that PubMob is short for **Pub**lic **Mob** programming*. PubMob is a celebration of the camaraderie possible within a group of strangers. 
 

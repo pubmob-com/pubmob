@@ -71,10 +71,10 @@ post-content: >
   </div>
   <div class="boxleft Reddish">
     <div class="image">
-      <img src='/assets/images/home/mobbing.jpg' alt='Why Mobbing'>
+      <img src='/assets/images/home/mobbing.jpg' alt='Why Mob Programming'>
     </div>
     <div class="boxcopy copy">
-      <h5>Why Mobbing?</h5>
+      <h5>Why Mob Programming?</h5>
       <p>
          Remote work is challenging. You've been isolated from teammates for months. You crave social interaction.
       </p>

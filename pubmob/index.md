@@ -29,9 +29,9 @@ PubMob sessions are kept short in order to provide you with just-in-time learnin
 
 ## Why PubMob is awesome for collaborative work
 
-PubMob uses mobbing as its primary mechanism in order to capitalize on the “wisdom of the crowd.” Rather than leave team members to struggle alone in their cube, mobbing has us increase our effectiveness by learning to harness the power of true, actively collaborating teams.
+PubMob uses mob programming as its primary mechanism in order to capitalize on the “wisdom of the crowd.” Rather than leave team members to struggle alone in their cube, mob programming has us increase our effectiveness by learning to harness the power of true, actively collaborating teams.
 
-No other practice builds as solid and cohesive a team in as short a time as mobbing.
+No other practice builds as solid and cohesive a team in as short a time as mob programming.
 
 ## Why PubMob is low-stress
 
@@ -41,7 +41,7 @@ You might be a little nervous the first time driving, but there's no reason to b
 
 ## Why PubMob is productive
 
-With mobbing, we work on one thing at a time as a team. Splitting up and having each team member work on separate items may seem like a good idea, but it creates a significant amount of overhead and cost. Mobbing, in contrast, speeds us up by minimizing:
+With mob programming, we work on one thing at a time as a team. Splitting up and having each team member work on separate items may seem like a good idea, but it creates a significant amount of overhead and cost. Mob programming, in contrast, speeds us up by minimizing:
 
 * {: .outer}Coordination meetings (iteration planning, daily stand-ups)
 

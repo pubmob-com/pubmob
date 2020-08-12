@@ -69,14 +69,14 @@ backsite: "javascript:history.back()"
   <div class="box LightGreen">
     <h2>What Does It Feel Like?</h2>
     <p>Being a driver may sound intimidating at first, but a key element of 
-      mobbing is to minimize the fear factor. When you're in the "hot seat" as a driver
+      mob programming is to minimize the fear factor. When you're in the "hot seat" as a driver
       (typically for a breezy 3-5 minutes),
       you're not expected to have all the answers. In fact, you're not expected to
       have <em>any</em> answers&mdash;your job is to listen and translate.</p>
     <p>You can't quite sit back and relax; it turns out that listening and translating
      is a valuable skill all its own. But it does mean that you should never feel
       pressured or intimidated because you don't have the answers.</p>
-    <p>The feedback we usually hear: Mobbing is fun, it's productive,
+    <p>The feedback we usually hear: Mob programming is fun, it's productive,
       and it goes by fast. [[some real quotes here ]]</p>
   </div>
   <div class="box LightYellow">
@@ -94,7 +94,7 @@ backsite: "javascript:history.back()"
 <p>TODO: WHERE does the git push ability get added? It would be great to automate this somehow when people sign up. There's probably a way via the GitHub API.</p>
 
   <p>
-  Read <a href="/mobbing">more about mobbing and why we use it</a>.
+  Read <a href="/mobbing">more about mob programming and why we use it</a>.
   </p>
   </div>
   

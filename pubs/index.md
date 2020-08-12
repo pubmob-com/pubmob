@@ -22,7 +22,7 @@ title-bar-text: PubMob | The Pubs
 backsite: "javascript:history.back()"
 ---
 <h1>Our pub mob session leads.</h1>
-<p>Each of our public mobbing sessions is run by a {{ site.session-lead-term }} with extensive experience in helping development teams deliver high-quality software.</p>
+<p>Each of our PubMob public sessions is run by a {{ site.session-lead-term }} with extensive experience in helping development teams deliver high-quality software.</p>
 <div class="pub-owners">
   {% assign sorted = site.pubs | sort: "sort-name" %}
   {% for pub in sorted %}
