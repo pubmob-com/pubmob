@@ -22,7 +22,7 @@ title-bar-text: What's on Tap
 all-topics-tag: All
 backsite: "javascript:history.back()"
 ---
-<script src="/assets/javascripts/moment.js"></script>
+<!-- <script src="/assets/javascripts/moment.js"></script> -->
 <h1>Our pub mob sessions.</h1>
 <p>At PubMob, you'll find a varied selection of engaging mob sessions, from hands-on coding to design workshops.</p>
 
