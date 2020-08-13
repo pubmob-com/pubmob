@@ -53,12 +53,6 @@
       grid-gap: 3px;
     }
 
-    .topics {
-      margin-bottom: 20px;
-      p {
-        @include ms-respond(font-size,0.2);
-      }
-    }
 
     .upcoming-sessions p {
       @include ms-respond(font-size,0.4);

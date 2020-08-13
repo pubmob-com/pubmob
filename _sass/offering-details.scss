@@ -1,0 +1,13 @@
+.offering-details {
+  p {
+    @include ms-respond(font-size,0.2);
+  }
+}
+
+.topics {
+  margin-bottom: 20px;
+}
+
+.price-duration {
+  margin-top: 20px;
+}
