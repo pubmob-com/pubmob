@@ -23,7 +23,7 @@ backsite: "javascript:history.back()"
 ---
 Bring the PubMob experience to your company or team.
 
-![PubMob Private](/assets/images/pubmobPrivate/pubmobPrivate.png)
+![PubMob Private](/assets/images/logos/PubMob_Private_1920x760.jpg)
 {: .max-width-image}
 
 ## Private development sessions
