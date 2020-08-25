@@ -12,7 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
-next-available-sessions: [] 
+next-available-sessions: []
 prerequisites: []
 summary-blurb-80-words: "<p>We’ll walk through a detailed readiness checklist and develop a high-level roadmap for Test Automation success. You'll identify the obstacles in your organization and create a plan to get you on the path to effective test automation!</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=38964"
@@ -25,4 +25,3 @@ I’ll help you get ready to succeed with test automation via the following acti
 * We’ll work through a readiness assessment checklist to identify obstacles to effective test automation.  Areas of focus include development and testing practices, test environment and data management and skill sets & technology
 
 * We’ll develop a three-phased implementation plan for addressing any obstacles and building effective test automation into your delivery cycle.
-

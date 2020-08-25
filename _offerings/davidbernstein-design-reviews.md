@@ -10,7 +10,7 @@ languages: [java,cpp,csharp,javascript]
 graphic: 
 public-or-private: both
 is-for-experienced-mobbers: false
-next-available-sessions: [] 
+next-available-sessions: []
 exercise-skill: beginner
 repo: 
 prerequisites: []
@@ -27,4 +27,3 @@ booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15
 active: true
 ---
 I’ve helped design dozens of successful products and services in a diverse range of industries. I have extensive experience working with design patterns and architecting a variety of systems, from embedded to the enterprise, and custom apps to operating systems.
-
