@@ -71,7 +71,7 @@
             {% assign offerings = site.offerings | sort: "name" %}
             {% for offering in offerings %}
               {% if offering.session-lead-id == page.session-lead-id %}
-                {% include offering.html %}
+                {% include offerings-listing-element.html %}
               {% endif %}
             {% endfor %}
           </section>

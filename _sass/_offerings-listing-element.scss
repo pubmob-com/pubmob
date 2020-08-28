@@ -1,16 +1,4 @@
-#offerings {  // the "on tap" or offerings page
-  @extend .interior;
-  #navofferings { @extend %active; }
-
-  .left {
-    grid-area: offering-left;
-  }
-
-  .right {
-    grid-area: offering-right;
-  }
-
-  .offering {
+ .offerings-listing-element {
     display: grid;
     grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
     grid-template-areas: "offering-left offering-right";
@@ -24,10 +12,12 @@
     padding: 30px 10px 10px 10px;
 
     .left {
+      grid-area: offering-left;
     }
 
     .right {
-      padding: 50px 0 0 0;
+       grid-area: offering-right;   
+       padding: 50px 0 0 0;
     }
 
     h1 {
@@ -53,7 +43,6 @@
       grid-gap: 3px;
     }
 
-
     .upcoming-sessions p {
       @include ms-respond(font-size,0.4);
       font-style: italic;
@@ -69,48 +58,41 @@
       grid-template-columns: 1fr;
       grid-template-areas: "offering-left" 
                            "offering-right";
-      .right {
-        padding: 0;
-      }
+      .right { padding: 0; }
     }
     @include respond-to(wide-handhelds) {
       grid-template-columns: 1fr;
       grid-template-areas: "offering-left" 
                            "offering-right";
-      .right {
-        padding: 0;
-      }
+      .right { padding: 0; }
     }
     @include respond-to(tablets) {
       grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
       grid-template-areas: "offering-left offering-right";
-      .right {
-        padding: 10px 0 0 0;
-      }
+      .right { padding: 10px 0 0 0; }
     }
     @include respond-to(desktops) { 
       grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
       grid-template-areas: "offering-left offering-right";
-      .right {
-        padding: 10px 0 0 0;
-      }
+      .right { padding: 10px 0 0 0; }
     }
     @include respond-to(max) { 
       grid-template-columns: minmax(80%,1fr) minmax(19%,1fr);
       grid-template-areas: "offering-left offering-right";
-      .right {
-        padding: 10px 0 0 0;
-      }
+      .right { padding: 10px 0 0 0; }
     }
-  }
+}
+  
+#offerings {  // the "on tap" or offerings page
+  @extend .interior;
+  #navofferings { @extend %active; }
 
   .all-topics {
     @include ms-respond(font-size,0.6);
     li {
       display: inline;
     }
-    li+li:before
-    {
+    li+li:before {
       content: '| ';
     }
   }

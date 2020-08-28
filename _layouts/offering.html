@@ -13,44 +13,36 @@
          </div>
       </div>
     </header>
-
     {{ page.pre-content }}
 
-    <article>
-      <div class="grid">
-        <div class="content">
+    <section class="offering">
+      <article class="left">
           <h3>{{ page.name }}</h3>
-          {% if page.graphic %}
-            <img src="/assets/images/offerings/{{page.session-lead-id}}/{{page.graphic}}" style="width: 225px" />
-          {% endif %}
+          {% include summary.html summary=page.twelve-words-or-fewer %}
+          <p>{{ page.summary-blurb-80-words }}</p>
+          {% include student-level.html exercise-skill=page.exercise-skill %}
+          <p>Topics:</p>
+          <p>Technologies:</p>
+          <p>Repo:</p>
+          <p>Prerequisites:</p>
+          <p>Upcoming dates: TBD</p>
+          {% include booking-button.html link=page.booking-link %}
+      </article>
+      <article class="right">
+        <img src="/assets/images/pubs/{{ page.session-lead-id }}.jpg" style="width: 225px" />
+        <p>{{ site.session-lead-term | capitalize }}: <a href="/pubs/{{page.session-lead-id}}">{{ page.session-lead-name }}</a></p>
+        {% if page.graphic %}
+          <img src="/assets/images/offerings/{{page.session-lead-id}}/{{page.graphic}}" style="width: 225px" />
+        {% endif %}
+      </article>
 
-        {% include booking-button.html link=page.booking-link %}
+    </section>
 
-        <div class="indent" style="float: right">
-          <img src="/assets/images/pubs/{{ page.session-lead-id }}.jpg" style="width: 225px" />
-          <p>{{ site.session-lead-term | capitalize }}: <a href="/pubs/{{page.session-lead-id}}">{{ page.session-lead-name }}</a></p>
-        </div>
+    <section>
+    {{ content }}
+    </section>
 
-        <div>
-          <br />
-           {% include summary.html summary=page.twelve-words-or-fewer %}
-           <p>{{ page.summary-blurb-300-words }}</p>
-           <!-- % include student-level.html exercise-skill=page.exercise-skill % -->
-           <p>Upcoming dates: TBD</p>
-        </div>
-
-        {{ content }}
-
-        </div>
-      </div>
-<!--      <div>
-        {% include booking-button.html link=page.booking-link %}
-      </div>
--->
-    </article>
     {{ page.post-content }}
-     <div>
-    </div>
      <footer>
       <div class="footerbar"></div>
       <div class="grid">

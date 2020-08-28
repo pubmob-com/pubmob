@@ -1,12 +1,10 @@
 -- BOOKING FORM breaks back button functionality
 
-NEW:
+- instead of link for upcoming times, put a mini-icon next to each link with a world clock or something
 - pub layout: optional video on right
 - certifications
 - video links
-- calendar links actual
 - menu sucks a bit (Skylar)
-- still a few mountain photos
 - facebook vanity URL
 - quick NDA
 - about page: About PubMob header size / margin
@@ -40,6 +38,8 @@ mario--conferences ("on your way to conference?")
 
 done:
 
+- still a few mountain photos
+- calendar links actual
 - heading inconsistency front page, also margins
 - lookup (e.g. given an ID get supporting data)
 - master list of technologies?

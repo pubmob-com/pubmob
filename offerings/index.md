@@ -31,6 +31,6 @@ backsite: "javascript:history.back()"
 
 {% assign offerings = site.offerings | sort: "name" %}
 {% for offering in offerings %}
-  {% include offering.html %}
+  {% include offerings-listing-element.html %}
 {% endfor %}
 
