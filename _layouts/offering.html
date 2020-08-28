@@ -24,9 +24,9 @@
           <nav class="back">
             <a href="{{ page.backsite }}"><p><i class="fas fa-chevron-left"></i> Back<p></a>
           </nav>
+          <h1>PubMob session: {{ page.name }}</h1>
           <section class="offering-grid">
             <article class="left">
-                <h3>{{ page.name }}</h3>
                 {% include summary.html summary=page.twelve-words-or-fewer %}
                 <p>{{ page.summary-blurb-80-words }}</p>
                 <p>Upcoming dates: TBD</p>
