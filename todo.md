@@ -1,5 +1,8 @@
 -- BOOKING FORM breaks back button functionality
 
+- SEARCH TODOS
+- mob tech: mob, screen share, AnyDesk
+   -- prep page for each
 - instead of link for upcoming times, put a mini-icon next to each link with a world clock or something
 - pub layout: optional video on right
 - certifications

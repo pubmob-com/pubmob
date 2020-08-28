@@ -4,6 +4,7 @@
 <!-- layout for the offering page itself; a single offering -->
 <html lang="en">
   <head>
+    <title>PubMob | Session | {{ page.name }}</title>
     {% include head.html %}
   </head>
   <body id="{{page.pagename}}">
@@ -16,44 +17,54 @@
     </header>
     {{ page.pre-content }}
 
-    <section class="offering-grid">
-      <article class="left">
-          <h3>{{ page.name }}</h3>
-          {% include summary.html summary=page.twelve-words-or-fewer %}
-          <p>{{ page.summary-blurb-80-words }}</p>
-          <p>Upcoming dates: TBD</p>
-          {% include booking-button.html link=page.booking-link %}
-          <div class="session-lead">
-            <img src="/assets/images/pubs/{{ page.session-lead-id }}.jpg" style="width: 225px" />
-            <p>{{ site.session-lead-term | capitalize }}: <a href="/pubs/{{page.session-lead-id}}">{{ page.session-lead-name }}</a></p>
-          </div>
-      </article>
-      <article class="right">
-        <div class="offering-details">
-          {% include topics.html topics=page.topics %}
-          {% include languages.html languages=page.languages %}
-          {% include student-level.html exercise-skill=page.exercise-skill %}
-          {% include price-duration.html %}
-          {% if page.repo %}
-            <div class="offering-repo">Repo: <a href="{{page.repo}}">{{ page.repo }}</a></div>
-          {% endif %}
-          {% if page.prerequisites.size > 0 %}
-            <p>Prerequisites: {{ page.preqrequisites }}</p>
-          {% endif %}
+    <div class="grid">
+      <div class="content">
+        <div class="indent">
+
+          <section class="offering-grid">
+            <article class="left">
+                <h3>{{ page.name }}</h3>
+                {% include summary.html summary=page.twelve-words-or-fewer %}
+                <p>{{ page.summary-blurb-80-words }}</p>
+                <p>Upcoming dates: TBD</p>
+                {% include booking-button.html link=page.booking-link %}
+                <div class="session-lead">
+                  <img src="/assets/images/pubs/{{ page.session-lead-id }}.jpg" style="width: 225px" />
+                  <p>{{ site.session-lead-term | capitalize }}: <a href="/pubs/{{page.session-lead-id}}">{{ page.session-lead-name }}</a></p>
+                </div>
+            </article>
+            <article class="right">
+              <div class="offering-details">
+                {% include topics.html topics=page.topics %}
+                {% include languages.html languages=page.languages %}
+                {% include student-level.html exercise-skill=page.exercise-skill %}
+                {% include price-duration.html %}
+                {% if page.repo %}
+                  <div class="offering-repo">Repo: <a href="{{page.repo}}">{{ page.repo }}</a></div>
+                {% endif %}
+                {% if page.prerequisites.size > 0 %}
+                  <p>Prerequisites: {{ page.preqrequisites }}</p>
+                {% endif %}
+              </div>
+            </article>
+          </section>
+
+          <section>
+          {{ content }}
+          </section>
+          <section>
+              {% if page.graphic %}
+                <img src="/assets/images/offerings/{{page.session-lead-id}}/{{page.graphic}}" style="width: 450px" />
+              {% endif %}
+          </section>
+
         </div>
-        {% if page.graphic %}
-          <img src="/assets/images/offerings/{{page.session-lead-id}}/{{page.graphic}}" style="width: 225px" />
-        {% endif %}
-      </article>
+      </div>
+    </div>
 
-    </section>
-
-    <section>
-    {{ content }}
-    </section>
 
     {{ page.post-content }}
-     <footer>
+    <footer>
       <div class="footerbar"></div>
       <div class="grid">
         <div class="content">
