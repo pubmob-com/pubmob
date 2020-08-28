@@ -15,8 +15,8 @@
 
     </article>
     <article class="right offering-details">
-      {% include topics.html %}
-      {% include languages.html %}
+      {% include topics.html topics=offering.topics %}
+      {% include languages.html languages=offering.languages %}
       {% include student-level.html exercise-skill=offering.exercise-skill %}
       {% include price-duration.html %}
     </article>
