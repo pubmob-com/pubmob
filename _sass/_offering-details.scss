@@ -49,7 +49,12 @@
   }
 }
 
-.upcoming-sessions p {
+.fine-print {
+  @include ms-respond(font-size,0.4);
+  font-style: italic;
+}
+
+.upcoming-sessions {
   @include ms-respond(font-size,0.4);
   font-style: italic;
 }

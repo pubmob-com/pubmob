@@ -1,9 +1,9 @@
-<div class="upcoming-sessions">
-  <p>Upcoming sessions:
+<div>
+  <p class="fine-print">Upcoming sessions:
     {% for next-session in offering.next-available-sessions | limit: 3 %}
-    <a class="upcoming-session-date" href="https://www.timeanddate.com/worldclock/fixedtime.html?iso={{ next-session | date: "%Y%m%dT%H%M%S" }}&msg={{ offering.name | escape }}&ah=1&am=15">{{ next-session }}</a>{% unless forloop.last %}, {% endunless %}
+    <span class="fine-print"><span class="upcoming-session-date fine-print">{{ next-session }}</span><a href="https://www.timeanddate.com/worldclock/fixedtime.html?iso={{ next-session | date: "%Y%m%dT%H%M%S" }}&msg={{ offering.name | escape }}&ah=1&am=15">?</a>{% unless forloop.last %}, {% endunless %}</span>
     {% endfor %}
   </p>
 </div>
+<!-- TODO why do I have to specify fine-print in multiple places -->
 
-<!-- | date: "%B %d %H:%M %Z" -->
