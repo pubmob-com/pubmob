@@ -27,6 +27,7 @@ company-logo-url: /assets/images/pubs/llewellyn_falco/spun_labs_logo.png
 topics: [refactoring]
 languages: [java,cpp,csharp,javascript,python]
 calendar-app-id: 
+backsite: "javascript:history.back()"
 ---
 Fun technical sessions focused on microskills and tooling craft.
 

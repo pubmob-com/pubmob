@@ -1,4 +1,5 @@
 ---
+# Layouts must stay in HTML
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -16,12 +17,14 @@
          </div>
       </div>
     </header>
-
     {{ page.pre-content }}
 
     <div class="grid">
       <div class="content">
         <div class="indent">
+          <nav class="back">
+            <a href="{{ page.backsite }}"><p><i class="fas fa-chevron-left"></i> Back<p></a>
+          </nav>
           <h1>Welcome to {{page.pub-name}}</h1>
           {% if page.tagline %}
           <p class="tagline">{{ page.tagline }}</p>

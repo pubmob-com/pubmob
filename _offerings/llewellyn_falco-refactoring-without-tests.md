@@ -17,5 +17,6 @@ prerequisites: []
 summary-blurb-80-words: "<p>Your legacy code doesn't have tests? Join the club. Let's learn how to do a lot of refactoring without the need for some tests.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39119"
 active: true
+backsite: "javascript:history.back()"
 ---
 Your legacy code doesn't have tests? Join the club. Let's learn how to do a lot of refactoring without the need for some tests.

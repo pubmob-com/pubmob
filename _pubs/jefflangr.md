@@ -21,6 +21,7 @@ company-logo-url: http://langrsoft.com/assets/images/home/logo-small.png
 topics: [TDD,legacy,design]
 languages: [Java,C++,C#,Clojure,Kotlin,JavaScript,React]
 calendar-app-id: JeffLangr
+backsite: "javascript:history.back()"
 ---
 Your session with Jeff will be laid-back but lively.
 

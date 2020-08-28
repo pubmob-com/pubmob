@@ -17,6 +17,7 @@ prerequisites: []
 summary-blurb-80-words: <p>Using existing test coverage, learn techniques and concepts to quickly de-crapify code.  Look at your company's monolith with some fresh eyes and renewed confidence!</p>
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39111"
 active: true
+backsite: "javascript:history.back()"
 ---
 You'll see code that looks like the stuff in your system!
 
