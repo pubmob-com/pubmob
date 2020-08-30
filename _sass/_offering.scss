@@ -8,7 +8,12 @@
     grid-template-areas: "left right";
     grid-gap: 10px 20px;
 
-    .left { grid-area: left; }
+    $size_about_left: 50%;
+    $size_about_right: 50%;
+
+    .left { 
+      grid-area: left;
+    }
     .right { 
       grid-area: right; 
       padding: 50px 0 0 0;
@@ -18,7 +23,33 @@
       margin-top: 30px;
       margin-bottom: 10px;
     }
-  }
 
-  // TODO: responsiveness!
+    @include respond-to(handhelds) { 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "left"
+        "right";
+    }
+    @include respond-to(wide-handhelds) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "left"
+        "right";
+    }
+    @include respond-to(tablets) {
+      grid-template-columns: minmax($size_about_left,1fr) minmax($size_about_right,1fr);
+      grid-template-areas:
+        "left right";
+    }
+    @include respond-to(desktops) { 
+      grid-template-columns: minmax($size_about_left,1fr) minmax($size_about_right,1fr);
+      grid-template-areas:
+        "left right";
+    }
+    @include respond-to(max) { 
+      grid-template-columns: minmax($size_about_left,1fr) minmax($size_about_right,1fr);
+      grid-template-areas:
+        "left right";
+    }
+  }
 }
