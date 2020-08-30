@@ -12,6 +12,12 @@
     padding-top: 10px;
   }
 
+  .tagline {
+    @include ms-respond(font-size, 1.3);
+    text-align: center;
+    font-style: italic;
+  }
+
   .tender {
     grid-area: about-left;
     .tech {
