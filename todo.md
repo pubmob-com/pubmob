@@ -5,14 +5,12 @@
 - mob tech: mob, screen share, AnyDesk
    -- prep page for each
 - MENU: show current page
-- instead of link for upcoming times, put a mini-icon next to each link with a world clock or something
 - pub layout: optional video on right
 - certifications
 - video links
 - menu sucks a bit (Skylar)
 - facebook vanity URL
 - quick NDA
-- about page: About PubMob header size / margin
 -- SOLICIT MORE SESSION LEADS!
   -- who speaks to you? -- ask of customers
 
@@ -43,6 +41,8 @@ mario--conferences ("on your way to conference?")
 
 done:
 
+- about page: About PubMob header size / margin
+- instead of link for upcoming times, put a mini-icon next to each link with a world clock or something
 - still a few mountain photos
 - calendar links actual
 - heading inconsistency front page, also margins
