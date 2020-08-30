@@ -1,5 +1,5 @@
 ---
-layout: offering
+layout: offering-page
 pagename: offering
 session-lead-id: llewellyn_falco
 session-lead-name: Llewellyn Falco

@@ -29,7 +29,7 @@
             <article class="left">
                 {% include summary.html summary=page.twelve-words-or-fewer %}
                 <p>{{ page.summary-blurb-80-words }}</p>
-                <p>Upcoming dates: TBD</p>
+                {% include upcoming-sessions.html next-available-sessions=page.next-available-sessions %}
                 {% include booking-button.html link=page.booking-link %}
                 <div class="session-lead">
                   <img src="/assets/images/pubs/{{ page.session-lead-id }}.jpg" style="width: 225px" />

@@ -1,5 +1,5 @@
 ---
-layout: offering
+layout: offering-page
 pagename: offering
 session-lead-id: jbrains
 session-lead-name: "J. B. Rainsberger"

@@ -1,5 +1,5 @@
 ---
-layout: offering
+layout: offering-page
 pagename: offering
 session-lead-id: jefflangr
 session-lead-name: Jeff Langr

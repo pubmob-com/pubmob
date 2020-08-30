@@ -1,6 +1,7 @@
 -- BOOKING FORM breaks back button functionality
 
 - SEARCH TODOS
+- SHOW globe time zone page in a popup
 - mob tech: mob, screen share, AnyDesk
    -- prep page for each
 - MENU: show current page
