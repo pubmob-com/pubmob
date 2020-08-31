@@ -50,8 +50,6 @@
     .pubDetails {
     }
 
-    $size_about_left: 50%;
-
     @include respond-to(handhelds) { 
       grid-template-columns: 1fr;
       grid-template-areas:
