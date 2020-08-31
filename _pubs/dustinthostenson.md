@@ -19,6 +19,7 @@ company-link: http://delta3consulting.com
 company-logo-url: http://delta3consulting.com/images/Delta3_tag_GRN.png
 topics: [coaching,TDD]
 languages: [C#,Java,Swift,Kotlin]
+preferred-mob-tech: mob
 backsite: "javascript:history.back()"
 ---
 Drop in and Dev Up!

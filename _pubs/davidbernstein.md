@@ -19,6 +19,7 @@ company-link: http://ToBeAgile.com
 company-logo-url: https://tobeagile.com/wp-content/uploads/2020/06/to-be-agile-logo-words.png
 topics: [BDD, design patterns, test-first development, feature refinement, refactoring]
 languages: []
+preferred-mob-tech: mob
 backsite: "javascript:history.back()"
 ---
 I’m David Bernstein of To Be Agile.

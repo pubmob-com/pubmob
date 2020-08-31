@@ -18,6 +18,7 @@ company-link: https://qualitycoding.org
 company-logo-url: /assets/images/pubs/jonreid/quality-coding.png
 topics: [unit testing, TDD, refactoring]
 languages: [swift, objectivec]
+preferred-mob-tech: mob
 backsite: "javascript:history.back()"
 ---
 Our fun, friendly pub is at the corner of PubMob and Apple. If you're an iOS developer, come on in!

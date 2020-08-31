@@ -19,6 +19,7 @@ company-link:
 company-logo-url: 
 topics: [outcome-based development, TDD, Java, Groovy, Javscript]
 calendar-app-id: SkylarWatson
+preferred-mob-tech: mob
 backsite: "javascript:history.back()"
 ---
 
