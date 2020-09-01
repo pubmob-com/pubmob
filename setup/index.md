@@ -28,75 +28,33 @@ post-content: >
     </div>
 backsite: "javascript:history.back()"
 ---
-<div class="horizontal-rule">
-  <div class="lr"></div>
-  <h1>What to Expect</h1>
-  <div class="lr"></div>
+<h1>What to Expect</h1>
+<p>During a PubMob session, expect to stay engaged as you switch between the role of being a driver&mdash;creating solutions in the computer&mdash;and a navigator, learning as you help other drivers understand where to go. Read on for more information about how to get ready for your PubMob experience.</p>
+
+<div>
+  <h2>What are the rules?</h2>
+  <p>PubMob follows a simple, core structure:</p>
+    <ul class="list outer">
+      <li><ul>The navigators are responsible for describing the next increment for a solution to the driver.</ul></li>
+      <li><ul>The driver, who controls the keyboard and mouse, listens to the navigator(s) and translates their direction into an appropriate solution in the computer.</ul></li>
+      <li><ul>Drivers may not navigate. If they have a brilliant idea, they relinquish the driver's seat, then act as a navigator.</ul></li>
+      <li><ul>The driver controls computer input for a short, timed interval.</ul></li>
+      <li><ul>We rotate once through each driver in the lineup before repeating the lineup.</ul></li>
+    </ul>
+  <p>The short rotations keep the session lively and prevent anyone from dominating.</p>
+  <p>Beyond the core PubMob structure, most everything else is common sense. Show respect for your {{ site.session-lead-term }} and fellow PubMobbers, and enjoy the experience. Your PubMob {{ site.session-lead-term }} may add a bit of spice to the session with custom guidelines and recommendations for a successful mob.</p>
+  <h2>What does a PubMob session feel like?</h2>
+  <p>Being a driver may sound intimidating at first, but a core reason we promote mob programming is to minimize the fear factor. When you're in the "hot seat" as a driver (typically for a breezy 3-5 minutes), you're not expected to have all the answers. In fact, you're not expected to have <em>any</em> answers&mdash;your job is to listen and translate.</p>
+  <p>You can't quite sit back and relax; it turns out that listening and translating is a valuable skill all its own. But it does mean that you should never feel pressured or intimidated because you don't have the answers.</p>
+  <p>The feedback we usually hear: Mob programming is fun, it's productive, and it goes by fast.</p>
+  <p>Read <a href="/mobprogramming">more about mob programming and why we use it</a>.</p>
+
+  <h2>How to get ready for your PubMob session</h2>
+  <p>Our PubMob {{ site.session-lead-term }}s are individuals with strong, extensive experience in helping others develop software. As such, they'll have likely settled on a preferred mechanism for facilitating their sessions. When you sign up for a PubMob session, make sure you read the description for the specified mob programming technique, which includes key information about how to get ready for that type of PubMob session.</p>
+  <p>Currently, our {{ site.session-lead-term }}s will be using one of the following techniques:</p>
+  <ul>
+    <li><p><a href="/setup/mob">Git handover with mob.</a> You'll build software on your own machine and use Git to share your changes.</p></li>
+    <li><p><a href="/setup/anydesk">Remote control with AnyDesk.</a> You'll be provided access to a remote desktop that provides fast access and minimal lag.</p></li>
+    <li><p><b>Cyber Dojo.</b> You'll work in a simple, web-based development environment that minimizes the need for extensive IDE knowledge.</p></li>
+  </ul>
 </div>
-
-<section class="seo">
-  <p>
-  </p>
-  <p>
-  </p>
-</section>
-
-<section class="boxes">
-  <div class="box LightBlue">
-    <h2>How Does It Work?</h2>
-    <p>You can get a quick notion of what an actual PubMob session looks like by
-      watching a few minutes of this <a href="">short video</a>. You'll see 
-      how the mob rotations work. For a sample 3-minute driver session, the 
-      next developer in turn:</p>
-      <ul class="list">
-        <li><p>shares their screen</p></li>
-        <li><p>issues the <code>mob start 3</code> command</p></li>
-        <li><p>listens for direction from the mob</p></li>
-        <li><p>builds code to suport the mob's direction</p></li>
-        <li><p>issues the <code>mob next</code> command, which passes the driver role to the next developer in turn</p></li>
-      </ul>
-    <p>The <code>mob start</code> command grabs the latest in-progress code
-      and checks out a work-in-progress (WIP) branch named mob-session.
-     The <code>mob next</code> command commits the current changes (it can
-      be in any state, maybe not even compiling) and pushes the WIP branch.</p>
-    <p>When the mob is ready to create a commit representing a piece of "done" work,
-      the current driver issues the <code>mob done</code> instead of the
-      <code>mob next</code> command. As a result, the mob tool squashes all
-      of the many WIP commits and stages the resulting changes on the master
-      branch. The team reviews what's staged and creates a commit. The mob
-      tool removes the WIP branch as a final step.</p>
-  </div>
-  <div class="box LightGreen">
-    <h2>What Does It Feel Like?</h2>
-    <p>Being a driver may sound intimidating at first, but a key element of 
-      mob programming is to minimize the fear factor. When you're in the "hot seat" as a driver
-      (typically for a breezy 3-5 minutes),
-      you're not expected to have all the answers. In fact, you're not expected to
-      have <em>any</em> answers&mdash;your job is to listen and translate.</p>
-    <p>You can't quite sit back and relax; it turns out that listening and translating
-     is a valuable skill all its own. But it does mean that you should never feel
-      pressured or intimidated because you don't have the answers.</p>
-    <p>The feedback we usually hear: Mob programming is fun, it's productive,
-      and it goes by fast. [[some real quotes here ]]</p>
-  </div>
-  <div class="box LightYellow">
-    <h2>How Do I Get Ready?</h2>
-    <p>Most sessions will use the <a href="http://github.com/remotemobprogramming/mob">mob</a> tool. Follow the instructions on the mob page to install the tool; it should take a couple minutes. For MacOS users, it's a single <code>brew install</code> command.</p>
-    <p>
-      Each pub {{ site.session-lead-term }} will have custom setup instructions for their mob session.
-      Most of the time, this will involve cloning a repository and making sure
-      it builds successfully.</p>
-    <p>In order to get the maximum value out of your session, make sure that you're
-    able to build the session's software, and run any tests, before joining the session.
-    Participants who aren't ready will be asked to fall back to remote control,
-    which is a lot less fun.</p>
-
-<p>TODO: WHERE does the git push ability get added? It would be great to automate this somehow when people sign up. There's probably a way via the GitHub API.</p>
-
-  <p>
-  Read <a href="/mobbing">more about mob programming and why we use it</a>.
-  </p>
-  </div>
-  
-</section>
-

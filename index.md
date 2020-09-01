@@ -75,7 +75,7 @@ post-content: >
   </div>
   <div class="boxleft Reddish">
     <div class="image">
-      <img src='/assets/images/home/mobbing.jpg' alt='Why Mob Programming'>
+      <img src='/assets/images/home/mobprogramming.jpg' alt='Why Mob Programming'>
     </div>
     <div class="boxcopy copy">
       <h5>Why Mob Programming?</h5>
@@ -87,7 +87,7 @@ post-content: >
         You want to love what you do.
       </p>
       <p>Build on the strengths of others. Build a real team. Relish the experience.
-         <a class="more" href="/mobbing">More &raquo;</a>
+         <a class="more" href="/mobprogramming">More &raquo;</a>
       </p>
     </div>
   </div>
@@ -95,12 +95,13 @@ post-content: >
     <div class="boxcopy copy">
       <h5>What to Expect / How to Get Ready</h5>
       <p>
-        To make the most out of your PubMob experience, you'll want to ensure you're ready
-        to hit the ground running.
+        To make the most out of your PubMob session, you'll want to ensure you're ready
+        to hit the ground running. That means getting your machine set up for the session,
+        if needed, and understanding what the PubMob experience is like.
       </p>
       <p>
-        Mostly that means having installed a simple tool for doing code handovers to other
-        PubMob attendees, and making sure you can build any codebases used in the session.
+        Our instructors will be using one of a few simple remote programming techniques to 
+        allow you to easily participate in the session. Take a moment to read about setting up for PubMob and what to expect.
         <a class="more" href="/setup">More &raquo;</a>
       </p>
     </div>

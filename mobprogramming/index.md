@@ -28,7 +28,7 @@ You might have spent some years pair-programming with other developers on your t
 
 Some of us do enjoy pairing and find it effective.
 
-![pairing](/assets/images/mobbing/pairing.jpg)
+![pairing](/assets/images/mobprogramming/pairing.jpg)
 {: .max-width-image}
 
 But most software developers recoil at the thought of sitting next to another developer throughout their day. Programming is a heavy brain activity. And we work best when we can sit in a quiet room and focus on the problem at hand by ourselves, right? Why would we use *two* developers to complete one task?
