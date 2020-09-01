@@ -55,6 +55,6 @@ backsite: "javascript:history.back()"
   <ul>
     <li><p><a href="/setup/mob">Git handover with mob.</a> You'll build software on your own machine and use Git to share your changes.</p></li>
     <li><p><a href="/setup/anydesk">Remote control with AnyDesk.</a> You'll be provided access to a remote desktop that provides fast access and minimal lag.</p></li>
-    <li><p><b>Cyber Dojo.</b> You'll work in a simple, web-based development environment that minimizes the need for extensive IDE knowledge.</p></li>
+    <li><p><a href="/setup/cyberdojo">Cyber Dojo.</a> You'll work in a simple, web-based development environment that minimizes the need for extensive IDE knowledge.</p></li>
   </ul>
 </div>
