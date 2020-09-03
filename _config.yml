@@ -76,6 +76,8 @@ navigation:
     id: navabout
 
 collections:
+  mobtech:
+    output: false
   technologies:
     output: false
   pubs:

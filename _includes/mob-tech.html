@@ -1,0 +1,5 @@
+<div>
+  {{ assign mob-tech = site.mobtech | first }}
+  {% assign mob-tech = site.mobtech | where: "name", include.mob-tech | first %}
+  <p><a href="/setup/{{mob-tech.name}}">{{ mob-tech.description }}</a></p>
+</div>

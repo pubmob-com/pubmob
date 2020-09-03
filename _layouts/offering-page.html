@@ -44,6 +44,7 @@
                 {% if page.repo %}
                   <div class="offering-repo">Repo: <a href="{{page.repo}}">{{ page.repo }}</a></div>
                 {% endif %}
+                {% include mob-tech.html mob-tech=page.mob-tech %}
                 {% if page.prerequisites.size > 0 %}
                   <p>Prerequisites: {{ page.preqrequisites }}</p>
                 {% endif %}
