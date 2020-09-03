@@ -9,9 +9,7 @@
 
       {% include summary.html summary=offering.twelve-words-or-fewer %}
       {% include summary-blurb.html %}
-      {% include upcoming-sessions.html next-available-sessions=offering.next-available-sessions %}
-      {% assign link = offering.booking-link %}
-      {% include booking-button.html link=offering.booking-link %}
+      {% include upcoming-sessions.html next-available-sessions=offering.next-available-sessions link=offering.booking-link %}
 
     </article>
     <article class="right offering-details">

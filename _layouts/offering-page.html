@@ -29,8 +29,7 @@
             <article class="left">
                 {% include summary.html summary=page.twelve-words-or-fewer %}
                 <p>{{ page.summary-blurb-80-words }}</p>
-                {% include upcoming-sessions.html next-available-sessions=page.next-available-sessions %}
-                {% include booking-button.html link=page.booking-link %}
+                {% include upcoming-sessions.html next-available-sessions=page.next-available-sessions link=page.booking-link %}
                 <div class="session-lead">
                   <img src="/assets/images/pubs/{{ page.session-lead-id }}.jpg" style="width: 225px" />
                   <p>{{ site.session-lead-term | capitalize }}: <a href="/pubs/{{page.session-lead-id}}">{{ page.session-lead-name }}</a></p>

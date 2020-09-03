@@ -1,9 +1,17 @@
 <div>
-  <p class="fine-print">Upcoming sessions:
+  <p class="fine-print">
+  {% if include.next-available-sessions.size > 0 %}
+  Upcoming sessions:
     {% for next-session in include.next-available-sessions | limit: 3 %}
     <span class="fine-print"><span class="upcoming-session-date fine-print">{{ next-session }}</span><a href="https://www.timeanddate.com/worldclock/fixedtime.html?iso={{ next-session | date: "%Y%m%dT%H%M%S" }}&msg={{ offering.name | escape }}&ah=1&am=15"><i class="fas fa-globe pad-char"></i></a>{% unless forloop.last %}, {% endunless %}</span>
     {% endfor %}
+    {% include booking-button.html link=include.link %}
+  {% else %}
+  check back later for upcoming sessions
+  {% endif %}
   </p>
+
 </div>
 <!-- TODO why do I have to specify fine-print in multiple places -->
+
 

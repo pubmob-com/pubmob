@@ -65,7 +65,7 @@ navigation:
   - title: Home
     url: /
     id: navhome
-  - title: Virtual Pubs
+  - title: Session Leads
     url: /pubs
     id: navpubs
   - title: On Tap

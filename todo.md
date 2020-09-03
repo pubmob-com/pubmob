@@ -1,5 +1,7 @@
 -- BOOKING FORM breaks back button functionality
 
+-- OVERALL calendar on site on each page!
+
 - SEARCH TODOS
 - SHOW globe time zone page in a popup
 - mob tech: mob, screen share, AnyDesk

@@ -61,6 +61,9 @@ $breakpoint-max: 1080px;
 
 .column-right {
   grid-area: col-r;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-right;
 }
 
 .two-column-grid {

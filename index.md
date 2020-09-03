@@ -34,7 +34,7 @@ pre-content: >
 post-content: >
 ---
 <section class="seo">
-  <h1>Virtual collaborative coding.</h1>
+  <h1>Remote collaborative software development / training</h1>
   <p>
     Welcome to a new world for software development. Join the PubMob experience and tap
     into the expertise of a productive worldwide community of software developers. 
