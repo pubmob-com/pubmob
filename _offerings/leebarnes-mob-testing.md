@@ -17,6 +17,7 @@ prerequisites: []
 summary-blurb-80-words: "<p>Mob testing provides a great forum to hone your testing skills and learn new techniques from our experts as well as your peers!</p>"
 booking-link: ""
 active: true
+mob-tech: mob
 backsite: "javascript:history.back()"
 ---
 Whether you're new to testing or a seasoned professional, mob testing is a great way to improve you skills and learn new techniques you can use on your own testing projects.

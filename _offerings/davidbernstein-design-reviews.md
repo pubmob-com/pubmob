@@ -25,6 +25,7 @@ summary-blurb-80-words: "<ul class='list'>
 </ul>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39109"
 active: true
+mob-tech: mob
 backsite: "javascript:history.back()"
 ---
 I’ve helped design dozens of successful products and services in a diverse range of industries. I have extensive experience working with design patterns and architecting a variety of systems, from embedded to the enterprise, and custom apps to operating systems.

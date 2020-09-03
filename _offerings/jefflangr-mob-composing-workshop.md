@@ -17,6 +17,7 @@ prerequisites: []
 summary-blurb-80-words: "<p>Mob programming is 'everyone in a room working on the same thing at the same time,' per Woody Zuill. Outrageous! Yet teams find mob programming a fun way to collaboratively build and deliver high-quality software. Some teams even say they go faster.</p><p>In this session, we'll mob to collaboratively compose a short song. Even if you know little about music, you'll feel firsthand how participating in a mob can reduce your anxiety and help you contribute quickly.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39116"
 active: true
+mob-tech: mob
 backsite: "javascript:history.back()"
 ---
 Suppose you have a software development team of five folks challenged with delivering five features. That team working as a mob--focusing on only one feature at a time--can actually deliver all five features faster than those same five folks trying to "divide & conquer" the features.
