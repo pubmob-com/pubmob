@@ -6,7 +6,7 @@ session-lead-name: Jeff Langr
 name: Legacy Dependency Breaking Techniques
 twelve-words-or-fewer: Simple techniques to break dependencies making it hard to test
 topics: [TDD,refactoring,design]
-languages: [java,cpp,csharp,clojure,kotlin,javascript]
+languages: [java,cpp,csharp,kotlin]
 graphic:
 public-or-private: both
 is-for-experienced-mobbers: false
@@ -20,9 +20,14 @@ active: true
 mob-tech: mob
 backsite: "javascript:history.back()"
 ---
-You'll see code that looks like the stuff in your system!
+During this session, we'll briefly touch on some key themes that will help keep you safe when touching legacy code. We'll then work through some of the legacy-breaking techniques that will enable you to start getting a handle on your object-oriented legacy code. You'll learn about as many of these dependency breaking techniques as we can fit:
 
-Topics:
-* blah
-* blah
-* blah
+* Expose static method
+* Extract and override call
+* Parameterize constructor
+* Break out method object
+* Template redefinition (C++) 
+{: .list}
+
+Most of these legacy code PubMob sessions are run in Java, which has become our lingua franca, but I'm sure you have legacy code in whatever other language you code in. Don't hesitate to ping me if you're interested in a private legacy code session or two on your own codebase, whether it be C++, Kotlin, or C#.
+

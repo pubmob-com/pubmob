@@ -39,10 +39,10 @@ backsite: "javascript:history.back()"
   <p>For a sample driver session (let's say for three minutes), the next developer in turn:</p>
   <ul class="list">
     <li><p>shares their screen</p></li>
-    <li><p>issues the <code>mob start 3</code></p></li>
+    <li><p>issues the command <code>mob start 3</code></p></li>
     <li><p>listens for direction from the mob</p></li>
     <li><p>builds code to suport the mob's direction</p></li>
-    <li><p>issues the <code>mob next</code> command, which passes the driver role to the next developer in turn</p></li>
+    <li><p>issues the command <code>mob next</code>, which passes the driver role to the next developer in turn</p></li>
   </ul>
   <p>The <code>mob start</code> command checks out a work-in-progress (WIP) branch named mob-session, creating it if necessary. The <code>mob next</code> command commits the current changes and pushes the WIP branch. The code can be in any state when <code>mob next</code> is executed; it might not even be compiling.</p>
   <p>When the mob is ready to create a commit representing a piece of "done" work, the current driver issues the <code>mob done</code> instead of the <code>mob next</code> command. When <code>mob done</code> is executed, the mob tool squashes all of the many WIP commits and stages the resulting changes on the master branch, then removes the WIP branch as a cleanup step. The team can review what's staged and create a commit as appropriate.</p>
