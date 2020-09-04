@@ -32,18 +32,21 @@ backsite: "javascript:history.back()"
 
 <div>
   <h2>cyber-dojo</h2>
-  <p>cyber-dojo is a place to practice programming<!-- <img src="/assets/images/setup/..." class="setupImg"/> --></p>
+  <p>cyber-dojo is an online place for practicing programming. It's also designed to help instructors (and learners) to keep tabs on their adherence to test-driven development (TDD): cyber-dojo provides a quick, colorful view of your adherence to the red-green-refactor rhythm. <img src="/assets/images/setup/cyberdojo.png" class="setupImg"/></p>
 
   <h2>How does cyber-dojo work?</h2>
-  <p>cyber-dojo is a web based development environment.  It is hosted on a linux cloud machine. Your pub host provides you a URL to access cyber-dojo. It's a simple WYSIWYG editor you already know how to use.</p>
+  <p>cyber-dojo is a web-based development environment hosted on a Linux cloud machine. Your {{ site.session-lead-term }} will provide you with a URL to access cyber-dojo. Cyber-dojo provides a simple WYSIWYG editor you already know how to use.</p>
 </div>
 
 <div>
   <h2>How do I get ready?</h2>
-  <p>You don't have much to do.  You'll need a decent internet connection (20 Mbps up and down) and a modern browser. Your host will provide the URL the day of your session.  If you can run zoom, cyber-dojo should have all it needs.</p> 
+  <p>Cyber-dojo makes it easy: There's no real setup. You'll need a decent internet connection (20 Mbps up and down) and a modern browser. Your host will provide the URL the day of your session. If you're able to run Zoom, cyber-dojo will likely have all the power it needs.</p> 
 
-  <h2><a id="fallback-rule"></a>What about when it's my turn?</h2><!-- TODO anchor tag here -->
+  <h2>What about when it's my turn?</h2>
   <p>Participants sharing the cyber-dojo development environment simply refresh their browser, once the page reloads you are synced with the last test run. </p>
+
+  <h2><a id="fallback-rule"></a>Fallback rule</h2>
+  <p>Generally there's little that can go wrong with cyber-dojo. In the unlikely event you encounter a problem, your {{ site.session-lead-term }} will attempt to help you resolve it. If you're unsuccessful, you'll be asked to type onto the {{ site.session-lead-term }}'s machine using Zoom's remote control capability for the remainder of the session.</p>
 
   <h2>Tradeoffs for cyber-dojo</h2>
   <p>Benefits:</p>
