@@ -16,7 +16,7 @@ next-available-sessions: []
 prerequisites: []
 summary-blurb-80-words: "Would you like to see Elm in practice? Serverless? With parsing? This is for you!"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39112"
-active: true
+active: false
 mob-tech: mob
 backsite: "javascript:history.back()"
 ---
