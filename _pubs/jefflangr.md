@@ -5,7 +5,7 @@ session-lead-id: jefflangr
 session-lead-name: Jeff Langr
 session-lead-short-name: Jeff
 owner-name: Jeff Langr
-sort-name: "1"
+sort-name: Langr, Jeff
 pub-name: Jeff's Place
 session-lead-photo-extension: jpg
 pub-photo: mountSaintHelens.png
