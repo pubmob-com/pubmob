@@ -12,7 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo:
-next-available-sessions: ["2020-09-16T15:00Z"]
+next-available-sessions: ["2020-09-16T14:00Z"]
 prerequisites: []
 summary-blurb-80-words: "<p>Given an ancient codebase that makes refactoring risky and expensive, how do you clear a path to continued delivery? The old wisdom says the best time to plant a tree was 20 years ago, and the next best time is today. But if you already have a gnarled old source tree, preserve your software investment by planting a Strangler: a pattern for reaping continuous value from your existing system while growing new functionality alongside it.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39520"
