@@ -15,7 +15,7 @@ repo:
 next-available-sessions: []
 prerequisites: []
 summary-blurb-80-words: "<p>Mob testing provides a great forum to hone your testing skills and learn new techniques from our experts as well as your peers!</p>"
-booking-link: ""
+booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39602"
 active: true
 mob-tech: mob
 backsite: "javascript:history.back()"
