@@ -87,6 +87,8 @@ collections:
     sort_by: name
   announcements:
     output: false
+  certifications:
+    output: false
 
 session-lead-term: session lead
 session-lead-term-plural: session leads
