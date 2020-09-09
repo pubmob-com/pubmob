@@ -12,7 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: intermediate
 repo: 
-next-available-sessions: []
+next-available-sessions: ["2020-09-15T22:00Z"]
 prerequisites: []
 summary-blurb-80-words: Pick up a few techniques to fix common dependency challenges in your code, things that make it seem impossible to write unit tests.
 booking-link: https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39115
@@ -30,4 +30,3 @@ During this session, we'll briefly touch on some key themes that will help keep 
 {: .list}
 
 Most of these legacy code PubMob sessions are run in Java, which has become our lingua franca, but I'm sure you have legacy code in whatever other language you code in. Don't hesitate to ping me if you're interested in a private legacy code session or two on your own codebase, whether it be C++, Kotlin, or C#.
-
