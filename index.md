@@ -122,6 +122,7 @@ post-content: >
         {% capture expireDate %}{{ announcement.expire | date: '%s' | plus: 0 }}{% endcapture %}
         {% if now <= expireDate %}
           {{ announcement.content | markdownify }} <em>(posted {{ announcement.date | date: "%b %d, %Y" }})</em>
+          <hr />
           {% assign count = count | plus: 1 %}
           {% if count == 3 %}
             {% break %}
