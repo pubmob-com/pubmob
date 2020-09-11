@@ -24,7 +24,7 @@ backsite: "javascript:history.back()"
 <p>Check out the following opportunities to earn PubMob certifications and prizes.</p>
 <div>
   {% for cert in site.certifications %}
-  <div>
+  <div class="indent">
     <h2>{{ cert.title }}</h2>
     <p>{{ cert.description }}</p>
     <p>Sessions required:</p>
