@@ -80,5 +80,5 @@ You may have been personally impacted by alcohol abuse. I fully understand if th
 
 **We do not discuss alcohol during PubMob.com sessions on software development.** You will not see alcohol advertised or promoted on the site. (You *will* see photos of pubs and people within, and you'll see glasses and bottles that might contain alcohol.) But the [code of conduct](/code-of-conduct) for PubMob.com session attendees is clear: **We don't tolerate jerks, and that includes people whose drug use leads to any conduct-violating actions or statements.** They will be ejected.
 
-If it helps, please remember that PubMob is short for **Pub**lic **Mob** programming*. PubMob is a celebration of the camaraderie possible within a group of strangers. 
+If it helps, please remember that PubMob is short for **Pub**lic **Mob** programming. PubMob is a celebration of the camaraderie possible within a group of strangers. 
 
