@@ -24,5 +24,9 @@ calendar-app-id: JeffLangr
 preferred-mob-tech: mob
 backsite: "javascript:history.back()"
 ---
-Your session with Jeff will be laid-back but lively.
+Over the past few years, Jeff has been doing an increasing amount of mob programming with his students and customers. The results are unanimously positive: students stay engaged and teams remain focused.
+
+Your session with Jeff will be a reflection of the interests and learning style of the mob as a whole, but chances are good it'll be a lively and memorable event.
+
+If the mob is a bit shy, we'll move toward a strict navigator role, where requests funnel through a single navigator. This will ensure everyone starts to feel comfortable with talking others through the concepts we're learning.
 
