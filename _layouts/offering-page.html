@@ -59,7 +59,12 @@
           </section>
           <section>
               {% if page.graphic %}
+                <figure>
                 <img src="/assets/images/offerings/{{page.session-lead-id}}/{{page.graphic}}" style="width: 450px" />
+                {% if page.graphic-caption %}
+                  <figcaption>{{ page.graphic-caption }}</figcaption>
+                {% endif %}
+                </figure>
               {% endif %}
           </section>
 
