@@ -30,7 +30,7 @@ Join us to see an effective mob session in action, first-hand.
 
 If you *are* a technical person, you might still want to consider this session, which will allow you to experience mob programming without the distraction of a coding problem--it's easy for some of us get too deeply mired in problem solving. My mob composing workshop might also open your eyes to the possibility of using mob programming outside the software world.
 
-Plus, you haven't really mobbed until you've composed music in a small group. :-)
+Plus, you haven't really mobbed until you've composed music in a small group.
 
 ## What does a mob *feel* like?
 
