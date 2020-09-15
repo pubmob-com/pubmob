@@ -12,7 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
-next-available-sessions: []
+next-available-sessions: ["2020-09-25T19:00Z","2020-10-02T19:00Z"]
 prerequisites: []
 summary-blurb-80-words: "<p>Mob testing provides a great forum to hone your testing skills and learn new techniques from our experts as well as your peers!</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39602"
@@ -25,4 +25,3 @@ Whether you're new to testing or a seasoned professional, mob testing is a great
 Testing dojos have become a popular way for testers to come together and work on testing challenges together.  I'll moderate mobbing sessions focused on specific applications or technologies that will hone your skills across different types of testing as well as specific app technologies.
 
 We'll keep the challenges fresh to ensure a wide array of learning experiences!
-
