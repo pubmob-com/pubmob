@@ -15,7 +15,7 @@ tagline: Reduce the costs and risks of software delivery.
 session-lead-photo-extension: jpg
 session-lead-blurb: "I help teams learn to deliver more effectively by growing together. In 20 years comprising global finance, startups, agriculture, universities, and nonprofits, I've managed products, projects, and people; engineered code, tests, and releases; deployed and operated production systems; provided phone and desk support; and listened to, empathized with, and improved the lot of folks in all of these roles."
 company: Latent Agility
-company-blurb: "I bring a rare combination of technical coaching and influential conversations."
+company-blurb: "I offer a rare combination of technical coaching and influential conversations."
 company-link: https://latentagility.com
 company-logo-url: https://latentagility.com/images/logo.png
 topics: [coaching, legacy code, refactoring, evolutionary design, TDD, BDD]
