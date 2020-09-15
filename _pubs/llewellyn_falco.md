@@ -8,10 +8,9 @@ owner-name: Llewellyn Falco
 sort-name: Falco, Llewellyn
 pub-name: Llewellyn's Place
 session-lead-photo-extension: png
-pub-photo: mountSaintHelens.png
-pub-photo-caption: "Reach new peaks with our training."
+pub-photo: 
+pub-photo-caption:
 pub-summary-twenty-words: Mobbing, Testing and Refactoring.
-
 tagline: "Happy Coding"
 session-lead-blurb: "
 Llewellyn Falco is an agile technical coach who specializes in teaching teams how to slay their legacy code dragons. His style is akin to a personal trainer: working with the teams to create healthy and lasting technical habits.
