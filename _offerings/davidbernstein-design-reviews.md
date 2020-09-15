@@ -10,7 +10,7 @@ languages: [java,cpp,csharp,javascript]
 graphic: 
 public-or-private: both
 is-for-experienced-mobbers: false
-next-available-sessions: []
+next-available-sessions: ["2020-09-24T18:00Z"]
 exercise-skill: beginner
 repo: 
 prerequisites: []
