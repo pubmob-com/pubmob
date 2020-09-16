@@ -1,8 +1,23 @@
 {% if offering.active %}
+<script>
+var modal = document.getElementById("private-modal");
+var clickable = document.getElementById("private-title");
+var span = document.getElementsByClassName("close")[0];
+clickable.onclick = function() { modal.style.display = "block"; }
+span.onclick = function() { modal.style.display = "none"; }
+window.onclick = function(event) { if (event.target == modal) modal.style.display = "none"; }
+</script>
+
 <div id="{{ offering.id }}">
   <section class="offerings-listing-element">
     <article class="left">
-      <h1><a href="{{ offering.id }}">{{ offering.name }}</a></h1>
+      <h1><a href="{{ offering.id }}">{{ offering.name }}</a>{% if offering.public-or-private == "private" %} <span id="private-title" class="private-offering-title">(Private)</span>{% endif %}</h1>
+      <div id="private-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p><strong>PubMob Private</strong> sessions are designed for teams looking to focus on a specific problem in their own codebase or system. You pay one price for up to 6 attendees in the session.<br /><a href="/pubmobPrivate">More &#187;</a></p>
+        </div>
+      </div>
       {% if page.pagename == "offerings" %}
         <h2><a href="/pubs/{{ offering.session-lead-id }}">{{ offering.session-lead-name }}</a></h2>
       {% endif %}
@@ -16,7 +31,7 @@
       {% include topics.html topics=offering.topics %}
       {% include languages.html languages=offering.languages %}
       {% include student-level.html exercise-skill=offering.exercise-skill %}
-      {% include price-duration.html %}
+      {% include price-duration.html public-or-private=offering.public-or-private %}
       {% include mob-tech.html mob-tech=offering.mob-tech %}
     </article>
   </section>

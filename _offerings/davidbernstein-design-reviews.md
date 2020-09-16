@@ -8,7 +8,7 @@ twelve-words-or-fewer: Get an outside perspective on your design ideas
 topics: [TDD, design patterns, domain modeling, refactoring]
 languages: [java,cpp,csharp,javascript]
 graphic: 
-public-or-private: both
+public-or-private: private
 is-for-experienced-mobbers: false
 next-available-sessions: ["2020-09-24T18:00Z"]
 exercise-skill: beginner
@@ -23,7 +23,7 @@ summary-blurb-80-words: "<ul class='list'>
 <li>Cohesively instantiate objects to reduce coupling throughout the system</li>
 <li>Implement alternative design solutions to resolve longstanding problems</li>
 </ul>"
-booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39109"
+booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39717"
 active: true
 mob-tech: mob
 backsite: "javascript:history.back()"
