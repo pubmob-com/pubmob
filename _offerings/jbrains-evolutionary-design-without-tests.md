@@ -12,7 +12,7 @@ public-or-private: public
 is-for-experienced-mobbers: false
 exercise-skill: intermediate
 repo: 
-next-available-sessions: ["2020-09-15T15:30Z","2020-10-06T15:30Z"]
+next-available-sessions: ["2020-10-06T15:30Z"]
 prerequisites: []
 summary-blurb-80-words: "Let's see how safely and deftly we can move without tests. We'll focus on guiding the design to evolve and we'll write the tests in our heads. We're professionals; we can trust each other."
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39218"
