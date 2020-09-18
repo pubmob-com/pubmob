@@ -15,7 +15,8 @@ session-lead-blurb: "Skylar Watson is a software consultant and agile coach who 
 company: SkyNet Software Solutions
 company-blurb: "SkyNet Software Solutions: there when you need them."
 company-link: 
-company-logo-url: 
+company-logo-url: /assets/images/pubs/skylarwatson/skynet.JPG
+company-logo-max-width: 454px
 topics: [outcome-based development, TDD, Java, Groovy, JavaScript]
 calendar-app-id: SkylarWatson
 preferred-mob-tech: mob
