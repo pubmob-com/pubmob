@@ -20,7 +20,7 @@ title-bar-color: title-bar-light-green
 title-bar-text: Why Mob Programming?
 backsite: "javascript:history.back()"
 ---
-You've likely spent most of your software development careeer in a cubicle or office, flying solo for most of your development efforts.
+You've likely spent most of your software development career in a cubicle or office, flying solo for most of your development efforts.
 
 You might have spent some years pair-programming with other developers on your team. You might also have spent some years *strongly resisting* pair programming.
 
