@@ -11,7 +11,8 @@ window.onclick = function(event) { if (event.target == modal) modal.style.displa
 <div id="{{ offering.id }}">
   <section class="offerings-listing-element">
     <article class="left">
-      <h1><a href="{{ offering.id }}">{{ offering.name }}</a>{% if offering.public-or-private == "private" %} <span id="private-title" class="private-offering-title">(Private)</span>{% endif %}</h1>
+      {% if offering.public-or-private == "private" %}<span id="private-title" class="private-offering-title"><img src="/assets/images/offerings/privateHeader.svg"></span>{% endif %}
+      <h1><a href="{{ offering.id }}">{{ offering.name }}</a></h1>
       <div id="private-modal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
