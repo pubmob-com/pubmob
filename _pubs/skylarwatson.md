@@ -16,7 +16,7 @@ company: SkyNet Software Solutions
 company-blurb: "SkyNet Software Solutions: there when you need them."
 company-link: 
 company-logo-url: 
-topics: [outcome-based development, TDD, Java, Groovy, Javscript]
+topics: [outcome-based development, TDD, Java, Groovy, JavaScript]
 calendar-app-id: SkylarWatson
 preferred-mob-tech: mob
 backsite: "javascript:history.back()"

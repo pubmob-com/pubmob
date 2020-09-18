@@ -22,7 +22,7 @@ backsite: "javascript:history.back()"
 ---
 If you've ever wanted to learn [Purescript](https://www.purescript.org/), but didn't want to learn it entirely on your own, then you and I have a lot in common!
 
-I tried to learn Haskell for a few days and a lot of it went over my head. In 2020 I started a volunteer project in Elm and I liked how I could deploy my work anywhere on a web site that plain Javascript could go. Someone suggested Purescript, because I could get the Haskell experience but still compile to Javscript, and it sounded like a good idea to me. **I'd rather learn this with people than on my own!**
+I tried to learn Haskell for a few days and a lot of it went over my head. In 2020 I started a volunteer project in Elm and I liked how I could deploy my work anywhere on a web site that plain Javascript could go. Someone suggested Purescript, because I could get the Haskell experience but still compile to JavaScript, and it sounded like a good idea to me. **I'd rather learn this with people than on my own!**
 
 I grew up as a professional programmer speaking Java. I think in objects and classes and polymorphism. I'm using this opportunity to learn Purescript not only to try out a different language, but also to practise thinking in functions and composition and higher-kinded types. If you'd like to practise this, too, then join us!
 

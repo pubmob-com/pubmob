@@ -41,7 +41,7 @@ backsite: "javascript:history.back()"
     <li><p>shares their screen</p></li>
     <li><p>issues the command <code>mob start 3</code></p></li>
     <li><p>listens for direction from the mob</p></li>
-    <li><p>builds code to suport the mob's direction</p></li>
+    <li><p>builds code to support the mob's direction</p></li>
     <li><p>issues the command <code>mob next</code>, which passes the driver role to the next developer in turn</p></li>
   </ul>
   <p>The <code>mob start</code> command checks out a work-in-progress (WIP) branch named mob-session, creating it if necessary. The <code>mob next</code> command commits the current changes and pushes the WIP branch. The code can be in any state when <code>mob next</code> is executed; it might not even be compiling.</p>
@@ -52,7 +52,7 @@ backsite: "javascript:history.back()"
   <h2>How do I get ready?</h2>
   <p>When using the <em>mob</em> tool, you have the advantage of working on your own machine, but you'll need to spend a few minutes setting things up.</p>
   <ul class="list outer">
-    <li><p>You'll need to install the <em>mob</em> tool, using the instructions on its <a href="http://github.com/remotemobprogramming/mob">GitHub</a> page. It's a one-command install on the Mac, Windows, or Linux. If you are on Windows, run the installation script in a Git Bash window. For MacOS users, it's a single <code>brew install</code> command.</p></li>
+    <li><p>You'll need to install the <em>mob</em> tool, using the instructions on its <a href="http://github.com/remotemobprogramming/mob">GitHub</a> page. It's a one-command install on the Mac, Windows, or Linux. If you are on Windows, run the installation script in a Git Bash window. For macOS users, it's a single <code>brew install</code> command.</p></li>
     <li><p>You'll need to clone the session's repository and ensure you can build / run tests.</p></li>
     <li><p>Check the listing for the PubMob session you are joining to see if there is any additional setup information.</p></li>
     <li><p>You may also need to provide a GitHub or other repository host login ID to the {{ site.session-lead-term }}.</p></li>
@@ -66,14 +66,14 @@ backsite: "javascript:history.back()"
   <p>If you have challenges setting up, don't hesitate to solicit help from the {{ site.session-lead-term }} before the session begins!</p>
   <p>Certain introductory PubMob sessions will set aside time during the session to help everyone get setup up. Look for these if it's your first visit to a PubMob!</p>
 
-  <h2>Tradeoffs for Git handover</h2>
+  <h2>Trade-offs for Git handover</h2>
   <p>Benefits:</p>
   <ul class="list outer">
     <li><p>Ability to work in your own preferred IDE under your own OS.</p></li>
     <li><p>Ability to use your own keyboard configuration / plugin.</p></li>
     <li><p>Rapid handovers.</p></li>
     <li><p>No lag while typing.</p></li>
-    <li><p>Spotty internet connection does not deteriorate your abililty to type.</p></li>
+    <li><p>Spotty internet connection does not deteriorate your ability to type.</p></li>
     <li><p>No keyboard mismatch issues across the wire.</p></li>
   </ul>
   <p>Costs:</p>

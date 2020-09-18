@@ -98,8 +98,8 @@ TWEET: perils of undo on mob switch
 James suggests:
 Rob Smallshire / Austin Bingham 
 Jon Kern
-Gitte Klitgard
-Patrica Aas
+Gitte Klitgaard
+Patricia Aas
 Becca Williams
 Gee Paw Hill
 Jutta Eckstein (technical?)

@@ -46,7 +46,7 @@ backsite: "javascript:history.back()"
   <h2><a id="fallback-rule"></a>One-chance setup / fallback rule</h2><!-- TODO anchor tag here -->
   <p>The first time you drive, you'll be asked to try typing remotely onto the AnyDesk host. Occasionally there are connectivity or keyboard issues with doing so. If at first you're unsuccessful, your {{ site.session-lead-term }} will attempt to help you resolve the problem. If you're unsuccessful, you'll be asked to type onto the {{ site.session-lead-term }}'s machine using Zoom's remote control capability for the remainder of the session.</p>
 
-  <h2>Tradeoffs for remote control with AnyDesk</h2>
+  <h2>Trade-offs for remote control with AnyDesk</h2>
   <p>Benefits:</p>
   <ul class="list outer">
     <li><p>Virtually no setup or installation required</p></li>
@@ -61,6 +61,6 @@ backsite: "javascript:history.back()"
     <li><p>Potential keyboard mismatch issues.</p></li>
     <li><p>Potentially unfamiliar IDE / key mapping experience.</p></li>
   </ul>
-  <p>Remote control with AnyDesk is ideal for the short sessions that PubMob offers, putting all the burden for session preparation on your {{ site.sesson-lead-term }}. You might be giving up your comfortable development environment for a short while, but you'll be hands-on immediately with minimal worries.</p>
+  <p>Remote control with AnyDesk is ideal for the short sessions that PubMob offers, putting all the burden for session preparation on your {{ site.session-lead-term }}. You might be giving up your comfortable development environment for a short while, but you'll be hands-on immediately with minimal worries.</p>
 </div>
 

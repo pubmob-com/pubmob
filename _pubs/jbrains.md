@@ -24,7 +24,7 @@ backsite: "javascript:history.back()"
 ---
 Hi, folks! I'm [jbrains](https://www.twitter.com/jbrains) and I'd like to help you deliver better results with less stress.
 
-I began my career---nevermind how long ago!---as a programmer, but I didn't stop there. Although I've expanded my view of software development, I remain a programmer at heart and continue to see the world of software development as a programmer. I think like a programmer, but I have learned how to speak the languages of business, personal development, and harmonious interaction. I would like our sessions to reflect that.
+I began my career---never mind how long ago!---as a programmer, but I didn't stop there. Although I've expanded my view of software development, I remain a programmer at heart and continue to see the world of software development as a programmer. I think like a programmer, but I have learned how to speak the languages of business, personal development, and harmonious interaction. I would like our sessions to reflect that.
 
 
 

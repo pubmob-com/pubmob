@@ -40,7 +40,7 @@ backsite: "javascript:history.back()"
 
 <div>
   <h2>How do I get ready?</h2>
-  <p>Cyber-dojo makes it easy: There's no real setup. You'll need a decent internet connection (20 Mbps up and down) and a modern browser. Your host will provide the URL the day of your session. If you're able to run Zoom, cyber-dojo will likely have all the power it needs.</p> 
+  <p>cyber-dojo makes it easy: There's no real setup. You'll need a decent internet connection (20 Mbps up and down) and a modern browser. Your host will provide the URL the day of your session. If you're able to run Zoom, cyber-dojo will likely have all the power it needs.</p> 
 
   <h2>What about when it's my turn?</h2>
   <p>Participants sharing the cyber-dojo development environment simply refresh their browser, once the page reloads you are synced with the last test run. </p>
@@ -48,7 +48,7 @@ backsite: "javascript:history.back()"
   <h2><a id="fallback-rule"></a>Fallback rule</h2>
   <p>Generally there's little that can go wrong with cyber-dojo. In the unlikely event you encounter a problem, your {{ site.session-lead-term }} will attempt to help you resolve it. If you're unsuccessful, you'll be asked to type onto the {{ site.session-lead-term }}'s machine using Zoom's remote control capability for the remainder of the session.</p>
 
-  <h2>Tradeoffs for cyber-dojo</h2>
+  <h2>Trade-offs for cyber-dojo</h2>
   <p>Benefits:</p>
   <ul class="list outer">
     <li><p>Virtually no setup or installation required.</p></li>
@@ -60,6 +60,6 @@ backsite: "javascript:history.back()"
   <ul class="list outer">
     <li><p>Minimalist editor with few creature comforts.</p></li>
   </ul>
-  <p>cyber-dojo is ideal for the short sessions that PubMob offers, putting all the burden for session preparation on your {{ site.sesson-lead-term }}. It's also great for work in languages such as C or C++, where getting everyone to build the software on their machine might be asking too much. You might be giving up your comfortable development environment for a short while, but you'll be hands-on immediately with minimal worries.</p>
+  <p>cyber-dojo is ideal for the short sessions that PubMob offers, putting all the burden for session preparation on your {{ site.session-lead-term }}. It's also great for work in languages such as C or C++, where getting everyone to build the software on their machine might be asking too much. You might be giving up your comfortable development environment for a short while, but you'll be hands-on immediately with minimal worries.</p>
 </div>
 
