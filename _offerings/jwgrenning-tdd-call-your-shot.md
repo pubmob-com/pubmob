@@ -12,7 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: intermediate
 repo: ""
-next-available-sessions: ["2020-09-21T16:30Z"]
+next-available-sessions: ["2020-09-21T16:30Z","2020-09-25T16:00Z"]
 prerequisites: []
 summary-blurb-80-words: "<p>Make a deliberate change,  predict red|green|yellow.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39118"
