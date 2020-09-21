@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.7.1'
-gem 'jekyll', '3.9.0'
+gem 'jekyll'
 gem 'uglifier'
 gem 'github-pages'
 gem 'sprockets', "~> 3.7"
