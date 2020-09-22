@@ -8,14 +8,14 @@ twelve-words-or-fewer: Learn a bunch of techniques for working in your code.
 topics: [TDD, design patterns, domain modeling, refactoring]
 languages: [java,cpp,csharp,javascript]
 graphic: 
-public-or-private: both
+public-or-private: private
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo:
-next-available-sessions: ["2020-09-24T19:30Z"]
+next-available-sessions: []
 prerequisites: []
 summary-blurb-80-words: "<p>It’s easy to be overwhelmed by newly inherited legacy code. Legacy code can be difficult to work with, and so it can be helpful to have an extra set of eyes and a whole bunch of techniques for dealing with it. I can help review your software to identify areas of risk and create approaches for mitigation.</p>"
-booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39108"
+booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39892"
 active: true
 mob-tech: mob
 backsite: "javascript:history.back()"
