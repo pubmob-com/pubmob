@@ -12,7 +12,7 @@ public-or-private: private
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo:
-next-available-sessions: []
+next-available-sessions: ["2020-09-30T18:00Z"]
 prerequisites: []
 summary-blurb-80-words: "<p>Every project is unique and so are its challenges. Through online interviews, questionnaires, and conversations I can provide you an ad hoc assessment of your software development process and/or project along with recommendations for improvement prioritized by the value that you’ll receive right away. This is a guided conversation from one to two hours.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39891"
