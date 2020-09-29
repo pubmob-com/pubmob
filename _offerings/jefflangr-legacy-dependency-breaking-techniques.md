@@ -5,14 +5,14 @@ session-lead-id: jefflangr
 session-lead-name: Jeff Langr
 name: Legacy Dependency Breaking Techniques
 twelve-words-or-fewer: Simple techniques to break dependencies making it hard to test
-topics: [TDD,refactoring,design]
+topics: [TDD,refactoring,design,legacy code]
 languages: [java,cpp,csharp,kotlin]
 graphic:
-public-or-private: both
+public-or-private: private
 is-for-experienced-mobbers: false
 exercise-skill: intermediate
 repo: 
-next-available-sessions: []
+next-available-sessions: ["2020-10-06T21:30Z"]
 prerequisites: []
 summary-blurb-80-words: Pick up a few techniques to fix common dependency challenges in your code, things that make it seem impossible to write unit tests.
 booking-link: https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39115
@@ -20,7 +20,11 @@ active: true
 mob-tech: mob
 backsite: "javascript:history.back()"
 ---
-During this session, we'll briefly touch on some key themes that will help keep you safe when touching legacy code. We'll then work through some of the legacy-breaking techniques that will enable you to start getting a handle on your object-oriented legacy code. You'll learn about as many of these dependency breaking techniques as we can fit:
+Let's start getting some of your legacy code under control!
+
+In this session, I'll help you and your team jump-start getting your legacy code under control. Our primary focus will be on writing enough characterization tests around your code so that you feel safe changing it.
+
+As we work through the session, you'll pick up some key themes for safe handling of legacy code. You'll probably learn about at least one of the following dependency breaking techniques:
 
 * Expose static method
 * Extract and override call
@@ -28,5 +32,3 @@ During this session, we'll briefly touch on some key themes that will help keep 
 * Break out method object
 * Template redefinition (C++) 
 {: .list}
-
-Most of these legacy code PubMob sessions are run in Java, which has become our lingua franca, but I'm sure you have legacy code in whatever other language you code in. Don't hesitate to ping me if you're interested in a private legacy code session or two on your own codebase, whether it be C++, Kotlin, or C#.
