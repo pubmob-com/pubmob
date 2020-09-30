@@ -6,12 +6,12 @@ session-lead-name: Jon Reid
 name: TDD Paint by Numbers in Xcode
 twelve-words-or-fewer: "Learn the Red-Green-Refactor cycle of TDD, without writing the tests."
 topics: [TDD]
-languages: [objectivec,swift]
+languages: [swift]
 graphic: paint-by-numbers.jpg
 public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
-repo: "http://github.com/jlangr/name-normalizer"
+repo: "https://github.com/jonreid/NameNormalizerSwift"
 next-available-sessions: ["2020-10-03T20:00Z"]
 prerequisites: []
 summary-blurb-80-words: "<p>Learn TDD the easy way with a TDD Paint by Numbers session. The tests are already written for you! You'll work in the production code. Since the tests are written, you’ll experience the meaty payoff of TDD. Namely, adding new behavior incrementally, and refactoring to keep the code clean.</p>"
@@ -24,7 +24,7 @@ TDD Paint by Numbers is a great way to learn test-driven development without the
 
 So you'll learn: The red-green-refactor cycle of TDD / How to focus on getting from red to green / Disciplined refactoring: moving in small, verified steps
 
-We'll be working on the same codebase, using Xcode 11.6. Check the scheduled sessions to see which are in Swift, and which in Objective-C.
+We'll be working on the same codebase, using Swift on Xcode 12.
 
 Your {{ site.session-lead-term }} will provide you with specific build instructions to ensure you're ready to 
 hit the ground running.
