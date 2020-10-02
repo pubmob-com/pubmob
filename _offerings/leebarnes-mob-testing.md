@@ -12,7 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
-next-available-sessions: ["2020-10-02T19:00Z","2020-10-16T18:00Z","2020-10-23T18:00Z"]
+next-available-sessions: ["2020-10-16T18:00Z","2020-10-23T18:00Z"]
 prerequisites: []
 summary-blurb-80-words: "<p>Mob testing provides a great forum to hone your testing skills and learn new techniques from our experts as well as your peers!</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39602"

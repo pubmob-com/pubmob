@@ -12,7 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
-next-available-sessions: ["2020-10-09T18:00Z"]
+next-available-sessions: ["2020-10-09T18:00Z","2020-10-16T15:00Z","2020-10-23T15:00Z"]
 prerequisites: []
 summary-blurb-80-words: "<p>We’ll walk through a detailed readiness checklist and develop a high-level roadmap for Test Automation success. You'll identify the obstacles in your organization and create a plan to get you on the path to effective test automation!</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=38964"
