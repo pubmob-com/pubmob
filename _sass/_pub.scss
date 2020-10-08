@@ -24,6 +24,13 @@
       @include ms-respond(font-size,0.5);
     }
   }
+
+  .book-image {
+    max-height: 225px;
+    width: auto;
+    padding: 5px 5px 5px 5px;
+  }
+
   .pubDetails {
     grid-area: about-right;
 
@@ -44,7 +51,7 @@
     }
 
     .tender {
-      img { width: 66%; height: auto; }
+      .photo { width: 66%; height: auto; }
     }
 
     .pubDetails {

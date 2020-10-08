@@ -89,6 +89,8 @@ collections:
     output: false
   certifications:
     output: false
+  books:
+    output: false
 
 session-lead-term: session lead
 session-lead-term-plural: session leads

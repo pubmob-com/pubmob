@@ -33,10 +33,14 @@
           <section class="about">
             <article class="tender">
               <h3>Your {{ site.session-lead-term }}: {{page.session-lead-name}}</h3>
-              <div><img src="/assets/images/{{ page.id }}.{{page.session-lead-photo-extension}}" /></div>
+              <div><img class="photo" src="/assets/images/{{ page.id }}.{{page.session-lead-photo-extension}}" /></div>
 
               <h3>About {{ page.session-lead-short-name }}</h3>
+
+
               <p>{{ page.session-lead-blurb }}</p>
+
+
               <h3>About {{ page.pub-name }}</h3>
               <div>
               {{ content | markdownify }}
@@ -67,6 +71,16 @@
           -->
 
           <section>
+
+            {% assign books = site.books | where: "session-lead-id", page.session-lead-id | sort: "year" %}
+            {% if books.size > 0 %}
+              <h3>{{ page.session-lead-short-name }}'s Books</h3>
+              <!-- todo sort by year -->
+              {% for book in books %}
+                {% if book.book-url %}<a href="{{ book.book-url }}">{% endif %}<img src="/assets/images/books/{{ book.session-lead-id }}-{{ book.image-height-225 }}" class="book-image" alt="{{ book.name }}" />{% if book.book-url %}</a>{% endif %}
+              {% endfor %}
+            {% endif %}
+
             <h3>{{ page.session-lead-short-name }}'s PubMob Sessions</h3>
             {% include class-legend.html %}
 
