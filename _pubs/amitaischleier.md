@@ -7,8 +7,8 @@ session-lead-name: Amitai Schleier
 owner-name: Amitai Schleier
 sort-name: Schleier, Amitai
 pub-name: "Amitai's Associates"
-pub-photo: agilein3minutes.png
-pub-photo-caption: "You may know me from Agile in 3 Minutes or my Coding Tour."
+pub-photo: germany-map.png
+pub-photo-caption: "You may know me from my Coding Tour (mostly in Germany)."
 pub-summary-twenty-words: Nice code you got there. Be a shame if something good didn't happen to it.
 
 tagline: Reduce the costs and risks of software delivery.
