@@ -7,7 +7,7 @@ session-lead-short-name: Jon
 owner-name: Jon Reid
 sort-name: Reid, Jon
 pub-name: Agile Apple Ale
-pub-photo: ios-unit-testing-by-example.png
+pub-photo: jonreid-teaching.jpg
 pub-summary-twenty-words: "Unit testing, TDD, and refactoring… on Apple platforms."
 session-lead-photo-extension: jpg
 tagline: Test-infected for two decades in the Apple ecosystem
