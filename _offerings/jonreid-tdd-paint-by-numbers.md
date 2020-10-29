@@ -20,6 +20,8 @@ active: true
 mob-tech: mob
 backsite: "javascript:history.back()"
 ---
+<blockquote>The mob programming practice really works well. It’s especially easy to learn in a remote setting. You just can not bump someone aside and take over. Me and the rest of our team really enjoyed Jon as a trainer and person. — Lead Engineer</blockquote>
+
 TDD Paint by Numbers is a great way to learn test-driven development without the test part. The tests are already written for you, so you'll get to experience TDD without writing the tests. You and the others in this session will take turns getting tests to pass, then cleaning up the code.
 
 So you'll learn: The red-green-refactor cycle of TDD / How to focus on getting from red to green / Disciplined refactoring: moving in small, verified steps
