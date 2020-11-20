@@ -12,7 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo:
-next-available-sessions: ["2020-11-20T14:00Z"]
+next-available-sessions: []
 prerequisites: []
 summary-blurb-80-words: "<p>By creating branches to house large changes, you begin to venture away from continuous integration. What if you could still continuously integrate your code when working on such refactors?</p><p>In this session, we'll take a “monolith” and extract functionality into a smaller micro-service while maintaining frequent and small commits.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39120"
