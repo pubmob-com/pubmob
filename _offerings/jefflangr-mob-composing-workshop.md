@@ -8,7 +8,7 @@ twelve-words-or-fewer: "Not a programmer? Learn firsthand the joy of a PubMob. C
 topics: [mob programming]
 languages: []
 graphic: 
-public-or-private: both
+public-or-private: private
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: "http://github.com/jlangr/geektone"
