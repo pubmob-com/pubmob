@@ -1,4 +1,5 @@
 <div class="price-duration">
   <p>1hr 15min</p>
-  <p>{% if include.public-or-private == "private" %}$995 / 6 attendees{% else %}$95 / attendee{% endif %}</p>
+  <p>{% if include.attendee-limit == 12 %}$1495 / 12 attendees{% else %}
+  {% if include.public-or-private == "private" %}$995 / 6 attendees{% else %}$95 / attendee{% endif %}{% endif %}</p>
 </div>
