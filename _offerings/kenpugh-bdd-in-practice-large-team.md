@@ -6,7 +6,7 @@ session-lead-name: Ken Pugh
 name: BDD in Practice - Large Team 
 twelve-words-or-fewer: Experience Behavior Driven Development with your stories 
 topics: [BDD, ATDD]
-languages: [gherkin, FIT]
+languages: 
 graphic: 
 public-or-private: private
 attendee-limit: 12
@@ -18,7 +18,7 @@ prerequisites: []
 summary-blurb-80-words: "<p>We'll collaborate using BDD to create acceptance tests for your actual stories.  You'll experience how the Triad - Customer, Developer, and Tester work together to form a shared understanding expressed as testable scenarios.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=41802"
 active: true
-mob-tech: mob
+mob-tech: 
 backsite: "javascript:history.back()"
 ---
 <p>I’ll help you:</p>
