@@ -6,7 +6,7 @@ session-lead-name: Ken Pugh
 name: BDD in Practice - Large Team 
 twelve-words-or-fewer: Experience Behavior Driven Development with your stories 
 topics: [BDD, ATDD]
-languages: 
+languages: []
 graphic: 
 public-or-private: private
 attendee-limit: 12
