@@ -48,6 +48,6 @@ backsite: "javascript:history.back()"
   <p>Please let us know if you're having any challenges getting set up.</p>
  
   <h2><a id="fallback-rule"></a>One-chance setup / fallback rule</h2>
-  <p>In the highly unlikely event that you're unable to use Mural during the PubMob session, the {{ site.session-lead-term }} and the mob will help you to set things up during your first turn as driver. If by your second round you're still unable to access Mural, you'll be able to continue activedly participating in the PubMob session as a mob navigator, but you won't be able to drive.</p>
+  <p>In the highly unlikely event that you're unable to use Mural during the PubMob session, the {{ site.session-lead-term }} and the mob will help you to set things up during your first turn as driver. If by your second round you're still unable to access Mural, you'll be able to continue actively participating in the PubMob session as a mob navigator, but you won't be able to drive.</p>
 </div>
 
