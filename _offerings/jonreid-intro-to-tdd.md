@@ -8,11 +8,11 @@ twelve-words-or-fewer: "Red-Green-Refactor and the Three Laws of TDD"
 topics: [TDD]
 languages: [swift]
 graphic: 
-public-or-private: private
+public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
-next-available-sessions: []
+next-available-sessions: ["2021-01-30T18:00Z","2021-02-27T18:00Z"]
 prerequisites: []
 summary-blurb-80-words: "<p>Let’s use the simplest programming puzzle, FizzBuzz, to learn the fundamentals of test-driven development. By simplifying the problem, we can concentrate on the nuances of what goes into TDD. You’ll experience the Red-Green-Refactor cycle, and the Three Laws of TDD.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=42046"
