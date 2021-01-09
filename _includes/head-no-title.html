@@ -14,4 +14,17 @@
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <link href="https://www.flexbooker.com/Content/widget_load.css" rel="stylesheet" /><script type="text/javascript" src="https://www.flexbooker.com/scripts/widget_load_min.js"></script>
-	
+
+{% comment %}
+Twitter social card, if any. Use @jbrains' offerings for examples
+{% endcomment %}
+
+{% if page.twitter-card %}
+	{% assign card = page.twitter-card %}
+  <meta name="twitter:card" content="{{ card.type }}">
+  <meta name="twitter:site" content="{{ card.site_username }}">
+  <meta name="twitter:creator" content="{{ card.creator_username }}">
+  <meta name="twitter:title" content="{{ card.title }}">
+  <meta name="twitter:description" content="{{ card.description }}">
+  <meta name="twitter:image" content="{{ card.image_url }}">
+{% endif %}

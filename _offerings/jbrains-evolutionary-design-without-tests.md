@@ -19,6 +19,13 @@ booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15
 active: true
 mob-tech: mob
 backsite: "javascript:history.back()"
+twitter-card:
+    type: "summary_large_image"
+    site_username: "@PubMobDotCom"
+    creator_username: "@jbrains"
+    title: "Evolutionary Design Without* Tests"
+    description: "Let's see how safely and deftly we can move without tests. We'll focus on guiding the design to evolve and we'll write the tests in our heads. We're professionals; we can trust each other."
+    image_url: "https://pubmob.com/assets/images/pubs/jbrains.jpg"
 ---
 <style type="text/css">
 #offering li { 
