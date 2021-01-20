@@ -12,7 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
-next-available-sessions: ["2021-01-15T19:00Z","2021-01-16T16:00Z","2021-01-22T19:00Z","2021-01-23T17:00Z"]
+next-available-sessions: ["2021-01-22T19:00Z","2021-01-23T17:00Z"]
 prerequisites: []
 summary-blurb-80-words: <p>Using existing test coverage, learn techniques and concepts to quickly de-crapify code.  Look at your company's monolith with some fresh eyes and renewed confidence!</p>
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39111"
