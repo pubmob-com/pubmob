@@ -12,7 +12,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: "https://github.com/jonreid/NameNormalizerSwift"
-next-available-sessions: ["2021-02-13T18:00Z","2021-03-13T18:00Z"]
+next-available-sessions: ["2021-03-13T18:00Z"]
 prerequisites: []
 summary-blurb-80-words: "<p>Learn TDD the easy way with a TDD Paint by Numbers session. The tests are already written for you! You'll work in the production code. Since the tests are written, you’ll experience the meaty payoff of TDD. Namely, adding new behavior incrementally, and refactoring to keep the code clean.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39521"
