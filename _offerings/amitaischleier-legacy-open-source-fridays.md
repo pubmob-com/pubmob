@@ -27,7 +27,7 @@ twitter-card:
     description: "Contribute to a historically significant Open Source project, enjoy the cumulative effect of your efforts, and gain new insights into *your* legacy code. This codebase needs plenty of mending and many new features, and presents unusual constraints to focus our decision-making."
     image_url: "https://pubmob.com/assets/images/pubs/amitaischleier.jpg"
 ---
-_(Don't know C? Neither did I, until I met this code. Please keep reading.)_
+_(Don't know C? Neither did I, until I met this code. You know languages inspired by C. I'm quite sure you'll be able to understand, contribute, learn, and enjoy, or your money back. Please keep reading.)_
 
 When you work with legacy code, your every move fraught with extra risk, it can be difficult to make room to experiment and learn.
 When you live in a codebase, over time it can even become difficult to perceive opportunities for experiments and learning.
