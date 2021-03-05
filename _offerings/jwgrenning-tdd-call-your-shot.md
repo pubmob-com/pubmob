@@ -16,7 +16,7 @@ next-available-sessions: []
 prerequisites: []
 summary-blurb-80-words: "<p>Make a deliberate change,  predict red|green|yellow.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39118"
-active: true
+active: false
 mob-tech: cyberdojo
 backsite: "javascript:history.back()"
 ---
