@@ -16,7 +16,7 @@ next-available-sessions: []
 discounted: true
 prerequisites: []
 summary-blurb-80-words: "Two decades ago, a lone-genius project made the internet more secure and inspired a generation of programmers. Two years ago, it came back to life as a collaborative effort. This historically significant codebase needs plenty of mending and many new features, while also presenting some unusual constraints to focus our decision-making. Contribute to Open Source, enjoy the cumulative effect of your efforts, and gain new insights into your legacy code."
-booking-link: 
+booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=43065"
 active: true
 mob-tech: mob
 backsite: "javascript:history.back()"
