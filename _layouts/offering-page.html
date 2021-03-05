@@ -44,7 +44,7 @@
                 {% include topics.html topics=page.topics %}
                 {% include languages.html languages=page.languages %}
                 {% include student-level.html exercise-skill=page.exercise-skill %}
-                {% include price-duration.html public-or-private=page.public-or-private attendee-limit=page.attendee-limit %}
+                {% include price-duration.html public-or-private=page.public-or-private attendee-limit=page.attendee-limit discounted=page.discounted %}
                 {% if page.repo %}
                   <div class="offering-repo">Repo: <a href="{{page.repo}}">{{ page.repo }}</a></div>
                 {% endif %}

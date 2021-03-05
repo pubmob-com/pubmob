@@ -32,7 +32,7 @@ window.onclick = function(event) { if (event.target == modal) modal.style.displa
       {% include topics.html topics=offering.topics %}
       {% include languages.html languages=offering.languages %}
       {% include student-level.html exercise-skill=offering.exercise-skill %}
-      {% include price-duration.html public-or-private=offering.public-or-private attendee-limit=offering.attendee-limit %}
+      {% include price-duration.html public-or-private=offering.public-or-private attendee-limit=offering.attendee-limit discounted=offering.discounted %}
       {% include mob-tech.html mob-tech=offering.mob-tech %}
     </article>
   </section>
