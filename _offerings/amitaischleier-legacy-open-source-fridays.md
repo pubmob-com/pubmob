@@ -30,12 +30,19 @@ twitter-card:
 ---
 _(Don't know C? Neither did I, until I met this code. You know languages inspired by C. I'm quite sure you'll be able to understand, contribute, learn, and enjoy, or your money back. Please keep reading.)_
 
+> "If you work with legacy code, don't miss this!
+> Or if you work with code of any sort, you're likely to learn something useful."  
+> -- [Esther Derby](https://twitter.com/estherderby/status/1368671178924167169)
+
 When you work with legacy code, your every move fraught with extra risk, it can be difficult to make room to experiment and learn.
 When you live in a codebase, over time it can even become difficult to perceive opportunities for experiments and learning.
 
 This is especially unfortunate, because it's precisely legacy code -- valuable code that we're afraid to change -- that places the most strenuous demands on your **perceptual acuity**, your **creativity**, and your ruthlessly disciplined **outcome-focused learning**.
 
 It's time to take your head for a stroll.
+
+> "Learn together with awesome people."  
+> -- [Butch Howard](https://twitter.com/butchhoward/status/1369086250217582592)
 
 Play with _someone else's_ legacy code, accompanied by an experienced guide.
 Encounter some familiar puzzles and some novel ones.
@@ -48,7 +55,23 @@ Feel pride in your contribution and in our progress from week to week.
 Sharpen your vision, refresh your cleverness, stretch, reenergize.
 Then return to your own code with new insights and confidence to find new ways forward.
 
+> "A great opportunity to learn technical excellence with one of the best out there.
+> At the lower rate, it's a no-brainer."  
+> -- [Ryan Ripley](https://twitter.com/ryanripley/status/1368660989017735168)
+
 <!--
 Latta's swing at it:
 Want more confidence and insights to dealing with legacy code? Learn with an experienced guide while contributing to a  significant open source project. We'll add features, mend broken bits, navigate strange constraints, and learn to focus our decision making.
+
+> "A chance to learn techniques for rescuing and enhancing legacy codebases with a really great guy! Don't miss it."  
+> -- [George Dinwiddie](https://twitter.com/gdinwiddie/status/1368644172169756675)
+
+> "Work online with one of the best."  
+> -- [Mark Kilby](https://twitter.com/mkilby/status/1368649304982839298)
+
+> "A neat opportunity for people interested in mobbing and/or open source participation."  
+> -- [Markus Silpala](https://twitter.com/msilpala/status/1368669450463973380)
+
+> "This is the good stuff!"  
+> -- [Ahmed Avais](https://twitter.com/ahmedavais/status/1368673545497280522)
 -->
