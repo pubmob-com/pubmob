@@ -59,19 +59,12 @@ Then return to your own code with new insights and confidence to find new ways f
 > At the lower rate, it's a no-brainer."  
 > -- [Ryan Ripley](https://twitter.com/ryanripley/status/1368660989017735168)
 
-<!--
-Latta's swing at it:
-Want more confidence and insights to dealing with legacy code? Learn with an experienced guide while contributing to a  significant open source project. We'll add features, mend broken bits, navigate strange constraints, and learn to focus our decision making.
+Upon the conclusion of our very first Legacy Open Source Friday, three participants immediately registered for every available session in the booking system.
+One of them told me:
 
-> "A chance to learn techniques for rescuing and enhancing legacy codebases with a really great guy! Don't miss it."  
-> -- [George Dinwiddie](https://twitter.com/gdinwiddie/status/1368644172169756675)
+> "You have a good vision and confidence in the project.
+> That energy is contagious.
+> Everyone felt the excitement."
 
-> "Work online with one of the best."  
-> -- [Mark Kilby](https://twitter.com/mkilby/status/1368649304982839298)
-
-> "A neat opportunity for people interested in mobbing and/or open source participation."  
-> -- [Markus Silpala](https://twitter.com/msilpala/status/1368669450463973380)
-
-> "This is the good stuff!"  
-> -- [Ahmed Avais](https://twitter.com/ahmedavais/status/1368673545497280522)
--->
+See for yourself what the excitement is all about.
+One of these Fridays, join us.
