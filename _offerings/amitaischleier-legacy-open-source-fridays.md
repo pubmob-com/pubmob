@@ -37,7 +37,7 @@ _(Don't know C? Neither did I, until I met this code. You know languages inspire
 When you work with legacy code, your every move fraught with extra risk, it can be difficult to make room to experiment and learn.
 When you live in a codebase, over time it can even become difficult to perceive opportunities for experiments and learning.
 
-This is especially unfortunate, because it's precisely legacy code -- valuable code that we're afraid to change -- that places the most strenuous demands on your **perceptual acuity**, your **creativity**, and your ruthlessly disciplined **outcome-focused learning**.
+This is especially unfortunate, because it's precisely legacy code -- [valuable code that we're afraid to change](https://www.legacycode.rocks/podcast-1/episode/27c69746/defining-legacy-code-with-amitai-schleier) -- that places the most strenuous demands on your **perceptual acuity**, your **creativity**, and your ruthlessly disciplined **outcome-focused learning**.
 
 It's time to take your head for a stroll.
 
