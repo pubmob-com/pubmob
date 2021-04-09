@@ -66,5 +66,10 @@ One of them told me:
 > That energy is contagious.
 > Everyone felt the excitement."
 
+Another:
+
+> "I am really enjoying this as much as I enjoy hanging out with friends in a bar."
+
+That's PubMob for you.
 See for yourself what the excitement is all about.
 One of these Fridays, join us.
