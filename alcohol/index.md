@@ -28,7 +28,7 @@ Wondering about the pub motif? Read about the origins of PubMob, followed by a s
 
 ## PubMob origins
 
-I've provided consulting independently since 2003. During that time, I've also managed to log more than 5 years' time building software remotely (and coaching others to do so. My remote experience includes one year at GeoLearning (defunct), three years at Outpace, and more than a year working remotely with developers at various customers (including Ford and Sonic). Last fall it became clear that remote software development was the direction to take for my personal consultancy. I began taking steps toward achieving that goal.
+I've provided consulting independently since 2003. During that time, I've also managed to log more than 5 years' time building software remotely (and coaching others to do so. My remote experience includes one year at GeoLearning (defunct), three years at Outpace, and more than a year working remotely with developers at various customers (including Ford and Sonic). In the fall of 2019 it became clear that remote software development was the direction to take for my personal consultancy. I began taking steps toward achieving that goal.
 
 After COVID-19 forced businesses to shutter their offices, millions of software developers suddenly found themselves working from home.
 
