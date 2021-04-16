@@ -22,11 +22,11 @@ backsite: "javascript:history.back()"
 ---
 # \#PubMob: A free taste of mob programming
 
-Want to try sitting in on an actual mob programming session at no cost? Join the weekly \#PubMob session, currently held for two hours each Friday. These sessions, which started in early April 2020 as a reaction to COVID-19, provide a way of exploring how to make remote mob programming successful while focusing on various software development exercises.
+Want to try sitting in on an actual mob programming session at no cost? Join a weekly free \#OpenPubMob session, currently held for two hours each Friday. These sessions, which started in early April 2020 as a reaction to COVID-19, provide a way of exploring how to make remote mob programming successful while focusing on various software development exercises.
 
-\#PubMob exercises touch on numerous topics that include refactoring, code design, legacy code, TDD, approvals testing, code coverage, IDEs, testing in general, and more. We retrospect on the sessions regularly and run frequent experiments as a result.
+\#OpenPubMob exercises touch on numerous topics that include refactoring, code design, legacy code, TDD, approvals testing, code coverage, IDEs, testing in general, and more. We retrospect on the sessions regularly and run frequent experiments as a result.
 
-The success of these weekly sessions led to the creation of PubMob.com. #PubMob will always remain free and informal; it is effectively run by the attendees themselves (not PubMob.com). We direct you to \#PubMob to learn about mob programming first-hand, so that you can feel more comfortable trying out some of the PubMob.com sessions. The opposite is not true: \#PubMob does not exist to lure people to PubMob.com; PubMob.com is not advertised in the \#PubMob sessions.
+The success of these weekly sessions led to the creation of PubMob.com. #PubMob will always remain free and informal; it is effectively run by the attendees themselves (not PubMob.com). We direct you to \#OpenPubMob to learn about mob programming first-hand, so that you can feel more comfortable trying out some of the PubMob.com sessions. The opposite is not true: \#OpenPubMob does not exist to lure people to PubMob.com; PubMob.com is not advertised in the \#OpenPubMob sessions.
 
-If you're interested in joining a \#PubMob session, look for [hashtag \#PubMob on Twitter](https://twitter.com/search?q=%23PubMob) or contact [@jlangr](https://twitter.com/jlangr) to be added to the email distribution.
+If you're interested in joining a \#PubMob session, look for [hashtags \#OpenPubMobUS and \#OpenPubMobUK on Twitter](https://twitter.com/search?q=%23PubMob) or contact [@jlangr](https://twitter.com/jlangr) for more information.
 
