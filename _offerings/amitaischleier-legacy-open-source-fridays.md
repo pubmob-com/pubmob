@@ -66,6 +66,11 @@ One of them told me:
 > That energy is contagious.
 > Everyone felt the excitement."
 
+Feedback from another:
+
+> "Amitai is kind, knowledgeable, resourceful, well prepared and just plain interesting.
+> I love that I have the opportunity to learn and be mentored by him."
+
 Another:
 
 > "I am really enjoying this as much as I enjoy hanging out with friends in a bar."
