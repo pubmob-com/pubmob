@@ -5,6 +5,7 @@ session-lead-id: jonreid
 session-lead-name: Jon Reid
 name: TDD Paint by Numbers in Xcode
 twelve-words-or-fewer: "Learn the Red-Green-Refactor cycle of TDD, without writing the tests."
+discounted: true
 topics: [TDD]
 languages: [swift]
 graphic: paint-by-numbers.jpg
