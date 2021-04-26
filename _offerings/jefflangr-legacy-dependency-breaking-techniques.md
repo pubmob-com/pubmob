@@ -6,7 +6,7 @@ session-lead-name: Jeff Langr
 name: Legacy Dependency Breaking Techniques
 twelve-words-or-fewer: Simple techniques to break dependencies making it hard to test
 topics: [TDD,refactoring,design,legacy code]
-languages: [java,cpp,csharp,kotlin]
+languages: [java]
 graphic:
 public-or-private: public
 is-for-experienced-mobbers: false

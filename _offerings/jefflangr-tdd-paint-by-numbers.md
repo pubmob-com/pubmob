@@ -6,7 +6,7 @@ session-lead-name: Jeff Langr
 name: TDD Paint by Numbers
 twelve-words-or-fewer: "Your first TDD experience: Learn refactoring & the Red-Green-Refactor Cycle."
 topics: [TDD]
-languages: [java,cpp,csharp,clojure,kotlin,javascript]
+languages: [java]
 graphic: tdd-paint-by-numbers.png
 public-or-private: both
 is-for-experienced-mobbers: false
