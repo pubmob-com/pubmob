@@ -20,7 +20,7 @@ company-link: https://latentagility.com
 company-logo-url: https://latentagility.com/images/logo.png
 topics: [coaching, legacy code, refactoring, evolutionary design, TDD, BDD]
 languages: [Kotlin, Java, C, Python, Perl]
-preferred-mob-tech: mob
+preferred-mob-tech: tmate
 backsite: "javascript:history.back()"
 ---
 Great learning experiences happen when we work together in real code, thoughtfully prepared.

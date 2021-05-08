@@ -56,6 +56,7 @@ backsite: "javascript:history.back()"
     <li><p><a href="/setup/mob">Git handover with mob.</a> You'll build software on your own machine and use Git to share your changes.</p></li>
     <li><p><a href="/setup/anydesk">Remote control with AnyDesk.</a> You'll be provided access to a remote desktop that provides fast access and minimal lag.</p></li>
     <li><p><a href="/setup/cyberdojo">cyber-dojo.</a> You'll work in a simple, web-based development environment that minimizes the need for extensive IDE knowledge.</p></li>
+    <li><p><a href="/setup/tmate">tmate.</a> You'll work in a shared Unix terminal session with the lowest possible latency.</p></li>
     <li><p><a href="/setup/mural">Mural.</a> You'll work with a collaboration tool that allows you to interact with an advanced whiteboard.</p></li>
   </ul>
 </div>
