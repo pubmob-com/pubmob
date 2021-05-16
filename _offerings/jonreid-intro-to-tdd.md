@@ -13,7 +13,7 @@ public-or-private: both
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: https://github.com/jonreid/TDDFramework
-next-available-sessions: []
+next-available-sessions: ["2021-05-29T17:00Z"]
 prerequisites: []
 summary-blurb-80-words: "<p>Let’s use the simplest programming puzzle, FizzBuzz, to learn the fundamentals of test-driven development. By simplifying the problem, we can concentrate on the nuances of what goes into TDD. You’ll experience the Red-Green-Refactor cycle, and the Three Laws of TDD.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=42046"
