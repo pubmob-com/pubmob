@@ -14,7 +14,7 @@ exercise-skill: intermediate
 repo: https://github.com/jbrains/pubmob-EvolutionaryDesignWithoutTests
 next-available-sessions: []
 prerequisites: []
-summary-blurb-80-words: "Let's see how safely and deftly we can move without tests. We'll focus on guiding the design to evolve and we'll write the tests in our heads. We're professionals; we can trust each other. (Our regular schedule returns in June 2021, maybe sooner.)"
+summary-blurb-80-words: "Let's see how safely and deftly we can move without tests. We'll focus on guiding the design to evolve and we'll write the tests in our heads. We're professionals; we can trust each other."
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39218"
 active: true
 mob-tech: mob
@@ -27,7 +27,7 @@ twitter-card:
     description: "Let's see how safely and deftly we can move without tests. We'll focus on guiding the design to evolve and we'll write the tests in our heads. We're professionals; we can trust each other."
     image_url: "https://pubmob.com/assets/images/pubs/jbrains.jpg"
 ---
-**This session will be irregularly scheduled between April 22, 2021 and late May 2021, but I intend to return to a regular schedule by June 2021. Thank you for your understanding.**
+**We're back with sessions starting May 31!**
 
 <style type="text/css">
 #offering li { 
