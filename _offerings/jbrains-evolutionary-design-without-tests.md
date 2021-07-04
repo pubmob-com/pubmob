@@ -27,7 +27,6 @@ twitter-card:
     description: "Let's see how safely and deftly we can move without tests. We'll focus on guiding the design to evolve and we'll write the tests in our heads. We're professionals; we can trust each other."
     image_url: "https://pubmob.com/assets/images/pubs/jbrains.jpg"
 ---
-**We're back with sessions starting May 31!**
 
 <style type="text/css">
 #offering li { 
@@ -45,8 +44,13 @@ We'll work in Java, because compile-time type checking helps make this safer. We
 
 I would like to explore two key questions: when do we truly need automated tests and which habits do we (collectively) have that compensate enough for not running automated tests? Accordingly, I propose the following basic rules:
 
-- We don't write automated tests. (We already know how to live with them; let's explore life without them.)
-- We try not to run the code at all. We try to convince ourselves that the code is correct merely by looking at it. (This will affect how we change the code as well as how we organize the code.)
-- If we run the code, then we decide whether to run the entire application or execute code in a REPL. When we run the code, we discuss why we chose to run the code.
+- We don't write automated tests. We already know how to live with them; **let's explore life without them**.
+- We try not to run the code at all. **We try to convince ourselves that the code is correct** merely by looking at it. This will affect how we change the code as well as how we organize the code.
+- If we run the code, then we decide whether to run the entire application or execute code in a REPL. When we run the code, we **discuss why we needed to run the code**.
 
-**Let me be clear about a few things**. These sessions are _not_ a recommendation to _stop_ writing automated tests. These sessions are not trying to "prove" anything about TDD or not TDD. My goal here is to focus on letting the design evolve while putting extra pressure on us to keep the design _really_ simple. Can we make the design so simple that we can feel confident enough just by looking at it? If yes, then how? If not, then why not? And if it's complicated, then let's learn more about what makes it complicated. In the meantime, we'll focus on good design principles, accurate refactoring, and we'll work in _really small_ steps.
+**Let me be clear about a few things**. These sessions are _not_ a recommendation to _stop_ writing automated tests. **These sessions are not trying to "prove" anything about TDD or not TDD.** My goal here is to focus on letting the design evolve while putting extra pressure on us to keep the design _really_ simple. **Can we make the design so simple** that we can feel confident enough just by looking at it? If yes, then how? If not, then why not? And if it's complicated, then let's learn more about what makes it complicated. In the meantime, we'll focus on good design principles, accurate refactoring, and **we'll work in _really small_ steps**.
+
+## Hop On and Hop Off... Any Time!
+
+Please feel welcome to **join us any time, as often as you like**. Although we are working on a long-running project, **you don't need to worry** about joining us part-way through. The strength of the ensemble lies partly in helping new folks feel comfortable contributing&mdash;a you always have me as both your coach (I help you drive) and Customer (I choose details about features).
+
