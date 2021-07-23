@@ -12,7 +12,7 @@ public-or-private: public
 is-for-experienced-mobbers: false
 exercise-skill: intermediate
 repo: https://github.com/jbrains/pubmob-EvolutionaryDesignWithoutTests
-next-available-sessions: ["2021-07-02T13:30Z","2021-07-13T13:30Z","2021-07-20T13:30Z","2021-07-27T13:30Z"]
+next-available-sessions: ["2021-07-27T13:30Z"]
 prerequisites: []
 summary-blurb-80-words: "Let's see how safely and deftly we can move without tests. We'll focus on guiding the design to evolve and we'll write the tests in our heads. We're professionals; we can trust each other."
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39218"
@@ -53,4 +53,3 @@ I would like to explore two key questions: when do we truly need automated tests
 ## Hop On and Hop Off... Any Time!
 
 Please feel welcome to **join us any time, as often as you like**. Although we are working on a long-running project, **you don't need to worry** about joining us part-way through. The strength of the ensemble lies partly in helping new folks feel comfortable contributing&mdash;a you always have me as both your coach (I help you drive) and Customer (I choose details about features).
-
