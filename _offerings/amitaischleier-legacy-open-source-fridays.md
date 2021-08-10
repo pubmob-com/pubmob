@@ -12,7 +12,7 @@ public-or-private: public
 is-for-experienced-mobbers: false
 exercise-skill: intermediate
 repo: 
-next-available-sessions: ["2021-07-30T13:00Z","2021-08-06T13:00Z","2021-08-13T13:00Z","2021-08-20T13:00Z","2021-08-27T13:00Z"]
+next-available-sessions: ["2021-08-13T13:00Z","2021-08-27T13:00Z"]
 discounted: true
 prerequisites: []
 summary-blurb-80-words: "Two decades ago, a lone-genius project made the internet more secure and inspired a generation of programmers. Two years ago, it came back to life as a collaborative effort. This historically significant codebase needs plenty of mending and many new features, while also presenting some unusual constraints to focus our decision-making. Contribute to Open Source, enjoy the cumulative effect of your efforts, and gain new insights into your legacy code."
