@@ -12,7 +12,7 @@ public-or-private: private
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: "http://github.com/jlangr/geektone"
-next-available-sessions: ["2021-09-07T21:30Z"]
+next-available-sessions: ["2021-09-07T21:30Z","2021-09-28T21:30Z","2021-10-26T21:30Z","2021-11-16T22:30Z"]
 prerequisites: []
 summary-blurb-80-words: "<p>Mob programming is 'everyone in a room working on the same thing at the same time,' per Woody Zuill. Outrageous! Yet teams find mob programming a fun way to collaboratively build and deliver high-quality software. Some teams even say they go faster.</p><p>In this session, we'll mob to collaboratively compose a short song. Even if you know little about music, you'll feel firsthand how participating in a mob can reduce your anxiety and help you contribute quickly.</p>"
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39116"
