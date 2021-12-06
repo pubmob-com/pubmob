@@ -12,7 +12,7 @@ public-or-private: public
 is-for-experienced-mobbers: false
 exercise-skill: intermediate
 repo: 
-next-available-sessions: ["2021-12-14T22:30Z"]
+next-available-sessions: []
 prerequisites: []
 summary-blurb-80-words: Pick up a few techniques to fix common dependency challenges in your code, things that make it seem impossible to write unit tests.
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39115"
