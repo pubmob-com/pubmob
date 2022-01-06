@@ -24,6 +24,8 @@ Date: 6 January 2022
 
 The following notice was issued via email from Flexbooker. Flexbooker software is used to accept bookings at PubMob, and also accepts payments for bookings.
 
+While financial data was not exposed in this breach, we find this incident highly disappointing and apologize for inconveniences and concerns.
+
 Thank you,
 - Jeff Langr
 
