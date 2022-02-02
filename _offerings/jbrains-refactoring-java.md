@@ -12,7 +12,7 @@ public-or-private: public
 is-for-experienced-mobbers: false
 exercise-skill: beginner
 repo: 
-next-available-sessions: ["2022-01-31T14:30Z"]
+next-available-sessions: []
 prerequisites: []
 summary-blurb-80-words: "Strengthen and deepen your skill in evolutionary design by practising in Java. There's plenty of Java code that needs refactoring. We'll never run out of examples."
 booking-link: "https://a.flexbooker.com/widget/75e809c1-6688-42cc-9fbf-77b001c15991?serviceIds=39114"
