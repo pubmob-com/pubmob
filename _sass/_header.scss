@@ -68,6 +68,17 @@
   }
 }
 
+header .announcement {
+  background-color: $IrishFlagOrange;
+  border: 2px solid black;
+  box-shadow: 4px 3px 8px 1px #969696;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  grid-row: 2;
+  grid-column: 1 / 2;
+}
+
 header .logo {
 //  image-fit: contain;
   max-width: 500px;
